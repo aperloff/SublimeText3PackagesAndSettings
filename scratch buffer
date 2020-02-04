@@ -1,0 +1,2517 @@
+//ghostscript conversion
+gs -o OffMeantnpuRef_BB_ak4pf.png -sDEVICE=jpeg -r144 OffMeantnpuRef_BB_ak4pf.pdf
+for i in *.pdf; do gs -o $i.png -sDEVICE=jpeg -r144 $i; done
+  
+//string replace in bash
+for i in *.pdf; do echo "${i/.pdf/.png}"; done
+
+//egrep
+egrep -h "Event|Jet|el_tight|el_loose|mu_tight|mu_loose" -r ~/nobackup/PS_outfiles_DYJets_20120615_base/res/ > base_all.txt
+egrep -h "Event" -r ~/nobackup/PS_outfiles_DYJets_20120615_base/res/ | egrep -h -v -i begin > base_event.txt
+cat base_event.txt | sort -n > base_event_sorted.txt
+egrep -h 8996400 -r ~/nobackup/PS_outfiles_DYJets_20120615_base/res/
+
+egrep -h "Event|Jet|el_tight|el_loose|mu_tight|mu_loose" -r ~/nobackup/PS_outfiles_DYJets_20120615_new/res/ > new_all.txt
+egrep -h "Event" -r ~/nobackup/PS_outfiles_DYJets_20120615_new/res/ | egrep -h -v -i begin > new_event.txt
+cat new_event.txt | sort -n > new_event_sorted.txt
+
+~/nobackup]$ egrep "TrigReport Events total =" -r PS_outfiles_DYJets_20120615_new/res/ | awk 'BEGIN{FS=' ';sum=0} {sum += $5} END{print sum}'
+
+echo "run: 2 evt: 3 \nrun: 1 evt: 56" | sort -n
+
+//find
+find . -name "*.eps" -exec epstopdf {} ";"
+find ./ -type f -name \*.jdl -exec sed -i 's/2015_04_27/2015_10_29/g' {} \;
+find ./ -type f -name \*.sh -exec sed -i 's/signal/HailMary/g' {} \;
+find ./ -type f -name \*.jdl -exec sed -i 's/Memory\ >=\ 199\ && //g' {} \;
+find ./ -type f -name \*.jdl -exec sed -i 's/libSHyFTTemplateMakers.so/libSHyFTTemplateMakers.so\nrequest_memory\ =\ 199/g' {} \;
+find ./ -type f -name \*.sh -exec sed -i '/^cp\ -r\ src\/TAMUWW*/c\rsync\ -avrhl\ --progress\ --exclude=\"*.txt~\"\ --exclude=\"*.old\"\ --exclude=\"*.backup\"\ --exclude=\"TF_*.txt\"\ --exclude=\"TransferFunctions"\ src\/TAMUWW\/ConfigFiles\/Official\/ $CONDORDIR\/' {} \;
+find ./ -depth -name "XMinusg_*.eps" -exec sh -c 'cp "$1" "${1%.eps}_no2000.eps"' _ {} \;
+
+//sed
+sed -i 's/--for_lfn/hurr.tamu.edu/g' crab_fjr_1.xml
+sed -i -r '/<LFN>/{N; s/pat_53x_test_v03/\/store\/user\/aperloff\/QCD_Pt_20_30_EMEnriched_TuneZ2star_8TeV_pythia6\/SQWaT_PAT_53X_Summer12_v1\/2f1ac1eea2f9d7159db8efcbdc625f84\/pat_53x_test_v03_/}' crab_fjr_1.xml
+sed -e '/<LFN>/{N; s/pat_53x_test_v03/\/store\/user\/aperloff\/QCD_Pt_20_30_EMEnriched_TuneZ2star_8TeV_pythia6\/SQWaT_PAT_53X_Summer12_v1\/2f1ac1eea2f9d7159db8efcbdc625f84\/pat_53x_test_v03_/}' crab_fjr_1.xml > crab_fjr_1.xml.new
+
+//rsync
+rsync -avrh --progress --stats aperloff@b0pcucla20.fnal.gov:/data/b0pcucla20/b/pdong/ntuple .
+rsync -avzt --exclude='*.root' --exclude='*pf.pdf' --include='*pfchs*' aperloff@hurr.tamu.edu:/home/aperloff/fdata/JEC_532/53X_ConeSizeTest/correctionL1 ./
+rsync -avzt --exclude='*.root' correction correctionL1 closureL1L2L3 ConeSizeTest_txts aperloff@io.physics.tamu.edu:/home/users/aperloff/public_html/CMS_JEC/53X_ConeSizeTest/
+rsync -avrhl --progress --exclude="*.txt~" --exclude="*.old" --exclude="*.backup" --exclude="TF_*.txt" --exclude="TransferFunctions" tmp2/ tmp/
+rsync -avrh --progress --exclude="*.root" --exclude="*.C" --exclude="*.condor" --exclude="*.stdout" --exclude="*.stderr" --exclude="*.jdl" --exclude="*.sh" aperloff@cmslpc-sl5.fnal.gov:/uscms_data/d2/aperloff/YOURWORKINGAREA/MatrixElement/gitty/CMSSW_5_3_2_patch4/src/TAMUWW/MVA/bin/2014_11_02_TMVA_output* ./
+rsync -avrh --progress  --exclude="*.condor" --exclude="*.stdout" --exclude="*.stderr" --exclude="*.png" --exclude="*.eps" --exclude="*.pyc" --exclude="*.gif" aperloff@cmslpc-sl5.fnal.gov:/uscms_data/d2/aperloff/YOURWORKINGAREA/MatrixElement/gitty/CMSSW_5_3_2_patch5/src/* ./
+
+//Standalone ROOT
+//Based on https://twiki.cern.ch/twiki/bin/view/CMSPublic/SWGuideScram#CmsswSCRAMChangingToolPath
+source /cvmfs/sft.cern.ch/lcg/external/gcc/4.9.1/x86_64-slc6-gcc48-opt/setup.csh
+source /cvmfs/sft.cern.ch/lcg/app/releases/ROOT/5.34.34/x86_64-slc6-gcc48-opt/root/bin/thisroot.csh
+
+//Example of how to use screen
+cmslpc34
+screen
+ctrl-a, ctrl-d
+[detached]
+exit
+cmslpc34
+screen -r
+
+//xargs example (xargs is basically the -exec function from find, but for other commands)
+find . | xargs -i rm -r {}
+-i is line by line
+find tmp2/ -type f \( -iname "*" ! -iname "*.txt~" ! -iname "*.old" ! -iname "*.backup" ! -iname "TF_*.txt" ! -iname "TransferFunctions" \) | xargs -i cp -av {} tmp/
+find tmp2/ -type l \( -iname "*" ! -iname "*.txt~" ! -iname "*.old" ! -iname "*.backup" ! -iname "TF_*.txt" ! -iname "TransferFunctions" \) | xargs -i cp -av {} tmp/
+find tmp2/ -type d \( -iname "*" ! -iname "*.txt~" ! -iname "*.old" ! -iname "*.backup" ! -iname "TF_*.txt" ! -iname "TransferFunctions" ! -iname "tmp2/" \) | xargs -i cp -av {} tmp/
+xrdfsls -u $STORE/$MEInput | grep WlnuJets | xargs -i xrdcp {} $SMEInput/WlnuJetsTest/
+xrdfsls $STORE/$MEInput | grep WlnuJets_M- | grep _HighPtLeptonKept | xargs -i tcsh -m -c "eosrm {}"
+nohup python ~/Scripts/ahadd.py -t ./ JRA.root `xrdfsls -u /store/user/lpcjme/noreplica/QCD_Flat_Pt-15to7000_TuneCUETP8M1_14TeV_pythia8/NoPU/170403_040452/0000/ | grep -v failed` > ahadd_NoPU.stdout &
+nohup python ~/Scripts/ahadd.py -t ./ JRA_0.root `xrdfsls -u /store/user/lpcjme/noreplica/QCD_Flat_Pt-15to7000_TuneCUETP8M1_14TeV_pythia8/PU200/170412_054326/0000/ | grep -v failed` > ahadd_0.stdout &
+nohup python ~/Scripts/ahadd.py -t ./ JRA_1.root `xrdfsls -u /store/user/lpcjme/noreplica/QCD_Flat_Pt-15to7000_TuneCUETP8M1_14TeV_pythia8/PU200/170412_054326/0001/ | grep -v failed` > ahadd_1.stdout &
+nohup python ~/Scripts/ahadd.py -t ./ JRA_2.root `xrdfsls -u /store/user/lpcjme/noreplica/QCD_Flat_Pt-15to7000_TuneCUETP8M1_14TeV_pythia8/PU200/170412_054326/0002/ | grep -v failed` > ahadd_2.stdout &
+nohup python ~/Scripts/ahadd.py -t ./ JRA.root `eos root://cmseos.fnal.gov/ find /store/user/lpcjme/noreplica/QCD_Flat_Pt-15to7000_TuneCUETP8M1_14TeV_pythia8/PU200/170412_054326/ | grep -v failed | sed 's~/eos/uscms~root://cmseos.fnal.gov/~'` > ahadd.stdout &
+
+
+//while read loop
+xrdfsls $STORE/$MEInput | grep WlnuJets_M- | grep _HighPtLeptonKept | while read -r i; do eosrm "$i"; done
+
+//AWK example
+ll *.* | awk '{print $4}'
+ls -l *.* | awk 'BEGIN{sum=0}{print $5;sum=sum+$5}END{print sum}'
+ls -l *.* | awk 'BEGIN{sum=0}{sum=sum+$5; print $5,sum}END{print sum}'
+ls -l *.* | awk 'BEGIN{sum=0; cntr=0}{sum=sum+$5; cntr=cntr+1;print $5,sum}END{print sum,cntr,sum/cntr}'
+eosls -l $STORE/MatrixElement/Summer12ME8TeV/MEInput/ | grep Wlnu | awk 'BEGIN{sum=0}{sum=sum+$5}END{print sum/1024/1024/1024}'
+tail -n1 *.stdout | awk 'BEGIN{sum=0}{if($1=="Finished") ++sum}END{print sum}'
+awk 'BEGIN{sum=0}{if($1=="Finished") ++sum}END{print sum}' *.stdout
+find . -type f -name "*.stdout" -exec awk '{s=$0};END{if(s!="Finished"){print FILENAME,s}}' {} \;
+
+//Add to end of GitHub url to ignore whitespace
+?w=1
+
+//SLURM
+for jobid in `squeue -u aperloff -t PENDING -p stakeholder -o '%i' --noheader -j 13413656` ; do scontrol update job=$jobid partition=background ; done
+
+//SRM
+srmrm "srm://cit-se.ultralight.org:8443/srm/v2/server?SFN=/mnt/hadoop/store/user/aperloff/WWtoAnything_TuneZ2_7TeV-pythia6-tauola/WWtoAnything_eOrMuSkim_PATtuple/3297cfde10d8624eb6db6b3239a1c18a/TFAnalysis_9_1_uzG.root"
+
+//
+//Debugging
+//
+//Valgrind
+valgrind --tool=memcheck --leak-check=full --show-reachable=yes --track-origins=yes --suppressions=$ROOTSYS/etc/valgrind-root.supp makeMicroNtuple_x -inputPaths /eos/uscms/store/user/eusebi/Winter12to13ME8TeV/rootOutput/WJetsInclusive/ -outputPath /uscms/home/aperloff/nobackup/Summer12ME8TeV/MEResults/microNtuples_matched/test/ -processes WJets -mergeNewEventNtuple /uscms_data/d2/aperloff/Summer12ME8TeV/MEInput/
+valgrind --tool=memcheck --leak-check=full --show-reachable=yes --track-origins=yes --suppressions=$ROOTSYS/etc/valgrind-root.supp testClass_x
+valgrind --tool=memcheck --suppressions=$ROOTSYS/etc/valgrind-root.supp --log-file=log --leak-check=full plotter_x -lep electron -jBin jets2 -tcat eq0tag -cutRegion Andrea -outDir ./ -ntype EventNtuple -QCDweight true -doCSVrewt true -doTTbarrewt true -PtWeight false -CosThetaLweight true -ZllDeltaPhiWeight true -ZllGenNeutrinoPtWeight true -limitBranches 0 -fillLimitTemplatesOnly false -include_data true -include_systematics false -debug false -signalTitle W+Jets -fillGen false -MakeZllWeightsStep 2 -maxEvts 1000
+
+//GDB
+gdb cmsRun
+catch throw
+run run_JRA_cfg.py
+
+gdb root.exe
+catch throw
+run -l debug_hl.C++g
+frame <number>
+print <variable_name
+
+//GDB - old
+scram b -j 16 USER_CXXFLAGS="-O0\ -g"
+ulimit -c 1000000000
+limit core 1000000000 
+cmsRun run_JRA_applyL1_cfg.py
+gdb /home/hepxadmin/cmssw/slc5_amd64_gcc462/cms/cmssw/CMSSW_5_2_3/bin/slc5_amd64_gcc462/cmsRun core.3919
+
+[Thread debugging using libthread_db enabled]
+Core was generated by `cmsRun run_JRA_applyL1_cfg.py`.
+Program terminated with signal 6, Aborted.
+#0  0x0000003bc5630265 in raise () from /lib64/libc.so.6
+(gdb) bt
+#0  0x0000003bc5630265 in raise () from /lib64/libc.so.6
+#1  0x0000003bc5631d10 in abort () from /lib64/libc.so.6
+#2  0x00007f196f11b41d in __gnu_cxx::__verbose_terminate_handler ()
+    at ../../../../libstdc++-v3/libsupc++/vterminate.cc:95
+#3  0x00007f196f1195c6 in __cxxabiv1::__terminate (handler=<optimized out>)
+    at ../../../../libstdc++-v3/libsupc++/eh_terminate.cc:40
+#4  0x00007f196f1195f3 in std::terminate () at ../../../../libstdc++-v3/libsupc++/eh_terminate.cc:50
+#5  0x00007f196f11a00f in __cxxabiv1::__cxa_pure_virtual () at ../../../../libstdc++-v3/libsupc++/pure.cc:50
+#6  0x00007f19679d4f61 in cms::JetCorrectionProducer<reco::CaloJet>::produce(edm::Event&, edm::EventSetup const&) ()
+   from /home/hepxadmin/cmssw/slc5_amd64_gcc462/cms/cmssw/CMSSW_5_2_3/lib/slc5_amd64_gcc462/libJetMETCorrectionsModules.so
+#7  0x00007f19717e4e1e in edm::EDProducer::doEvent(edm::EventPrincipal&, edm::EventSetup const&, edm::CurrentProcessingContext const*) ()
+   from /home/hepxadmin/cmssw/slc5_amd64_gcc462/cms/cmssw/CMSSW_5_2_3/lib/slc5_amd64_gcc462/libFWCoreFramework.so
+#8  0x00007f197187eabe in edm::WorkerT<edm::EDProducer>::implDoBegin(edm::EventPrincipal&, edm::EventSetup const&, edm::CurrentProcessingContext const*) ()
+   from /home/hepxadmin/cmssw/slc5_amd64_gcc462/cms/cmssw/CMSSW_5_2_3/lib/slc5_amd64_gcc462/libFWCoreFramework.so
+#9  0x00007f1971813c75 in bool edm::Worker::doWork<edm::OccurrenceTraits<edm::EventPrincipal, (edm::BranchActionType)0> >(edm::OccurrenceTraits<edm::EventPrincipal, (edm::BranchActionType)0>::MyPrincipal&, edm::EventSetup const&, edm::CurrentProcessingContext const*, edm::CPUTimer*) ()
+   from /home/hepxadmin/cmssw/slc5_amd64_gcc462/cms/cmssw/CMSSW_5_2_3/lib/slc5_amd64_gcc462/libFWCoreFramework.so
+#10 0x00007f197181b5c4 in bool edm::WorkerInPath::runWorker<edm::OccurrenceTraits<edm::EventPrincipal, (edm::BranchActionType)0> >(edm::OccurrenceTraits<edm::EventPrincipal, (edm::BranchActionType)0>::MyPrincipal&, edm::EventSetup const&, edm::CurrentProcessingContext const*) ()
+   from /home/hepxadmin/cmssw/slc5_amd64_gcc462/cms/cmssw/CMSSW_5_2_3/lib/slc5_amd64_gcc462/libFWCoreFramework.so
+#11 0x00007f197181b763 in void edm::Path::processOneOccurrence<edm::OccurrenceTraits<edm::EventPrincipal, (edm::Branc---Type <return> to continue, or q <return> to quit---
+hActionType)0> >(edm::OccurrenceTraits<edm::EventPrincipal, (edm::BranchActionType)0>::MyPrincipal&, edm::EventSetup const&) ()
+   from /home/hepxadmin/cmssw/slc5_amd64_gcc462/cms/cmssw/CMSSW_5_2_3/lib/slc5_amd64_gcc462/libFWCoreFramework.so
+#12 0x00007f197181bc86 in void edm::Schedule::processOneOccurrence<edm::OccurrenceTraits<edm::EventPrincipal, (edm::BranchActionType)0> >(edm::OccurrenceTraits<edm::EventPrincipal, (edm::BranchActionType)0>::MyPrincipal&, edm::EventSetup const&) ()
+   from /home/hepxadmin/cmssw/slc5_amd64_gcc462/cms/cmssw/CMSSW_5_2_3/lib/slc5_amd64_gcc462/libFWCoreFramework.so
+#13 0x00007f197180cd94 in edm::EventProcessor::readAndProcessEvent() ()
+   from /home/hepxadmin/cmssw/slc5_amd64_gcc462/cms/cmssw/CMSSW_5_2_3/lib/slc5_amd64_gcc462/libFWCoreFramework.so
+#14 0x00007f19717e93da in statemachine::HandleEvent::readAndProcessEvent() ()
+
+
+//Get Histograms from Canvas
+TH1D* h =(TH1D*)((TList*)((THStack*)((TCanvas*)Mjj_muon->GetPrimitive("Mjj_muon_1"))->GetPrimitive("Mjj_muon_stackMC"))->GetHists())->FindObject("Mjj_muon_TTbar")
+((TH1D*)(((TList*)((THStack*)((TCanvas*)LeptPt_muon->GetPrimitive("Mjj_muon_1"))->GetPrimitive("Mjj_muon_stackMC"))->GetHists())->GetObject("TTbar")))->Draw()
+
+//Optimization
+Optimization_x -ifile /uscms/home/aperloff/nobackup/Summer12ME8TeV/2013_02_19_ValidationPlots/lpt_lpt_j1pt_j1pt_j2pt_j2pt_muon.root -ofile /uscms/home/aperloff/nobackup/Summer12ME8TeV/2013_02_19_ValidationPlots/lpt_lpt_j1pt_j1pt_j2pt_j2pt_muon_fom.root -lepton muon -treeNameBase lpt_lpt_j1pt_j1pt_j2pt_j2pt_ -fom 1
+Optimization_x -ifile /uscms/home/aperloff/nobackup/Summer12ME8TeV/2013_02_19_ValidationPlots/lpt_lpt_j1pt_j1pt_j2pt_j2pt_electron.root -ofile /uscms/home/aperloff/nobackup/Summer12ME8TeV/2013_02_19_ValidationPlots/lpt_lpt_j1pt_j1pt_j2pt_j2pt_electron_fom.root -lepton electron -treeNameBase lpt_lpt_j1pt_j1pt_j2pt_j2pt_ -fom 1 -backgrounds WW:::WZ:::ZZ:::DYJets:::TTbar:::STopS_T:::STopS_Tbar:::STopT_T:::STopT_Tbar:::STopTW_T:::STopTW_Tbar:::WJets_electron
+Optimization_x -ifile /uscms/home/aperloff/nobackup/Summer12ME8TeV/2013_02_21_ValidationPlots/Mjj_Mjj_Mt_MET_DeltaR_DeltaR_muon.root -ofile /uscms/home/aperloff/nobackup/Summer12ME8TeV/2013_02_21_ValidationPlots/Mjj_Mjj_Mt_MET_DeltaR_DeltaR_muon_fom.root -lepton muon -treeNameBase Mjj_Mjj_Mt_MET_DeltaR_DeltaR_ -fom 1
+Optimization_x -ifile /uscms/home/aperloff/nobackup/Summer12ME8TeV/2013_02_21_ValidationPlots/Mjj_Mjj_Mt_MET_DeltaR_DeltaR_electron.root -ofile /uscms/home/aperloff/nobackup/Summer12ME8TeV/2013_02_21_ValidationPlots/Mjj_Mjj_Mt_MET_DeltaR_DeltaR_electron_fom.root -lepton electron -treeNameBase Mjj_Mjj_Mt_MET_DeltaR_DeltaR_ -fom 1
+
+//Fitter
+Fitter_x -lepton electron -object MET -readLocation /uscms/home/aperloff/nobackup/Summer12ME8TeV/2013_07_02_ValidationPlots_PU_QCDEta/histos_electron.root -writeLocation /uscms/home/aperloff/nobackup/Summer12ME8TeV/2013_07_02_ValidationPlots_PU_QCDEta/Fitter_electron_MET.root -fproc WJets:::QCD_ElEnriched > /uscms/home/aperloff/nobackup/Summer12ME8TeV/2013_07_02_ValidationPlots_PU_QCDEta/Fitter_electron_MET.txt
+
+//TableProduction
+TableProduction_x -latexAuthors "Ricardo Eusebi and Alexx Perloff" -latexEmails "eusebi@physics.tamu.edu and aperloff@physics.tamu.edu" -processNames DYJets:::ggH125:::SingleEl_Data:::SingleMu_Data:::STopS_T:::STopS_Tbar:::STopT_T:::STopT_Tbar:::STopTW_T:::STopTW_Tbar:::TTbar:::WJets:::WW:::WZ:::ZZ -muonLuminosity 11966 -electronLuminosity 11828 -crossSectionFilePath ../../ConfigFiles/Official/CrossSections_8TeV.txt -branchingRatiosFilePath ../../ConfigFiles/Official/BranchingRatios_8TeV.txt -rootFoldersFileLocation /uscms_data/d2/aperloff/Summer12ME8TeV/MEInput/
+
+//Isolation Plotter
+IsolationPlotter_x -ifilePaths /uscms/home/aperloff/nobackup/PS_outfiles_20121102_DATA4/:::/uscms/home/aperloff/nobackup/PS_outfiles_20121102_QCD_v3/:::/uscms/home/aperloff/nobackup/PS_outfiles_20130505_FullIsoMVA/ -ifiles DATA_partial.root:::QCD_partial.root:::Full.root -ifilePostFixes DATA:::QCD:::FULL -ofilepath test/
+
+//Create Condor Scripts
+               CreateCondorScript_runME_x -inputmode "" -scriptDir /fdata/hepx/store/user/aperloff/ME532_Completion/ -rootInputDir /fdata/hepx/store/user/aperloff/Summer12ME8TeV/MEInput/ -nEventsPerJob 400 -verbose true -processes WW:::WZ:::WJets:::DYJets:::TTbar:::STopS_T:::STopS_Tbar:::STopT_T:::STopT_Tbar:::STopTW_T:::STopTW_Tbar:::QCD_Electron_Dp6p7:::SingleEl_Data_19p148fb:::SingleMu_Data_19p279fb:::WH125:::ggH125:::qqH125 -pbsScripts true -pbsUser Alexx -completedOutputDir /fdata/hepx/store/user/aperloff/ME532_Completion/ -pbsWalltimeStr 120:00:00 -useSpecificEvents true -specificEventsFileLocation /fdata/hepx/store/user/aperloff/ME532_Completion/MissingEventsFiles/
+CreateCondorScript_runME_x -inputmode "" -scriptDir /home/aperloff/MatrixElement/CMSSW_5_3_2_patch4/src/MECONDORJobs_Alexx/ -rootInputDir /fdata/hepx/store/user/aperloff/ME532/ -nEventsPerJob 150 -verbose true -processes WH125:::ggH110:::ggH120:::ggH125:::ggH130:::ggH140:::ggH150:::ggH160:::ggH170:::ggH180:::ggH190:::ggH200:::ggH250:::ggH300:::ggH350:::ggH400:::ggH450:::ggH500:::ggH550:::ggH600:::ggH700:::ggH800:::ggH900:::ggH1000:::qqH125:::qqH170:::qqH180:::qqH190:::qqH200:::qqH250:::qqH300:::qqH350:::qqH400:::qqH450:::qqH500:::qqH550:::qqH600:::qqH700:::qqH800:::qqH900:::qqH1000:::WW:::WZ:::WJets:::ZJets:::TTbar:::STopS_T:::STopS_Tbar:::STopT_T:::STopT_Tbar:::STopTW_T:::STopTW_Tbar:::QCD_Electron_Dp6p7:::SingleEl_Data_19p148fb:::SingleMu_Data_19p279fb -pbsScripts true -pbsUser Alexx -completedOutputDir /fdata/hepx/store/user/aperloff/ME532/ -pbsWalltimeStr 120:00:00
+//For Checking Processes
+CreateCondorScript_runME_x -inputmode "" -scriptDir /uscms/home/aperloff/nobackup/Summer12ME8TeV/MEResults/ -rootInputDir /uscms/home/aperloff/nobackup/Summer12ME8TeV/MEInput/ -completedOutputDir /uscms/home/aperloff/nobackup/Summer12ME8TeV/MEResults/rootOutput/qqH125/ -nEventsPerJob 150 -verbose true -processes qqH125 -checkCompletedJobsInstead true -verbose false
+
+//Make MicroNtuple
+makeMicroNtuple_x -inputPaths /eos/uscms/store/user/eusebi/Winter12to13ME8TeV/rootOutput/ggH110/ /eos/uscms/store/user/eusebi/Winter12to13ME8TeV/rootOutput/ggH120/ /eos/uscms/store/user/eusebi/Winter12to13ME8TeV/rootOutput/ggH130/ /eos/uscms/store/user/eusebi/Winter12to13ME8TeV/rootOutput/ggH140/ /eos/uscms/store/user/eusebi/Winter12to13ME8TeV/rootOutput/ggH150/ /eos/uscms/store/user/eusebi/Winter12to13ME8TeV/rootOutput/ggH160/ /eos/uscms/store/user/eusebi/Winter12to13ME8TeV/rootOutput/ggH170/ /eos/uscms/store/user/eusebi/Winter12to13ME8TeV/rootOutput/ggH180/ /eos/uscms/store/user/eusebi/Winter12to13ME8TeV/rootOutput/ggH190/ /eos/uscms/store/user/eusebi/Winter12to13ME8TeV/rootOutput/ggH200/ /eos/uscms/store/user/eusebi/Winter12to13ME8TeV/rootOutput/ggH250/ /eos/uscms/store/user/eusebi/Winter12to13ME8TeV/rootOutput/ggH300/ /eos/uscms/store/user/eusebi/Winter12to13ME8TeV/rootOutput/ggH350/ /eos/uscms/store/user/eusebi/Winter12to13ME8TeV/rootOutput/ggH400/ /eos/uscms/store/user/eusebi/Winter12to13ME8TeV/rootOutput/ggH450/ /eos/uscms/store/user/eusebi/Winter12to13ME8TeV/rootOutput/ggH500/ /eos/uscms/store/user/eusebi/Winter12to13ME8TeV/rootOutput/ggH550/ /eos/uscms/store/user/eusebi/Winter12to13ME8TeV/rootOutput/ggH600/ /eos/uscms/store/user/eusebi/Winter12to13ME8TeV/rootOutput/ggH700/ /eos/uscms/store/user/eusebi/Winter12to13ME8TeV/rootOutput/ggH800/ /eos/uscms/store/user/eusebi/Winter12to13ME8TeV/rootOutput/ggH900/ /eos/uscms/store/user/eusebi/Winter12to13ME8TeV/rootOutput/ggH1000/ -outputPath /uscms/home/aperloff/nobackup/Summer12ME8TeV/MEResults/microNtuples_matched/ -processes ggH110 ggH120 ggH130 ggH140 ggH150 ggH160 ggH170 ggH180 ggH190 ggH200 ggH250 ggH300 ggH350 ggH400 ggH450 ggH500 ggH550 ggH600 ggH700 ggH800 ggH900 ggH1000 -mergeNewEventNtuple /uscms_data/d2/aperloff/Summer12ME8TeV/MEInput/
+makeMicroNtuple_x -inputPaths /eos/uscms/store/user/eusebi/Winter12to13ME8TeV/rootOutput/ /eos/uscms/store/user/eusebi/Winter12to13ME8TeV/rootOutput/ /eos/uscms/store/user/eusebi/Winter12to13ME8TeV/rootOutput/ /eos/uscms/store/user/eusebi/Winter12to13ME8TeV/rootOutput/Tbar/ /eos/uscms/store/user/eusebi/Winter12to13ME8TeV/rootOutput/Tbar/ /eos/uscms/store/user/eusebi/Winter12to13ME8TeV/rootOutput/Tbar/ -outputPath /uscms/home/aperloff/nobackup/Summer12ME8TeV/MEResults/microNtuples_matched/ -processes STopS_T STopT_T STopTW_T STopS_Tbar STopT_Tbar STopTW_Tbar -mergeNewEventNtuple /uscms_data/d2/aperloff/Summer12ME8TeV/MEInput/
+makeMicroNtuple_x -inputPaths /uscms/home/aperloff/nobackup/Summer12ME8TeV/MEResults/rootOutput/QCD_Electron_Dp6p7/ /eos/uscms/store/user/eusebi/Winter12to13ME8TeV/rootOutput/ /eos/uscms/store/user/eusebi/Winter12to13ME8TeV/rootOutput/ /eos/uscms/store/user/eusebi/Winter12to13ME8TeV/rootOutput/ /eos/uscms/store/user/eusebi/Winter12to13ME8TeV/rootOutput/WJetsInclusive/ -outputPath /uscms/home/aperloff/nobackup/Summer12ME8TeV/MEResults/microNtuples_matched/ -processes QCD_Electron_Dp6p7 WW WZ ZJets WJets -mergeNewEventNtuple /uscms_data/d2/aperloff/Summer12ME8TeV/MEInput/
+makeMicroNtuple_x -inputPaths /eos/uscms/store/user/eusebi/Winter12to13ME8TeV/rootOutput/ /eos/uscms/store/user/eusebi/Winter12to13ME8TeV/rootOutput/ /eos/uscms/store/user/eusebi/Winter12to13ME8TeV/rootOutput/ /eos/uscms/store/user/eusebi/Winter12to13ME8TeV/rootOutput/ -outputPath /uscms/home/aperloff/nobackup/Summer12ME8TeV/MEResults/microNtuples_matched/ -processes WJets_matchingdown WJets_matchingup WJets_scaledown WJets_scaleup -mergeNewEventNtuple /uscms_data/d2/aperloff/Summer12ME8TeV/MEInput/
+makeMicroNtuple_x -inputPaths /eos/uscms/store/user/eusebi/Winter12to13ME8TeV/rootOutput/ /eos/uscms/store/user/eusebi/Winter12to13ME8TeV/rootOutput/ -outputPath /uscms/home/aperloff/nobackup/Summer12ME8TeV/MEResults/microNtuples_matched/ -processes SingleEl_Data_19p148fb SingleMu_Data_19p279fb -mergeNewEventNtuple /uscms_data/d2/aperloff/Summer12ME8TeV/MEInput/
+makeMicroNtuple_x -inputPaths /eos/uscms/store/user/aperloff/MatrixElement/Summer12ME8TeV/MEResults/rootOutput/ggH125/ -outputPath /uscms/home/aperloff/nobackup/Summer12ME8TeV/tmp/ -processes ggH125 -mergeNewEventNtuple ""
+
+makeMicroNtuple_x -inputPaths /eos/uscms/store/user/aperloff/MatrixElement/Summer12ME8TeV/MEResults/rootOutput/WH_ZH_TTH_HToZZ_M125/ -outputPath ./ -processes WH_ZH_TTH_HToZZ_M125 -mergeNewEventNtuple /eos/uscms/store/user/aperloff//MatrixElement/Summer12ME8TeV/MEInput/ -fillBDT true
+makeMicroNtuple_x -inputPaths /eos/uscms/store/user/aperloff/MatrixElement/Summer12ME8TeV/MEResults/rootOutput/WH_ZH_TTH_HToWW_M125/ -outputPath ./ -processes WH_ZH_TTH_HToWW_M125 -mergeNewEventNtuple /eos/uscms/store/user/aperloff//MatrixElement/Summer12ME8TeV/MEInput/ -fillBDT true
+makeMicroNtuple_x -inputPaths /eos/uscms/store/user/aperloff/MatrixElement/Summer12ME8TeV/MEResults/rootOutput/qqH125/ -outputPath ./ -processes qqH125 -mergeNewEventNtuple /eos/uscms/store/user/aperloff/MatrixElement/Summer12ME8TeV/MEInput/ -fillBDT true
+makeMicroNtuple_x -inputPaths /eos/uscms/store/user/eusebi/Winter12to13ME8TeV/rootOutput/ggH125_BIG/ -outputPath ./ -processes ggH125_BIG -mergeNewEventNtuple /eos/uscms/store/user/aperloff//MatrixElement/Summer12ME8TeV/MEInput/ -fillBDT true
+makeMicroNtuple_x -inputPaths /eos/uscms/store/user/eusebi/Winter12to13ME8TeV/rootOutput/WJets/ -outputPath ./ -processes WJets -mergeNewEventNtuple /eos/uscms/store/user/aperloff//MatrixElement/Summer12ME8TeV/MEInput/ -fillBDT true
+makeMicroNtuple_x -inputPaths /eos/uscms/store/user/eusebi/Winter12to13ME8TeV/rootOutput/TTbar/ -outputPath ./ -processes TTbar -mergeNewEventNtuple /eos/uscms/store/user/aperloff/MatrixElement/Summer12ME8TeV/MEInput/ -fillBDT true
+makeMicroNtuple_x -inputPaths /eos/uscms/store/user/aperloff/MatrixElement/Summer12ME8TeV/MEResults/rootOutput/WH125_HToBB/ -outputPath ./ -processes WH125_HToBB -mergeNewEventNtuple /eos/uscms/store/user/aperloff//MatrixElement/Summer12ME8TeV/MEInput/ -fillBDT true
+makeMicroNtuple_x -inputPaths /eos/uscms/store/user/eusebi/Winter12to13ME8TeV/rootOutput/WW/ -outputPath ./ -processes WW -mergeNewEventNtuple /eos/uscms/store/user/aperloff//MatrixElement/Summer12ME8TeV/MEInput/ -fillBDT true
+makeMicroNtuple_x -inputPaths /eos/uscms/store/user/eusebi/Winter12to13ME8TeV/rootOutput/WZ/ -outputPath ./ -processes WZ -mergeNewEventNtuple /eos/uscms/store/user/aperloff//MatrixElement/Summer12ME8TeV/MEInput/ -fillBDT true
+makeMicroNtuple_x -inputPaths /eos/uscms/store/user/eusebi/Winter12to13ME8TeV/rootOutput/STopS_T/ -outputPath ./ -processes STopS_T -mergeNewEventNtuple /eos/uscms/store/user/aperloff//MatrixElement/Summer12ME8TeV/MEInput/ -fillBDT true
+makeMicroNtuple_x -inputPaths /eos/uscms/store/user/eusebi/Winter12to13ME8TeV/rootOutput/STopS_Tbar/ -outputPath ./ -processes STopS_Tbar -mergeNewEventNtuple /eos/uscms/store/user/aperloff//MatrixElement/Summer12ME8TeV/MEInput/ -fillBDT true
+makeMicroNtuple_x -inputPaths /eos/uscms/store/user/eusebi/Winter12to13ME8TeV/rootOutput/STopT_T/ -outputPath ./ -processes STopT_T -mergeNewEventNtuple /eos/uscms/store/user/aperloff//MatrixElement/Summer12ME8TeV/MEInput/ -fillBDT true
+makeMicroNtuple_x -inputPaths /eos/uscms/store/user/eusebi/Winter12to13ME8TeV/rootOutput/STopT_Tbar/ -outputPath ./ -processes STopT_Tbar -mergeNewEventNtuple /eos/uscms/store/user/aperloff//MatrixElement/Summer12ME8TeV/MEInput/ -fillBDT true
+makeMicroNtuple_x -inputPaths /eos/uscms/store/user/eusebi/Winter12to13ME8TeV/rootOutput/STopTW_T/ -outputPath ./ -processes STopTW_T -mergeNewEventNtuple /eos/uscms/store/user/aperloff//MatrixElement/Summer12ME8TeV/MEInput/ -fillBDT true
+makeMicroNtuple_x -inputPaths /eos/uscms/store/user/eusebi/Winter12to13ME8TeV/rootOutput/STopTW_Tbar/ -outputPath ./ -processes STopTW_Tbar -mergeNewEventNtuple /eos/uscms/store/user/aperloff//MatrixElement/Summer12ME8TeV/MEInput/ -fillBDT true
+makeMicroNtuple_x -inputPaths /eos/uscms/store/user/eusebi/Winter12to13ME8TeV/rootOutput/ZJets/ -outputPath ./ -processes ZJets -mergeNewEventNtuple /eos/uscms/store/user/aperloff//MatrixElement/Summer12ME8TeV/MEInput/ -fillBDT true
+makeMicroNtuple_x -inputPaths /eos/uscms/store/user/eusebi/Winter12to13ME8TeV/rootOutput/SingleMu_Full/ -outputPath ./ -processes SingleMu_Full -mergeNewEventNtuple /eos/uscms/store/user/aperloff//MatrixElement/Summer12ME8TeV/MEInput/ -fillBDT true
+makeMicroNtuple_x -inputPaths /eos/uscms/store/user/eusebi/Winter12to13ME8TeV/rootOutput/SingleMu_Data_19p279fb/ -outputPath ./ -processes SingleMu_Data_19p279fb -mergeNewEventNtuple /eos/uscms/store/user/aperloff//MatrixElement/Summer12ME8TeV/MEInput/ -fillBDT true
+makeMicroNtuple_x -inputPaths /eos/uscms/store/user/eusebi/Winter12to13ME8TeV/rootOutput/SingleEl_Full/ -outputPath ./ -processes SingleEl_Full -mergeNewEventNtuple /eos/uscms/store/user/aperloff//MatrixElement/Summer12ME8TeV/MEInput/ -fillBDT true
+makeMicroNtuple_x -inputPaths /eos/uscms/store/user/eusebi/Winter12to13ME8TeV/rootOutput/SingleEl_Data_19p148fb/ -outputPath ./ -processes SingleEl_Data_19p148fb -mergeNewEventNtuple /eos/uscms/store/user/aperloff//MatrixElement/Summer12ME8TeV/MEInput/ -fillBDT true
+makeMicroNtuple_x -inputPaths /eos/uscms/store/user/aperloff/MatrixElement/Summer12ME8TeV/MEResults/rootOutput/TTH_HToBB_M125/ -outputPath ./ -processes TTH_HToBB_M125 -mergeNewEventNtuple /eos/uscms/store/user/aperloff/MatrixElement/Summer12ME8TeV/MEInput/ -fillBDT true
+makeMicroNtuple_x -inputPaths /eos/uscms/store/user/eusebi/Winter12to13ME8TeV/rootOutput/SingleMu_Data_19p279fb_semiCombined/ -outputPath ./ -processes SingleMu_Data_19p279fb -mergeNewEventNtuple $EOS/MatrixElement/Summer12ME8TeV/MEInput/
+makeMicroNtuple_x -inputPaths /eos/uscms/store/user/eusebi/Winter12to13ME8TeV/rootOutput/SingleMu_Data_19p279fb/ -outputPath ./ -processes SingleMu_Data_19p279fb -mergeNewEventNtuple /eos/uscms/store/user/aperloff//MatrixElement/Summer12ME8TeV/MEInput/ -fillBDT true -debug false
+
+nohup makeMicroNtuple_x -inputPaths /eos/uscms/store/user/aperloff/MatrixElement/Summer12ME8TeV/MEResults/rootOutput/WJets_matchingdown_partialHadd/ -addDir / -outputPath ./ -processes WJets_matchingdown -mergeNewEventNtuple /eos/uscms/store/user/aperloff/MatrixElement/Summer12ME8TeV/MEInput/ -fillBDT true -debug false -useXROOTD false > microWJets_matchingdown_BaseCuts_0.stdout &
+nohup makeMicroNtuple_x -inputPaths /eos/uscms/store/user/aperloff/MatrixElement/Summer12ME8TeV/MEResults/rootOutput/WJets_matchingup_partialHadd/ -addDir / -outputPath ./ -processes WJets_matchingup -mergeNewEventNtuple /eos/uscms/store/user/aperloff/MatrixElement/Summer12ME8TeV/MEInput/ -fillBDT true -debug false -useXROOTD false > microWJets_matchingup_BaseCuts_0.stdout &
+nohup makeMicroNtuple_x -inputPaths /eos/uscms/store/user/aperloff/MatrixElement/Summer12ME8TeV/MEResults/rootOutput/WJets_scaledown_partialHadd/ -addDir / -outputPath ./ -processes WJets_scaledown -mergeNewEventNtuple /eos/uscms/store/user/aperloff/MatrixElement/Summer12ME8TeV/MEInput/ -fillBDT true -debug false -useXROOTD false > microWJets_scaledown_BaseCuts_0.stdout &
+nohup makeMicroNtuple_x -inputPaths /eos/uscms/store/user/aperloff/MatrixElement/Summer12ME8TeV/MEResults/rootOutput/WJets_scaleup_partialHadd/ -addDir / -outputPath ./ -processes WJets_scaleup -mergeNewEventNtuple /eos/uscms/store/user/aperloff/MatrixElement/Summer12ME8TeV/MEInput/ -fillBDT true -debug false -useXROOTD false > microWJets_scaleup_BaseCuts_0.stdout &
+nohup makeMicroNtuple_x -inputPaths /eos/uscms/store/user/aperloff/MatrixElement/Summer12ME8TeV/MEResults/rootOutput/WJets_JESDown_partialHadd/ -addDir / -outputPath ./ -processes WJets_JESDown -mergeNewEventNtuple /eos/uscms/store/user/aperloff/MatrixElement/Summer12ME8TeV/MEInput/ -fillBDT true -debug false -useXROOTD false > microWJets_JESDown_BaseCuts_0.stdout &
+nohup makeMicroNtuple_x -inputPaths /eos/uscms/store/user/aperloff/MatrixElement/Summer12ME8TeV/MEResults/rootOutput/WJets_JESUp_partialHadd/ -addDir / -outputPath ./ -processes WJets_JESUp -mergeNewEventNtuple /eos/uscms/store/user/aperloff/MatrixElement/Summer12ME8TeV/MEInput/ -fillBDT true -debug false -useXROOTD false > microWJets_JESUp_BaseCuts_0.stdout &
+nohup makeMicroNtuple_x -inputPaths /eos/uscms/store/user/aperloff/MatrixElement/Summer12ME8TeV/MEResults/rootOutput/WW_JESDown_partialHadd/ -addDir / -outputPath ./ -processes WW_JESDown -mergeNewEventNtuple /eos/uscms/store/user/aperloff/MatrixElement/Summer12ME8TeV/MEInput/ -fillBDT true -debug false -useXROOTD false > microWW_JESDown_BaseCuts_0.stdout &
+nohup makeMicroNtuple_x -inputPaths /eos/uscms/store/user/aperloff/MatrixElement/Summer12ME8TeV/MEResults/rootOutput/WW_JESUp_partialHadd/ -addDir / -outputPath ./ -processes WW_JESUp -mergeNewEventNtuple /eos/uscms/store/user/aperloff/MatrixElement/Summer12ME8TeV/MEInput/ -fillBDT true -debug false -useXROOTD false > microWW_JESUp_BaseCuts_0.stdout &
+
+nohup makeMicroNtuple_x -inputPaths /eos/uscms/store/user/aperloff/MatrixElement/Summer12ME8TeV/MEResults/rootOutput/WJets_matchingdown_partialHadd/ -addDir / -outputPath ./ -processes WJets_matchingdown -fillBDT true -debug false -useXROOTD false > microWJets_matchingdown_BaseCuts_0.stdout &
+nohup makeMicroNtuple_x -inputPaths /eos/uscms/store/user/aperloff/MatrixElement/Summer12ME8TeV/MEResults/rootOutput/WJets_matchingup_partialHadd/ -addDir / -outputPath ./ -processes WJets_matchingup -fillBDT true -debug false -useXROOTD false > microWJets_matchingup_BaseCuts_0.stdout &
+nohup makeMicroNtuple_x -inputPaths /eos/uscms/store/user/aperloff/MatrixElement/Summer12ME8TeV/MEResults/rootOutput/WJets_scaledown_partialHadd/ -addDir / -outputPath ./ -processes WJets_scaledown -fillBDT true -debug false -useXROOTD false > microWJets_scaledown_BaseCuts_0.stdout &
+nohup makeMicroNtuple_x -inputPaths /eos/uscms/store/user/aperloff/MatrixElement/Summer12ME8TeV/MEResults/rootOutput/WJets_scaleup_partialHadd/ -addDir / -outputPath ./ -processes WJets_scaleup -fillBDT true -debug false -useXROOTD false > microWJets_scaleup_BaseCuts_0.stdout &
+nohup makeMicroNtuple_x -inputPaths /eos/uscms/store/user/aperloff/MatrixElement/Summer12ME8TeV/MEResults/rootOutput/WJets_JESDown_partialHadd/ -addDir / -outputPath ./ -processes WJets_JESDown -fillBDT true -debug false -useXROOTD false > microWJets_JESDown_BaseCuts_0.stdout &
+nohup makeMicroNtuple_x -inputPaths /eos/uscms/store/user/aperloff/MatrixElement/Summer12ME8TeV/MEResults/rootOutput/WJets_JESUp_partialHadd/ -addDir / -outputPath ./ -processes WJets_JESUp -fillBDT true -debug false -useXROOTD false > microWJets_JESUp_BaseCuts_0.stdout &
+nohup makeMicroNtuple_x -inputPaths /eos/uscms/store/user/aperloff/MatrixElement/Summer12ME8TeV/MEResults/rootOutput/WW_JESDown_partialHadd/ -addDir / -outputPath ./ -processes WW_JESDown -fillBDT true -debug false -useXROOTD false > microWW_JESDown_BaseCuts_0.stdout &
+nohup makeMicroNtuple_x -inputPaths /eos/uscms/store/user/aperloff/MatrixElement/Summer12ME8TeV/MEResults/rootOutput/WW_JESUp_partialHadd/ -addDir / -outputPath ./ -processes WW_JESUp -fillBDT true -debug false -useXROOTD false > microWW_JESUp_BaseCuts_0.stdout &
+nohup makeMicroNtuple_x -inputPaths /eos/uscms/store/user/aperloff/MatrixElement/Summer12ME8TeV/MEResults/rootOutput/TTbar_JESDown_partialHadd/ -addDir / -outputPath ./ -processes TTbar_JESDown -fillBDT true -debug false -useXROOTD false > microTTbar_JESDown_BaseCuts_0.stdout &
+nohup makeMicroNtuple_x -inputPaths /eos/uscms/store/user/aperloff/MatrixElement/Summer12ME8TeV/MEResults/rootOutput/TTbar_JESUp_partialHadd/ -addDir / -outputPath ./ -processes TTbar_JESUp -fillBDT true -debug false -useXROOTD false > microTTbar_JESUp_BaseCuts_0.stdout &
+
+rm microTTbar_BaseCuts.root microWH_ZH_TTH_HToWW_M125_BaseCuts.root microWJets_BaseCuts.root microggH125_BIG_BaseCuts.root microTTH_HToWW_M125_BaseCuts.root microTTH_HToZZ_M125_BaseCuts.root microZH_HToWW_M125_BaseCuts.root microZH_HToZZ_M125_BaseCuts.root microWH_HToZZ_M125_BaseCuts.root microWH_ZH_TTH_HToZZ_M125_BaseCuts.root microqqH125_BaseCuts.root microWH_HToWW_M125_BaseCuts.root microWH125_HToBB_BaseCuts.root
+mv microTTbar_BaseCuts.root microWH_ZH_TTH_HToWW_M125_BaseCuts.root microWJets_BaseCuts.root microggH125_BIG_BaseCuts.root microTTH_HToWW_M125_BaseCuts.root microTTH_HToZZ_M125_BaseCuts.root microZH_HToWW_M125_BaseCuts.root microZH_HToZZ_M125_BaseCuts.root microWH_HToZZ_M125_BaseCuts.root microWH_ZH_TTH_HToZZ_M125_BaseCuts.root microqqH125_BaseCuts.root microWH_HToWW_M125_BaseCuts.root microWH125_HToBB_BaseCuts.root $EOS/MatrixElement/Summer12ME8TeV/MEResults/microNtuples_optimized/
+
+
+
+//Run the EPD Optimizer
+optimizeEPDCoefficients > & output.log &
+
+//EventNtuple To UVa Ntuple
+EventNtupleToUVaNtuple_x -ifilePath /uscms/home/aperloff/nobackup/Summer12ME8TeV/MEInput/ -ifiles ggH125 -ofilePath /uscms/home/aperloff/nobackup/ -ofiles ggH125_UVa_muon -leptonCat muon
+
+//Trigger Map
+PS->cd()
+jets2p->Show(0)
+EventNtuple *ntuple = new EventNtuple()
+jets2p->SetBranchAddress("EvtNtuple",&ntuple)
+jets2p->GetEntry(0)
+ntuple->printTriggers(".*")
+ntuple->printSpecificTrigger("DST_Ele8_CaloIdL_CaloIsoVL_TrkIdVL_TrkIsoVL_HT250_v1")
+ntuple->findTriggers("AlCa_LumiPixels_*",false)
+ntuple->findTriggers("AlCa_LumiPixels_*",true)
+ntuple->findTriggers("AlCa_EcalPhiSym_v12",false)
+ntuple->findTriggers("AlCa_EcalPhiSym_v12",true)
+ntuple->findTriggers("AlCa_*",false)
+ntuple->findTriggers("AlCa_*",true)
+
+
+
+Standard Model 	xxx July 	W/Z cross section (Jane Dee) 	CMS-PAS-SMP-12-011
+Standard Model 	xxx July 	Jet cross section (John Doe) 	CMS-PAS-SMP-12-012
+Standard Model 	xxx July 	WW cross section (John Doe) 	CMS-PAS-SMP-12-013
+Standard Model 	xxx July 	ZZ cross section (Jane Dee) 	CMS-PAS-SMP-12-014
+
+
+
+Muon
+
+Cert_190456-196531_8TeV_13Jul2012ReReco_Collisions12_JSON.txt Cert_200961-206940_8TeV_PromptReco_Collisions12_JSON.txt Cert_190456-200601_8TeV_PromptReco_Collisions12_JSON_v2.txt Cert_203894-205618_8TeV_PromptReco_Collisions12_JSON.txt Cert_190782-190949_8TeV_06Aug2012ReReco_Collisions12_JSON.txt  Cert_205339-206088_8TeV_PromptReco_Collisions12_JSON.txt Cert_194480-208686_8TeV_PromptReco_Collisions12_JSON.txt Cert_205620-206539_8TeV_PromptReco_Collisions12_JSON.txt Cert_194631-203002_8TeV_PromptReco_Collisions12_JSON.txt Cert_206744-207469_8TeV_PromptReco_Collisions12_JSON.txt Cert_198022-198523_8TeV_24Aug2012ReReco_Collisions12_JSON.txt Cert_mu_207477-207898_8TeV_PromptReco_Collisions12_JSON.txt Cert_200519-202016_8TeV_PromptReco_Collisions12_JSON.txt Cert_207889-208357_8TeV_PromptReco_Collisions12_JSON.txt
+
+electron
+
+Cert_190456-196531_8TeV_13Jul2012ReReco_Collisions12_JSON.txt Cert_190782-190949_8TeV_06Aug2012ReReco_Collisions12_JSON.txt Cert_194480-208686_8TeV_PromptReco_Collisions12_JSON.txt Cert_194631-203002_8TeV_PromptReco_Collisions12_JSON.txt Cert_198022-198523_8TeV_24Aug2012ReReco_Collisions12_JSON.txt Cert_198934-200532_8TeV_PromptReco_Collisions12_JSON_v2.txt Cert_200519-202016_8TeV_PromptReco_Collisions12_JSON.txt Cert_200961-206940_8TeV_PromptReco_Collisions12_JSON.txt Cert_203894-205618_8TeV_PromptReco_Collisions12_JSON.txt Cert_205339-206088_8TeV_PromptReco_Collisions12_JSON.txt Cert_205620-206539_8TeV_PromptReco_Collisions12_JSON.txt Cert_206744-207469_8TeV_PromptReco_Collisions12_JSON.txt Cert_207477-207898_8TeV_PromptReco_Collisions12_JSON.txt Cert_207889-208357_8TeV_PromptReco_Collisions12_JSON.txt
+
+
+DAS Searches
+dataset dataset=/QCD_Pt*TuneZ2star_8TeV_pythia*/Summer12_DR53X*/AODSIM
+dataset dataset=/QCD_Pt_*_*_EMEnriched_TuneZ2star_8TeV_pythia6/Summer12_DR53X*/AODSIM 
+dataset=/QCD_Pt_350_EMEnriched_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v1/AODSIM
+dataset dataset=/QCD_Pt_*_*_EMEnriched_TuneZ2star_8TeV_pythia6/Summer12_DR53X*/AODSIM 
+
+PREP Database
+http://cms.cern.ch/iCMS/jsp/mcprod/admin/requestmanagement.jsp?dsn=QCD_Pt_30_80_EMEnriched_TuneZ2star_8TeV_pythia6&campid=Summer12_DR53X
+Campaign Managment: Summer12_DR53X
+Filter on DataSetName: QCD_Pt_30_80_EMEnriched_TuneZ2star_8TeV_pythia6
+
+lumiCalc2.py overview -i Cert_190456-208686_8TeV_PromptReco_Collisions12_JSON.txt
+
+
+mergeJSON.py --output /uscms/home/aperloff/nobackup/PS_outfiles_20121102_FullIsoMVA/Full_partial.JSON /uscms/home/aperloff/MatrixElement/CMSSW_5_3_2_patch4/src/TAMUWW/Selection/test/JSON/SingleElectron/Cert_190782-190949_8TeV_06Aug2012ReReco_Collisions12_JSON.txt /uscms/home/aperloff/MatrixElement/CMSSW_5_3_2_patch4/src/TAMUWW/Selection/test/JSON/SingleElectron/Cert_190456-196531_8TeV_13Jul2012ReReco_Collisions12_JSON.txt /uscms/home/aperloff/MatrixElement/CMSSW_5_3_2_patch4/src/TAMUWW/Selection/test/JSON/SingleElectron/Cert_190456-196531_8TeV_13Jul2012ReReco_Collisions12_JSON.txt /uscms/home/aperloff/MatrixElement/CMSSW_5_3_2_patch4/src/TAMUWW/Selection/test/JSON/SingleElectron/Cert_190456-196531_8TeV_13Jul2012ReReco_Collisions12_JSON.txt /uscms/home/aperloff/MatrixElement/CMSSW_5_3_2_patch4/src/TAMUWW/Selection/test/JSON/SingleElectron/Cert_198022-198523_8TeV_24Aug2012ReReco_Collisions12_JSON.txt /uscms/home/aperloff/MatrixElement/CMSSW_5_3_2_patch4/src/TAMUWW/Selection/test/JSON/SingleElectron/Cert_198934-200532_8TeV_PromptReco_Collisions12_JSON_v2.txt
+
+
+pileupCalc.py -i /uscms/home/aperloff/nobackup/PS_outfiles_20121102_FullIsoMVA/Full_partial.JSON --inputLumiJSON=/uscms/home/aperloff/MatrixElement/CMSSW_5_3_2_patch4/src/TAMUWW/Selection/test/JSON/pileup_JSON_DCSONLY_190389-208686_corr.txt --calcMode=true --minBiasXsec=69400 --maxPileupBin=60 --numPileupBins=600 --pileupHistName=pileup_noTrig /uscms/home/aperloff/nobackup/PS_outfiles_20121102_FullIsoMVA/pileup12_noTrig_Full_partial.root --verbose
+
+
+
+dbs lsd --path=/QCD_Pt_20_30_EMEnriched_TuneZ2star_8TeV_pythia6/aperloff-SQWaT_PAT_53X_Summer12_v1-2f1ac1eea2f9d7159db8efcbdc625f84/USER --url=https://cmsdbsprod.cern.ch:8443/cms_dbs_ph_analysis_02_writer/servlet/DBSServlet
+dbs lsd --path=/QCD_Pt_30_80_EMEnriched_TuneZ2star_8TeV_pythia6/aperloff-SQWaT_PAT_53X_Summer12_v1-2f1ac1eea2f9d7159db8efcbdc625f84/USER --url=https://cmsdbsprod.cern.ch:8443/cms_dbs_ph_analysis_02_writer/servlet/DBSServlet
+dbs lsd --path=/QCD_Pt_80_170_EMEnriched_TuneZ2star_8TeV_pythia6/aperloff-SQWaT_PAT_53X_Summer12_v1-2f1ac1eea2f9d7159db8efcbdc625f84/USER --url=https://cmsdbsprod.cern.ch:8443/cms_dbs_ph_analysis_02_writer/servlet/DBSServlet
+dbs lsd --path=/QCD_Pt_170_250_EMEnriched_TuneZ2star_8TeV_pythia6/aperloff-SQWaT_PAT_53X_Summer12_v1-2f1ac1eea2f9d7159db8efcbdc625f84/USER --url=https://cmsdbsprod.cern.ch:8443/cms_dbs_ph_analysis_02_writer/servlet/DBSServlet
+dbs lsd --path=/QCD_Pt_250_350_EMEnriched_TuneZ2star_8TeV_pythia6/aperloff-SQWaT_PAT_53X_Summer12_v1-2f1ac1eea2f9d7159db8efcbdc625f84/USER --url=https://cmsdbsprod.cern.ch:8443/cms_dbs_ph_analysis_02_writer/servlet/DBSServlet
+dbs lsd --path=/QCD_Pt_350_EMEnriched_TuneZ2star_8TeV_pythia6/aperloff-SQWaT_PAT_53X_Summer12_v1-2f1ac1eea2f9d7159db8efcbdc625f84/USER --url=https://cmsdbsprod.cern.ch:8443/cms_dbs_ph_analysis_02_writer/servlet/DBSServlet
+
+
+dbs lsf --path=/QCD_Pt_20_30_EMEnriched_TuneZ2star_8TeV_pythia6/aperloff-SQWaT_PAT_53X_Summer12_v1-2f1ac1eea2f9d7159db8efcbdc625f84/USER --url=https://cmsdbsprod.cern.ch:8443/cms_dbs_ph_analysis_02_writer/servlet/DBSServlet > filelist_20to30.txt
+dbs lsf --path=/QCD_Pt_30_80_EMEnriched_TuneZ2star_8TeV_pythia6/aperloff-SQWaT_PAT_53X_Summer12_v1-2f1ac1eea2f9d7159db8efcbdc625f84/USER --url=https://cmsdbsprod.cern.ch:8443/cms_dbs_ph_analysis_02_writer/servlet/DBSServlet > filelist_30to80.txt
+dbs lsf --path=/QCD_Pt_80_170_EMEnriched_TuneZ2star_8TeV_pythia6/aperloff-SQWaT_PAT_53X_Summer12_v1-2f1ac1eea2f9d7159db8efcbdc625f84/USER --url=https://cmsdbsprod.cern.ch:8443/cms_dbs_ph_analysis_02_writer/servlet/DBSServlet > filelist_80to170.txt
+dbs lsf --path=/QCD_Pt_170_250_EMEnriched_TuneZ2star_8TeV_pythia6/aperloff-SQWaT_PAT_53X_Summer12_v1-2f1ac1eea2f9d7159db8efcbdc625f84/USER --url=https://cmsdbsprod.cern.ch:8443/cms_dbs_ph_analysis_02_writer/servlet/DBSServlet > filelist_170to250.txt
+dbs lsf --path=/QCD_Pt_250_350_EMEnriched_TuneZ2star_8TeV_pythia6/aperloff-SQWaT_PAT_53X_Summer12_v1-2f1ac1eea2f9d7159db8efcbdc625f84/USER --url=https://cmsdbsprod.cern.ch:8443/cms_dbs_ph_analysis_02_writer/servlet/DBSServlet > filelist_250to350.txt
+dbs lsf --path=/QCD_Pt_350_EMEnriched_TuneZ2star_8TeV_pythia6/aperloff-SQWaT_PAT_53X_Summer12_v1-2f1ac1eea2f9d7159db8efcbdc625f84/USER --url=https://cmsdbsprod.cern.ch:8443/cms_dbs_ph_analysis_02_writer/servlet/DBSServlet > filelist_350.txt
+
+python ~/Scripts/DBSInvalidateFile.py --DBSURL=https://cmsdbsprod.cern.ch:8443/cms_dbs_ph_analysis_02_writer/servlet/DBSServlet --lfnFileList=filelist_20to30.txt
+python ~/Scripts/DBSInvalidateFile.py --DBSURL=https://cmsdbsprod.cern.ch:8443/cms_dbs_ph_analysis_02_writer/servlet/DBSServlet --lfnFileList=filelist_30to80.txt
+python ~/Scripts/DBSInvalidateFile.py --DBSURL=https://cmsdbsprod.cern.ch:8443/cms_dbs_ph_analysis_02_writer/servlet/DBSServlet --lfnFileList=filelist_80to170.txt
+python ~/Scripts/DBSInvalidateFile.py --DBSURL=https://cmsdbsprod.cern.ch:8443/cms_dbs_ph_analysis_02_writer/servlet/DBSServlet --lfnFileList=filelist_170to250.txt
+python ~/Scripts/DBSInvalidateFile.py --DBSURL=https://cmsdbsprod.cern.ch:8443/cms_dbs_ph_analysis_02_writer/servlet/DBSServlet --lfnFileList=filelist_250to350.txt
+python ~/Scripts/DBSInvalidateFile.py --DBSURL=https://cmsdbsprod.cern.ch:8443/cms_dbs_ph_analysis_02_writer/servlet/DBSServlet --lfnFileList=filelist_350.txt
+
+
+jets2p->Scan("jLV.matchedpdgId:genParticleCollection.pdgId:genParticleCollection.p4.Pt()")
+jets2p->Scan("genParticleCollection.pdgId:jLV.partonFlavor:jLV.matchedpdgId:genParticleCollection.p4.Pt():jLV.Pt():jLV.refLV.Pt()")
+
+
+TProfile* p = new TProfile("p","p",80,-4,4)
+jet1->Draw("((METLV[0].fP.fX*jLV[0].fP.fX)+(METLV[0].fP.fY*jLV[0].fP.fY))/TMath::Sqrt(TMath::Power(jLV[0].fP.fX,2)+TMath::Power(jLV[0].fP.fY,2)):jLV[0].Phi()>>p","","")
+
+parallel
+root [11]  FCN=51.5277 FROM MIGRAD    STATUS=CONVERGED      61 CALLS          62 TOTAL
+                     EDM=5.05296e-07    STRATEGY= 1      ERROR MATRIX ACCURATE
+  EXT PARAMETER                                   STEP         FIRST
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE
+   1  p0          -3.75112e+00   7.75361e-02   2.64725e-04  -7.32284e-04
+   2  p1           9.88865e-01   1.08493e-02   3.70402e-05  -8.51341e-02
+   3  p2          -1.74725e+01   5.32091e-02   1.88268e-04   8.01995e-03
+
+
+TProfile* p2 = new TProfile("p2","p2",80,-4,4)
+jet1->Draw("((METLV[0].fP.fX*jLV[0].fP.fY)-(METLV[0].fP.fY*jLV[0].fP.fX))/TMath::Sqrt(TMath::Power(jLV[0].fP.fX,2)+TMath::Power(jLV[0].fP.fY,2)):jLV[0].Phi()>>p2","","")
+
+perpendicular
+                    EDM=9.02122e-09    STRATEGY= 1      ERROR MATRIX ACCURATE
+  EXT PARAMETER                                   STEP         FIRST
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE
+   1  p0           3.79709e+00   7.89306e-02   3.08818e-04   1.33880e-03
+   2  p1           1.02242e+00   2.34708e-02   5.06172e-05  -1.50613e-03
+   3  p2           2.90239e-02   9.78729e-02   2.20350e-04   1.61557e-03
+
+
+
+Metx -= -3.75*sin(0.988865*jetPhi()) * Cos(JetPhi()) + 3.79 *cos(1.02*JetPhi()) * Sin(JetPhi)
+Mety -= -3.75*sin(0.988865*jetPhi()) * Sin(JetPhi()) + 3.79 *cos(1.02*JetPhi()) * Cos(JetPhi)
+
+
+//Check that jets do not depend on phi
+TProfile* p1 = new TProfile("p1","p1",80,-4,4)
+jet1->Draw("TMath::Sqrt(TMath::Power(jLV[0].fP.fX,2)+TMath::Power(jLV[0].fP.fY,2)):jLV[0].Phi()>>p1")
+
+"sqrt(pow(METLV[0].Pt()*sin(METLV[0].Phi())+0.680000,2)+pow(METLV[0].Pt()*cos(METLV[0].Phi())+0.130000,2)):atan2(2*(METLV[0].Pt()*sin(METLV[0].Phi())+0.680000),2*(METLV[0].Pt()*cos(METLV[0].Phi())+0.130000))"
+
+
+hadd /uscms/home/aperloff/nobackup/PS_outfiles_20130916_FullIsoMVA/SingleEl_D_v1_p8/PS_partial.root /uscms/home/aperloff/nobackup/PS_outfiles_20130916_FullIsoMVA/SingleEl_D_v1_p8/res/PS_*.root
+hadd /uscms/home/aperloff/nobackup/PS_outfiles_20130916_FullIsoMVA/SingleEl_D_v1_p7/PS_partial.root /uscms/home/aperloff/nobackup/PS_outfiles_20130916_FullIsoMVA/SingleEl_D_v1_p7/res/PS_*.root
+hadd /uscms/home/aperloff/nobackup/PS_outfiles_20130916_FullIsoMVA/SingleEl_D_v1_p6/PS_partial.root /uscms/home/aperloff/nobackup/PS_outfiles_20130916_FullIsoMVA/SingleEl_D_v1_p6/res/PS_*.root
+hadd /uscms/home/aperloff/nobackup/PS_outfiles_20130916_FullIsoMVA/SingleEl_D_v1_p5/PS_partial.root /uscms/home/aperloff/nobackup/PS_outfiles_20130916_FullIsoMVA/SingleEl_D_v1_p5/res/PS_*.root
+hadd /uscms/home/aperloff/nobackup/PS_outfiles_20130916_FullIsoMVA/SingleEl_D_v1_p4/PS_partial.root /uscms/home/aperloff/nobackup/PS_outfiles_20130916_FullIsoMVA/SingleEl_D_v1_p4/res/PS_*.root
+hadd /uscms/home/aperloff/nobackup/PS_outfiles_20130916_FullIsoMVA/SingleEl_D_v1_p3/PS_partial.root /uscms/home/aperloff/nobackup/PS_outfiles_20130916_FullIsoMVA/SingleEl_D_v1_p3/res/PS_*.root
+hadd /uscms/home/aperloff/nobackup/PS_outfiles_20130916_FullIsoMVA/SingleEl_D_v1_p2/PS_partial.root /uscms/home/aperloff/nobackup/PS_outfiles_20130916_FullIsoMVA/SingleEl_D_v1_p2/res/PS_*.root
+hadd /uscms/home/aperloff/nobackup/PS_outfiles_20130916_FullIsoMVA/SingleEl_D_v1_p1/PS_partial.root /uscms/home/aperloff/nobackup/PS_outfiles_20130916_FullIsoMVA/SingleEl_D_v1_p1/res/PS_*.root
+
+hadd /uscms/home/aperloff/nobackup/PS_outfiles_20130916_NTUPLES/SingleEl_Full_partial.root /uscms/home/aperloff/nobackup/PS_outfiles_20130916_FullIsoMVA/SingleEl_D_v1_p8/PS_partial.root /uscms/home/aperloff/nobackup/PS_outfiles_20130916_FullIsoMVA/SingleEl_D_v1_p7/PS_partial.root /uscms/home/aperloff/nobackup/PS_outfiles_20130916_FullIsoMVA/SingleEl_D_v1_p6/PS_partial.root /uscms/home/aperloff/nobackup/PS_outfiles_20130916_FullIsoMVA/SingleEl_D_v1_p5/PS_partial.root /uscms/home/aperloff/nobackup/PS_outfiles_20130916_FullIsoMVA/SingleEl_D_v1_p4/PS_partial.root /uscms/home/aperloff/nobackup/PS_outfiles_20130916_FullIsoMVA/SingleEl_D_v1_p3/PS_partial.root /uscms/home/aperloff/nobackup/PS_outfiles_20130916_FullIsoMVA/SingleEl_D_v1_p2/PS_partial.root /uscms/home/aperloff/nobackup/PS_outfiles_20130916_FullIsoMVA/SingleEl_D_v1_p1/PS_partial.root
+
+Name:              Done / Total * LuminosityTotal fb-1 = LuminosityDone fb-1
+SingleEl_A_ReReco: 49   / 50    * 0.082                = 0.08036
+SingleEl_A:        415  / 416   * 0.809                = 0.80705528846154
+SingleEl_B_p1:     1606 / 1607  * 1.940                = 1.93879278158059
+SingleEl_B_p2:     1605 / 1607  * 2.396                = 2.39301804604854
+SingleEl_C_v1:     192  / 199   * 0.489                = 0.47179899497488
+SingleEl_C_v2_p1:  1110 / 1113  * 2.891                = 2.8832075471698
+SingleEl_C_v2_p2:  626  / 633   * 1.761                = 1.7415260663507
+SingleEl_C_v2_p3:  580  / 592   * 1.542                = 1.51074324324324
+SingleEl_D_v1_p1:  703  / 710   * 1.923                = 1.90404084507042
+SingleEl_D_v1_p2:  351  / 362   * 1.061                = 1.02875966850829
+SingleEl_D_v1_p3:  217  / 224   * 0.684                = 0.662625
+SingleEl_D_v1_p4:  312  / 321   * 0.896                = 0.8708785046729
+SingleEl_D_v1_p5:  341  / 344   * 0.989                = 0.980375
+SingleEl_D_v1_p6:  148  / 151   * 0.464                = 0.45478145695364
+SingleEl_D_v1_p7:  261  / 263   * 0.705                = 0.69963878326996
+SingleEl_D_v1_p8:  170  / 172   * 0.516                = 0.51
+SUM:               8686 / 8764  * 19.148               = 18.9376012264
+
+Total: 8686/8764 = 0.99109995435874
+Luminosity: 18.97758192606115 fb-1 / 19.148 fb-1
+
+./movefiles.py T1_US_FNAL_LPC /uscms_data/d2/aperloff/Summer12ME8TeV/MEInput/ T3_US_TAMU Summer12ME8TeV/MEInput/ --diff -lcg -r -v -srt 2400
+./movefiles.py T1_US_FNAL_LPC /uscms_data/d2/aperloff/Summer12ME8TeV/MEResults/ T3_US_TAMU Summer12ME8TeV/MEResults/ --diff -lcg -r -v -srt 2400
+countr from /uscms_data/d2/aperloff/Summer12ME8TeV/MEResults and ~/fdata/Summer12ME8TeV/MEResults
+
+./movefiles.py T1_US_FNAL_LPC /uscms_data/d2/aperloff/Summer12ME8TeV/MEResults/rootOutput/ T1_US_FNAL_EOS MatrixElement/Summer12ME8TeV/MEResults/rootOutput/ --diff -lcg -r -v -srt 2400
+
+cronjobs on cmslpc33.fnal.gov
+
+
+
+root> tree.SetScanField(0);  // no page break if Scan is redirected
+root > tree.Scan(....); >scan.log
+
+or
+
+((TTreePlayer*)(tree->GetPlayer()))->SetScanRedirect(true);
+((TTreePlayer*)(tree->GetPlayer()))->SetScanFileName("output.txt");
+tree->Scan(...)
+
+
+valgrind --leak-check=yes Fitter_x -lepton electron -object MET -readLocation histos_electron.root -writeLocation ./Fitter_electron_MET.root -fproc WJets QCD_ElFULL
+
+
+
+LeptEta_WJets_electron->Scale(0.910086)
+LeptEta_QCD_ElFULL_electron->Scale(19.0594)
+THStack* h = new THStack("stack","stack")
+h->Add(LeptEta_WJets_electron)
+h->Add(LeptEta_QCD_ElFULL_electron)
+h->Add(LeptEta_WH125_electron)
+h->Add(LeptEta_ggH125_electron)
+h->Add(LeptEta_qqH125_electron)
+h->Add(LeptEta_WW_electron)
+h->Add(LeptEta_WZ_electron)
+h->Add(LeptEta_ZJets_electron)
+h->Add(LeptEta_TTbar_electron)
+h->Add(LeptEta_STopS_T_electron)
+h->Add(LeptEta_STopS_Tbar_electron)
+h->Add(LeptEta_STopT_T_electron)
+h->Add(LeptEta_STopT_Tbar_electron)
+h->Add(LeptEta_STopTW_T_electron)
+h->Add(LeptEta_STopTW_Tbar_electron)
+LeptEta_SingleEl_Data_electron->Draw()
+h->Draw("sames")
+LeptEta_QCD_ElFULL_electron->Integral()
+LeptEta_WJets_electron->Integral()
+
+
+LeptEta_WJets_electron->Scale(0.910086)
+LeptEta_QCD_ElFULL_electron->Scale(19.0594)
+Double_t etabins[83] = {-5.191, -4.889, -4.716, -4.538, -4.363, -4.191, -4.013, -3.839, -3.664, -3.489, -3.314, -3.139, -2.964, -2.853, -2.650, -2.500, -2.322, -2.172, -2.043, -1.930, -1.830, -1.740, -1.653, -1.566, -1.479, -1.392, -1.305, -1.218, -1.131, -1.044, -0.957, -0.879, -0.783, -0.696, -0.609, -0.522, -0.435, -0.348, -0.261, -0.174, -0.087, +0.000, +0.087, +0.174, +0.261, +0.348, +0.435, +0.522, +0.609, +0.696, +0.783, +0.879, +0.957, +1.044, +1.131, +1.218, +1.305, +1.392, +1.479, +1.566, +1.653, +1.740, +1.830, +1.930, +2.043, +2.172, +2.322, +2.500, +2.650, +2.853, +2.964, +3.139, +3.314, +3.489, +3.664, +3.839, +4.013, +4.191, +4.363, +4.538, +4.716, +4.889, +5.191}
+TH1D* h = new TH1D("h","h",82,etabins)
+h->Add(LeptEta_WJets_electron)
+h->Add(LeptEta_QCD_ElFULL_electron)
+h->Add(LeptEta_WH125_electron)
+h->Add(LeptEta_ggH125_electron)
+h->Add(LeptEta_qqH125_electron)
+h->Add(LeptEta_WW_electron)
+h->Add(LeptEta_WZ_electron)
+h->Add(LeptEta_ZJets_electron)
+h->Add(LeptEta_TTbar_electron)
+h->Add(LeptEta_STopS_T_electron)
+h->Add(LeptEta_STopS_Tbar_electron)
+h->Add(LeptEta_STopT_T_electron)
+h->Add(LeptEta_STopT_Tbar_electron)
+h->Add(LeptEta_STopTW_T_electron)
+h->Add(LeptEta_STopTW_Tbar_electron)
+LeptEta_SingleEl_Data_electron->Draw()
+h->Draw("sames")
+LeptEta_QCD_ElFULL_electron->Integral()
+LeptEta_WJets_electron->Integral()
+
+
+cp ../2013_10_31_ValidationPlots_PU/UVa/QCD_ElFULL/PlotterBatchJob.* UVa/QCD_ElFULL/
+cp ../2013_10_31_ValidationPlots_PU/signal/QCD_ElFULL/PlotterBatchJob.* signal/QCD_ElFULL/
+cp ../2013_10_31_ValidationPlots_PU/control4/QCD_ElFULL/PlotterBatchJob.* control4/QCD_ElFULL/
+cp ../2013_10_31_ValidationPlots_PU/control6/QCD_ElFULL/PlotterBatchJob.* control6/QCD_ElFULL/
+cp ../2013_10_31_ValidationPlots_PU/control7/QCD_ElFULL/PlotterBatchJob.* control7/QCD_ElFULL/
+cp ../2013_10_31_ValidationPlots_PU/control8/QCD_ElFULL/PlotterBatchJob.* control8/QCD_ElFULL/
+cp ../2013_10_31_ValidationPlots_PU/control8/QCD_ElFULL/PlotterBatchJob.* control9/QCD_ElFULL/
+
+
+EventNtuple* ntuple = new EventNtuple()
+PS->cd()
+jets2p->SetBranchAddress("EvtNtuple",&ntuple)
+jets2p->GetEntry(0)
+jets2p->Show(0)
+ntuple->printDecayInformation(2212,1,5,"")
+ntuple->printDecayInformation(6,1,3,"")
+ntuple->printDecayInformation(-6,1,3,"")
+
+TFile *_file0 = TFile::Open("/uscms/home/aperloff/nobackup/Summer12ME8TeV/2013_11_05_ValidationPlots_PU_QCDEta/signal/QCD_ElFULL/histos_electron.root")
+TFile *_file0 = TFile::Open("/uscms/home/aperloff/nobackup/Summer12ME8TeV/2013_11_05_ValidationPlots_PU_QCDEta/FlatMVAEleID/QCD_ElFULL/histos_electron.root")
+TCanvas* c_eta = new TCanvas("c_eta","c_eta",800,800)
+TH1D* WJets_eta = (TH1D*)LeptEta_WJets_electron
+TH1D* QCD_eta = (TH1D*)LeptEta_QCD_ElFULL_electron
+TH1D* Data_eta = (TH1D*)LeptEta_SingleEl_Data_electron
+WJets_eta->Scale(1.0/WJets_eta->Integral())
+QCD_eta->Scale(1.0/QCD_eta->Integral())
+Data_eta->Scale(1.0/Data_eta->Integral())
+WJets_eta->Draw()
+QCD_eta->Draw("same")
+Data_eta->Draw("same")
+TCanvas* c_pt = new TCanvas("c_pt","c_pt",800,800)
+TH1D* WJets_pt = (TH1D*)LeptPt_WJets_electron
+TH1D* QCD_pt = (TH1D*)LeptPt_QCD_ElFULL_electron
+TH1D* DATA_pt = (TH1D*)LeptPt_SingleEl_Data_electron
+WJets_pt->Scale(1.0/WJets_pt->Integral())
+QCD_pt->Scale(1.0/QCD_pt->Integral())
+DATA_pt->Scale(1.0/DATA_pt->Integral())
+WJets_pt->Draw()
+QCD_pt->Draw("same")
+DATA_pt->Draw("same")
+
+
+TFile *_file0 = TFile::Open("/uscms/home/aperloff/nobackup/Summer12ME8TeV/2013_11_05_ValidationPlots_PU_QCDEta/signal/QCD_ElFULL/histos_electron.root")
+TFile *_file1 = TFile::Open("/uscms/home/aperloff/nobackup/Summer12ME8TeV/2013_11_05_ValidationPlots_PU/signal/QCD_ElFULL/2013_11_15/histos_electron.root")
+TLegend* leg = new TLegend(0.7,0.4,1.0,0.6)
+_file0->cd()
+LeptEta_QCD_ElFULL_electron->SetLineColor(kBlack)
+LeptEta_QCD_ElFULL_electron->Draw()
+LeptEta_QCD_ElFULL_electron->SetTitle("QCD Lepton #eta Shape")
+LeptEta_QCD_ElFULL_electron->GetXaxis()->SetTitle("#eta")
+TH1D* h1 = (TH1D*)LeptEta_QCD_ElFULL_electron
+_file1->cd()
+LeptEta_QCD_ElFULL_electron->SetLineColor(kRed)
+LeptEta_QCD_ElFULL_electron->Draw("same")
+TH1D* h2 = (TH1D*)LeptEta_QCD_ElFULL_electron
+leg->AddEntry(h2,"Unweighted","l")
+leg->AddEntry(h1,"Weighted","l")
+leg->Draw("same")
+
+
+
+TH1D* DATA = (TH1D*)LeptPt_SingleEl_Data_electron
+TH1D* WJets = (TH1D*)LeptPt_WJets_electron
+TH1D* TTbar = (TH1D*)LeptPt_TTbar_electron
+TH1D* WW = (TH1D*)LeptPt_WW_electron
+TH1D* WZ = (TH1D*)LeptPt_WZ_electron
+TH1D* SUM = (TH1D*)WJets->Clone("SUM")
+SUM->Add(TTbar)
+SUM->Add(WW)
+SUM->Add(WZ)
+SUM->Scale(DATA->Integral()/SUM->Integral())
+TH1D* DIV = (TH1D*)DATA->Clone("DIV")
+DIV->Divide(SUM)
+DIV->Draw()
+
+
+
+Double_t a[5] = {0,10,20,50,100}
+TH1D* h = new TH1D("h","h",4,a)
+h->Fill(1)
+h->Fill(15)
+h->Fill(25)
+h->Fill(75)
+h->Fill(75)
+THnSparse* s = THnSparse::CreateSparse("hs","hs",h)
+Double_t x[1] = {75}
+s->GetNbins()
+s->GetBin(x)
+
+
+IsolationPlotter_x -ifiles SingleEl_Full.root -ifilePaths /uscms_data/d2/aperloff/Summer12ME8TeV/MEInput/ -ifilePostFixes QCD -ofilepath /uscms_data/d2/aperloff/Summer12ME8TeV/tmp/ -plots correction_fast -stackDrawOption "" -coshEta true
+
+
+  sequence HLTEle27WP80Sequence = HLTDoRegionalEgammaEcalSequence + HLTL1SeededEcalClustersSequence + hltL1SeededRecoEcalCandidate + hltEGRegionalL1SingleEG20ORL1SingleEG22 + hltEG27EtFilter + hltL1SeededHLTClusterShape + hltEle27WP80ClusterShapeFilter+ hltL1SeededPhotonEcalIso + hltEle27WP80EcalIsoFilter + HLTDoLocalHcalWithoutHOSequence + hltL1SeededPhotonHcalForHE + hltEle27WP80HEFilter + hltL1SeededPhotonHcalIso + hltEle27WP80HcalIsoFilter + HLTDoLocalPixelSequence + HLTDoLocalStripSequence + hltL1SeededStartUpElectronPixelSeeds + hltEle27WP80PixelMatchFilter + hltCkfL1SeededTrackCandidates + hltCtfL1SeededWithMaterialTracks + hltEle27WP80BarrelTracks + hltCtfL1SeededWithMaterialCleanTracks + hltEle27WP80CleanMergedTracks + hltEle27WP80PixelMatchElectronsL1Seeded + hltEle27WP80OneOEMinusOneOPFilter + hltEle27WP80L1SeededDetaDphi + hltEle27WP80DetaFilter + hltEle27WP80DphiFilter + HLTL1SeededEgammaRegionalRecoTrackerSequence + hltEle27WP80L1SeededElectronTrackIso + hltEle27WP80TrackIsoFilter
+
+
+hadd ~/nobackup/PS_outfiles_20130916_NTUPLES/SingleMu_Full.root ~/nobackup/PS_outfiles_20130916_FullIsoMVA2/SingleMu_A_ReReco.root ~/nobackup/PS_outfiles_20130916_FullIsoMVA2/SingleMu_A.root ~/nobackup/PS_outfiles_20130916_FullIsoMVA2/SingleMu_B_p1.root ~/nobackup/PS_outfiles_20130916_FullIsoMVA2/SingleMu_B_p2.root ~/nobackup/PS_outfiles_20130916_FullIsoMVA2/SingleMu_C_v1.root ~/nobackup/PS_outfiles_20130916_FullIsoMVA2/SingleMu_C_v2_p1_p1.root ~/nobackup/PS_outfiles_20130916_FullIsoMVA2/SingleMu_C_v2_p1_p2.root ~/nobackup/PS_outfiles_20130916_FullIsoMVA2/SingleMu_C_v2_p2.root ~/nobackup/PS_outfiles_20130916_FullIsoMVA2/SingleMu_C_v2_p3.root ~/nobackup/PS_outfiles_20130916_FullIsoMVA2/SingleMu_D_v1_p1.root ~/nobackup/PS_outfiles_20130916_FullIsoMVA2/SingleMu_D_v1_p2.root ~/nobackup/PS_outfiles_20130916_FullIsoMVA2/SingleMu_D_v1_p3.root ~/nobackup/PS_outfiles_20130916_FullIsoMVA2/SingleMu_D_v1_p4.root ~/nobackup/PS_outfiles_20130916_FullIsoMVA2/SingleMu_D_v1_p5.root ~/nobackup/PS_outfiles_20130916_FullIsoMVA2/SingleMu_D_v1_p6.root ~/nobackup/PS_outfiles_20130916_FullIsoMVA2/SingleMu_D_v1_p7.root ~/nobackup/PS_outfiles_20130916_FullIsoMVA2/SingleMu_D_v1_p8.root
+
+
+root $EOS/MatrixElement/PS_outfiles_20130514_FullIsoMVA_WJets/PS.root
+root ~/nobackup/Summer12ME8TeV/MEInput/SingleEl_Full.root
+gStyle->SetPalette(1)
+PS->cd()
+TH2D* full = new TH2D("full","full",500,0,500,500,0,500)
+jets2p->Draw("lLV[0].Pt()*lLV[0].lpfIso:lLV[0].Pt()>>full","lLV[0].emvaTrig>0.05&&lLV[0].emvaTrig<0.95&&lLV[0].Pt()>30&&METLV[0].Pt()>25","colz")
+TFile* f = new TFile("/eos/uscms/store/user/aperloff/MatrixElement/PS_outfiles_20130514_FullIsoMVA_WJets/PS.root","READ")
+PS->cd()
+TH2D* wjets = new TH2D("wjets","wjets",500,0,500,500,0,500)
+jets2p->Draw("lLV[0].Pt()*lLV[0].lpfIso:lLV[0].Pt()>>wjets","lLV[0].emvaTrig>0.05&&lLV[0].emvaTrig<0.95&&lLV[0].Pt()>30&&METLV[0].Pt()>25","colz")
+TH2D* subtracted = (TH2D*)full->Clone("subtracted")
+//wjets->Scale(2.79399600000000000e+06/18393090.0)
+wjets->Scale((19148*41440.805)/18393090.0)
+wjets->Draw("colz")
+subtracted->Add(wjets,-1.0)
+subtracted->Draw("colz")
+TF1* func = new TF1("func","0.2*x[0]",0,500)
+func->Draw("same")
+
+electron full with singleEl_full tmva<0.95 2d histogram and subtract the component of wjets (scales to the total mc contribution)
+
+The JetAnalyzers subpackage contains code used for creating the L2Relative and L3Absolute JEC corrections. The JetUtilities subpackage contains useful tools and plugins for the JetAnalyzers package. 
+1148  git clone git@github.com:cms-jet/JetMETAnalysis.git
+ 1149  cd JetMETAnalysis/
+ 1150  ll
+ 1151  git remote add -f JetUtilities /home/aperloff/JEC/gitty/CMSSW_5_3_2_patch4/src/JetUtilities/
+ 1152  git merge -s ours --no-commit JetUtilities/master
+ 1153  git remote -v
+ 1154  git read-tree --prefix=JetUtilities/ -u JetUtilties
+ 1155  git read-tree --prefix=JetUtilities/ -u JetUtilties/
+ 1156  git read-tree --prefix=JetUtilities/ -u JetUtilties/master
+ 1157  git read-tree --prefix=JetUtilities/ -u /home/aperloff/JEC/gitty/CMSSW_5_3_2_patch4/src/JetUtilities/
+ 1158  cd ..
+ 1159  rm -r JetMETAnalysis/
+ 1160  git clone git@github.com:cms-jet/JetMETAnalysis.git
+ 1161  cd JetMETAnalysis/
+ 1162  git remote add -f JetUtilities git@github.com:cms-jet/JetMETAnalysis-JetUtilities.git
+ 1163  git merge -s ours --no-commit JetUtilities
+ 1164  git merge -s ours --no-commit JetUtilities/master
+ 1165  git read-tree --prefix=JetUtilities/ -u JetUtilities/master
+ 1166  ll
+ 1167  ll JetUtilities/
+ 1168  git commit -m "merging project JetUtilities into subdirectory"
+ 1169  git remote add -f JetAnalyzers git@github.com:cms-jet/JetMETAnalysis-JetAnalyzers.git
+ 1170  git merge -s ours --no-commit JetAnalyzers/master
+ 1171  git read-tree --prefix=JetAnalyzers/ -u JetAnalyzers/master
+ 1172  git commit -m "merging project JetAnalyzers into subdirectory"
+ 1173  ll
+ 1174  ll JetAnalyzers/
+ 1175  ll
+ 1176  git push origin master
+ 1177  git log
+ 1178  git lol
+ 1179  git tag
+
+git checkout CMSSW_5_3_11 -- CondFormats/JetMETObjects
+ 1225  mkdir JetMETAnalysis
+ 1227  cd JetMETAnalysis
+ 1232  git clone git@github.com:cms-jet/JetAnalyzers.git
+ 1235  git clone git@github.com:cms-jet/JetUtilities.git
+
+git cms-addpkg JetMETCorrections/Algorithms
+ 1022  ll
+ 1023  git cms-addpkg JetMETCorrections/Modules
+
+
+cd JetMETCorrections/Algorithms/src/
+cp ~/JEC/CMSSW_5_3_2_patch4/src/JetMETCorrections/Algorithms/src/L1OffsetCorrector.cc .
+
+//TString prefix = "MET";
+TString prefix = "LeptEta";
+TString leptonName = "electron"
+TCanvas* inputCanvas = (TCanvas*)(gDirectory->Get(prefix))->Clone()
+TPad* inputPad = (TPad *) inputCanvas->GetPrimitive(prefix + "_1")
+THStack* inputMCStack = (THStack*) inputPad->GetPrimitive(prefix + "_" + leptonName + "_stackMC")
+TList* inputMCList = inputMCStack->GetHists()
+TH1D* qcd = (TH1D*)inputMCList->FindObject(prefix + "_QCD_ElFULL_electron_clone")
+TH1D* wjets = (TH1D*)inputMCList->FindObject(prefix + "_WJets_electron_clone")
+qcd->Scale(0.571779)
+wjets->Scale(0.942684)
+inputMCStack->Modified()
+inputCanvas->Draw()
+
+
+1-y*([0]+([1]*z)*(1+[2]*log(x)))/x
+[1]=0
+[2]=0
+1-((y*[0])/x)
+[0]=0
+1
+
+
+./run_MatrixElement /fdata/hepx/store/user/aperloff/Summer12ME8TeV/MEInput/WJets.root ./MatchingTest.root jets2p 20 20 1 1 PS
+run_MatrixElement /uscms/home/aperloff/nobackup/Summer12ME8TeV/MEInput/WJets.root ./MatchingTest.root jets2p 20 20 1 1 PS 0 1
+run_MatrixElement /uscms/home/aperloff/nobackup/Summer12ME8TeV/MEInput/WJets.root ./MatchingTest.root jets2p 20 20 1 1 PS 1 /uscms_data/d2/aperloff/Summer12ME8TeV/MEResults/microNtuples_matched/test/microWJets_missingEvents.txt
+
+rename .root _completion.root $EOS/MatrixElement/Summer12ME8TeV/MEResults/rootOutput_completion/SingleMu_Data_19p279fb/SingleMu_Data_19p279fb*
+
+CRABTools/movefiles.py T3_US_TAMU /Summer12ME8TeV/MEResults/rootOutput_completion/SingleMu_Data_19p279fb/ T1_US_FNAL_EOS MatrixElement/Summer12ME8TeV/MEResults/rootOutput_completion/SingleMu_Data_19p279fb/ -diff -lcg -r -srt 3600 -s SingleMu_Data_19p279fb -i .pbs.
+
+
+
+
+
+qalter -l walltime=60:00:00 `qselect -u aperloff  -s Q -q gridrt`
+qdel `qselect -u aperloff -q grid`
+
+
+[aperloff@hurr:~/fdata/Summer12ME8TeV/MEResults/rootOutput/SingleEl_Full_Subset]$ grep -rnL "Finished" ../log/SingleEl_Full_Subset/CondorME_SingleEl_Full_Subset_3332797-*.brazos.tamu.edu.stdout
+
+
+
+TMVAClassification_x -lep electron -train true -plot true -myMethodList BDT,BDTD,BDTG,MLP,KNN,PDERS,CutsGA,Likelihood,LikelihoodD,LikelihoodPCA -ofileBase TMVA_electron -signals ggH125 -backgrounds WJets -eventProbs 0 1 3 5 8 12 19 54 -batch false
+
+TMVAClassification_x -lep electron -train true -plot true -myMethodList BDT,BDTD,BDTG -ofileBase TMVA_electron -signals ggH125 -backgrounds WJets -eventProbs 0 5 19 54 -batch false
+
+TMVAClassification_x -lep electron -train true -plot true -myMethodList BDT,BDTD,BDTG -ofileBase TMVA_electron -signals ggH125 -backgrounds WJets -eventProbs 0 5 19 -batch false
+
+jet_draw_corrections_x -algs ak3pfl1 ak4pfl1 ak5pfl1 ak6pfl1 ak7pfl1 ak8pfl1 ak9pfl1 ak10pfl1 -era ConeSizeTest_MC -path ../../ConeSizeTest_txts/ -outputDir ./ -useL1FasCor false -useL1OffCor false -useL2Cor true -useL3Cor true -useL2L3ResCor false -tdr true -outputFormat .png -norm ak5pfl1 -combineAlgs true
+
+
+cmsrel CMSSW_7_0_0
+cd CMSSW_7_0_0/src/
+cmsenv
+git-cms-init
+git-cms-addpkg GeneratorInterface/LHEInterface
+
+
+import random
+uniques = []
+for i in range(20):
+    x = '%032x' % random.randrange(16**32)
+    if x in uniques:
+        raise Exception('We duped %d at iteration number %d' % (x, i))
+    uniques.append(x)
+
+len(uniques)
+print uniques
+
+import subprocess
+id=str(625).strip()
+p = subprocess.Popen( ['squeue','-j', id,'-o','%all'], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+squeue_output, squeue_error = p.communicate()
+squeue_output
+'             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)\n             601_0   general slurmtes aperloff  R       0:19      1 c0101\n             601_1   general slurmtes aperloff  R       0:19      1 c0101\n             601_2   general slurmtes aperloff  R       0:19      1 c0101\n             601_3   general slurmtes aperloff  R       0:19      1 c0101\n             601_4   general slurmtes aperloff  R       0:19      1 c0101\n             601_5   general slurmtes aperloff  R       0:19      1 c0101\n'
+squeue_error
+squeue_return = p.returncode #1=error, 0=okay, 1=missing job
+squeue_return
+s = squeue_output.rstrip().split('\n')
+[snew.split() for snew in s]
+
+
+import subprocess
+#id=str(3440831).strip()
+id=str(3440795).strip()
+p=subprocess.Popen( ['qstat','-x',id], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+qstat_output, qstat_error = p.communicate()
+qstat_output
+
+'<Data><Job><Job_Id>3440795.brazos.tamu.edu</Job_Id><Job_Name>CMS_CRAB2</Job_Name><Job_Owner>aperloff@hurr.tamu.edu</Job_Owner><resources_used><cput>01:09:15</cput><mem>605108kb</mem><vmem>1107604kb</vmem><walltime>01:09:30</walltime></resources_used><job_state>R</job_state><queue>grid</queue><server>brazos.tamu.edu</server><Checkpoint>u</Checkpoint><ctime>1397194681</ctime><Error_Path>hurr.tamu.edu:/home/aperloff/MatrixElement/gitty/CMSSW_5_3_2/src/signal/crab/GENSIM/125/LQ-ggh125_BIG_GEN_part4//res/tmp_CMSSW_738.stderr</Error_Path><exec_host>c0536/1</exec_host><Hold_Types>n</Hold_Types><Join_Path>n</Join_Path><Keep_Files>n</Keep_Files><Mail_Points>a</Mail_Points><mtime>1397194812</mtime><Output_Path>hurr.tamu.edu:/home/aperloff/MatrixElement/gitty/CMSSW_5_3_2/src/signal/crab/GENSIM/125/LQ-ggh125_BIG_GEN_part4//res/tmp_CMSSW_738.stdout</Output_Path><Priority>0</Priority><qtime>1397194681</qtime><Rerunable>True</Rerunable><Resource_List><mem>1900mb</mem><nodect>1</nodect><nodes>1:ppn=1</nodes><vmem>1900mb</vmem><walltime>72:00:00</walltime></Resource_List><session_id>20422</session_id><Variable_List>PBS_O_QUEUE=gridrt,PBS_O_HOST=hurr.tamu.edu,PBS_O_HOME=/home/aperloff,PBS_O_LANG=C,PBS_O_LOGNAME=aperloff,PBS_O_PATH=/home/aperloff/crab/CRAB_2_10_5_patch1/external/sqlite//3.3.5/bin:/home/aperloff/crab/CRAB_2_10_5_patch1/python:/home/aperloff/crab/CRAB_2_10_5_patch1/external/DLSAPI/bin:/home/aperloff/MatrixElement/gitty/CMSSW_5_3_2/bin/slc5_amd64_gcc462:/home/aperloff/MatrixElement/gitty/CMSSW_5_3_2/external/slc5_amd64_gcc462/bin:/home/hepxadmin/cmssw/slc5_amd64_gcc462/cms/cmssw/CMSSW_5_3_2/bin/slc5_amd64_gcc462:/home/hepxadmin/cmssw/slc5_amd64_gcc462/cms/cmssw/CMSSW_5_3_2/external/slc5_amd64_gcc462/bin:/home/hepxadmin/cmssw/slc5_amd64_gcc462/external/gcc/4.6.2/bin:/apps0/osg-1.2.20/globus/bin:/home/hepxadmin/gLite/gLite-UI//d-cache/srm/bin:/home/hepxadmin/gLite/gLite-UI//d-cache/dcap/bin:/home/hepxadmin/gLite/gLite-UI//edg/bin:/home/hepxadmin/gLite/gLite-UI//glite/bin:/home/hepxadmin/gLite/gLite-UI//lcg/bin:/home/hepxadmin/cmssw/common:/home/hepxadmin/cmssw/bin:/usr/lib64/qt-3.3/bin:/usr/kerberos/bin:/usr/local/bin:/bin:/usr/bin:/usr/local/bin,PBS_O_MAIL=/var/spool/mail/aperloff,PBS_O_SHELL=/bin/bash,PBS_SERVER=brazos.tamu.edu,PBS_O_WORKDIR=/home/aperloff/MatrixElement/gitty/CMSSW_5_3_2/src/signal/crab/GENSIM/125</Variable_List><etime>1397194681</etime><submit_args>/tmp/tmpfDU8sT</submit_args><start_time>1397194735</start_time><Walltime><Remaining>254962</Remaining></Walltime><start_count>1</start_count><fault_tolerant>False</fault_tolerant></Job></Data>\n'
+
+qstat_error
+qstat_return = p.returncode #1=error, 0=okay, 153=missing
+qstat_return
+
+squeue_output='             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)\n             601_0   general slurmtes aperloff  R       0:19      1 c0101\n             601_1   general slurmtes aperloff  R       0:19      1 c0101\n             601_2   general slurmtes aperloff  R       0:19      1 c0101\n             601_3   general slurmtes aperloff  R       0:19      1 c0101\n             601_4   general slurmtes aperloff  R       0:19      1 c0101\n             601_5   general slurmtes aperloff  R       0:19      1 c0101\n'
+s = squeue_output.rstrip().split('\n')
+[snew.split() for snew in s]
+
+grep -i pbs -r . | grep -v SchedulerPbsv2.py | grep -v "Binary file" | grep -v SchedulerPbs.py | grep -v "pbs_python/4.3.0/" | grep -v SchedulerPbsv2_extraPrintouts.py
+
+
+ps -ef | grep "globus-gridftp-" | wc
+top -p $(pgrep globus-gridftp- | head -20 | tr "\\n" "," | sed 's/,$//')
+~/Scripts/duSort.sh ~/nobackup/
+
+
+ZMass offset. Lepton recoil is too small?
+https://indico.cern.ch/event/309944/contribution/0/material/slides/0.pdf
+
+Joey Plot os WJets_inclusive vs WJets_exclusive
+https://goodell.web.cern.ch/goodell/WPlusJetsBkg_DataModel_CrossCheck_Ele/
+https://goodell.web.cern.ch/goodell/WPlusJetsBkg_DataModel_CrossCheck/
+
+HWW meeting on May 8th
+https://indico.cern.ch/event/312518/
+
+https://itunes.apple.com/us/app/apple-remote-desktop/id409907375?mt=12
+
+
+jet_synchtest_x -algo1 ak4pf -algo2 ak4pfl1 -iftest false -ApplyJEC false -outputPath ./ -samplePU JetStudies_Phase_II_140PileUp_conf4_29_Apr_2014_15_30_13/DelphesJRA.root -sampleNoPU JetStudies_Phase_II_140PileUp_conf4_29_Apr_2014_15_30_13/DelphesJRA.root -npvRhoNpuBinWidth 5 -NBinsNpvRhoNpu 32
+jet_synchtest_x -algo1 ak4pf -algo2 ak4pfl1 -iftest true -ApplyJEC true -JECpar ../correction/parameters_ak4pf_ak4pfl1.txt -outputPath ./ -samplePU JetStudies_Phase_II_140PileUp_conf4_29_Apr_2014_15_30_13/DelphesJRA.root -sampleNoPU JetStudies_Phase_II_140PileUp_conf4_29_Apr_2014_15_30_13/DelphesJRA.root -npvRhoNpuBinWidth 5 -NBinsNpvRhoNpu 32
+jet_synchplot_x -algo1 ak4pf -algo2 ak4pfl1 -outDir ./ -fixedRange false -NBinsNpvRhoNpu 32 -npvRhoNpuBinWidth 5
+jet_synchplot_x -algo1 ak4pf -algo2 ak4pfl1 -outDir ./ -fixedRange false -NBinsNpvRhoNpu 20 -npvRhoNpuBinWidth 5 -binOffset 50
+jet_synchplot_x -algo1 ak4pf -algo2 ak4pfl1 -outDir ./ -fixedRange false -NBinsNpvRhoNpu 7 -npvRhoNpuBinWidth 10 -binOffset 60
+
+
+
+Joey WJets electron scale factor after PU-QCDEta-CSV-TTbar 1.001
+Joey WJets muon scale factor after PU-QCDEta-CSV-TTbar 1.026
+IsolationPlotter_x  -ifiles SingleEl_Full.root SingleEl_Data_19p148fb.root WJets_Full.root SingleEl_Full_Subset.root -ifilePaths ~/nobackup/Summer12ME8TeV/MEInput/ ~/nobackup/Summer12ME8TeV/MEInput/ ~/nobackup/Summer12ME8TeV/MEInput/ ~/nobackup/Summer12ME8TeV/MEInput/ -ifilePostFixes SingleEl_Full SingleEl_Data WJets_Full SinleEl_Full_Subset -plots COMPONENTS_PFISOMVA_ONLY
+
+0.3 No MVa cut 
+->Integral(0,1001,61,401)
+signal
+->Integral(995,1001,0,41)
+Total events
+->Integral(0,1001,0,401)
+
+
+lcg-cp -v -b -n 15 --sendreceive-timeout 3600 --srm-timeout 60 -D srmv2 "srm://cmssrm.fnal.gov:8443/srm/managerv2?SFN=/11/store/user/lnujj/PatTuples_8TeV_53X/aperloff/WJetsToLNu_matchingup_8TeV-madgraph-tauola/SQWaT_PAT_53X_Summer12_v1/829f288d768dd564418efaaf3a8ab9aa/pat_53x_test_v03_179_1_njP.root" "srm://cmseos.fnal.gov:8443/srm/v2/server?SFN=/eos/uscms/store/user/lnujj/PatTuples_8TeV_53X/aperloff/WJetsToLNu_matchingup_8TeV-madgraph-tauola/SQWaT_PAT_53X_Summer12_v1/829f288d768dd564418efaaf3a8ab9aa/pat_53x_test_v03_179_1_njP.root"
+
+
+
+TMVAClassification_x -myMethodList BDT -lep electron -custom true -signals ggH125 2>&1 | tee -a output.txt
+TMVAClassification_x -myMethodList BDT -lep electron -custom false -eventProbs 0 1 3 5 8 12 19 54 -signals WH125 2>&1 | tee -a output.txt
+
+
+
+
+svcast for slurm
+
+run slurm job
+squeue
+ssh <host>
+
+srun -pty /bin/bash
+strace
+man squeue
+man sinfo
+environment variables for formats
+
+
+Notes for Slurm Tests:
+
+scram b -j 16 USER_CXXFLAGS="-g -Wno-error=unused-variable" REM_CXXFLAGS="-Wno-error=unused-but-set-variable"
+
+
+
+Type         Module       Label        Process
+-------------------------------------------------
+JRAEvent     "ak4pf"      "JRAEvent"   "JRAP"
+JRAEvent     "ak4pfchs"   "JRAEvent"   "JRAP"
+
+
+
+
+ak4pfchsl1->cd()
+TGraphErrors* g = ((TGraphErrors*)gDirectory->Get("AbsCorVsJetPt_JetEta-0.174to-0.087"))
+//TGraphErrors* g = ((TGraphErrors*)gDirectory->Get("AbsCorVsJetPt_JetEta2.65to2.853"))
+//TGraphErrors* g = ((TGraphErrors*)gDirectory->Get("AbsCorVsJetPt_JetEta4.363to4.538"))
+g->Draw("AP")
+gPad->SetLogx()
+
+//TF1 *fgamma = new TF1("fgamma", "[3]+TMath::GammaDist(TMath::Log10(x), [0], [1], [2])", 1, 30)
+//fgamma->SetRange(2.0,30.0)
+//fgamma->SetParameters(5, 0, 1,1)
+//fgamma->SetParLimits(0,0,1000)
+//fgamma->SetParLimits(1,0,1000)
+//fgamma->SetParLimits(2,0,1000)
+//g->Fit("fgamma","R+")
+
+//TF1 *flog = new TF1("flog", "[3]+TMath::LogNormal(TMath::Log10(x), [0], [1], [2])", 4, 30)
+TF1 *flog = new TF1("flog", "[0]+((1.0/(TMath::Log10(x)*TMath::Sqrt(2.0*TMath::Pi()*TMath::Power([2],2))))*TMath::Exp(-TMath::Power(TMath::Log(x)-TMath::Log([1]),2)/(2.0*TMath::Power([2],2))))", 3, 30)
+flog->SetLineColor(kBlue)
+flog->SetRange(4.0,30.0)
+flog->SetParameters(0.5, 0, 1)
+flog->SetParLimits(0,0,1000)
+flog->SetParLimits(1,0,1000)
+flog->SetParLimits(2,0,1000)
+g->Fit("flog","R+")
+
+TF1* fgaus = new TF1("fgaus","[0]+[1]/(pow(log10(x),2)+[2])+[3]*exp(-[4]*(log10(x)-[5])*(log10(x)-[5]))",30,2000)
+fgaus->SetLineColor(kOrange)
+fgaus->SetRange(30,2000)
+fgaus->SetParameter(0,0.5);
+fgaus->SetParameter(1,9.0);
+fgaus->SetParameter(2,8.0);
+fgaus->SetParameter(3,-0.3);
+fgaus->SetParameter(4,0.6);
+fgaus->SetParameter(5,1.0);
+fgaus->SetParLimits(2,0.1,100);
+fgaus->SetParLimits(3,-100,0);
+fgaus->SetParLimits(4,0,100);
+g->Fit("fgaus","R+")
+
+
+TF1 *merged = new TF1("merged","(x<=[10])*([0]+TMath::LogNormal(TMath::Log10(x), [1], [2], [3]))+(x>[10])*([4]+[5]/(pow(log10(x),2)+[6])+[7]*exp(-[8]*(log10(x)-[9])*(log10(x)-[9])))",2,2000)
+merged->SetLineColor(kGreen)
+merged->SetRange(2,2000)
+merged->SetParameter(0,flog->GetParameter(3))
+merged->SetParameter(1,flog->GetParameter(0))
+merged->SetParameter(2,flog->GetParameter(1))
+merged->SetParameter(3,flog->GetParameter(2))
+merged->SetParLimits(1,0,100)
+merged->SetParLimits(2,0,100)
+merged->SetParLimits(3,0,100)
+merged->SetParameter(4,fgaus->GetParameter(0))
+merged->SetParameter(5,fgaus->GetParameter(1))
+merged->SetParameter(6,fgaus->GetParameter(2))
+merged->SetParameter(7,fgaus->GetParameter(3))
+merged->SetParameter(8,fgaus->GetParameter(4))
+merged->SetParameter(9,fgaus->GetParameter(5))
+merged->SetParLimits(6,0.1,100)
+merged->SetParLimits(7,-100,0)
+merged->SetParLimits(8,0,100)
+merged->SetParameter(10,30)
+g->Fit("merged","R+")
+
+without parameter based split
+9.96880934193224211e-01
+with parameter based split
+1.04854574622222763e+00
+
+
+//TF1 *merged2 = new TF1("merged2","([0]+TMath::LogNormal(TMath::Log10(x), [1], [2], [3]))+([4]+[5]/(pow(log10(x),2)+[6])+[7]*exp(-[8]*(log10(x)-[9])*(log10(x)-[9])))",2,2500)
+TF1 *merged2 = new TF1("merged2","([0]+((1.0/(TMath::Log10(x)*TMath::Sqrt(2.0*TMath::Pi()*TMath::Power([2],2))))*TMath::Exp(-TMath::Power(TMath::Log(x)-[1],2)/(2.0*TMath::Power([2],2)))))+([4]+[5]/(pow(log10(x),2)+[6])+[7]*exp(-[8]*(log10(x)-[9])*(log10(x)-[9])))",2,2500)
+merged2->SetLineColor(kMagenta)
+merged2->SetRange(2,2000)
+merged2->SetParameter(0,flog->GetParameter(3))
+merged2->SetParameter(1,flog->GetParameter(0))
+merged2->SetParameter(2,flog->GetParameter(1))
+merged2->SetParameter(3,flog->GetParameter(2))
+merged2->SetParLimits(1,0,5)
+merged2->SetParLimits(2,-20,20)
+merged2->SetParLimits(3,0,5)
+merged2->SetParameter(4,fgaus->GetParameter(0))
+merged2->SetParameter(5,fgaus->GetParameter(1))
+merged2->SetParameter(6,fgaus->GetParameter(2))
+merged2->SetParameter(7,fgaus->GetParameter(3))
+merged2->SetParameter(8,fgaus->GetParameter(4))
+merged2->SetParameter(9,fgaus->GetParameter(5))
+merged2->SetParLimits(6,0.1,100)
+merged2->SetParLimits(7,-100,0)
+merged2->SetParLimits(8,0,100)
+g->Fit("merged2","R+")
+
+
+
+((TGraphErrors*)gDirectory->Get("AbsCorVsJetPt_JetEta2.65to2.853"))->GetFunction("fit")->GetChisquare()/((TGraphErrors*)gDirectory->Get("AbsCorVsJetPt_JetEta2.65to2.853"))->GetFunction("fit")->GetNDF()
+merged->GetChisquare()/merged->GetNDF()
+
+
+plotter_x -lep electron -cutRegion signal -outDir ./ -ntype MicroNtuple -QCDweight true -doCSVrewt true -doTTbarrewt true -PtWeight false -maxEvts 50 -MVAMethods BDT -MVAWeightDir /uscms/home/jdg6y/Templates_forAlexx/TMVA_HWWtoWjets_2PlusJets_MultiSig_Btag11_Comb_BDT.weights.xml
+
+
+
+.L $CMSSW_BASE/src/TAMUWW/Tools/bin/ntuple_subset.C+
+microNtuple_addition("microSingleMu_Data_19p279fb_new/microSingleMu_Data_19p279fb_afterSubtraction.root","/eos/uscms/store/user/aperloff/MatrixElement/Summer12ME8TeV/MEInput/SingleMu_Data_19p279fb.root","/uscms_data/d2/aperloff/microSingleMu_Data_19p279fb_completion/microSingleMu_Data_19p279fb_BaseCuts.root","microSingleMu_Data_19p279fb_new/microSingleMu_Data_19p279fb_afterAddition")
+
+
+combineChannels_x -inputElectronChannel /uscms_data/d2/aperloff/Summer12ME8TeV/2014_09_16_ValidationPlots_PU_CSV_TTbar_QCDEta_Scale_TAMUWWMVA/signal/QCD_ElFULL/histos_electron.root -inputMuonChannel /uscms_data/d2/aperloff/Summer12ME8TeV/2014_09_16_ValidationPlots_PU_CSV_TTbar_QCDEta_Scale_TAMUWWMVA/signal/QCD_MuFULL/histos_muon.root -outputFilename /uscms_data/d2/aperloff/Summer12ME8TeV/2014_09_16_ValidationPlots_PU_CSV_TTbar_QCDEta_Scale_TAMUWWMVA/signal/both/simpleCombine/histos_both.root -distribution MVADiscriminator -ntype MicroNtuple
+ProduceLimitsDatacard_x -basepath ./ -variable MVADiscriminator -channelName TwoPlusJets -basepath /uscms_data/d2/aperloff/Summer12ME8TeV/2014_09_16_ValidationPlots_PU_CSV_TTbar_QCDEta_Scale_TAMUWWMVA/signal/both/simpleCombine/
+combine -M Asymptotic --significance histos_MVADiscriminator_both_datacard.txt  -t -1 --expectSignal=1
+
+
+METree->Scan("lLV[0].Pt():TMath::Sign(TMath::Sqrt(TMath::Abs(TMath::Power(lLV[0].Pt()+METLV[0].Pt(),2)-(TMath::Power(lLV[0].Px()+METLV[0].Px(),2)+TMath::Power(lLV[0].Py()+METLV[0].Py(),2)+TMath::Power(0,2)))),TMath::Power(lLV[0].Pt()+METLV[0].Pt(),2)-(TMath::Power(lLV[0].Px()+METLV[0].Px(),2)+TMath::Power(lLV[0].Py()+METLV[0].Py(),2)+TMath::Power(0,2))):jLV[0].DRlj:jLV[1].DRlj:lLV[0].Pt()+Sum$(jLV.Et()):TMath::Sqrt(TMath::Power(jLV[0].Px()+jLV[1].Px()+lLV[0].Px()+METLV[0].Px(),2)+TMath::Power(jLV[0].Py()+jLV[1].Py()+lLV[0].Py()+METLV[0].Py(),2)):dPhiMETJet:dPhiJetJet:CosTheta_l:CosTheta_WH:dRlepjj:jLV[0].Pt():jLV[0].Eta():jLV[0].Phi():jLV[0].Et():jLV[1].Pt():jLV[1].Eta():jLV[1].Phi():jLV[1].Et():KinBDT:MEBDT:event","leptonCat==2&&@jLV.size()==2&&Sum$(jLV.jBtagDiscriminatorCSV>0.4)==0")
+
+
+srun -p interactive -N 1 --mincpus=31 --time=480 --pty --x11=first --mem 6400 matlab
+srun -p interactive -N 1 --time=480 --pty --x11=first bash
+root [6] TProfile* p = new TProfile("p","p",200,0,2000)
+root [7] t->Draw("jtpt/refpt:refpt>>p","TMath::Abs(jteta)<1.3&&refdrjt<0.25")
+jet_correction_analyzer_x -inputFilename /fdata/hepx/store/user/aperloff/JRA_outfiles_53X_20141106_condor/JRA/JRA.root -outputDir ./ -path ../../ -era CSA14_V4_MC -useL2Cor false -useL3Cor true -algs ak5pfchsl1l2l3 -MCPUReWeighting ../../../53X/pileup14_RD_March13_finebin.root -DataPUReWeighting ../../../53X/pileup12_jt400.root
+
+
+plotter_x -lep electron -cutRegion signal -outDir ./ -ntype MicroNtuple -QCDweight true -doCSVrewt true -doTTbarrewt true -PtWeight false -MVAMethods BDT -MVAWeightDir $CMSSW_BASE/src/TAMUWW/MVA/bin/2014_11_02_TMVA_output_jets2_eq0tag_both_HToWW_WJets_noEvtProbs_11KinVar/TMVAClassification_BDT.weights.xml -maxEvts 10 -tcat eq0tag -jBin jets2 -MVAVars leptonPt lepMT jet1dRLep jet2dRLep ht Ptlnujj dRlepjj dPhiMETJet dPhiJetJet CosTheta_l CosTheta_WH -MVASpec csvWeight_lep ttbarWeight puWeight_lep
+plotter_x -lep electron -cutRegion signal -outDir ./ -ntype MicroNtuple -QCDweight true -doCSVrewt true -doTTbarrewt true -PtWeight false -MVAMethods BDT -MVAWeightDir ~jdg6y/WeightFiles_forAlexx/TMVA_HWWtoWjets_2Jets_2j0B_11_Max4_BDT.weights.xml -maxEvts 100 -tcat eq0tag -jBin jets2 -MVAVars leptonPt lepMT jet1dRLep jet2dRLep ht Ptlnujj dRlepjj dPhiMETJet dPhiJetJet CosTheta_l CosTheta_WH -MVASpec csvWeight_lep ttbarWeight puWeight_lep
+
+
+
+ /uscms/home/jdg6y/WeightFiles_forAlexx/DataCards_wSystematics
+
+
+Jets1/electron/
+p2toInf
+p2top7
+p3toInf
+p3top7
+
+Jets1/muon/
+p2to2
+p2toInf
+p3to2
+p3toInf
+
+
+ln -s ../histos_electron.root p2toInf/QCDWeighting_rebinMET20_rebinEta2/histos_electron.root
+ln -s ../histos_electron.root p2top7/QCDWeighting_rebinMET20_rebinEta2/histos_electron.root
+ln -s ../histos_electron.root p3toInf/QCDWeighting_rebinMET20_rebinEta2/histos_electron.root
+ln -s ../histos_electron.root p3top7/QCDWeighting_rebinMET20_rebinEta2/histos_electron.root
+
+ln -s ../histos_muon.root p2to2/QCDWeighting_rebinMET20_rebinEta2/histos_muon.root
+ln -s ../histos_muon.root p2toInf/QCDWeighting_rebinMET20_rebinEta2/histos_muon.root
+ln -s ../histos_muon.root p3to2/QCDWeighting_rebinMET20_rebinEta2/histos_muon.root
+ln -s ../histos_muon.root p3toInf/QCDWeighting_rebinMET20_rebinEta2/histos_muon.root
+
+
+root
+.L $CMSSW_BASE/src/TAMUWW/Tools/QCD_EtaDependent_MetFit_Minuit.C+
+QCD_EtaDependent_MetFit_Minuit("electron",true)
+
+
+
+/uscms/home/jstupak/Vh/Wh/CMSSW_5_3_6/src/VHbb/post/automation/addStatShapes.py
+
+
+iambatman
+Ricardo Grid Password: cert
+
+
+Joey
+Full (with sys)
+-- Profile Likelihood -- 
+Significance: 0.436482
+(p-value = 0.331243)
+Stats only
+Significance: 0.920968
+(p-value = 0.178534)
+
+
+exclusion: p(b|s+b)<<1
+significance: p(S+B|B)<<1
+
+
+
+
+Make scripts
+CreateCondorScript_runME_x -inputmode " " -scriptDir ./ -rootInputDir $EOS/MatrixElement/Summer12ME8TeV/MEInput/ -nEventsPerJob 100 -verbose true -processes WJets_matchingdown:::WJets_matchingup:::WJets_scaledown:::WJets_scaleup:::WW:::WJets
+CreateCondorScript_runME_x -inputmode " " -scriptDir ./ -rootInputDir $EOS/MatrixElement/Summer12ME8TeV/MEInput/ -nEventsPerJob 150 -verbose true -processes TTbar_JESUp TTbar_JESDown
+Check output and make cleanup scripts
+CreateCondorScript_runME_x -inputmode " " -scriptDir ./ -rootInputDir $EOS/MatrixElement/Summer12ME8TeV/MEInput/ -nEventsPerJob 100 -verbose true -processes WJets_matchingdown -checkCompletedJobsInstead true -completedOutputDir WJets_matchingdown -createCompletionScripts true
+CreateCondorScript_runME_x -inputmode " " -scriptDir ./ -rootInputDir $EOS/MatrixElement/Summer12ME8TeV/MEInput/ -nEventsPerJob 100 -verbose true -processes WJets_matchingup -checkCompletedJobsInstead true -completedOutputDir WJets_matchingup -createCompletionScripts true
+CreateCondorScript_runME_x -inputmode " " -scriptDir ./ -rootInputDir $EOS/MatrixElement/Summer12ME8TeV/MEInput/ -nEventsPerJob 100 -verbose true -processes WJets_scaledown -checkCompletedJobsInstead true -completedOutputDir WJets_scaledown -createCompletionScripts true
+CreateCondorScript_runME_x -inputmode " " -scriptDir ./ -rootInputDir $EOS/MatrixElement/Summer12ME8TeV/MEInput/ -nEventsPerJob 100 -verbose true -processes WJets_scaleup -checkCompletedJobsInstead true -completedOutputDir WJets_scaleup -createCompletionScripts true
+CreateCondorScript_runME_x -inputmode " " -scriptDir ./ -rootInputDir $EOS/MatrixElement/Summer12ME8TeV/MEInput/ -nEventsPerJob 100 -verbose true -processes WJets_JESDown -checkCompletedJobsInstead true -completedOutputDir WJets_JESDown -createCompletionScripts true
+CreateCondorScript_runME_x -inputmode " " -scriptDir ./ -rootInputDir $EOS/MatrixElement/Summer12ME8TeV/MEInput/ -nEventsPerJob 100 -verbose true -processes WJets_JESUp -checkCompletedJobsInstead true -completedOutputDir WJets_JESUp -createCompletionScripts true
+CreateCondorScript_runME_x -inputmode " " -scriptDir ./ -rootInputDir $EOS/MatrixElement/Summer12ME8TeV/MEInput/ -nEventsPerJob 100 -verbose true -processes WW_JESDown -checkCompletedJobsInstead true -completedOutputDir WW_JESDown -createCompletionScripts true
+CreateCondorScript_runME_x -inputmode " " -scriptDir ./ -rootInputDir $EOS/MatrixElement/Summer12ME8TeV/MEInput/ -nEventsPerJob 100 -verbose true -processes WW_JESUp -checkCompletedJobsInstead true -completedOutputDir WW_JESUp -createCompletionScripts true
+CreateCondorScript_runME_x -inputmode " " -scriptDir ./ -rootInputDir $EOS/MatrixElement/Summer12ME8TeV/MEInput/ -nEventsPerJob 150 -verbose true -processes TTbar_JESDown -checkCompletedJobsInstead true -completedOutputDir TTbar_JESDown -createCompletionScripts true
+CreateCondorScript_runME_x -inputmode " " -scriptDir ./ -rootInputDir $EOS/MatrixElement/Summer12ME8TeV/MEInput/ -nEventsPerJob 150 -verbose true -processes TTbar_JESUp -checkCompletedJobsInstead true -completedOutputDir TTbar_JESUp -createCompletionScripts true
+Transfer files
+python $CMSSW_BASE/src/TAMUWW/Selection/test/CRABTools/movefiles.py T1_US_FNAL_LPC /uscms_data/d2/aperloff/Summer12ME8TeV/MEResults/2015_06_05_microNtuples_optimized/tmp2/WJets_matchingup/ T1_US_FNAL_EOS MatrixElement/Summer12ME8TeV/MEResults/rootOutput/WJets_matchingup/ -x
+python $CMSSW_BASE/src/TAMUWW/Selection/test/CRABTools/movefiles.py T1_US_FNAL_LPC /uscms_data/d2/aperloff/Summer12ME8TeV/MEResults/2015_06_05_microNtuples_optimized/tmp2/WJets_scaledown/ T1_US_FNAL_EOS MatrixElement/Summer12ME8TeV/MEResults/rootOutput/WJets_scaledown/ -x
+python $CMSSW_BASE/src/TAMUWW/Selection/test/CRABTools/movefiles.py T1_US_FNAL_LPC /uscms_data/d2/aperloff/Summer12ME8TeV/MEResults/2015_06_05_microNtuples_optimized/tmp2/WJets_scaleup/ T1_US_FNAL_EOS MatrixElement/Summer12ME8TeV/MEResults/rootOutput/WJets_scaleup/ -x
+python $CMSSW_BASE/src/TAMUWW/Selection/test/CRABTools/movefiles.py T1_US_FNAL_LPC /uscms_data/d2/aperloff/Summer12ME8TeV/MEResults/2015_06_05_microNtuples_optimized/tmp2/WJets_JESDown/ T1_US_FNAL_EOS MatrixElement/Summer12ME8TeV/MEResults/rootOutput/WJets_JESDown/ -x
+python $CMSSW_BASE/src/TAMUWW/Selection/test/CRABTools/movefiles.py T1_US_FNAL_LPC /uscms_data/d2/aperloff/Summer12ME8TeV/MEResults/2015_06_05_microNtuples_optimized/tmp2/WJets_JESUp/ T1_US_FNAL_EOS MatrixElement/Summer12ME8TeV/MEResults/rootOutput/WJets_JESUp/ -x
+
+
+synched:
+WJets_matchingdown
+WJets_matchingup
+WJets_scaledown
+WJets_scaleup
+WJets_JESDown
+WJets_JESUp
+WW_JESDown
+WW_JESUp
+TTbar_JESDown
+TTbar_JESUp
+
+hadd:
+emacs -nw $CMSSW_BASE/src/TAMUWW/Selection/test/CRABTools/hadd.py
+python TAMUWW/Selection/test/CRABTools/hadd.py
+
+microNtuple:
+WJets_matchingdown
+WJets_matchingup
+WJets_scaledown
+WJets_scaleup
+
+
+
+
+
+
+
+PS->cd()
+jet1->Draw("TMath::ACos(TMath::Cos(METLV[0].Phi()-jLV[0].Phi()))","Entry$<10000&&lLV[0].lpfIso>0.3&&lLV[0].lpfIso<0.7&&jLV[0].Pt()>30&&METLV[0].Pt()>25&&lLV[0].Pt()>30&&jLV[0].jBtagDiscriminatorCSV<0.4")
+htemp->SetLineColor(kRed)
+jet1->Draw("TMath::ACos(TMath::Cos(METLV[0].Phi()-lLV[0].Phi()))","Entry$<10000&&lLV[0].lpfIso>0.3&&lLV[0].lpfIso<0.7&&jLV[0].Pt()>30&&METLV[0].Pt()>25&&lLV[0].Pt()>30&&jLV[0].jBtagDiscriminatorCSV<0.4")
+htemp->SetLineColor(kGreen)
+jet1->Draw("TMath::ACos(TMath::Cos(lLV[0].Phi()-jLV[0].Phi()))","Entry$<10000&&lLV[0].lpfIso>0.3&&lLV[0].lpfIso<0.7&&jLV[0].Pt()>30&&METLV[0].Pt()>25&&lLV[0].Pt()>30&&jLV[0].jBtagDiscriminatorCSV<0.4")
+htemp->SetLineColor(kBlue)
+
+
+
+
+find . -type f -print0 | xargs -0 sed -i 's/EventNtuple/MicroNtuple/g'
+find ./ -type f -name "*.sh" -print0 | xargs -0 sed -i 's/eq0tag/eq1tag/g'
+rsync -avrh --progress --include="*.png" --exclude="#*" --exclude="*.C" --exclude="*.pdf" --exclude="*.root" --exclude="*.jdl" --exclude="*.sh" --exclude="*.txt~" --exclude="*.jdl~" --exclude="*.sh~" --exclude="*.stderr" --exclude="*.stdout" --exclude="*.condor" --exclude="*.txt" ~/nobackup/Summer12ME8TeV/2015_04_27_LimitHistograms_PU_CSV_TTbar_QCDEta_Scale/ aperloff@io.physics.tamu.edu:/home/users/aperloff/public_html/CMS_MatrixElement/2015_04_27_LimitHistograms_PU_CSV_TTbar_QCDEta_Scale/
+rsync -avrh --progress --exclude="#*" --exclude="*.C" --exclude="*.png" --exclude="*.root" --exclude="*.jdl" --exclude="*.sh" --exclude="*.txt~" --exclude="*.jdl~" --exclude="*.sh~" --exclude="*.stderr" --exclude="*.stdout" --exclude="*.condor" --exclude="*.txt" aperloff@cmslpc-sl5.fnal.gov:/uscms_data/d2/aperloff/Summer12ME8TeV/2015_04_27_LimitHistograms_PU_CSV_TTbar_QCDEta_Scale/nominal ./
+
+produce all templates
+formatLimitHistogramFile.py
+getRateSystenatics.py
+ProduceLimitsDatacard.py
+runDatacards_saveOutput_moveFiles.py
+  CL: python ../runDatacards_saveOutput_moveFiles.py -c -r -s -o -l -p -m
+  Sig: python ../runDatacards_saveOutput_moveFiles.py -c -r -s -sig -o -l
+       python ../runDatacards_saveOutput_moveFiles.py -r -s -sig -o -l
+
+
+wget --no-check-certificate --output-document=JetHT_cff.py "https://cmsweb.cern.ch/das/makepy?dataset=/JetHT/Run2015D-PromptReco-v4/MINIAOD&instance=prod/global"
+
+
+
+
+
+conddb --db Summer15_V1_DATA.db list JetCorrectorParametersCollection_Summer15_V1_DATA_AK8PFPuppi
+conddb --db Summer15_V1_DATA.db search Jet
+conddb --db Summer15_V1_DATA.db search JetCorrectorParametersCollection_Summer15_V1_DATA_AK
+
+
+  160 18:02 cmsrel CMSSW_7_5_X_2015-09-01-1100
+   161  18:02 cd CMSSW_7_5_X_2015-09-01-1100/src/
+   162  18:02 cmsenv
+   163  18:03 wget http://people.physics.tamu.edu/aperloff/CMS_JEC/Summer15_50nsV5/Summer15_50nsV5_DATA.db
+   164  18:03 sqlite3 Summer15_50nsV5_DATA.db
+   166  18:04 conddb --db Summer15_50nsV5_DATA.db dump JetCorrectorParametersCollection_Summer15_50nsV5_DATA_AK4PF
+
+
+To use next time we are uploading to data
+{
+    "destinationDatabase": "oracle://cms_orcon_prod/CMS_COND_31X_PHYSICSTOOLS",
+    "destinationTags": {
+        "JetCorrectorParametersCollection_Summer15_V2_DATA_AK4PF": {
+            "dependencies": {JetCorrectorParametersCollection_Summer15_V1_DATA_AK4PF},
+            "synchronizeTo": "express"
+        }
+    },
+    "inputTag": "JetCorrectorParametersCollection_Summer15_V2_DATA_AK8PF.txt",
+    "since": null,
+    "userText": ""
+}
+
+
+
+
+scram tool list
+
+
+combine -M MaxLikelihoodFit DataCard_electron_TwoJ0B_MET_SumMC.txt --expectSignal=1 -S 1 -m 125 --saveShapes --plots
+combine -M HybridNew --rule CLs --testStat LHC DataCard_electron_TwoJ0B_MET.txt --expectSignal=1 -S 1 -m 125 -H ProfileLikelihood --fork 20 -s -1 -T 100
+
+plotter_from_file_x -ifilename /uscms_data/d2/aperloff/YOURWORKINGAREA/MatrixElement/gitty/CMSSW_7_1_5/src/datacards/testRemovalOfSys/mlfit.root -idirname shapes_prefit/TwoJ0B -ofilepath ./ -suffix _prefit -lep electron -include_data true -include_systematics false -alternateDataFile /uscms_data/d2/aperloff/Summer12ME8TeV/2015_04_27_LimitHistograms_PU_CSV_TTbar_QCDEta_Scale/nominal/Jets2/electron/histos_electron.root
+plotter_from_file_x -ifilename /uscms_data/d2/aperloff/YOURWORKINGAREA/MatrixElement/gitty/CMSSW_7_1_5/src/datacards/testRemovalOfSys/mlfit.root -idirname shapes_fit_b/TwoJ0B -ofilepath ./ -suffix _fit_b -lep electron -include_data true -include_systematics false -alternateDataFile /uscms_data/d2/aperloff/Summer12ME8TeV/2015_04_27_LimitHistograms_PU_CSV_TTbar_QCDEta_Scale/nominal/Jets2/electron/histos_electron.root
+plotter_from_file_x -ifilename /uscms_data/d2/aperloff/YOURWORKINGAREA/MatrixElement/gitty/CMSSW_7_1_5/src/datacards/testRemovalOfSys/mlfit.root -idirname shapes_fit_s/TwoJ0B -ofilepath ./ -suffix _fit_s -lep electron -include_data true -include_systematics false -alternateDataFile /uscms_data/d2/aperloff/Summer12ME8TeV/2015_04_27_LimitHistograms_PU_CSV_TTbar_QCDEta_Scale/nominal/Jets2/electron/histos_electron.root
+plotter_from_file_x -ifilename histos_electron.root -ofilepath tmp/ -lep electron -include_data true -include_systematics false
+
+
+
+((THStack*)KinMEBDT->GetPad(1)->GetPrimitive("KinMEBDT_electron_stackMC"))->GetHists()->FindObject("KinMEBDT_WJets_electron_clone")
+
+
+gSystem->Load("$CMSSW_BASE/lib/slc6_amd64_gcc491/libJetMETAnalysisJetUtilities.so")
+.L $CMSSW_BASE/src/JetMETAnalysis/JetUtilities/interface/ObjectLoader.h
+TDirectory* idir = _file0->GetDirectory("ak4pfl2l3")
+ObjectLoader<TH1F> hl
+hl.load_objects(idir,"RelRsp:JetEta:RefPt")
+hl.print()
+cout << hl.quantity() << endl;
+hl.nvariables()
+cout << hl.variable(0) << endl;
+cout << hl.variable(1) << endl;
+
+gSystem->Load("$CMSSW_BASE/lib/slc6_amd64_gcc491/libJetMETAnalysisJetUtilities.so")
+.L $CMSSW_BASE/src/JetMETAnalysis/JetUtilities/interface/ObjectLoader.h
+TDirectory* idir = _file0->GetDirectory("ak4pfl1l2l3")
+ObjectLoader<TH1F> hl
+hl.load_objects(idir,"RelRsp:JetEta:RefPt")
+hl.print()
+
+root $EOS/MatrixElement/Summer12ME8TeV/MEResults/2015_07_23_microNtuples_optimized_BDT/rootFiles/microWW_BaseCuts.root
+EventNtuple* ntuple = new EventNtuple()
+METree->SetBranchAddress("EvtTree",&ntuple)
+METree->GetEntry(0)
+ntuple->printDecayInformation(2212,1,10)
+
+elcnt_prim>=1
+mucnt_Loose==0
+elcnt_Loose==1
+
+
+elcnt_prim>=2
+mucnt_Loose==0
+elcnt_Loose==2
+
+
+cmslpc-help@fnal.gov
+
+
+AK4PFPuppiL1L2L3->cd()
+gSystem->Load("$CMSSW_BASE/lib/slc6_amd64_gcc491/libAnalysisJMEDAS.so")
+.L $CMSSW_BASE/src/Analysis/JMEDAS/interface/jmedas_pileupNtuple.h
+TTree* mytree = t
+pileupNtuple ntuple(mytree, false);
+ntuple.printJEC()
+ntuple.printJEC(9)
+ntuple.printJEC(9,3)
+
+
+combineCards.py Name1=DataCard_electron_TwoJ0B_KinMEBDT.txt Name2=DataCard_electron_ThreeJ0B_KinMEBDT.txt Name3=DataCard_electron_FourJ0B_KinMEBDT.txt Name4=DataCard_muon_TwoJ0B_KinMEBDT.txt Name5=DataCard_muon_ThreeJ0B_KinMEBDT.txt Name6=DataCard_muon_FourJ0B_KinMEBDT.txt > DataCard_CombinedLepton_CombinedJet_KinMEBDT.txt
+ -- Asymptotic --
+Observed Limit: r < 106.4387
+Expected  2.5%: r < 0.0004
+Expected 16.0%: r < 5.4521
+Expected 50.0%: r < 7.0312
+Expected 84.0%: r < 14.1501
+Expected 97.5%: r < 21.3245
+
+
+
+../commentLines.py DataCard_CombinedLepton_CombinedJet_KinMEBDT.txt DataCard_CombinedLepton_CombinedJet_KinMEBDT_commented.txt --comment CMS_hww_lnujj_statError_TwoJ0B_KinMEBDT_QCD_MuFULL_muon_bin_29 CMS_hww_lnujj_statError_TwoJ0B_KinMEBDT_QCD_MuFULL_muon_bin_30 CMS_hww_lnujj_statError_TwoJ0B_KinMEBDT_QCD_MuFULL_muon_bin_37 CMS_hww_lnujj_statError_TwoJ0B_KinMEBDT_WJets_muon_bin_37 CMS_hww_lnujj_statError_TwoJ0B_KinMEBDT_ZJets_electron_bin_27 CMS_hww_lnujj_statError_TwoJ0B_KinMEBDT_ZJets_muon_bin_30 CMS_hww_lnujj_statError_TwoJ0B_KinMEBDT_ZJets_muon_bin_29 CMS_hww_lnujj_statError_TwoJ0B_KinMEBDT_ZJets_muon_bin_37
+
+
+
+[aperloff@cmslpc36 datacards]$ python runDatacards_saveOutput_moveFiles.py -m -o -r -s
+
+
+edmPluginHelp -q -m PoolOutputModule
+
+
+
+
+
+nohup ConvertZllJetsToWlnuJets_x -iProcessName ZJetsToLL_M10To50 -oProcessName WlnuJets -suffix _M-10To50_HighPtLeptonKept65_SmearedMET_realphi04 -oFilePath /uscms_data/d2/aperloff/ -probIndex1 0.65 -METResMethod real+phi -METPhiResolution 0.4 -doMove false > & out_convert_04-1.txt &
+nohup ConvertZllJetsToWlnuJets_x -iProcessName ZJetsToLL_M50 -oProcessName WlnuJets -suffix _M-50_HighPtLeptonKept65_SmearedMET_realphi04 -oFilePath /uscms_data/d2/aperloff/ -probIndex1 0.65 -METResMethod real+phi -METPhiResolution 0.4 -doMove false > & out_convert_04-2.txt &
+
+nohup ConvertZllJetsToWlnuJets_x -iProcessName ZJetsToLL_M10To50 -oProcessName WlnuJets -suffix _M-10To50_HighPtLeptonKept62_SmearedMET_real -oFilePath /uscms_data/d2/aperloff/ -probIndex1 0.62 -METResMethod real -doMove false > & out_convert-1.txt &
+nohup ConvertZllJetsToWlnuJets_x -iProcessName ZJetsToLL_M50 -oProcessName WlnuJets -suffix _M-50_HighPtLeptonKept62_SmearedMET_real -oFilePath /uscms_data/d2/aperloff/ -probIndex1 0.62 -METResMethod real -doMove false > & out_convert-2.txt &
+
+nohup plotter_x -lep electron -jBin jets2 -tcat eq0tag -cutRegion signal -outDir ./ -ntype EventNtuple -QCDweight true -doCSVrewt true -doTTbarrewt true -PtWeight false -CosThetaLweight true -ZllDeltaPhiWeight true -limitBranches -1 -fillLimitTemplatesOnly false -include_data false -include_systematics false -debug true -signalTitle W+Jets -fillGen true >& plotter_0.stdout &
+nohup plotter_x -lep electron -jBin jets2 -tcat eq0tag -cutRegion signal -outDir ./ -ntype EventNtuple -QCDweight true -doCSVrewt true -doTTbarrewt true -PtWeight false -CosThetaLweight true -ZllDeltaPhiWeight true -ZllGenNeutrinoPtWeight true -limitBranches -1 -fillLimitTemplatesOnly false -include_data false -include_systematics false -debug true -signalTitle W+Jets -fillGen true >& plotter_0.stdout &
+nohup plotter_x -lep electron -jBin jets2 -tcat eq0tag -cutRegion signal -outDir ./ -ntype MicroNtuple -QCDweight true -doCSVrewt true -doTTbarrewt true -PtWeight false -CosThetaLweight true -ZllDeltaPhiWeight true -ZllEventProbWeight true -limitBranches -1 -fillLimitTemplatesOnly false -include_data false -include_systematics false -debug true -signalTitle W+Jets -fillGen true >& plotter_0.stdout &
+
+
+.L $CMSSW_BASE/src/TAMUWW/Tools/macros/draw_all_hist.C
+draw_all_hist("LeptPt_","WJets_*",true,true,true,true)
+draw_all_hist("MET_","WJets_*",true,true,true,true)
+draw_all_hist("WmT_","WJets_*",true,true,true,true)
+draw_all_hist("Ptjj_","WJets_*",true,true,true,true)
+draw_all_hist("Jet1Pt_","WJets_*",true,true,true,true)
+draw_all_hist("Jet2Pt_","WJets_*",true,true,true,true)
+draw_all_hist("Ptlv_","WJets_*",true,true,true,true)
+draw_all_hist("Mlv_","WJets_*",true,true,true,true)
+draw_all_hist("Mlvjj_","WJets_*",true,true,true,true)
+draw_all_hist("LeptPhi_","WJets_*",true,false,false,true,-TMath::Pi(),TMath::Pi())
+draw_all_hist("LeptEta_","WJets_*",true,false,false,true,-TMath::Pi(),TMath::Pi())
+draw_all_hist("Jet1Eta_","WJets_*",true,false,false,true,-TMath::Pi(),TMath::Pi())
+draw_all_hist("Jet1Phi_","WJets_*",true,false,false,true,-TMath::Pi(),TMath::Pi())
+draw_all_hist("DeltaPhi_LMET_","WJets_*",true,false,false,true,-TMath::Pi(),TMath::Pi())
+save_all_canvases("./",".png")
+save_all_canvases("./",".eps")
+rsync -avrh --progress --exclude="*_electron.png" --exclude="*_electron.pdf" --exclude="*_electron.eps" --exclude="*.root" --exclude="*.stdout" ./* aperloff@io.physics.tamu.edu:/home/users/aperloff/public_html/CMS_MatrixElement/CompareConvertedZllJetsToWJets/jets2/electron/
+rsync -avrh --progress --exclude="#*" --exclude="*.C" --exclude="*.eps" --exclude="*_electron.png" --exclude="*_muon.png" --exclude="*.root" --exclude="*.jdl" --exclude="*.sh" --exclude="*.txt~" --exclude="*.jdl~" --exclude="*.sh~" --exclude="*.stderr" --exclude="*.stdout" --exclude="*.condor" --exclude="*.txt" ./ aperloff@io.physics.tamu.edu:/home/users/aperloff/public_html/CMS_MatrixElement/CompareConvertedZllJetsToWJets/HighPtLeptonKept050mu061el/
+
+root $MEInput/WJets.root $MEInput/DYJets.root $MEInput/DYJetsToLL.root
+_file0->cd("PS")
+TH1D* wjets = new TH1D("wjets_njets","njets",20,0,20)
+jets2p->Draw("@jLV.size()>>wjets_njets","METLV[0].Pt()>=25&&jLV[0].Pt()>=30&&jLV[1].Pt()>=25&&((lLV[0].leptonCat==1 && lLV[0].Pt()>30)||(lLV[0].leptonCat==2 && lLV[0].Pt()>25))")
+_file1->cd("PS")
+TH1D* zjets = new TH1D("zjets_njets","njets",20,0,20)
+jets2p->Draw("@jLV.size()>>zjets_njets","METLV[0].Pt()>=25&&jLV[0].Pt()>=30&&jLV[1].Pt()>=25&&((lLV[0].leptonCat==1 && lLV[0].(Long64_t)213800].leptonCat==2 && lLV[0].Pt()>25))")
+_file2->cd("PS")
+TH1D* zjetsll = new TH1D("zjetsll_njets","njets",20,0,20)
+jets2p->Draw("@jLV.size()>>zjetsll_njets","METLV[0].Pt()>=25&&jLV[0].Pt()>=30&&jLV[1].Pt()>=25&&((lLV[0].leptonCat==1 && lLV[0(Long64_t)82122V[0].leptonCat==2 && lLV[0].Pt()>25))")
+wjets->SetLineColor(kGreen)
+zjets->SetLineColor(kBlue)
+zjetsll->SetLineColor(kRed)
+wjets->SetMarkerColor(kGreen)
+zjets->SetMarkerColor(kBlue)
+zjetsll->SetMarkerColor(kRed)
+double wjint = wjets->Integral()
+double zjint = zjets->Integral()
+double zjllint = zjetsll->Integral()
+zjets->Scale(wjint/zjint)
+zjetsll->Scale(wjint/zjllint)
+wjets->GetXaxis()->SetTitle("njets")
+wjets->GetXaxis()->SetRangeUser(2,10)
+wjets->Draw("e")
+zjets->Draw("esame")
+zjetsll->Draw("esame")
+
+
+
+PS->cd()
+EventNtuple* ntuple = new EventNtuple()
+jets2p->SetBranchAddress("EvtNtuple", &ntuple)
+jets2p->GetEntry(0)
+TLorentzVector v = ntuple->getGenVorDaughter(EventNtuple::LEPTON,true)
+v.Pt()
+v.Eta()
+v.Phi()
+v.E()
+
+root 
+TH1D* WJets = new TH1D("WJets","LeptPt (GEN)",200,0,1000)
+TH1D* WlnuJets = new TH1D("WlnuJets","LeptPt (GEN)",200,0,1000)
+WJets->Sumw2()
+WlnuJets->Sumw2()
+WJets->SetLineColor(kGreen)
+WlnuJets->SetLineColor(kRed)
+TLorentzVector lepton
+int *pdgid = new int(0)
+TFile* _file0 = TFile::Open("$SMEInput/WJets_GEN.root","READ")
+TFile* _file1 = TFile::Open("/uscms_data/d2/aperloff/WlnuJets_M-50_GEN35.root","READ")
+_file0->cd("PS")
+EventNtuple* ntuple = new EventNtuple()
+jets2p->SetBranchAddress("EvtNtuple", &ntuple)
+for(unsigned int ientry=0; ientry<jets2p->GetEntries(); ientry++) {if(ientry%100000==0){cout << "\tDoing entry " << ientry << endl;} jets2p->GetEntry(ientry); lepton = ntuple->getGenVorDaughter(EventNtuple::LEPTON, 24, pdgid, false); if(lepton.Pt()<28 || abs(lepton.Eta())>2.0 || abs(*pdgid)!=11){continue;} WJets->Fill(lepton.Pt());}
+_file1->cd("PS")
+jets2p->SetBranchAddress("EvtNtuple", &ntuple)
+for(unsigned int ientry=0; ientry<jets2p->GetEntries(); ientry++) {if(ientry%100000==0){cout << "\tDoing entry " << ientry << endl;} jets2p->GetEntry(ientry); lepton = ntuple->getGenVorDaughter(EventNtuple::LEPTON, 24, pdgid, false); if(lepton.Pt()<28 || abs(lepton.Eta())>2.0 || abs(*pdgid)!=11){continue;} WlnuJets->Fill(lepton.Pt());}
+double wjint = WJets->Integral()
+double wlnujint = WlnuJets->Integral()
+WlnuJets->Scale(wjint/wlnujint)
+WJets->Draw()
+WlnuJets->Draw("same")
+
+
+//
+// Test the percentage of time that the lepton pT is greater than the MET pT (2 jets, electron)
+//
+// Before converted to a W+Jets topology (i.e. still in a ZToLL+Jets topology)
+// If keep leading lepton
+jets2p->Draw("(80.398/91.1876)*lLV[0].Pt()>=sqrt(pow(METLV[0].Px()+((80.398/91.1876)*lLV[1].Px()),2)+pow(METLV[0].Py()+((80.398/91.1876)*lLV[1].Py()),2))","lLV[0].leptonCat==2&&lLV[1].leptonCat==2&&@jLV.size()==2&&(80.398/91.1876)*jLV[0].Pt()>30&&(80.398/91.1876)*jLV[1].Pt()>25&&(80.398/91.1876)*lLV[0].Pt()>30&&(sqrt(pow(METLV[0].Px()+((80.398/91.1876)*lLV[1].Px()),2)+pow(METLV[0].Py()+((80.398/91.1876)*lLV[1].Py()),2))>25)")
+// If move leading lepton
+jets2p->Draw("(80.398/91.1876)*lLV[1].Pt()>=sqrt(pow(METLV[0].Px()+((80.398/91.1876)*lLV[0].Px()),2)+pow(METLV[0].Py()+((80.398/91.1876)*lLV[0].Py()),2))","lLV[0].leptonCat==2&&lLV[1].leptonCat==2&&@jLV.size()==2&&(80.398/91.1876)*jLV[0].Pt()>30&&(80.398/91.1876)*jLV[1].Pt()>25&&(80.398/91.1876)*lLV[1].Pt()>30&&(sqrt(pow(METLV[0].Px()+((80.398/91.1876)*lLV[0].Px()),2)+pow(METLV[0].Py()+((80.398/91.1876)*lLV[0].Py()),2))>25)")
+// After converted to a W+Jets topology
+jets2p->Draw("lLV[0].Pt()>=METLV[0].Pt()","METLV[0].Pt()>25&&lLV[0].Pt()>30&&lLV[0].leptonCat==2&&@jLV.size()==2&&jLV[0].Pt()>30&&jLV[1].Pt()>25")
+
+
+
+root $SMEInput/WJets.root ~/nobackup/WlnuJets_M-50_HighPtLeptonKept65_SmearedMET_real.root ~/nobackup/WlnuJets_M-10To50_HighPtLeptonKept65_SmearedMET_real.root
+_file0->cd("PS")
+TH1D* htemp = new TH1D("htemp","htemp",100,0,6.8)
+htemp->Sumw2()
+jets2p->Draw("TMath::Abs(METLV[0].Phi()-lLV[0].Phi())>>htemp","METLV[0].Pt()>25","goff")
+htemp->SetLineColor(kGreen)
+_file1->cd("PS")
+TH1D* htemp2 = new TH1D("htemp2","htemp2",100,0,6.8)
+htemp2->Sumw2()
+jets2p->Draw("TMath::Abs(METLV[0].Phi()-lLV[0].Phi())>>htemp2","METLV[0].Pt()>25","goff")
+htemp2->SetLineColor(kRed)
+_file2->cd("PS")
+TH1D* htemp3 = new TH1D("htemp3","htemp3",100,0,6.8)
+htemp3->Sumw2()
+jets2p->Draw("TMath::Abs(METLV[0].Phi()-lLV[0].Phi())>>htemp3","METLV[0].Pt()>25","goff")
+htemp2->Add(htemp3)
+double wjint = htemp->Integral()
+double wlnujint = htemp2->Integral()
+htemp2->Scale(wjint/wlnujint)
+htemp->Draw()
+htemp2->Draw("sames")
+htemp->Chi2Test(htemp2,"WW")
+//TFile *_file3 = TFile::Open("root://cmseos.fnal.gov//store/user/aperloff//MatrixElement/Summer12ME8TeV/MEInput//ggH125.root")
+//_file3->cd("PS")
+//jets2p->Draw("TMath::Abs(METLV[0].Phi()-lLV[0].Phi())>>htemp4","","same")
+//htemp4->Scale(wjint/htemp4->Integral())
+new TCanvas()
+c1_n2->SetLogy()
+_file0->cd("PS")
+TH1D* wjtemp = new TH1D("wjtemp","wjtemp",100,10,215)
+wjtemp->Sumw2()
+jets2p->Draw("METLV[0].Pt()>>wjtemp","METLV[0].Pt()<200 && METLV[0].Pt()>25","goff")
+wjtemp->SetLineColor(kGreen)
+_file1->cd("PS")
+TH1D* zlltemp = new TH1D("zlltemp","zlltemp",100,10,215)
+zlltemp->Sumw2()
+jets2p->Draw("METLV[0].Pt()>>zlltemp","METLV[0].Pt()<200 && METLV[0].Pt()>25","goff")
+zlltemp->SetLineColor(kRed)
+_file2->cd("PS")
+TH1D* zlltemp2 = new TH1D("zlltemp2","zlltemp2",100,10,215)
+zlltemp2->Sumw2()
+jets2p->Draw("METLV[0].Pt()>>zlltemp2","METLV[0].Pt()<200 && METLV[0].Pt()>25","goff")
+zlltemp->Add(zlltemp2)
+double wjtempint = wjtemp->Integral()
+double zlltempint = zlltemp->Integral()
+wjtempint
+zlltempint
+zlltemp->Scale(wjtempint/zlltempint)
+wjtemp->Draw()
+zlltemp->Draw("sames")
+
+
+//create METLV mass distribution file
+root $SMEInput/WJets.root
+_file0->cd("PS")
+TH1D* METLV_M = new TH1D("METLV_M","METLV_M",200,-200,200)
+METLV_M->Sumw2()
+jets2p->Draw("METLV[0].M()>>METLV_M")
+METLV_M->Draw()
+c1->SetLogy()
+TFile* ofile = TFile::Open("METLV_M.root","RECREATE")
+ofile->cd()
+METLV_M->Write()
+c1->Write()
+ofile->Close()
+
+
+TFile *_file0 = TFile::Open("/uscms/home/aperloff/nobackup/METLV_M.root")
+METLV_M->Draw()
+METLV_M->SetLineColor(kBlack)
+c1->SetLogy()
+gSystem->Load("../lib/slc6_amd64_gcc493/libFastSimulationUtilities.so")
+.L FastSimulation/Utilities/interface/DoubleCrystalBallGenerator.h
+.L FastSimulation/Utilities/interface/RandomEngineAndDistribution.h
+RandomEngineAndDistribution *r = new RandomEngineAndDistribution()
+TH1D* h=new TH1D("h","h",200,-200,200)
+TH1D* h1=new TH1D("h1","h1",200,-200,200)
+TH1D* h2=new TH1D("h2","h2",200,-200,200)
+h->Sumw2()
+h1->Sumw2()
+h2->Sumw2()
+DoubleCrystalBallGenerator cb
+//double shoot(double mu, double sigma, double aL, double nL, double aR, double nR, const RandomEngineAndDistribution* random)
+for(int i=0;i<1000000;i++){h1->Fill(cb.shoot(-13.4845,6.33968,0.923477,130.012,2.03278,51.9814,r));}
+for(int i=0;i<1000000;i++){h2->Fill(cb.shoot(12.805,6.35106,2.76822,9.44149,1.27451,32.6555,r));}
+h->SetLineColor(kRed)
+h1->SetLineColor(kBlue)
+h2->SetLineColor(kBlack)
+h1->Scale(331297.0/h1->Integral())
+h2->Scale(260853.0/h2->Integral())
+h->Add(h1)
+h->Add(h2)
+h->Scale(METLV_M->Integral()/h->Integral())
+h->Draw("sames")
+h->Chi2Test(METLV_M,"PUUNORM CHI2/NDF")
+h1->Draw("same")
+h2->Draw("same")
+chi2/ndf = 89.6128
+
+.L FastSimulation/Utilities/interface/GaussianTail.h
+GaussianTail gt(1.,2.)
+TH1D* h=new TH1D("h","h",1000,0,10)
+for(int i=0;i<1000000;i++){h->Fill(gt.shoot(r));}
+
+
+//Get fit parameters
+root -n
+.L DSCBFit.C+
+DSCBFit()
+
+There are 2 peak(s)
+peak0: -13
+peak0 height: 36882
+Final Parameters for peak 0:
+  N (par0): 38204.7
+  mu (par1): -13.4845
+  sigma (par2): 6.33968
+  aL (par3): 0.923477
+  nL (par4): 130.012
+  aR (par5): 2.03278
+  nR (par6): 51.9814
+  C (par7): 5.22403
+Chi2/NDF = 2252.16/37 = 60.8693
+peak1: 13
+peak1 height: 30885
+Final Parameters for peak 1:
+  N (par0): 32093.1
+  mu (par1): 12.805
+  sigma (par2): 6.35106
+  aL (par3): 2.76822
+  nL (par4): 9.44149
+  aR (par5): 1.27451
+  nR (par6): 32.6555
+  C (par7): 0.0502612
+Chi2/NDF = 2616.35/92 = 28.4386
+
+METLV_M->Integral(1,100)
+331297
+METLV_M->Integral(101,200)
+260853
+
+METLV_M2:
+gaus
+ FCN=10798.9 FROM MIGRAD    STATUS=CALL LIMIT   1352 CALLS        1353 TOTAL
+                     EDM=0.7324    STRATEGY= 1  ERROR MATRIX UNCERTAINTY  25.9 per cent
+  EXT PARAMETER                APPROXIMATE        STEP         FIRST
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE
+   1  Constant     1.05338e+07   4.56122e+05   5.60026e+05  -1.10312e-04
+   2  Mean        -4.61032e+03   2.61248e+01  -3.26455e+01  -3.84795e+00
+   3  Sigma        1.16477e+03   3.40838e+00   2.52554e-03  -2.51422e+04
+PrevFitTMP->GetChisquare()/PrevFitTMP->GetNDF()
+(const double)5.23710230794607146e+00
+
+gausn(0)+expo(4)
+ FCN=3231.44 FROM MIGRAD    STATUS=CONVERGED     584 CALLS         585 TOTAL
+                     EDM=2.12399e-08    STRATEGY= 1  ERROR MATRIX UNCERTAINTY   2.8 per cent
+  EXT PARAMETER                                   STEP         FIRST
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE
+   1  p0           1.28830e+06   6.12592e+04  -1.31107e+01  -4.69037e-08
+   2  p1          -2.16735e+01   8.36784e+00   1.68332e-03  -1.08324e-04
+   3  p2           2.50937e+02   4.55746e+00  -7.54085e-07   1.29643e-01
+   4  p3           7.39084e+00   3.15569e-02  -1.60574e-06  -5.86592e-02
+   5  p4          -2.80408e-03   2.54647e-05   5.73216e-09  -2.62649e+01
+PrevFitTMP->GetChisquare()/PrevFitTMP->GetNDF()
+(const double)1.56865782279474320e+00
+
+Gaussian CDF
+[2]*0.5*(1+ROOT::Math::erf((-x+[0])/([1]*TMath::Sqrt(2))))
+Gaussian CDF C
+[3]*ROOT::Math::normal_cdf_c(x+[0],[1],[2])
+Exponential CDF C
+[3]*ROOT::Math::exponential_cdf_c(x+[0],[1],[2])
+root [3]  FCN=5343.81 FROM MIGRAD    STATUS=CONVERGED      55 CALLS          56 TOTAL
+                     EDM=6.54483e-08    STRATEGY= 1      ERR MATRIX NOT POS-DEF
+  EXT PARAMETER                APPROXIMATE        STEP         FIRST
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE
+   1  p0          -4.96541e+01   4.73199e+00   1.39208e-02  -1.45253e-04
+   2  p1           3.95619e-03   6.80358e-06   1.62297e-07   1.74947e+01
+   3  p2           4.96541e+01   4.73423e+00   1.39208e-02   1.45253e-04
+   4  p3           6.66684e+03   1.62025e+01   6.74835e-01  -1.35063e-05
+PrevFitTMP->GetChisquare()/PrevFitTMP->GetNDF()
+(const double)4.40544682137323651e+00
+
+[3]*ROOT::Math::exponential_cdf_c(x+[0],[1],[2])+(x>1000)*[7]*ROOT::Math::exponential_pdf(x+[4],[5],[6])
+root [23]  FCN=1791.01 FROM MIGRAD    STATUS=CONVERGED     210 CALLS         211 TOTAL
+                     EDM=1.96652e-12    STRATEGY= 1      ERR MATRIX NOT POS-DEF
+  EXT PARAMETER                APPROXIMATE        STEP         FIRST
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE
+   1  p0          -5.56021e+01   4.29795e+00   7.94693e-03  -1.75675e-06
+   2  p1           4.13745e-03   7.98195e-06   1.01717e-07  -1.46332e-01
+   3  p2           5.56021e+01   4.29899e+00   7.94693e-03   1.75532e-06
+   4  p3           6.61098e+03   1.52381e+01   1.79381e-01   4.00417e-08
+   5  p4          -9.99958e+02   1.52027e+02   8.32361e-04  -3.91023e-08
+   6  p5           1.27623e-03   2.50077e-05   1.85593e-07   2.17765e-02
+   7  p6           4.99997e+01   1.56928e+02   3.37208e-03   2.81513e-08
+   8  p7           2.90200e+04   6.05312e+03   9.26333e+00   7.50051e-10
+PrevFitTMP->GetChisquare()/PrevFitTMP->GetNDF()
+(const double)1.48139975386488287e+00
+
+CrystalBall CDF
+[5]*ROOT::Math::crystalball_cdf_c(x-[0],[1],[2],[3],[4])
+
+
+METLV_M2->Draw()
+METLV_M2->SetLineColor(kBlack)
+METLV_M2->Rebin()
+c1->SetLogx()
+c1->SetLogy()
+TH1D* h=new TH1D("h","h",10000,0,40000)
+h->Sumw2()
+TF1* f = new TF1("f","[3]*ROOT::Math::exponential_cdf_c(x+[0],[1],[2])+(x>1000)*[7]*ROOT::Math::exponential_pdf(x+[4],[5],[6])",0,40000)
+f->SetParameters(-5.56021e+01, 4.13745e-03, 5.56021e+01, 6.61098e+03,-9.99958e+02, 1.27623e-03, 4.99997e+01, 2.90200e+04)
+f->SetNpx(500)
+for(int i=0;i<20000000;i++){h->Fill(f->GetRandom());}
+h->SetLineColor(kRed)
+h->SetMarkerColor(kRed)
+h->Scale(METLV_M2->Integral()/h->Integral())
+h->Draw("sames")
+f->SetLineColor(kBlue)
+f->Draw("same")
+h->Chi2Test(METLV_M2,"PUUNORM CHI2/NDF")
+Chi2 = 4491.736721, Prob = 2.5983e-225, NDF = 1823, igood = 3
+(const Double_t)2.46392579345576657e+00
+
+
+
+.L $CMSSW_BASE/src/TAMUWW/Tools/macros/draw_all_hist.C
+TFile* ifile(0)
+TCanvas* c(0);
+TString lepton = "muon"
+for(int i=40; i<66; i++) {ifile = TFile::Open(Form("HighPtLeptonKept0%i//%s/GenNeutrinoWeight_minGenPt25/histos_%s_jets2.root",i,lepton.Data(),lepton.Data()),"READ"); c=draw_all_hist("LeptPt_","WJets_*",true,true,false,true);cout << "HighPtLeptonPercentage = " << i << "%:" << endl;((TLegend*)c->FindObject("leg_ks"))->Print();((TLegend*)c->FindObject("leg_chi2NDF"))->Print();c=draw_all_hist("MET_","WJets_*",true,true,false,true);save_all_canvases(Form("jets2_HighPtLeptonKept0%i/%s/GenNeutrinoWeight_minGenPt25/",i,lepton.Data()),".png");DestroyCanvases();}
+
+
+
+
+
+root [9] t->Scan("jteta:jtpt:jtjec","run==1&&lumi==39055&&evt==7498369")
+***********************************************************
+*    Row   * Instance *     jteta *      jtpt *     jtjec *
+***********************************************************
+*  2909824 *        0 * -2.008307 * 142.93859 * 1.0424057 *
+*  2909824 *        1 * 2.3066761 * 95.151527 * 1.0562828 *
+*  2909824 *        2 * 0.3415734 * 25.524852 * 1.2197072 *
+*  2909824 *        3 * 0.1302157 * 25.247896 * 1.2456646 *
+***********************************************************
+
+
+
+root [11]  t->Scan("jteta:jtpt:jtjec","run==1&&lumi==39055&&evt==7498369")
+***********************************************************
+*    Row   * Instance *     jteta *      jtpt *     jtjec *
+***********************************************************
+*        0 *        0 * -2.008307 * 147.26585 * 1.0726791 *
+*        0 *        1 * 2.3066761 * 97.056366 * 1.0763021 *
+*        0 *        2 * 0.3415734 * 18.859884 * 0.9585905 *
+*        0 *        3 * 0.1302157 * 19.156173 * 1.0043880 *
+***********************************************************
+
+
+JetCorrectorParameters *L1JetPar;
+JetCorrectorParameters *L1JPTJetPar;
+JetCorrectorParameters *L2JetPar;
+JetCorrectorParameters *L3JetPar;
+vector<JetCorrectorParameters> vPar;
+L1JetPar = new JetCorrectorParameters("Spring16_V1_MC_L1FastJet_AK4Calol1.txt")
+L1JPTJetPar = new JetCorrectorParameters("Spring16_V1_MC_L1JPTOffset_AK4JPTl1.txt")
+L2JetPar = new JetCorrectorParameters("Spring16_V1_MC_L2Relative_AK4JPTl1.txt")
+L3JetPar = new JetCorrectorParameters("Spring16_V1_MC_L3Absolute_AK4JPTl1.txt")
+vPar.push_back(*L1JetPar)
+vPar.push_back(*L1JPTJetPar)
+vPar.push_back(*L2JetPar)
+vPar.push_back(*L3JetPar)
+FactorizedJetCorrector *JetCorrector = new FactorizedJetCorrector(vPar)
+JetCorrector->setJetPt()
+JetCorrector->setJetEta()
+
+
+JetCorrectorParameters *L2JetPar;
+L2JetPar = new JetCorrectorParameters("Spring16_V1_MC_L2Relative_AK4JPTl1.txt")
+vector<JetCorrectorParameters> vPar;
+vPar.push_back(*L2JetPar)
+FactorizedJetCorrector *JetCorrector = new FactorizedJetCorrector(vPar)
+JetCorrector->setJetPt(142.93859)
+JetCorrector->setJetEta(-2.008307)
+JetCorrector->getCorrection()
+
+
+
+
+
+nohup python CRABTools/hadd.py /store/user/aperloff/MatrixElement/SingleElectron/SingleEl_A_ReReco/ /uscms_data/d2/aperloff/SingleEl/ SingleEl_A_ReReco -j 362 -p PS_ &
+nohup python CRABTools/hadd.py /store/user/aperloff/MatrixElement/SingleElectron/SingleEl_A/ /uscms_data/d2/aperloff/SingleEl/ SingleEl_A -j 2316 -p PS_ &
+nohup python CRABTools/hadd.py /store/user/aperloff/MatrixElement/SingleElectron/SingleEl_B_p1/ /uscms_data/d2/aperloff/SingleEl/ SingleEl_B_p1 -j 8199 -p PS_ &
+nohup python CRABTools/hadd.py /store/user/aperloff/MatrixElement/SingleElectron/SingleEl_C_v1/ /uscms_data/d2/aperloff/SingleEl/ SingleEl_C_v1 -j 1578 -p PS_ &
+nohup python CRABTools/hadd.py /store/user/aperloff/MatrixElement/SingleElectron/SingleEl_C_v2_p1/160504_065253/ /uscms_data/d2/aperloff/SingleEl/ SingleEl_C_v2_p1 -p PS_ &
+nohup python CRABTools/hadd.py /store/user/aperloff/MatrixElement/SingleElectron/SingleEl_C_v2_p1/160516_233614/ /uscms_data/d2/aperloff/SingleEl/ SingleEl_C_v2_p1_missingLumis -j 1191 -p PS_ &
+nohup python CRABTools/hadd.py /store/user/aperloff/MatrixElement/SingleElectron/SingleEl_C_v2_p2/ /uscms_data/d2/aperloff/SingleEl/ SingleEl_C_v2_p2 -j 3023 -p PS_ &
+nohup python CRABTools/hadd.py /store/user/aperloff/MatrixElement/SingleElectron/SingleEl_C_v2_p3/ /uscms_data/d2/aperloff/SingleEl/ SingleEl_C_v2_p3 -j 2872 -p PS_ &
+nohup python CRABTools/hadd.py /store/user/aperloff/MatrixElement/SingleElectron/SingleEl_D_v1_p1/ /uscms_data/d2/aperloff/SingleEl/ SingleEl_D_v1_p1 -j 6167 -p PS_ &
+nohup python CRABTools/hadd.py /store/user/aperloff/MatrixElement/SingleElectron/SingleEl_D_v1_p2/ /uscms_data/d2/aperloff/SingleEl/ SingleEl_D_v1_p2 -j 3469 -p PS_ &
+nohup python CRABTools/hadd.py /store/user/aperloff/MatrixElement/SingleElectron/SingleEl_D_v1_p3/ /uscms_data/d2/aperloff/SingleEl/ SingleEl_D_v1_p3 -j 2215 -p PS_ &
+nohup python CRABTools/hadd.py /store/user/aperloff/MatrixElement/SingleElectron/SingleEl_D_v1_p4/ /uscms_data/d2/aperloff/SingleEl/ SingleEl_D_v1_p4 -j 7508 -p PS_ &
+nohup python CRABTools/hadd.py /store/user/aperloff/MatrixElement/SingleElectron/SingleEl_D_v1_p5/ /uscms_data/d2/aperloff/SingleEl/ SingleEl_D_v1_p5 -j 3204 -p PS_ &
+nohup python CRABTools/hadd.py /store/user/aperloff/MatrixElement/SingleElectron/SingleEl_D_v1_p6/ /uscms_data/d2/aperloff/SingleEl/ SingleEl_D_v1_p6 -j 1521 -p PS_ &
+nohup python CRABTools/hadd.py /store/user/aperloff/MatrixElement/SingleElectron/SingleEl_D_v1_p7/ /uscms_data/d2/aperloff/SingleEl/ SingleEl_D_v1_p7 -j 2260 -p PS_ &
+nohup python CRABTools/hadd.py /store/user/aperloff/MatrixElement/SingleElectron/SingleEl_D_v1_p8/ /uscms_data/d2/aperloff/SingleEl/ SingleEl_D_v1_p8 -j 4768 -p PS_ &
+nohup python CRABTools/hadd.py /store/user/aperloff/MatrixElement/SingleMu/SingleMu_A_ReReco/ /uscms_data/d2/aperloff/SingleMu/ SingleMu_A_ReReco -j 336 -p PS_ &
+nohup python CRABTools/hadd.py /store/user/aperloff/MatrixElement/SingleMu/SingleMu_A/ /uscms_data/d2/aperloff/SingleMu/ SingleMu_A -j 2607 -p PS_ &
+nohup python CRABTools/hadd.py /store/user/aperloff/MatrixElement/SingleMu/SingleMu_B_p1/ /uscms_data/d2/aperloff/SingleMu/ SingleMu_B_p1 -j 7511 -p PS_ &
+nohup python CRABTools/hadd.py /store/user/aperloff/MatrixElement/SingleMu/SingleMu_C_v1/ /uscms_data/d2/aperloff/SingleMu/ SingleMu_C_v1 -j 2241 -p PS_ &
+nohup python CRABTools/hadd.py /store/user/aperloff/MatrixElement/SingleMu/SingleMu_C_v2_p1_p1/ /uscms_data/d2/aperloff/SingleMu/ SingleMu_C_v2_p1_p1 -j 8346 -p PS_ &
+nohup python CRABTools/hadd.py /store/user/aperloff/MatrixElement/SingleMu/SingleMu_C_v2_p2/ /uscms_data/d2/aperloff/SingleMu/ SingleMu_C_v2_p2 -j 6335 -p PS_ &
+nohup python CRABTools/hadd.py /store/user/aperloff/MatrixElement/SingleMu/SingleMu_C_v2_p3/ /uscms_data/d2/aperloff/SingleMu/ SingleMu_C_v2_p3 -j 5923 -p PS_ &
+nohup python CRABTools/hadd.py /store/user/aperloff/MatrixElement/SingleMu/SingleMu_D_v1_p1/ /uscms_data/d2/aperloff/SingleMu/ SingleMu_D_v1_p1 -j 6961 -p PS_ &
+nohup python CRABTools/hadd.py /store/user/aperloff/MatrixElement/SingleMu/SingleMu_D_v1_p2/ /uscms_data/d2/aperloff/SingleMu/ SingleMu_D_v1_p2 -j 3548 -p PS_ &
+nohup python CRABTools/hadd.py /store/user/aperloff/MatrixElement/SingleMu/SingleMu_D_v1_p3/ /uscms_data/d2/aperloff/SingleMu/ SingleMu_D_v1_p3 -j 3192 -p PS_ &
+nohup python CRABTools/hadd.py /store/user/aperloff/MatrixElement/SingleMu/SingleMu_D_v1_p4/ /uscms_data/d2/aperloff/SingleMu/ SingleMu_D_v1_p4 -j 3194 -p PS_ &
+nohup python CRABTools/hadd.py /store/user/aperloff/MatrixElement/SingleMu/SingleMu_D_v1_p5/ /uscms_data/d2/aperloff/SingleMu/ SingleMu_D_v1_p5 -j 4934 -p PS_ &
+nohup python CRABTools/hadd.py /store/user/aperloff/MatrixElement/SingleMu/SingleMu_D_v1_p6/ /uscms_data/d2/aperloff/SingleMu/ SingleMu_D_v1_p6 -j 3177 -p PS_ &
+nohup python CRABTools/hadd.py /store/user/aperloff/MatrixElement/SingleMu/SingleMu_D_v1_p7/ /uscms_data/d2/aperloff/SingleMu/ SingleMu_D_v1_p7 -j 2484 -p PS_ &
+nohup python CRABTools/hadd.py /store/user/aperloff/MatrixElement/SingleMu/SingleMu_D_v1_p8/ /uscms_data/d2/aperloff/SingleMu/ SingleMu_D_v1_p8 -j 4941 -p PS_ &
+
+nohup python $CMSSW_BASE/src/TAMUWW/Selection/test/CRABTools/hadd.py /uscms_data/d2/aperloff/SingleMu_WlnuJets/ /uscms_data/d2/aperloff/SingleMu_WlnuJets_partialHadd/ SingleMu_WlnuJets -j 4743 -p SingleMu_WlnuJets &
+nohup python $CMSSW_BASE/src/TAMUWW/Selection/test/CRABTools/hadd.py /uscms_data/d2/aperloff/SingleEl_WlnuJets/ /uscms_data/d2/aperloff/SingleEl_WlnuJets_partialHadd/ SingleEl_WlnuJets -j 1892 -p SingleEl_WlnuJets &
+
+nohup makeMicroNtuple_x -inputPaths /eos/uscms/store/user/aperloff/MatrixElement/Summer12ME8TeV/MEResults/rootOutput/SingleEl_WlnuJets_partialHadd/rootFiles/ -addDir / -outputPath ./ -processes SingleEl_WlnuJets -fillBDT true -debug false -useXROOTD false > microSingleEl_WlnuJets_BaseCuts_0.stdout &
+nohup makeMicroNtuple_x -inputPaths /eos/uscms/store/user/aperloff/MatrixElement/Summer12ME8TeV/MEResults/rootOutput/SingleMu_WlnuJets_partialHadd/rootFiles/ -addDir / -outputPath ./ -processes SingleMu_WlnuJets -fillBDT true -debug false -useXROOTD false > microSingleMu_WlnuJets_BaseCuts_0.stdout &
+
+
+
+
+
+
+python /uscms/home/aperloff/nobackup/YOURWORKINGAREA/MatrixElement/gitty/CMSSW_7_1_5/src/datacards/runDatacards_saveOutput_moveFiles.py -r -e -l -m -o -p --output_path $PWD/statisticsOnly/output/ --input_path $PWD/
+
+
+
+python createRun2016InterleavedDatabase.py --era Spring16_25nsV8All_DATA --BCD ../../JECDatabase/SQLiteFiles/Spring16_25nsV8BCD_DATA.db --E ../../JECDatabase/SQLiteFiles/Spring16_25nsV8E_DATA.db --F ../../JECDatabase/SQLiteFiles/Spring16_25nsV8F_DATA.db --G ../../JECDatabase/SQLiteFiles/Spring16_25nsV8_DATA.db
+conddb --db Spring16_25nsV8All_DATA.db search jet
+conddb --db Spring16_25nsV8All_DATA.db list JetCorrectorParametersCollection_Spring16_25nsV8_DATA_AK8PFPuppi
+
+
+TF1* f = new TF1("f","3*x+1",0,10)
+c1 = new TCanvas("c1","PolyLine3D & PolyMarker3D Window",200,10,500,500);
+TView3D *view = (TView3D*)TView3D::CreateView(1)
+view->SetRange(0,0,0,10,10,40)
+TPolyLine3D *pl3d1 = new TPolyLine3D(5);
+pl3d1->SetPoint(0,1,1,f->Eval(1))
+pl3d1->SetPoint(1,3,1,f->Eval(3))
+pl3d1->SetPoint(2,5,1,f->Eval(5))
+pl3d1->SetPoint(3,7,1,f->Eval(7))
+pl3d1->SetPoint(4,9,1,f->Eval(9))
+TPolyLine3D *pl3d2 = new TPolyLine3D(5);
+pl3d2->SetPoint(0,1,2,f->Eval(1))
+pl3d2->SetPoint(1,3,2,f->Eval(3))
+pl3d2->SetPoint(2,5,2,f->Eval(5))
+pl3d2->SetPoint(3,7,2,f->Eval(7))
+pl3d2->SetPoint(4,9,2,f->Eval(9))
+
+TPolyLine3D *pl3d3 = new TPolyLine3D(5);
+pl3d3->SetPoint(0,1,3,f->Eval(1))
+pl3d3->SetPoint(1,3,3,10)
+pl3d3->SetPoint(2,5,3,11)
+pl3d3->SetPoint(3,7,3,20)
+pl3d3->SetPoint(4,9,3,9)
+
+pl3d1->Draw()
+pl3d2->Draw()
+pl3d3->Draw()
+
+
+
+
+
+
+
+
+
+
+
+
+
+test_jet_corrector_x -nBenchmarkJCP 1000000 -theBenchmark both -ifilename /home/aperloff/JEC/CMSSW_8_0_20/src/JetMETCorrections/JECDatabase/textFiles/Summer16_23Sep2016V1_MC/Summer16_23Sep2016V1_MC_L1FastJet_AK4PFchs.txt
+
+igprof -d -pp -z -o benchmark_1D_20170224/igprof_old.pp.gz test_jet_corrector_x -nBenchmarkJCP 1000000 -theBenchmark old -ifilename /home/aperloff/JEC/CMSSW_8_0_20/src/JetMETCorrections/JECDatabase/textFiles/Summer16_23Sep2016V1_MC/Summer16_23Sep2016V1_MC_L1FastJet_AK4PFchs.txt >& benchmark_1D_20170224/log_macro_old.log
+igprof -d -pp -z -o benchmark_1D_20170224/igprof_new.pp.gz test_jet_corrector_x -nBenchmarkJCP 1000000 -theBenchmark new -ifilename /home/aperloff/JEC/CMSSW_8_0_20/src/JetMETCorrections/JECDatabase/textFiles/Summer16_23Sep2016V1_MC/Summer16_23Sep2016V1_MC_L1FastJet_AK4PFchs.txt >& benchmark_1D_20170224/log_macro_new.log
+igprof-analyse -d -v -g benchmark_1D_20170224/igprof_old.pp.gz >& benchmark_1D_20170224/igreport_old.res
+igprof-analyse -d -v -g benchmark_1D_20170224/igprof_new.pp.gz >& benchmark_1D_20170224/igreport_new.res
+
+test_jetCorrector(old 1M)
+  igprof ticks = 0.44/1000000 = 4.4e-07
+test_jetCorrector(new 1M)
+  igprof ticks = 0.19/1000000 = 1.9e-07
+test_jetCorrector
+  igprof speedup = 2.3
+
+2D
+==
+
+test_jet_corrector_x -nBenchmarkJCP 100 -theBenchmark both -ifilename /home/aperloff/JEC/CMSSW_8_0_20/src/JetMETCorrections/JECDatabase/textFiles/Summer16_23Sep2016V1_MC/Summer16_23Sep2016V1_MC_L2Relative_AK4PFchs.txt
+
+igprof -d -pp -z -o benchmark_2D_20170224/igprof_old.pp.gz test_jet_corrector_x -nBenchmarkJCP 1000000 -theBenchmark old -ifilename /home/aperloff/JEC/CMSSW_8_0_20/src/JetMETCorrections/JECDatabase/textFiles/Summer16_23Sep2016V1_MC/Summer16_23Sep2016V1_MC_L2Relative_AK4PFchs.txt >& benchmark_2D_20170224/log_macro_old.log
+igprof -d -pp -z -o benchmark_2D_20170224/igprof_new.pp.gz test_jet_corrector_x -nBenchmarkJCP 1000000 -theBenchmark new -ifilename /home/aperloff/JEC/CMSSW_8_0_20/src/JetMETCorrections/JECDatabase/textFiles/Summer16_23Sep2016V1_MC/Summer16_23Sep2016V1_MC_L2Relative_AK4PFchs.txt >& benchmark_2D_20170224/log_macro_new.log
+igprof-analyse -d -v -g benchmark_2D_20170224/igprof_old.pp.gz >& benchmark_2D_20170224/igreport_old.res
+igprof-analyse -d -v -g benchmark_2D_20170224/igprof_new.pp.gz >& benchmark_2D_20170224/igreport_new.res
+
+test_jetCorrector(old 1M)
+  igprof ticks = 25.11/1000000 = 2.511e-05
+test_jetCorrector(new 1M)
+  igprof ticks = 0.26/1000000 = 2.6e-07
+test_jetCorrector
+  igprof speedup = 96.6
+
+3D
+==
+
+test_jet_corrector_x -nBenchmarkJCP 100 -theBenchmark both -ifilename /home/aperloff/fdata/JEC/81X_StudyHighPtClosure/beforeL1/THnSparseSpline/THnSparseTest_25nsV1_MC_L1FastJet_ak4pfchs.txt
+
+igprof -d -pp -z -o benchmark_3D_20170224/igprof_old.pp.gz test_jet_corrector_x -nBenchmarkJCP 100000 -theBenchmark old -ifilename /home/aperloff/fdata/JEC/81X_StudyHighPtClosure/beforeL1/THnSparseSpline/THnSparseTest_25nsV1_MC_L1FastJet_ak4pfchs.txt >& benchmark_3D_20170224/log_macro_old.log
+igprof -d -pp -z -o benchmark_3D_20170224/igprof_new.pp.gz test_jet_corrector_x -nBenchmarkJCP 1000000 -theBenchmark new -ifilename /home/aperloff/fdata/JEC/81X_StudyHighPtClosure/beforeL1/THnSparseSpline/THnSparseTest_25nsV1_MC_L1FastJet_ak4pfchs.txt >& benchmark_3D_20170224/log_macro_new.log
+igprof-analyse -d -v -g benchmark_3D_20170224/igprof_old.pp.gz >& benchmark_3D_20170224/igreport_old.res
+igprof-analyse -d -v -g benchmark_3D_20170224/igprof_new.pp.gz >& benchmark_3D_20170224/igreport_new.res
+
+Non-templated and only somewhat variadic (run 10K/100K/1M times):
+  test_jetCorrector(old 100K)
+  igprof ticks = 336.09/100000 = 3.3609e-03
+test_jetCorrector(new)
+  igprof ticks = 0.28/1000000 = 2.8e-07
+test_jetCorrector
+  igprof speedup = 12003.2
+
+Behavior (using text.txt):
+  When values should be in the first line/record                                 (bin = {-5.0,1.5,4.0}): both return 0
+  When values should be in the second line/record                                (bin = {-5.0,1.5,4.5}): both return 1
+  When values should be in the last line/record                                  (bin = {-5.0,1.5,7.5}): both return 4
+  When values should be outside of bound (too high) in last binned variable      (bin = {-5.0,1.5,8.0}): both return -1
+    binIndexN returns additional message:
+      %MSG-e JetCorrectorParameters:
+      Value for dimension 2 is outside of the bin boundaries
+              Requested 8 for boundaries (3.94263,7.88103)
+      %MSG
+  When value should be outside of bound (too low) in last binned variable        (bin = {-5.0,1.5,1.0}): both return -1
+    binIndexN returns additional message:
+      %MSG-e JetCorrectorParameters:
+      Value for dimension 2 is outside of the bin boundaries
+              Requested 1 for boundaries (3.94263,7.88103)
+      %MSG
+  When value should be outside of bound (too low) in second binned variable      (bin = {-5.0,0.5,4.5}): both return -1
+    binIndexN returns additional message:
+      %MSG-e JetCorrectorParameters:
+      Value for dimension 1 is outside of the bin boundaries
+              Requested 0.5 for boundaries (1,2)
+      %MSG
+  When value should be outside of bount in both first and second binned variable (bin = {-5.0,0.5,8.0}): both return -1
+    binIndexN returns additional message:
+      %MSG-e JetCorrectorParameters:
+      Value for dimension 1 is outside of the bin boundaries
+              Requested 0.5 for boundaries (1,2)
+      %MSG
+
+Behavior (using THnSparseTest_25nsV1_MC_L1FastJet_ak4pfchs.txt):
+  %MSG-e JetCorrectorParameters:
+    Duplicate binning in record found (existing index,current index)=(60241,60242)
+    Bins(lower bounds)=(4.889, 40, 12.699)
+  %MSG
+  %MSG-e JetCorrectorParameters:
+    The mapping of bin lower bounds to indices does not contain all possible entries!!!
+  %MSG
+  This message is because there is a pT bin that is 12.669 to 12.669. In other words, a bin of size zero with the same lower bound as the next bin.
+  When values should be in the last line/record                  (bin = {5.0,41.5,15.0}):   both return 60246
+  When values should be in some line/record in the middle        (bin = {5.0,41.5,12.669}): both return 60243
+  When values should be at location of duplicate line/record     (bin = {5.0,40.5,12.669}): old=60242, new=60241
+    Old method checked the upper bound as well and due to a < and not <= chose to check the next bin
+    The new method thought there would be distinct lower bounds for adjacent bins and chose the first bin
+  When value should be just above the location of the duplicate  (bin = {5.0,40.5,12.7}):   old=60242, new=60241
+    Doesn't matter if you are slightly above because that doesn't change the lower bound you are looking for
+  When values are slightly below the duplate                     (bin = {5.0,40.5,12.5}):   both return 60240
+
+
+
+igprof -d -pp -z -o igprof_old.pp.gz test_jet_corrector_x -nBenchmarkJCP 100000 -theBenchmark old >& log_macro_old.log
+igprof -d -pp -z -o igprof_new.pp.gz test_jet_corrector_x -nBenchmarkJCP 1000000 -theBenchmark new >& log_macro_new.log
+igprof-analyse -d -v -g igprof_old.pp.gz >& igreport_old.res
+igprof-analyse -d -v -g igprof_new.pp.gz >& igreport_new.res
+http://igprof.org/html-output-format.html
+
+
+
+/etc/grid-security/certificates/
+
+0) git fetch official-cmssw
+1) git rebase --onto CMSSW_9_0_0_pre5 CMSSW_9_0_0_pre4 bin-lookup-JetCorrectorParameters
+2) git push -f my-cmssw bin-lookup-JetCorrectorParameters
+3) cmsrel CMSSW_9_0_0_pre5; cd CMSSW_9_0_0_pre5/src/; cmsenv;
+4) git cms-merge-topic aperloff:bin-lookup-JetCorrectorParameters
+5) git checkout -b bin-lookup-JetCorrectorParameters aperloff/bin-lookup-JetCorrectorParameters
+6) scram b -j 16
+7) Yay!
+
+http://cms-sw.github.io/tutorial-resolve-conflicts.html#the-above-is-all-great-stuff-but-i-need-a-quick-recipe
+0) cmsrel [new IB]; cd [new IB]/src; cmsenv
+1) git clone git@github.com:kpedro88/cms-git-tools -b HelpRebase
+2) then, after you do cmsenv in the new IB, do this:
+   cd <path>/cms-git-tools
+   source init.sh
+3) git cms-checkout-topic -u [user]:[my-branch]
+4) git rebase --onto [NEW_RELEASE] [OLD_RELEASE] [my-branch]
+5) git cms-checkdeps -a
+6) scram b -j 8
+7) Yay!
+
+
+cmsrel CMSSW_9_1_X_2017-03-07-1100
+cd CMSSW_9_1_X_2017-03-07-1100/src/
+cmsenv
+git cms-merge-topic aperloff:bin-lookup-JetCorrectorParameters
+scram16debug
+
+gdb cmsRun
+run TTbar_8TeV_TuneCUETP8M1_cfi_GEN_SIM_RECOBEFMIX_DIGI_L1_DIGI2RAW_L1Reco_RECO_EI_VALIDATION_DQM.py
+bt
+frame 1
+print fX
+
+frame 0
+print mDefinitions.mBinVar.size()
+$4 = 1
+print MAX_SIZE_DIMENSIONALITY
+$5 = 3
+p helper
+$7 = {<std::__shared_ptr<JetCorrectorParametersHelper, (__gnu_cxx::_Lock_policy)2>> = {
+    _M_ptr = 0x0, _M_refcount = {_M_pi = 0x0}}, <No data fields>}
+p helper._M_ptr
+$9 = (JetCorrectorParametersHelper *) 0x0
+p mDefinitions.mBinVar.size()<=MAX_SIZE_DIMENSIONALITY
+$10 = true
+print mParameters.helper._M_ptr
+$3 = (JetCorrectorParametersHelper *) 0x0
+print (*mParameters.helper._M_ptr).mIndexMap
+Cannot access memory at address 0x18
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+jet_l1_correction_x -inputDir ./ -outputDir ./ -algo1 ak4pfchs -algo2 ak4pfchs -useNPU false -era THnSparseTest_25nsV1_MC -rebinRho 5 -rebinEta 2 -forTesting true
+
+
+
+In ~/Downloads. Cool code for doing 2D splines with SciPy.
+python -i test2Dspline.py
+
+
+
+dasgoclient --query="dataset dataset=/Neutrino_E-10_gun/RunIISpring15PrePremix-PUMoriond17_80X_mcRun2_asymptotic_2016_TrancheIV_v2-v2/GEN-SIM-DIGI-RAW"
+runTheMatrix.py -l 250202.0 --dryRun
+cmsDriver.py step2 --mc --conditions auto:run2_mc -s DIGIPREMIX_S2:pdigi_valid,DATAMIX,L1,DIGI2RAW,HLT:@relval2016 --nThreads 8 --datatier GEN-SIM-DIGI-RAW -n 1000 --era Run2_2016 --eventcontent RAWSIM --filein file:step1.root --fileout file:step2.root --datamix PreMix --pileup_input filelist:premixFilesShort.log --no_exec
+cmsDriver.py step3 --mc --conditions auto:run2_mc --nThreads 8 -n 1000 --era Run2_2016 --eventcontent RECOSIM,MINIAODSIM --runUnscheduled -s RAW2DIGI,L1Reco,RECO,EI,PAT --datatier GEN-SIM-RECO,MINIAODSIM --filein file:step2.root --fileout file:step3.root --customise SimGeneral/DataMixingModule/customiseForPremixingInput.customiseForPreMixingInput --no_exec
+
+NoPU
+cmsDriver.py step2 --mc --conditions auto:run2_mc -s DIGI:pdigi_valid,L1,DIGI2RAW,HLT:@relval2016 --nThreads 8 --datatier GEN-SIM-DIGI-RAW -n 1000 --era Run2_2016 --eventcontent RAWSIM --filein file:step1.root --fileout file:step2.root --no_exec
+cmsDriver.py step3 --mc --conditions auto:run2_mc --nThreads 8 -n 1000 --era Run2_2016 --eventcontent RECOSIM,MINIAODSIM --runUnscheduled -s RAW2DIGI,L1Reco,RECO,EI,PAT --datatier GEN-SIM-RECO,MINIAODSIM --filein file:step2.root --fileout file:step3.root --no_exec
+
+
+
+
+
+[7/18/17, 2:15:21 PM] Hannsjoerg Weber: . ATLAS and CMS Collaborations, “Procedure for the LHC Higgs boson search combination  in summer 2011”, ATL-PHYS-PUB-2011-011, CMS-NOTE-2011-005 (2011)
+[7/18/17, 2:15:40 PM] Hannsjoerg Weber: maybe add for asymptotic + CLs these:
+[7/18/17, 2:15:44 PM] Hannsjoerg Weber: . A. L. Read, “Modified frequentist analysis of search results (The CLs method)”, Workshop on confidence limits, CERN, Geneva, Switzerland, 17-18 Jan 2000: Proceedings OPEN-2000-005 (2000) 81, doi:10.5170/CERN-2000-005.81.
+[7/18/17, 2:15:49 PM] Hannsjoerg Weber: . A. L. Read, “Presentation of search results: The CLs technique”, J. Phys. G 28 (2002) 2693, doi:10.1088/0954-3899/28/10/313.
+[7/18/17, 2:15:55 PM] Hannsjoerg Weber: . G. Cowan et al., “Asymptotic formulae for likelihood-based tests of new physics”, Eur. Phys. J. C 71 (2011) 1554, doi:10.1140/epjc/s10052-011-1554-0, arXiv:1007.1727.
+
+
+
+
+
+
+dasgoclient --query="dataset dataset=/QCD_Flat_Pt-15to7000_TuneCUETP8M1_14TeV_pythia8/snabili-*scenario4*FEVTDEBUGHL*/USER instance=prod/phys03"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+root -n jra_aged_relval_f_g.root jra_nonaged_relval_f_g.root jra_d.root
+_file0->cd("ak4pfl2l3")
+TGraphErrors* gaged = ((TGraphErrors*)gDirectory->Get("RelResVsRefPt_JetEta0to0.5"))
+_file1->cd("ak4pfl2l3")
+TGraphErrors* gnonaged = ((TGraphErrors*)gDirectory->Get("RelResVsRefPt_JetEta0to0.5"))
+_file2->cd("ak4pfl2l3")
+TGraphErrors* gratio = ((TGraphErrors*)gDirectory->Get("myprefix_RelResVsRefPt_JetEta0to0.5_mysuffix"))
+cout << "(" << gaged->GetX()[8] << "," << gaged->Eval(gnonaged->GetX()[7],0,"s") << ")" << endl
+cout << "(" << gnonaged->GetX()[7] << "," << gnonaged->GetY()[7] << ")" << endl
+cout << "(" << gratio->GetX()[7] << "," << gratio->GetY()[7] << ")" << endl
+
+
+
+
+edmPluginHelp <module name>
+
+
+
+
+uncertainties (bin by bin):
+errorUp = 0
+erorrDn = 0
+erorrNorm2 = 0
+errorStatOnly2 = totalBkd.GetBinError(ibin)**2
+totalNorm = sqrt(norm1**2+norm2**2+norm3**2)
+
+for bkd in bkdList:
+  errorNorm2+= (totalNorm**2*bkd.content**2)
+
+  for sys in sysList:
+    errorPlus = sys.content-bkd.content
+    errorMinus = bkd.content-sys.content
+    if errorPlus > 0: errorUp += errorPlus**2
+    else: errorDn += errorPlus**2
+    if errorMinus > 0: errorDn += errorMinus**2
+    else: errorUp += errorMinus**2
+
+totBkgError.SetPointEYhigh(ibin-1,math.sqrt(errorUp+errorNorm2+errorStatOnly2))
+totBkgError.SetPointEYlow(ibin-1, math.sqrt(errorDn+errorNorm2+errorStatOnly2))
+
+for binNo in range(0,hData.GetNbinsX()+2):
+  if bkgHT.GetBinContent(binNo)!=0:
+    pullUncBandTot.SetPointEYhigh(binNo-1,totBkgTemp3[catStr].GetErrorYhigh(binNo-1)/bkgHT.GetBinContent(binNo))
+    pullUncBandTot.SetPointEYlow(binNo-1,totBkgTemp3[catStr].GetErrorYlow(binNo-1)/bkgHT.GetBinContent(binNo))      
+if not doOneBand: pullUncBandTot.SetFillStyle(3001)
+else: pullUncBandTot.SetFillStyle(3344)
+pullUncBandTot.SetFillColor(1)
+pullUncBandTot.SetLineColor(1)
+pullUncBandTot.SetMarkerSize(0)
+gStyle.SetHatchesLineWidth(1)
+pullUncBandTot.Draw("SAME E2")
+
+
+plotter_from_file_x -ifilename histos_electron_jets2_HighKinBDT_SysNames.root -alternateDataFile histos_electron_jets2_HighKinBDT_SysNames.root -ofilepath ./ -lep electron -tcat eq0tag -cutRegion HighKinBDT -isCombinedFile true -jBin jets2
+
+
+combine -M Asymptotic datacard_ThreeJ0B.txt --minimizerStrategy 0 --minimizerTolerance 0.001
+Will compute both limit(s) using minimizer Minuit2 with strategy 0 and tolerance 0.001
+  [WARNING] Found [CMS_hww_lnujj_topPtWeight_shape] at boundary.
+WARNING: Best fit of asimov dataset is at r = 0.049191 (0.002460 times rMax), while it should be at zero
+Median for expected limits: 9.59375
+Sigma  for expected limits: 4.89486
+ -- Asymptotic --
+Observed Limit: r < 73.6082
+Expected  2.5%: r < 5.1529
+Expected 16.0%: r < 6.4192
+Expected 50.0%: r < 9.5938
+Expected 84.0%: r < 9.7850
+Expected 97.5%: r < 11.8677
+
+combine -M MaxLikelihoodFit -t -1 --expectSignal 1 datacard_ThreeJ0B.txt
+ --- MaxLikelihoodFit ---
+Best fit r: 1  -1/+3.80411  (68% CL)
+nll S+B -> -0.127781  nll B -> -0.0956451
+==>Good, but errors are not symetric. Open up the range of signal strengths
+
+combine -M MaxLikelihoodFit -t -1 --expectSignal 1 datacard_ThreeJ0B.txt -v 2 --setPhysicsModelParameterRanges r=-5,5
+ --- MaxLikelihoodFit ---
+Best fit r: 1  -3.9425/+3.80203  (68% CL)
+nll S+B -> -0.127781  nll B -> -0.0956451
+==>Good, error bounds not too big or small and they are symetric.
+root -l mlfit.root
+fit_s->Print("V")
+==>Look at errors to see no pulls, but CMS_hww_lnujj_matching_shape, CMS_hww_lnujj_scale_shape, and CMS_scale_j_shape are tightly constrained
+
+combine -M MaxLikelihoodFit  datacard_ThreeJ0B.txt -v 2 --setPhysicsModelParameterRanges  r=-20,60 --minimizerStrategy 2 --minimizerTolerance 0.001 --plot
+ --- MaxLikelihoodFit ---
+Best fit r: 43.219  0.00090991/+0.00101783  (68% CL)
+nll S+B -> -363.681  nll B -> 1471.47
+==>Bad, wants the signal strength to be 43 times higher than we predict
+
+combine -M MaxLikelihoodFit datacard_ThreeJ0B.txt -v 2 --setPhysicsModelParameterRanges r=-20,80 --minimizerStrategy 2 --minimizerTolerance 0.001 --plots --saveNormalizations --saveShapes  --saveWorkspace
+root -l mlfit.root
+ThreeJ0B_electron_HighKinBDT_fit_s->Draw()
+shapes_fit_s->cd()
+.ls
+ThreeJ0B_electron_HighKinBDT->cd()
+.ls
+
+python $CMSSW_BASE/src/HiggsAnalysis/CombinedLimit/test/diffNuisances.py -a mlfit.root
+
+95\% upper confidence level on mu=sigma/sigma_sm
+================================================
+python $CMSSW_BASE/src/runDatacards_saveOutput_moveFiles.py -r -s --output_path $PWD/2017_11_15_FullSystematics/output/
+python $CMSSW_BASE/src/runDatacards_saveOutput_moveFiles.py -m -s --output_path $PWD/2017_11_15_FullSystematics/output/
+signigficance
+=============
+python $CMSSW_BASE/src/runDatacards_saveOutput_moveFiles.py -r --significance -s --output_path $PWD/2017_11_15_FullSystematics/significance/observed/
+python $CMSSW_BASE/src/runDatacards_saveOutput_moveFiles.py -r --significance -s -e --output_path $PWD/2017_11_15_FullSystematics/significance/apriori/
+python $CMSSW_BASE/src/runDatacards_saveOutput_moveFiles.py -r --significance -s -e -a --output_path $PWD/2017_11_15_FullSystematics/significance/aposteriori/
+p-value
+=======
+python $CMSSW_BASE/src/runDatacards_saveOutput_moveFiles.py -r --significance -s --pvalue --output_path $PWD/2017_11_15_FullSystematics/pvalue/observed/
+python $CMSSW_BASE/src/runDatacards_saveOutput_moveFiles.py -r --significance -s -e --pvalue --output_path $PWD/2017_11_15_FullSystematics/pvalue/apriori/
+python $CMSSW_BASE/src/runDatacards_saveOutput_moveFiles.py -r --significance -s -e -a --pvalue --output_path $PWD/2017_11_15_FullSystematics/pvalue/aposteriori/
+python $CMSSW_BASE/src/runDatacards_saveOutput_moveFiles.py -m -s --pvalue --output_path $PWD/2017_11_15_FullSystematics/pvalue/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/uscmst1b_scratch/lpc1/3DayLifetime/aperloff
+
+python ~/lpc-scripts/copyfiles.py T3_US_FNALLPC noreplica/QCD_Pt-15to3000_Flat_8TeV_NoPileUp_v1/crab_pthat_15to3000/180123_141609/0000/ local $PWD/ -p xrootd -r -su lpcjme --diff
+
+hadd OpenDataTree_mc.root OpenDataTree_mc_*.root
+
+ 
+
+
+root root://cmsxrootd.fnal.gov//store/mc/RunIIFall17DRStdmix/QCD_Pt-15to7000_TuneCP5_Flat2017_13TeV_pythia8/AODSIM/NoPU_94X_mc2017_realistic_v10-v2/40000/000A2345-58D8-E711-95B6-0CC47A4D7690.root
+Events->Draw("GenEventInfoProduct_generator__SIM.obj.binningValues_[0]","GenEventInfoProduct_generator__SIM.obj.weights_")
+
+root -n pythia8ex2_CommonSettings.root
+Events->Draw("GenEventInfoProduct_generator__PROD.obj.binningValues_[0]")
+
+
+
+
+
+
+
+
+
+
+import numpy as np
+import h5py
+h5f = h5py.File('data1.h5', 'w')
+array = np.load('/cms-sc17/deepjec/ak5PFJetsParams0_1.npy')
+h5f.create_dataset('dataset', data=array)
+h5f.close()
+
+
+import pandas as pd
+import numpy as np
+array = np.load("data/ak5/ak5PFJetsParams0_1.npy")
+df = pd.DataFrame(array)
+df_jets = pd.DataFrame(array,columns=['run','lumi','event','met','sumet','rho','pthat','mcweight','njet','jet_pt','jet_eta','jet_phi','jet_E','jet_area','jet_jes','gen_pt','jet_gen_dr','chf','nhf','phf','elf','muf','hf_hf','hf_phf','hf_hm','hf_phm','chm','nhm','phm','elm','mum','beta','bstar','pfcand_ijet'])
+len(df_jets) #3986440
+df_jets = df_jets.drop_duplicates()
+len(df_jets)#199018
+df_jets = df_jets[(df_jets.jet_pt>50)]
+len(df_jets) #85844
+df = pd.DataFrame(array,columns=['event', 'jet_pt', 'jet_eta', 'jet_phi','pfcand_pt', 'pfcand_eta', 'pfcand_phi', 'pfcand_id', 'pfcand_charge', 'pfcand_ijet'])
+df = df[(df.jet_pt>50)]
+(df['pfcand_ijet'] == df_jets['pfcand_ijet'].iloc[0]) & (df['event'] == df_jets['event'].iloc[0])
+df[(df['pfcand_ijet'] == df_jets['pfcand_ijet'].iloc[0]) & (df['event'] == df_jets['event'].iloc[0])]
+len(df_jets)
+>>> 85844
+
+
+import numpy as np
+import h5py
+import dask.array as da
+import dask.dataframe as dd
+data=[]
+for i in range(4,5):
+    h5f = h5py.File('data/ak5/ak5PFJetsParams0_{}.h5'.format(i),'r')
+    obj_from_file = h5f['dataset']
+    obj_from_file.shape
+    data.append(obj_from_file)
+
+da_data = [da.from_array(x, chunks=(5000, )) for x in data]
+da_data_concat = da.concatenate(da_data, axis=0)
+df_da = dd.from_dask_array(da_data_concat,columns=['run','lumi','event','met','sumet','rho','pthat','mcweight','njet','jet_pt','jet_eta','jet_phi','jet_E','jet_area','jet_jes','gen_pt','jet_gen_dr','chf','nhf','phf','elf','muf','hf_hf','hf_phf','hf_hm','hf_phm','chm','nhm','phm','elm','mum','beta','bstar','pfcand_ijet'])
+df_da = df_da.drop_duplicates()
+df_da = df_da[(df_da.jet_pt>50)]
+df_da.loc[33].jet_pt.head(n=1)
+df_cand_da = dd.from_dask_array(da_data_concat,columns=['event', 'jet_pt', 'jet_eta', 'jet_phi','pfcand_pt', 'pfcand_eta', 'pfcand_phi', 'pfcand_id', 'pfcand_charge', 'pfcand_ijet'])
+df_cand_da = df_cand_da[(df_cand_da.jet_pt>50)]
+
+df_cand_i = df_cand_da[(df_cand_da.event==1700030)&(abs(df_cand_da.jet_pt-133.960602)<0.01)]
+
+df_da_comp = df_da.jet_pt.loc[33].compute()
+df_da_comp.values
+>>> array([133.96060181])
+
+
+
+
+
+
+
+f = h5py.File(samplesToRun[0], "r")
+columnHeaders = f["reco_candidates"].attrs["column_headers"]
+f.close()
+
+variables = ["jetPt", "jetEta", ... ]
+
+dataColumns = np.array([np.flatnonzero(columnHeaders == v)[0] for v in variables])
+
+
+
+
+
+
+
+
+
+
+to submit once dictionaries are made
+python $CMSSW_BASE/src/Condor/Production/python/cacheAll.py
+./checkVomsTar.sh
+python submitJobs.py -d MCRelVal,MCRelValHEMiss -p -o root://cmseos.fnal.gov//store/user/aperloff/SUSY/RA2b13TeVProduction/V15a -s
+python submitJobs.py -d MCRelValHEMiss -p -o root://cmseos.fnal.gov//store/user/aperloff/SUSY/RA2b13TeVProduction/V15a -s
+
+
+
+
+
+
+git rm --CACHED <files>
+#maybe move them if they will be untracked an in the way
+git commit -a -m "<same message>"
+git rebase -i HEAD~<number of commits back to when the files were added>
+  During rebase move the new commit to right after the one with the files added
+  Change 'pick' to 'f' to squash the commits together
+  Run the rebase
+#Can also run the rebase interactively without the commit and fix the commit during the rebase when there is a conflict
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+eos root://cmseos.fnal.gov/ find --xurl /store/user/lpcsusyhad/SusyRA2Analysis2015/Skims/Run2ProductionV12/tree_SLmLDP/ | grep -v path=
+eos root://cmseos.fnal.gov find -d /store/user/lpcsusyhad/SusyRA2Analysis2015/Run2ProductionV16 | sed 's~.*/store~/store~'
+
+eos root://cmseos.fnal.gov/ find --xurl /store/user/lpcsusyhad/SusyRA2Analysis2015/Run2ProductionV14/ | grep -v path= > transfer.txt
+
+gfal-copy -r root://cmseos.fnal.gov//store/user/lpcsusyhad/SusyRA2Analysis2015/Run2ProductionV14/ gsiftp://gridftp-hadoop.colorado.edu:2811/mnt/hadoop/store/user/aperloff/SusyRA2Analysis2015/Run2ProductionV15a
+gfal-copy --from-file -r transfer_file_0.txt gsiftp://gridftp-hadoop.colorado.edu:2811/mnt/hadoop/store/user/aperloff/SusyRA2Analysis2015/Run2ProductionV14/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Interactive skimming:
+=====================
+Edit input/input_selection.txt to link only to input/input_sets_skim.txt and input/input_sets_skim_signal.txt
+  Comment out input/input_sets_skim_data.txt, input/input_sets_skim_data_reMiniAOD.txt, and input/input_sets_skim_fast.txt so that it doesn't try to skim the data or fastsim
+Edit input/input_sets_skim.txt and input/input_sets_skim_signal.txt to have the correct names
+  Or make new files to account for the fact that we will have multiple years
+
+Batch skimming:
+===============
+Edit input/dict_skim.py and input/dict_skim_signal.py to list the samples to skim
+Then run one of these:
+  python makeSkimInput.py -r input/dict_skim.py -w input/input_sets_skim.txt -e batch/exportSkim.sh -n 50
+  python makeSkimInput.py -r input/dict_skim_signal.py -w input/input_sets_skim_signal.txt -e batch/exportSkimSignal.sh -n 50
+  python makeSkimInput.py -r input/dict_skim_data.py -w input/input_sets_skim_data.txt -e batch/exportSkimData.sh --data -n 50 -f /store/user/lpcsusyhad/SusyRA2Analysis2015/Run2ProductionV16
+Edit and then run:
+  batch/SKsub.sh
+  batch/SKsub_signal.sh
+After the skims finish, some may need to be hadded (split or extended samples):
+  ./hadd_skims.sh -r
+To print a cutflow table from a skimmed ROOT file:
+  root -b -l -q 'KCutflowDriver.C+("root://cmseos.fnal.gov//store/user/lpcsusyhad/SusyRA2Analysis2015/Skims/Run2ProductionV14/tree_signal/tree_T1tttt_1500_100.root")'
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+--------------------------------------------------------------------------------------------- 10:17:47
+
+Fri Dec  7 10:17:47 CST 2018
+[aperloff@cmslpc34:/uscms_data/.../CMSSW_8_0_25/src] from-CMSSW_8_0_25* $ python ~/Scripts/lpc-scripts/getSiteInfo.py T3_US_Colorado -f
+Running sanity checks before proceeding ...
+Site Information:
+  Name: Colorado
+  Alias: T3_US_Colorado
+  Types: ['cms', 'phedex', 'psn']
+  Element Type: xrootd
+  fqdn: hepxrd01.colorado.edu:1094
+  lfn: /store/user
+  pfn: gsiftp://gridftp-hadoop.colorado.edu/mnt/hadoop/store/user
+  local_redirector:
+  xrootd_endpoint:
+  gsiftp_endpoint:
+  local_path_to_store:
+  is_primary: True
+--------------------------------------------------------------------------------------------- 10:17:54
+
+Fri Dec  7 10:17:54 CST 2018
+[aperloff@cmslpc34:/uscms_data/.../CMSSW_8_0_25/src] from-CMSSW_8_0_25* $ python ~/Scripts/lpc-scripts/getSiteInfo.py T3_US_TAMU -f
+Running sanity checks before proceeding ...
+Site Information:
+  Name: TAMU
+  Alias: T3_US_TAMU
+  Types: ['cms', 'phedex', 'psn']
+  Element Type: SE
+  fqdn: srm.brazos.tamu.edu
+  lfn: /store/user
+  pfn: gsiftp://gridftp.brazos.tamu.edu/cms/store/user
+  local_redirector: None
+  xrootd_endpoint: srm.brazos.tamu.edu
+  gsiftp_endpoint: None
+  local_path_to_store: /fdata/hepx/
+  is_primary: True
+--------------------------------------------------------------------------------------------- 10:18:07
+
+Fri Dec  7 10:18:07 CST 2018
+[aperloff@cmslpc34:/uscms_data/.../CMSSW_8_0_25/src] from-CMSSW_8_0_25* $ python ~/Scripts/lpc-scripts/getSiteInfo.py T3_US_FNALLPC -f
+Running sanity checks before proceeding ...
+Site Information:
+  Name: FNALLPC
+  Alias: T3_US_FNALLPC
+  Types: ['cms', 'phedex', 'psn']
+  Element Type: SE
+  fqdn: cmseos.fnal.gov
+  lfn: /store/user
+  pfn: srm://cmseos.fnal.gov:8443/srm/v2/server?SFN=/eos/uscms/store/user
+  local_redirector: None
+  xrootd_endpoint: cmseos.fnal.gov
+  gsiftp_endpoint: None
+  local_path_to_store: /eos/uscms/
+  is_primary: True
+
+
+
+
+
+Can only see MiniAOD step with these campaign names:
+
+flowRunIIFall17MiniAODv2Fast
+T1tttt - Done, but not in DAS. Means that it is still in the PRODUCTION stage. DAS has the wrong number of event and files. This is a problem because we get the file list from DAS.
+
+flowRunIISummer16MiniAODv3Fast
+/SMS-T1tttt - 94% done
+/SMS-T2tt_mStop-350to400 - 91% done
+/SMS-T2tt_mStop-400to1200 - 96% done
+/SMS-T1qqqq - 98% done
+/SMS-T2bb_mSbot-1650to2600  - 60% done
+/SMS-T2qq_mSq-1850to2600 - 91% done
+/SMS-T1bbbb - 91% done
+
+
+eosls /store/user/lpcsusyhad/SusyRA2Analysis2015/Run2ProductionV16/ | grep -v Summer16 | grep -v Autumn18 | grep GJets_DR-0p4_HT | grep -v 600ToInf | grep -v pythia8_v2 | xargs -i eos root://cmseos.fnal.gov/ mv /store/user/lpcsusyhad/SusyRA2Analysis2015/Run2ProductionV16/{} /store/user/lpcsusyhad/SusyRA2Analysis2015/oldGJets_toBeRemoved/{}
+
+python ../python/get_mcm.py -d dict_mcm_small --miniaod=RunIIFall17MiniAODv2* --digireco=RunIIFall17DRPremix* --gensim=RunIIFall17\*GS\* --pu correctPU --cert=/uscms/homes/a/aperloff/private/myCert.pem --key=/uscms/homes/a/aperloff/private/myCert.key -g new_pmx -v BGenFilter
+
+for f in *.stdout; do tail -n 1 ${f}; done
+
+neutralMultiplity_forward
+neutralEmEnergyFraction_endcap
+
+  for(unsigned j = 0; j < Jets_origIndex->size(); ++j){
+      //reverse the index vector
+      newIndex[Jets_origIndex->at(j)] = j;
+}
+
+newIndex = [0,1,2,3,4,5,6,7,8,9,10,12,13,11,18,17,15,16,14]
+
+int i = newIndex[Jets_origIndex->at(j)];
+Jets->at(i)*(1./(Jets_jecFactor->at(i)*Jets_jerFactor->at(i)))
+
+
+j = 0
+i = 0
+e = 650.18737
+jec = 1.0705596
+jer = 1.0789406
+raw e = 650.18737*(1./(1.0705596*1.0789406)) = 562.8985669796
+
+
+
+j = 11
+i = 11
+e = 26.478533
+jec = 1.0989954
+jer = 1.2402589
+raw e = 26.478533*(1./(1.0989954*1.2402589)) = 19.426103275
+
+
+j = 17
+i = 17
+e = 57.469623
+jec = 1.2336785
+jer = 0.8892840
+raw e = 57.469623*(1./(1.2336785*0.8892840)) = 52.383664172
+chf = 1.1245000 = che/(e*jec*jer)
+
+PreSelection->Scan("Jets.Energy():Jets_jecFactor:Jets_jerFactor:Jets_chargedHadronEnergy:Jets_chargedHadronEnergyFraction:Jets_chargedHadronEnergy/(Jets.Energy()/Jets_jecFactor):Jets_chargedHadronEnergy/(Jets.Energy()/Jets_jecFactor/Jets_jerFactor):Jets_chargedHadronEnergyFraction*Jets_jerFactor","Jets_chargedHadronEnergyFraction>1.0")
+
+
+
+Jets_neutralEmEnergyFraction  && pT>30 && eta<2.7 && Jets_ID==0
+  should see that this contains only events which are past the just value
+
+
+root -b -q -l 'KSkimDriver.C+("JetHT_2017B_files0to9","signal","root://cmseos.fnal.gov//store/user/lpcsusyhad/SusyRA2Analysis2015/Run2ProductionV16",{"input/input_selection_dijet.txt"},{},"test/tree")' > test/tree_signal/tree_JetHT_2017B_files0to9.log &
+
+
+
+
+
+
+For CMSConnect T1_US_FNAL test:
+  ls -alh in multiple places
+  xrdcp --version
+  printenv
+  voms-proxy-info --all
+  id
+  w/ xrootd debug symbols
+inside the job just before that xrdcp
+
+
+
+
+Kevin's signal N-1 plots with no phase space cuts
+http://cms-results.web.cern.ch/cms-results/public-results/publications/SUS-16-033/#AddFig
+
+
+
+
+
+
+
+
+gdb --args cmsRun runMakeTreeFromMiniAOD_cfg.py scenario=Fall17 inputFilesConfig=RunIIFall17MiniAODv2.TTJets_SingleLeptFromT_TuneCP5_13TeV-madgraphMLM-pythia8 nstart=0 nfiles=1 outfile=Fall17.TTJets_SingleLeptFromT_TuneCP5_13TeV-madgraphMLM-pythia8 numevents=10000 >& Fall17.TTJets_SingleLeptFromT_TuneCP5_13TeV-madgraphMLM-pythia8.log &
+
+cmsRun runMakeTreeFromMiniAOD_cfg.py scenario=Fall17 dataset=file:store_mc_RunIIFall17MiniAODv2_TTJets_SingleLeptFromT_TuneCP5_13TeV-madgraphMLM-pythia8_MINIAODSIM_PU2017_12Apr2018_94X_mc2017_realistic_v14-v1_00000_00ED846F-7D43-E811-9ED0-20CF305616D1.root nstart=0 nfiles=1 outfile=RunIIFall17MiniAODv2.TTJets_SingleLeptFromT_TuneCP5_13TeV-madgraphMLM-pythia8 numevents=1000 >& newv2PFJetID.log &
+
+~/Scripts/utilities/runIgprof.sh -n newPFJetIDIggy -s GoodJetsProducer -d filter -c -e 'cmsRun runMakeTreeFromMiniAOD_cfg.py scenario=Fall17 dataset=file:store_mc_RunIIFall17MiniAODv2_TTJets_SingleLeptFromT_TuneCP5_13TeV-madgraphMLM-pythia8_MINIAODSIM_PU2017_12Apr2018_94X_mc2017_realistic_v14-v1_00000_00ED846F-7D43-E811-9ED0-20CF305616D1.root nstart=0 nfiles=1 outfile=RunIIFall17MiniAODv2.TTJets_SingleLeptFromT_TuneCP5_13TeV-madgraphMLM-pythia8 numevents=1000'
++ igprof -d -t cmsRun -pp -z -o igprof_newPFJetIDIggy.pp.gz cmsRun runMakeTreeFromMiniAOD_cfg.py scenario=Fall17 dataset=file:store_mc_RunIIFall17MiniAODv2_TTJets_SingleLeptFromT_TuneCP5_13TeV-madgraphMLM-pythia8_MINIAODSIM_PU2017_12Apr2018_94X_mc2017_realistic_v14-v1_00000_00ED846F-7D43-E811-9ED0-20CF305616D1.root nstart=0 nfiles=1 outfile=RunIIFall17MiniAODv2.TTJets_SingleLeptFromT_TuneCP5_13TeV-madgraphMLM-pythia8 numevents=1000
++ igprof-analyse -d -v igprof_newPFJetIDIggy.pp.gz
+Produced igreport_newPFJetIDIggy.res
+Produced igsorted_newPFJetIDIggy_GoodJetsProducer_self.res
+Produced igsorted_newPFJetIDIggy_filter_desc.res
+Produced igsorted_newPFJetIDIggy_doEvent_desc.res
+
+
+
+
+
+
+
+
+
+To test on a Serenity board:
+Contact Greg Rose after asking Rboert
+  EMP infrastructure firmware
+    Supports the evaluation board we are using
+
+
+
+
+
+
+
+python KSkimDriverBatch.py -n 10 -r ecalcomp -s MET_2017B MET_2017C MET_2017D MET_2017E MET_2017F MET_2018D MET_2018A MET_2018B MET_2018C MET_2018D -i /store/user/lpcsusyhad/SusyRA2Analysis2015/Skims/Run2ProductionV17/tree_signalUnblind/ -o EcalNoiseComparison/V17/tree_signalUnblind/tree
+
+python KSkimDriverBatch.py -n 10 -r ecalcomp -s T1bbbb_1000_900_MC2017 T1bbbb_1500_100_MC2017 T1qqqq_1000_800_MC2017 T1qqqq_1400_100_MC2017 T1tttt_1200_800_MC2017 T1tttt_2000_100_MC2017 T2tt_1200_100_MC2017 T2tt_650_350_MC2017 T2tt_850_100_MC2017  -i /store/user/lpcsusyhad/SusyRA2Analysis2015/Skims/Run2ProductionV17/tree_signal/ -o EcalNoiseComparison/V17/tree_signal/tree
+
+python KSkimDriverBatch.py -n 10 -r ecalcompratio -s T1bbbb_1000_900_MC2017 T1bbbb_1500_100_MC2017 T1qqqq_1000_800_MC2017 T1qqqq_1400_100_MC2017 T1tttt_1200_800_MC2017 T1tttt_2000_100_MC2017 T2tt_1200_100_MC2017 T2tt_650_350_MC2017 T2tt_850_100_MC2017  -i /store/user/lpcsusyhad/SusyRA2Analysis2015/Skims/Run2ProductionV17/tree_signal/ -o EcalNoiseComparison/V17/tree_signal/tree
+python KSkimDriverBatch.py -n 10 -r ecalcomp -s MET_2017B MET_2017C MET_2017D MET_2017E MET_2017F MET_2018D MET_2018A MET_2018B MET_2018C MET_2018D -i /store/user/lpcsusyhad/SusyRA2Analysis2015/Skims/Run2ProductionV17/tree_SLm/ -o EcalNoiseComparison/V17/tree_SLm/tree
+python KSkimDriverBatch.py -n 10 -r ecalcomp -s MET_2017B MET_2017C MET_2017D MET_2017E MET_2017F MET_2018D MET_2018A MET_2018B MET_2018C MET_2018D -i /store/user/lpcsusyhad/SusyRA2Analysis2015/Skims/Run2ProductionV16/tree_signalUnblind/ -o EcalNoiseComparison/V16/tree_signalUnblind/tree
+python KSkimDriverBatch.py -n 10 -r ecalcomp -s MET_2017B MET_2017C MET_2017D MET_2017E MET_2017F MET_2018D MET_2018A MET_2018B MET_2018C MET_2018D -i /store/user/lpcsusyhad/SusyRA2Analysis2015/Skims/Run2ProductionV16/tree_SLm/ -o EcalNoiseComparison/V16/tree_SLm/tree
+python KSkimDriverBatch.py -n 10 -r ecalcomp -s MET_2017B MET_2017C MET_2017D MET_2017E MET_2017F MET_2018D MET_2018A MET_2018B MET_2018C MET_2018D -i /store/user/lpcsusyhad/SusyRA2Analysis2015/Skims/Run2ProductionV16/tree_signal/ -o EcalNoiseComparison/V16/tree_signal/tree
+
+
+Without HT5/HT DeltaPh1 Cut or ECAL Noise Cut
+python KSkimDriverBatch.py -n 8 -r ecalcomp ecalcomp ecalcompnoise ecalcompnoise ecalcompratio ecalcompratio ecalcompboth ecalcompboth -s MET_2018A MET_2018D MET_2018A MET_2018D MET_2018A MET_2018D MET_2018A MET_2018D -i /store/user/lpcsusyhad/SusyRA2Analysis2015/Skims/Run2ProductionV17/tree_signalUnblind/ -o EcalNoiseComparison/V17/tree_signalUnblindModified/tree
+
+python KSkimDriverBatch.py -n 8 -r ecalcomp ecalcomp ecalcomp ecalcomp ecalcomp ecalcomp ecalcomp ecalcompnoise ecalcompnoise ecalcompnoise ecalcompnoise ecalcompnoise ecalcompnoise ecalcompnoise ecalcompratio ecalcompratio ecalcompratio ecalcompratio  ecalcompratio ecalcompratio ecalcompratio ecalcompboth ecalcompboth ecalcompboth ecalcompboth ecalcompboth ecalcompboth ecalcompboth -s MET_2017B MET_2017C MET_2017D MET_2017E MET_2017F MET_2018B MET_2018C MET_2017B MET_2017C MET_2017D MET_2017E MET_2017F MET_2018B MET_2018C MET_2017B MET_2017C MET_2017D MET_2017E MET_2017F MET_2018B MET_2018C MET_2017B MET_2017C MET_2017D MET_2017E MET_2017F MET_2018B MET_2018C -i /store/user/lpcsusyhad/SusyRA2Analysis2015/Skims/Run2ProductionV17/tree_signalUnblind/ -o EcalNoiseComparison/V17/tree_signalUnblindModified/tree
+
+
+root -b -l -q 'MakeAllDCdata.C+("root://cmseos.fnal.gov//store/user/lpcsusyhad/SusyRA2Analysis2015/Skims/Run2ProductionV17","signalUnblind","input/input_RA2bin_DC_data.txt","input/input_sets_DC_data.txt","EcalNoiseComparison/V17/tree_signalUnblind/")'
+
+
+
+plotter_x -ana GenMETComparison -doPUrewt false -include_data false -include_systematics false -debug true -maxEvents 50000
+
+
+
+xrdfs root://hepxrd01.colorado.edu:1094/ ls /store/user/aperloff/SusyRA2Analysis2015/Run2ProductionV12/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Distinguished Researcher Notes:
+===============================
+period of time where hardware development has priority over analysis
+focusing on very serious hardware project - okay great!
+part of analysis that analyzed all run 2 data
+don't be mebarassed on having strong emphasis on challenges of trigger -- don't be appologetic
+
+hardware experience more important than convenership
+  what contributions made in published physics analysis
+
+seems to have become a big deal in a lot of people's minds
+way overblown
+thought deeply about really challenging problems
+don't let convenership distort planning
+
+leadership skills are a thing, but not what they prioritize
+  does a person have ideas
+  are they really digging into some problems in a deep way
+
+good idea if building around a strong foundation
+  propose physics studies to leverage hardware
+  don't equate that with convener of a SUSY subgroup
+
+
+
+
+What contributed in RA2/b, service work, etc. 
+
+
+=========================
+contributed in...
+comment on plan...
+what seen directly...
+personal opinion...
+
+
+
+
+
+
+
+
+
+
+
+/etc/hosts to get localhost IP address
+
+
+
+
+
+
+
+
+
+vivado_docker bash `pwd`/ /home/vivado/TrackletFirmware/

@@ -1,0 +1,10 @@
+<snippet>
+	<content><![CDATA[
+\begin{aeq}{eq:${1}}
+	${2} &= ${3}\\\\
+\end{aeq}
+]]></content>
+	<tabTrigger>aeq</tabTrigger>
+	<scope>text.tex.latex</scope>
+	<description>Aligned Equation with Label</description>
+</snippet>

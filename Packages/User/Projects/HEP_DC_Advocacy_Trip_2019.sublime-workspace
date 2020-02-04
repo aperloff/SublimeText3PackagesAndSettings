@@ -1,0 +1,1254 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"cutval",
+				"cutvalmax_"
+			],
+			[
+				"fileNamePU",
+				"fileNamePUMC"
+			],
+			[
+				"varty",
+				"vartypes_"
+			],
+			[
+				"psuh",
+				"push_back\tfunc"
+			],
+			[
+				"iConfi",
+				"iConfig"
+			],
+			[
+				"GenEventI",
+				"GenEventInfoWeight"
+			],
+			[
+				"outpu",
+				"output_dataset"
+			],
+			[
+				"folder",
+				"folder_it"
+			],
+			[
+				"filter",
+				"filter_it"
+			],
+			[
+				"current",
+				"current_dataset"
+			],
+			[
+				"nfile",
+				"nfiles_added"
+			],
+			[
+				"var_go",
+				"var_group_title"
+			],
+			[
+				"var_gro",
+				"var_group_title"
+			],
+			[
+				"group",
+				"group_name"
+			],
+			[
+				"process",
+				"process_year"
+			],
+			[
+				"Jets_cha",
+				"Jets_chargedMultiplicity"
+			],
+			[
+				"Jets_char",
+				"Jets_chargedEmEnergyFraction"
+			],
+			[
+				"Jets_neu",
+				"Jets_neutralMultiplicity"
+			],
+			[
+				"pave",
+				"pave_text"
+			],
+			[
+				"file",
+				"filelist_stripped"
+			],
+			[
+				"compar",
+				"compare_names"
+			],
+			[
+				"xr",
+				"xrootd_endpoint"
+			],
+			[
+				"xrdfs",
+				"xrdfs_find"
+			],
+			[
+				"xrd",
+				"xrdfs_find"
+			],
+			[
+				"igno",
+				"ignore_cmssw"
+			],
+			[
+				"dire",
+				"directories"
+			],
+			[
+				"files",
+				"files"
+			],
+			[
+				"all_",
+				"all_directories"
+			],
+			[
+				"child",
+				"childcount"
+			],
+			[
+				"filename",
+				"filename_filter"
+			],
+			[
+				"pat",
+				"partial_path"
+			],
+			[
+				"XR",
+				"XRootD_endpoint"
+			],
+			[
+				"ign",
+				"ignore_cmssw"
+			],
+			[
+				"stor",
+				"store_true"
+			],
+			[
+				"comp",
+				"compare_names"
+			],
+			[
+				"missin",
+				"missingname"
+			],
+			[
+				"start",
+				"start_time"
+			],
+			[
+				"get",
+				"get_checksum_dict"
+			],
+			[
+				"ch",
+				"chk_range"
+			],
+			[
+				"pro",
+				"program_group"
+			],
+			[
+				"star",
+				"start_site_time"
+			],
+			[
+				"print",
+				"print_done"
+			],
+			[
+				"end",
+				"end_checksum_dict"
+			],
+			[
+				"out",
+				"out_split"
+			],
+			[
+				"fileli",
+				"filelist_stripped"
+			],
+			[
+				"filel",
+				"filelist_stripped"
+			],
+			[
+				"add",
+				"add_argument"
+			],
+			[
+				"fts",
+				"fts_gfal_group"
+			],
+			[
+				"sto",
+				"store_true"
+			],
+			[
+				"program",
+				"program_group"
+			],
+			[
+				"list",
+				"listname"
+			],
+			[
+				"notes",
+				"notes_papers"
+			],
+			[
+				"work",
+				"working_area"
+			],
+			[
+				"std",
+				"stderr"
+			],
+			[
+				"filelis",
+				"filelist_names"
+			],
+			[
+				"lis",
+				"list_of_filelist"
+			],
+			[
+				"in",
+				"indir"
+			],
+			[
+				"Zin",
+				"ZinvStatLumiValue"
+			],
+			[
+				"bis",
+				"bisect_right"
+			],
+			[
+				"Get",
+				"GetNbinsX"
+			],
+			[
+				"setFill",
+				"SetFillStyle"
+			],
+			[
+				"point",
+				"point_intersection"
+			],
+			[
+				"SetLine",
+				"SetLineStyle"
+			],
+			[
+				"Varnam",
+				"RA2VarNames"
+			],
+			[
+				"is",
+				"is_htmht"
+			],
+			[
+				"control",
+				"control_offset"
+			],
+			[
+				"contro",
+				"control_offset"
+			],
+			[
+				"RA2V",
+				"RA2VarMin"
+			],
+			[
+				"qty",
+				"qty"
+			],
+			[
+				"found",
+				"found_bin_nums"
+			],
+			[
+				"RA2bin",
+				"RA2binVec"
+			],
+			[
+				"RA2bi",
+				"RA2bins"
+			],
+			[
+				"RA",
+				"RA2VarMax"
+			],
+			[
+				"RA2Va",
+				"RA2VarMin"
+			],
+			[
+				"found_",
+				"found_bins"
+			],
+			[
+				"bin_num",
+				"bin_number"
+			],
+			[
+				"foun",
+				"found_bin_nums"
+			],
+			[
+				"fin",
+				"FindBin"
+			],
+			[
+				"found_bin",
+				"found_bin_nums"
+			],
+			[
+				"MHTM",
+				"MHTMax"
+			],
+			[
+				"setLin",
+				"SetLineColor"
+			],
+			[
+				"RA2",
+				"RA2VarNames"
+			],
+			[
+				"min",
+				"min"
+			],
+			[
+				"copyfiles",
+				"copyfiles_test"
+			],
+			[
+				"all",
+				"all_files"
+			],
+			[
+				"writ",
+				"written_files"
+			],
+			[
+				"get_",
+				"get_list_of_files"
+			],
+			[
+				"mkdir",
+				"mkdir_command"
+			],
+			[
+				"EnD",
+				"ENDsite"
+			],
+			[
+				"END",
+				"ENDsite"
+			],
+			[
+				"make",
+				"make_directory"
+			],
+			[
+				"STAT",
+				"STARTsite"
+			],
+			[
+				"remote",
+				"remoteIsDir"
+			],
+			[
+				"made",
+				"made_dir"
+			],
+			[
+				"python_",
+				"python_path"
+			],
+			[
+				"setup",
+				"setuplines"
+			],
+			[
+				"shor",
+				"getShortPath"
+			],
+			[
+				"lcg_veri",
+				"lcg_version"
+			],
+			[
+				"current_l",
+				"current_lcg_version"
+			],
+			[
+				"lcg_",
+				"lcg_versions"
+			],
+			[
+				"curre",
+				"current_version_list"
+			],
+			[
+				"cur",
+				"current_version_list"
+			],
+			[
+				"pyh",
+				"python_paths"
+			],
+			[
+				"lcg",
+				"lcg_paths"
+			],
+			[
+				"set",
+				"setup"
+			],
+			[
+				"arch",
+				"architecture"
+			],
+			[
+				"lc",
+				"lcg_version"
+			],
+			[
+				"archi",
+				"architectures"
+			],
+			[
+				"split",
+				"splitPathWidth"
+			],
+			[
+				"line",
+				"lines"
+			],
+			[
+				"short",
+				"short_path"
+			],
+			[
+				"CMSSW",
+				"CMSSW_BASE"
+			],
+			[
+				"path",
+				"path_parts"
+			],
+			[
+				"getV",
+				"getVersionString"
+			],
+			[
+				"ver",
+				"version_info_0"
+			],
+			[
+				"getVersion",
+				"getVersionFolder"
+			],
+			[
+				"minor",
+				"minor_versions"
+			],
+			[
+				"mino",
+				"minor_version"
+			],
+			[
+				"vers",
+				"version_info_3"
+			],
+			[
+				"sys",
+				"system_version"
+			],
+			[
+				"curren",
+				"current_version"
+			],
+			[
+				"version",
+				"version_info"
+			],
+			[
+				"FIL",
+				"FILES_UNFILTERED"
+			],
+			[
+				"init_",
+				"init_list_command"
+			],
+			[
+				"additio",
+				"additional_arguments"
+			],
+			[
+				"proto",
+				"protocol_list"
+			],
+			[
+				"pre",
+				"prepend_command"
+			],
+			[
+				"possibl",
+				"possible_protocols"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 342.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"fi",
+				"Snippet: figure"
+			],
+			[
+				"figu",
+				"Snippet: figure"
+			],
+			[
+				"subfig",
+				"Snippet: subfig2"
+			],
+			[
+				"figur",
+				"Snippet: figure"
+			],
+			[
+				"table",
+				"Snippet: table"
+			],
+			[
+				"listi",
+				"Snippet: Listing"
+			],
+			[
+				"proje",
+				"Project Manager: Open Project"
+			],
+			[
+				"python",
+				"SublimeREPL: Python"
+			],
+			[
+				"commen",
+				"Snippet: Comment"
+			],
+			[
+				"figure",
+				"Snippet: figure"
+			],
+			[
+				"subfi",
+				"Snippet: subfig2"
+			],
+			[
+				"snipsub",
+				"Snippet: subfig2"
+			],
+			[
+				"sniptabl",
+				"Snippet: table"
+			],
+			[
+				"diff",
+				"FileDiffs: Menu"
+			],
+			[
+				"packa",
+				"Package Control: Install Package"
+			],
+			[
+				"pro",
+				"Project Manager: Open Project"
+			],
+			[
+				"proj",
+				"Project Manager: Open Project"
+			],
+			[
+				"markdown",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"repl",
+				"SublimeREPL: Python"
+			],
+			[
+				"fig",
+				"Snippet: figure"
+			],
+			[
+				"equation",
+				"Snippet: Equation"
+			],
+			[
+				"equa",
+				"Snippet: Equation"
+			],
+			[
+				"markdo",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"mana",
+				"Project Manager: Open Project"
+			],
+			[
+				"Apply",
+				"ApplySyntax: Settings"
+			],
+			[
+				"project mana",
+				"Project Manager: Open Project"
+			],
+			[
+				"sublimpy",
+				"SublimeREPL: Python"
+			],
+			[
+				"snittable",
+				"Snippet: table"
+			],
+			[
+				"sublreplpyth",
+				"SublimeREPL: Python"
+			],
+			[
+				"rep",
+				"SublimeREPL: Python"
+			],
+			[
+				"replpyth",
+				"SublimeREPL: Python"
+			],
+			[
+				"snipfig",
+				"Snippet: figure"
+			],
+			[
+				"open",
+				"Project Manager: Open Project"
+			],
+			[
+				"snipfigu",
+				"Snippet: figure"
+			],
+			[
+				"snippsubgi",
+				"Snippet: subfig2"
+			],
+			[
+				"sniptext",
+				"Snippet: beamer-textblock"
+			],
+			[
+				"snippfig",
+				"Snippet: figure"
+			],
+			[
+				"snipptex",
+				"Snippet: beamer-textblock"
+			],
+			[
+				"snifig",
+				"Snippet: figure"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"markpr",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"markdow",
+				"MarkdownTOC:Update TOC"
+			],
+			[
+				"markdotoc",
+				"MarkdownTOC:Update TOC"
+			],
+			[
+				"markdopri",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"markdowtoc",
+				"MarkdownTOC:Insert TOC"
+			],
+			[
+				"markdownpr",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"TOC",
+				"MarkdownTOC:Insert TOC"
+			],
+			[
+				"comment",
+				"Snippet: Comment"
+			],
+			[
+				"sft",
+				"SFTP: Edit Server…"
+			],
+			[
+				"eq",
+				"Snippet: Equation"
+			],
+			[
+				"itemiz",
+				"Snippet: Itemize"
+			],
+			[
+				"enum",
+				"Snippet: Enumerate"
+			],
+			[
+				"comm",
+				"Snippet: Comment"
+			],
+			[
+				"snifigu",
+				"Snippet: figure"
+			],
+			[
+				"equ",
+				"Snippet: Equation"
+			],
+			[
+				"item",
+				"Snippet: Itemize"
+			],
+			[
+				"equati",
+				"Snippet: Equation"
+			],
+			[
+				"",
+				"A File Icon: Changelog"
+			],
+			[
+				"snicomme",
+				"Snippet: Comment"
+			],
+			[
+				"snieq",
+				"Snippet: Equation"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"intall",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"packin",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: List Packages"
+			],
+			[
+				"wrap",
+				"Word Wrap: Toggle"
+			],
+			[
+				"wra",
+				"Word Wrap: Toggle"
+			],
+			[
+				"sftp",
+				"SFTP: Edit Server…"
+			],
+			[
+				"latextoo",
+				"LaTeXTools: Reconfigure and migrate settings"
+			],
+			[
+				"insal",
+				"Package Control: Install Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"latex",
+				"Set Syntax: LaTeX Beamer"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"snippe",
+				"Snippet: Using statement"
+			],
+			[
+				"c++",
+				"Set Syntax: C++"
+			],
+			[
+				"C++",
+				"Set Syntax: C++"
+			],
+			[
+				"Snippet: using",
+				"Snippet: using-namespace"
+			],
+			[
+				"un",
+				"Snippet: using-namespace"
+			],
+			[
+				"create",
+				"Create Xiki Buffer"
+			],
+			[
+				"packageconint",
+				"Package Control: Install Package"
+			],
+			[
+				"sideb",
+				"View: Toggle Side Bar"
+			],
+			[
+				"SFTP",
+				"Preferences: SFTP Settings"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				"Pac",
+				"Package Control: Install Package"
+			],
+			[
+				"Pack",
+				"Package Control: Install Package"
+			],
+			[
+				"Packag",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: In",
+				"Package Control: Install Package"
+			],
+			[
+				"FindKey",
+				"FindKeyConflicts: (Direct) Conflicts to Buffer"
+			],
+			[
+				"pacin",
+				"Package Control: Install Package"
+			],
+			[
+				"packinst",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 548.0
+	},
+	"console":
+	{
+		"height": 125.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = 'df21e130d211cfc94d9b0905775a7c0f' + '1e3d39e33b79698005270310898eea76'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by) ",
+			" import urllib.request,os,hashlib; h = 'df21e130d211cfc94d9b0905775a7c0f' + '1e3d39e33b79698005270310898eea76'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by) "
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/aperloff/Documents/CMS/HEP_DC_Advocacy_Trip/2019"
+	],
+	"file_history":
+	[
+		"/Users/aperloff/Documents/CMS/HEP_DC_Advocacy_Trip/2019/PhoneScript.txt",
+		"/Users/aperloff/Library/texmf/tex/latex/Presentation.cls",
+		"/Users/aperloff/Documents/CMS/FPGA/Presentations/2019_03_07 - Track Stand-Alone Board/2019_03_07-TSABoard.tex",
+		"/Users/aperloff/Documents/CMS/FPGA/Presentations/2019_03_07 - Track Stand-Alone Board/introduction.tex",
+		"/Users/aperloff/Documents/CMS/FPGA/Presentations/2019_03_07 - Track Stand-Alone Board/vertexing.tex",
+		"/Users/aperloff/Documents/CMS/FPGA/Presentations/2019_03_07 - Track Stand-Alone Board/jet_finding.tex",
+		"/Users/aperloff/Documents/CMS/FPGA/Presentations/2019_03_07 - Track Stand-Alone Board/tsa_testbench.tex",
+		"/Users/aperloff/Documents/CMS/FPGA/Presentations/2019_03_07 - Track Stand-Alone Board/backup.tex",
+		"/Users/aperloff/Documents/CMS/FPGA/Presentations/2019_03_07 - Track Stand-Alone Board/conclusion.tex",
+		"/Users/aperloff/Documents/CMS/FPGA/Presentations/Diagrams/Vertexing_v4.tex",
+		"/Users/aperloff/Documents/CMS/FPGA/Presentations/Diagrams/TwoLayerJetFinding_HT.tex",
+		"/Users/aperloff/Documents/CMS/FPGA/Presentations/Diagrams/TwoLayerJetFinding_DeltaZ.tex",
+		"/Users/aperloff/Documents/CMS/FPGA/Presentations/Diagrams/TwoLayerJetFinding_Layer2.tex",
+		"/Users/aperloff/Documents/CMS/FPGA/Presentations/Diagrams/TwoLayerJetFinding_Layer1.tex",
+		"/Users/aperloff/Documents/CMS/FPGA/Presentations/2019_03_07 - Track Stand-Alone Board/2019_03_07-TSABoard.log",
+		"/Users/aperloff/Documents/CMS/FPGA/Presentations/2019_03_07 - Track Stand-Alone Board/firmware.tex",
+		"/Users/aperloff/Documents/CMS/FPGA/Presentations/2019_03_07 - Track Stand-Alone Board/hardware.tex",
+		"/Users/aperloff/Documents/CMS/FPGA/Presentations/2018_01_31-CorrelatorVsTP/2018_01_31-CorrelatorVsTP.tex",
+		"/Users/aperloff/Documents/CMS/SUSY/RA2b/Presentations/2019_02_21-TreeMakerProduction/2019_02_21-TreeMakerProduction.tex",
+		"/Users/aperloff/Documents/CU/Brand/CU-Boulder_Beamer_Template/beamerthemeboulder.sty",
+		"/Users/aperloff/Documents/CU/Brand/CU-Boulder_Beamer_Template/beamerouterthememiniframesboulder.sty",
+		"/Users/aperloff/Documents/CU/Brand/CU-Boulder_Beamer_Template/beamercolorthemeboulderbox.sty",
+		"/Users/aperloff/Documents/CU/Brand/CU-Boulder_Beamer_Template/beamercolorthemeboulder.sty",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1550787169/cmslpc/uscms_data/d2/aperloff/YOURWORKINGAREA/SUSY/slc7/CMSSW_9_4_11/src/TreeMaker/WeightProducer/python/MCSample.py",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1550854786/cmslpc/uscms_data/d2/aperloff/YOURWORKINGAREA/SUSY/slc7/CMSSW_9_4_11/src/TreeMaker/Production/python/scenarios.py",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1550125135/cmslpc/uscms_data/d2/aperloff/YOURWORKINGAREA/SUSY/slc6/CMSSW_8_0_30/src/Analysis/scripts/fastFullMHTCorrection.C",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1550728031/cmslpc/uscms_data/d2/aperloff/YOURWORKINGAREA/SUSY/slc7/CMSSW_9_4_11/src/TreeMaker/Production/python/get_mcm.py",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1550870470/cmslpc/uscms_data/d2/aperloff/YOURWORKINGAREA/SUSY/slc7/CMSSW_9_4_11/src/TreeMaker/Production/test/runMakeTreeFromMiniAOD_cfg.py",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1550817552/cmslpc/uscms_data/d2/aperloff/YOURWORKINGAREA/SUSY/slc7/CMSSW_9_4_11/src/TreeMaker/Utils/src/JetProperties.cc",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1550888483/cmslpc/uscms_data/d2/aperloff/YOURWORKINGAREA/SUSY/slc7/CMSSW_9_4_11/src/TreeMaker/TreeMaker/python/makeJetVars.py",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1550887168/cmslpc/uscms_data/d2/aperloff/YOURWORKINGAREA/SUSY/slc7/CMSSW_9_4_11/src/TreeMaker/Utils/interface/all_equal.h",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1550889345/cmslpc/uscms_data/d2/aperloff/YOURWORKINGAREA/SUSY/slc7/CMSSW_9_4_11/src/TreeMaker/Utils/python/goodjetsproducer_cfi.py",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1550789445/cmslpc/uscms_data/d2/aperloff/YOURWORKINGAREA/SUSY/slc7/CMSSW_9_4_11/src/TreeMaker/Utils/src/GoodJetsProducer.cc",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1550772546/cmslpc/uscms_data/d2/aperloff/YOURWORKINGAREA/SUSY/slc7/CMSSW_9_4_11/src/TreeMaker/WeightProducer/python/getWeightProducer_cff.py",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1550854010/cmslpc/uscms_data/d2/aperloff/YOURWORKINGAREA/SUSY/slc7/CMSSW_9_4_11/src/TreeMaker/WeightProducer/src/WeightProducer.cc",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1550867864/cmslpc/uscms_data/d2/aperloff/YOURWORKINGAREA/SUSY/slc7/CMSSW_9_4_11/src/TreeMaker/TreeMaker/python/maker.py",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1550854675/cmslpc/uscms_data/d2/aperloff/YOURWORKINGAREA/SUSY/slc7/CMSSW_9_4_11/src/TreeMaker/WeightProducer/python/weightProducer_cfi.py",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1550796089/cmslpc/uscms_data/d2/aperloff/YOURWORKINGAREA/SUSY/slc7/CMSSW_9_4_11/src/TreeMaker/Production/python/scenarios.py",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1550789367/cmslpc/uscms_data/d2/aperloff/YOURWORKINGAREA/SUSY/slc7/CMSSW_9_4_11/src/TreeMaker/TreeMaker/python/makeJetVars.py",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1550789287/cmslpc/uscms_data/d2/aperloff/YOURWORKINGAREA/SUSY/slc7/CMSSW_9_4_11/src/TreeMaker/Utils/python/goodjetsproducer_cfi.py",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1550786428/cmslpc/uscms_data/d2/aperloff/YOURWORKINGAREA/SUSY/slc7/CMSSW_9_4_11/src/TreeMaker/WeightProducer/python/weightProducer_cfi.py",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1550784777/cmslpc/uscms_data/d2/aperloff/YOURWORKINGAREA/SUSY/slc7/CMSSW_9_4_11/src/TreeMaker/WeightProducer/src/WeightProducer.cc",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1550790041/cmslpc/uscms_data/d2/aperloff/YOURWORKINGAREA/SUSY/slc6/CMSSW_8_0_30/src/Analysis/input/input_PFJetID_options.txt",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1550790007/cmslpc/uscms_data/d2/aperloff/YOURWORKINGAREA/SUSY/slc6/CMSSW_8_0_30/src/Analysis/KCode/KCommonSelectors.h",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1550789805/cmslpc/uscms_data/d2/aperloff/YOURWORKINGAREA/SUSY/slc6/CMSSW_8_0_30/src/Analysis/KCode/KSkimmerSelectors.h",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1550789609/cmslpc/uscms_data/d2/aperloff/YOURWORKINGAREA/SUSY/slc6/CMSSW_8_0_30/src/Analysis/KCode/KCommonSelectors.h",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1550772644/cmslpc/uscms_data/d2/aperloff/YOURWORKINGAREA/SUSY/slc7/CMSSW_9_4_11/src/TreeMaker/WeightProducer/src/WeightProducer.cc",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1550771399/cmslpc/uscms_data/d2/aperloff/YOURWORKINGAREA/SUSY/slc7/CMSSW_9_4_11/src/TreeMaker/TreeMaker/python/makeTreeFromMiniAOD_cff.py",
+		"/Users/aperloff/Documents/CMS/SUSY/RA2b/Presentations/2019_02_14-FastSimMHTRatio/2019_02_014_FastSimMHTRatio.tex",
+		"/Users/aperloff/Documents/CMS/SUSY/RA2b/Presentations/2019_02_05-JetIDStudies/2019_02_012_JetIDStudies.tex",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1550703394/cmslpc/uscms_data/d2/aperloff/YOURWORKINGAREA/SUSY/slc7/CMSSW_9_4_11/src/ecalBadCalibFilterLists/test/MakeEcalBadCalibFilterListMergerRunPeriodsByPD.sh",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1550703580/cmslpc/uscms_data/d2/aperloff/YOURWORKINGAREA/SUSY/slc7/CMSSW_9_4_11/src/ecalBadCalibFilterLists/test/MakeEcalBadCalibFilterListJDL.sh",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1550703628/cmslpc/uscms_data/d2/aperloff/YOURWORKINGAREA/SUSY/slc7/CMSSW_9_4_11/src/ecalBadCalibFilterLists/test/MakeEcalBadCalibFilterListTEMPLATE.jdl",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1550703641/cmslpc/uscms_data/d2/aperloff/YOURWORKINGAREA/SUSY/slc7/CMSSW_9_4_11/src/ecalBadCalibFilterLists/test/MakeEcalBadCalibFilterList.sh",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1550703648/cmslpc/uscms_data/d2/aperloff/YOURWORKINGAREA/SUSY/slc7/CMSSW_9_4_11/src/ecalBadCalibFilterLists/scripts/MakeEcalBadCalibFilterList.C",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1550680439/cmslpc/uscms_data/d2/aperloff/YOURWORKINGAREA/SUSY/slc7/CMSSW_9_4_11/src/TreeMaker/Production/test/ECALBadCalibFilter/MakeEcalBadCalibFilterListMergerRunPeriodsByPD.sh",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1550281613/cmslpc/uscms_data/d2/aperloff/YOURWORKINGAREA/SUSY/slc7/CMSSW_9_4_11/src/TreeMaker/Production/test/MakeEcalBadCalibFilterList.C",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1550447433/cmslpc/uscms_data/d2/aperloff/YOURWORKINGAREA/SUSY/slc7/CMSSW_9_4_11/src/TreeMaker/Production/test/ECALBadCalibFilter/MakeEcalBadCalibFilterListJDL.sh",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1550442641/cmslpc/uscms_data/d2/aperloff/YOURWORKINGAREA/SUSY/slc7/CMSSW_9_4_11/src/TreeMaker/Production/test/ECALBadCalibFilter/MakeEcalBadCalibFilterList.sh",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1550447680/cmslpc/uscms_data/d2/aperloff/YOURWORKINGAREA/SUSY/slc7/CMSSW_9_4_11/src/TreeMaker/Production/test/ECALBadCalibFilter/MakeEcalBadCalibFilterListTEMPLATE.jdl",
+		"/Users/aperloff/Documents/Curriculum Vitae/src/outreach.tex",
+		"/Users/aperloff/Documents/Curriculum Vitae/src/schools.tex",
+		"/Users/aperloff/Documents/Curriculum Vitae/CurriculumVitae.tex",
+		"/Users/aperloff/Documents/Curriculum Vitae/src/research-undergrad.tex",
+		"/Users/aperloff/Documents/Curriculum Vitae/src/research-postdoc.tex",
+		"/Users/aperloff/Documents/Curriculum Vitae/src/research-grad.tex",
+		"/Users/aperloff/Documents/Curriculum Vitae/src/present.tex",
+		"/Users/aperloff/Documents/Curriculum Vitae/src/intro.tex",
+		"/Users/aperloff/Documents/Curriculum Vitae/src/education.tex",
+		"/Users/aperloff/Documents/CMS/SUSY/RA2b/Presentations/2019_02_05-JetIDStudies/2019_02_05-JetIDStudies.tex",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1550442630/cmslpc/uscms_data/d2/aperloff/YOURWORKINGAREA/SUSY/slc7/CMSSW_9_4_11/src/TreeMaker/Production/test/ECALBadCalibFilter/MakeEcalBadCalibFilterList.jdl",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1550446835/cmslpc/uscms_data/d2/aperloff/YOURWORKINGAREA/SUSY/slc7/CMSSW_9_4_11/src/TreeMaker/Production/test/ECALBadCalibFilter/MakeEcalBadCalibFilterJDL.sh",
+		"/Users/aperloff/Documents/CMS/SUSY/RA2b/NanoAODDatasets-14Dec2018.txt",
+		"/Users/aperloff/Documents/CMS/SUSY/RA2b/TreeMakerDatasets_2018.txt",
+		"/Users/aperloff/Documents/CMS/SUSY/RA2b/TreeMakerDatasets_2017.txt",
+		"/Users/aperloff/Documents/CMS/SUSY/RA2b/TreeMakerDatasets_2016.txt",
+		"/Users/aperloff/Downloads/proj_VCU118_tkobjalgo/solution/syn/report/mp7wrapped_tkobjalgo_csynth.rpt",
+		"/Users/aperloff/Downloads/proj_VCU118_tkobjalgo/solution/syn/report/tkobjalgo_csynth.rpt",
+		"/Users/aperloff/Downloads/proj_VCU118_tkobjalgo/solution/syn/report/tkobjalgo_merge_hist_csynth.rpt",
+		"/Users/aperloff/Downloads/proj_VCU118_tkobjalgo/solution/syn/report/Loop_mp7_unpack_trac_csynth.rpt",
+		"/Users/aperloff/Documents/CMS/FPGA/torreys.colorado.edu/L1TrackObjects_HLS/firmware/simple_tkobjalgo.cpp",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1550243639/culogin/nfs/data41/aperloff/L1TrackObjects_HLS/proj_VCU118_tkobjalgo/solution/syn/report/mp7wrapped_tkobjalgo_csynth.rpt",
+		"/Users/aperloff/Documents/CMS/FPGA/Presentations/2019_02_15-Vertexing/2019_02_15-Vertexing.tex",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1550107756/cmslpc/uscms_data/d2/aperloff/YOURWORKINGAREA/SUSY/slc6/CMSSW_8_0_30/src/Analysis/scripts/FastFullMHTCorrection.C",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1549930626/cmslpc/uscms_data/d2/aperloff/YOURWORKINGAREA/SUSY/slc6/CMSSW_8_0_30/src/Analysis/scripts/QuickJetID.C",
+		"/Users/aperloff/Downloads/lost-in-cmsstor720-disk-disk1-lfn",
+		"/Users/aperloff/Documents/CMS/SUSY/RA2b/Presentations/2019_02_05-JetIDStudies/TestJetID.tex",
+		"/Users/aperloff/Documents/CMS/SUSY/RA2b/Presentations/2019_02_05-JetIDStudies/QuickJetID.C",
+		"/Users/aperloff/Documents/CMS/SUSY/RA2b/Presentations/2019_02_05-JetIDStudies/JetIDStudies.log",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1549378132/cmslpc/uscms/homes/a/aperloff/nobackup/transfer_to_colorado/V12/Run2ProductionV12_transfer.log",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1549378068/cmslpc/uscms/homes/a/aperloff/nobackup/transfer_to_colorado/Skims/V16/Run2ProductionV16_transfer.log",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1549655516/cmslpc/uscms/homes/a/aperloff/nobackup/YOURWORKINGAREA/SUSY/slc6/CMSSW_8_0_30/src/Analysis/KCode/KSkimmerSelectors.h",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1549655539/cmslpc/uscms/homes/a/aperloff/nobackup/YOURWORKINGAREA/SUSY/slc6/CMSSW_8_0_30/src/Analysis/KCode/KCommonSelectors.h",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1549656267/cmslpc/uscms/homes/a/aperloff/nobackup/YOURWORKINGAREA/SUSY/slc6/CMSSW_8_0_30/src/Analysis/input/input_selection_pfjetid.txt",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1549667688/cmslpc/uscms/homes/a/aperloff/nobackup/YOURWORKINGAREA/SUSY/slc6/CMSSW_8_0_30/src/Analysis/input/input_selection_syst.txt",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1549684308/cmslpc/uscms/homes/a/aperloff/nobackup/YOURWORKINGAREA/SUSY/slc6/CMSSW_8_0_30/src/Analysis/input/input_PFJetID_options.txt",
+		"/Users/aperloff/Desktop/eosmkdir_error.txt",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1549684214/cmslpc/uscms/homes/a/aperloff/nobackup/YOURWORKINGAREA/SUSY/slc6/CMSSW_8_0_30/src/Analysis/input/input_RA2bin_options.txt",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1549683236/cmslpc/uscms/homes/a/aperloff/nobackup/YOURWORKINGAREA/SUSY/slc6/CMSSW_8_0_30/src/Analysis/input/input_sets_skim_data_2017.txt",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1549679828/cmslpc/uscms/homes/a/aperloff/nobackup/YOURWORKINGAREA/SUSY/slc6/CMSSW_8_0_30/src/Analysis/input/input_RA2bin_options.txt",
+		"/Users/aperloff/Desktop/good_file_open.log",
+		"/Users/aperloff/Desktop/bad_file_open.log",
+		"/Users/aperloff/Documents/CMS/SUSY/RA2b/Presentations/2019_02_05-JetIDStudies/2019_02_05-JetIDStudies.log",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1549388141/cmslpc/uscms/homes/a/aperloff/nobackup/YOURWORKINGAREA/SUSY/slc7/CMSSW_9_4_11/src/TreeMaker/WeightProducer/python/getWeightProducer_cff.py",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1549384116/cmslpc/uscms_data/d2/aperloff/YOURWORKINGAREA/SUSY/slc7/CMSSW_9_4_11/src/TreeMaker/WeightProducer/python/getWeightProducer_cff.py",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1549383880/cmslpc/uscms_data/d2/aperloff/YOURWORKINGAREA/SUSY/slc7/CMSSW_9_4_11/src/TreeMaker/WeightProducer/python/MCSample.py",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1549379681/cmslpc/uscms/homes/a/aperloff/nobackup/transfer_to_colorado/Skims/V16/fts_transfer_file_list.txt",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1549380288/cmslpc/uscms/homes/a/aperloff/Scripts/utilities/FTS/fts_utilities.py",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1549378117/cmslpc/uscms/homes/a/aperloff/nobackup/transfer_to_colorado/V14/Run2ProductionV14_transfer.log",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1548774313/cmslpc/uscms/homes/a/aperloff/nobackup/transfer_to_colorado/V12/Run2ProductionV12_transfer.log",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1548770786/cmslpc/uscms/homes/a/aperloff/nobackup/transfer_to_colorado/V15/Run2ProductionV15_transfer.log",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1549063856/cmslpc/uscms/homes/a/aperloff/Scripts/utilities/FTS/fts_utilities.py",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1548697382/cmslpc/uscms/homes/a/aperloff/Scripts/utilities/XRootD/xrdfs_find.py",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1548692634/cmslpc/uscms/homes/a/aperloff/Scripts/utilities/FTS/fts_utilities.py",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1548683894/cmslpc/uscms/homes/a/aperloff/nobackup/transfer_to_colorado/V15/Run2ProductionV15_transfer.log",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1548743257/cmslpc/uscms/homes/a/aperloff/nobackup/transfer_to_colorado/V12/Run2ProductionV12_transfer.log",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1548700035/cmslpc/uscms/homes/a/aperloff/Scripts/lpc-scripts/copyfiles.py",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1548696639/cmslpc/uscms/homes/a/aperloff/Scripts/utilities/FTS/getSiteInfo.py",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1548520326/cmslpc/uscms/homes/a/aperloff/nobackup/transfer_to_colorado/V14/Run2ProductionV14_transfer.log",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1548497588/cmslpc/uscms/homes/a/aperloff/Scripts/utilities/FTS/fts_utilities.py",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1548497569/cmslpc/uscms/homes/a/aperloff/Scripts/lpc-scripts/getSiteInfo.py",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1548520787/cmslpc/uscms/homes/a/aperloff/nobackup/transfer_to_colorado/V15/Run2ProductionV15_transfer.log",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1548469136/cmslpc/uscms/homes/a/aperloff/Scripts/utilities/GFAL/gfal-copy-fork.py",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1548367411/cmslpc/uscms/homes/a/aperloff/Scripts/lpc-scripts/getSiteInfo.py",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1548365250/cmslpc/uscms/homes/a/aperloff/Scripts/utilities/FTS/fts_utilities.py",
+		"/Users/aperloff/Documents/CMS/SUSY/RA2b/Presentations/2019_01_24-TreeMakerProduction/2019_01_24-TreeMakerProduction.tex",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1548358686/cmslpc/uscms/homes/a/aperloff/Scripts/lpc-scripts/eosdu",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1548085547/cmslpc/uscms/homes/a/aperloff/Scripts/utilities/GFAL/gfal-copy-fork.py"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 94.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 24.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.sftp":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "HEP_DC_Advocacy_Trip_2019.sublime-project",
+	"replace":
+	{
+		"height": 44.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"plo",
+				"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1460565795/cmslpc/uscms/home/aperloff/nobackup/YOURWORKINGAREA/MatrixElement/gitty/CMSSW_5_3_2_patch5/src/TAMUWW/Tools/bin/plotter_x.cc"
+			],
+			[
+				"dra",
+				"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1426464123/brazos/home/aperloff/JEC/CMSSW_7_3_3/src/JMEAnalysis/JMEValidator/macros/particleDrawer.C"
+			],
+			[
+				"run",
+				"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1426464338/brazos/home/aperloff/JEC/CMSSW_7_3_3/src/JMEAnalysis/JMEValidator/test/runValidator.py"
+			],
+			[
+				"par",
+				"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1426464123/brazos/home/aperloff/JEC/CMSSW_7_3_3/src/JMEAnalysis/JMEValidator/macros/particleDrawer.C"
+			],
+			[
+				"event",
+				"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1414446841/cmslpc/uscms/home/aperloff/nobackup/YOURWORKINGAREA/MatrixElement/gitty/CMSSW_5_3_2_patch4/src/TAMUWW/Tools/bin/EventNtupleToUVaNtuple_x.cc"
+			],
+			[
+				"form",
+				"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1412375393/cmslpc/uscms/home/aperloff/nobackup/YOURWORKINGAREA/VHbb/CMSSW_7_1_0_pre9/src/VHbb/HbbAnalyzer/bin/format_plots_x.cc"
+			],
+			[
+				"plot",
+				"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1409671503/cmslpc/uscms/home/aperloff/nobackup/YOURWORKINGAREA/MatrixElement/gitty/CMSSW_5_3_2_patch4/src/TAMUWW/Tools/bin/plotter_x.cc"
+			],
+			[
+				"plott",
+				"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1409671503/cmslpc/uscms/home/aperloff/nobackup/YOURWORKINGAREA/MatrixElement/gitty/CMSSW_5_3_2_patch4/src/TAMUWW/Tools/bin/plotter_x.cc"
+			],
+			[
+				"hbb",
+				"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1410537533/cmslpc/uscms/home/aperloff/nobackup/YOURWORKINGAREA/VHbb/CMSSW_7_1_0_pre9/src/VHbb/HbbAnalyzer/plugins/HbbAnalyzer.cc"
+			],
+			[
+				"hbban",
+				"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1410537533/cmslpc/uscms/home/aperloff/nobackup/YOURWORKINGAREA/VHbb/CMSSW_7_1_0_pre9/src/VHbb/HbbAnalyzer/plugins/HbbAnalyzer.cc"
+			],
+			[
+				"cfi",
+				"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1410537997/cmslpc/uscms/home/aperloff/nobackup/YOURWORKINGAREA/VHbb/CMSSW_7_1_0_pre9/src/VHbb/HbbAnalyzer/python/HbbAnalyzer_cfi.py"
+			],
+			[
+				"cfg",
+				"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1410538007/cmslpc/uscms/home/aperloff/nobackup/YOURWORKINGAREA/VHbb/CMSSW_7_1_0_pre9/src/VHbb/HbbAnalyzer/python/HbbAnalyzer_cfg.py"
+			],
+			[
+				"",
+				"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1412203431/cmslpc/uscms/home/aperloff/nobackup/YOURWORKINGAREA/MatrixElement/gitty/CMSSW_5_3_2_patch4/src/TAMUWW/MVA/src/TAMUWWMVA.cc"
+			],
+			[
+				"un",
+				"untitled"
+			],
+			[
+				"inc",
+				"/Users/aperloff/Library/Application Support/Sublime Text 2/Packages/User/C++/include-stl.sublime-snippet"
+			],
+			[
+				"unti",
+				"untitled"
+			],
+			[
+				"mico",
+				"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1384972849/cmslpc/uscms/home/aperloff/MatrixElement/gitty/CMSSW_5_3_2_patch4/src/TAMUWW/Tools/src/MicroNtupleMaker.cc"
+			],
+			[
+				"jn",
+				"kjfnvldjf"
+			],
+			[
+				"jv",
+				"kjfnvldjf"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 319.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

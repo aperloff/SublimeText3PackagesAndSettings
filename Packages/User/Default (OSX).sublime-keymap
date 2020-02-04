@@ -1,0 +1,10 @@
+[
+	{ "keys": ["alt+tab"], "command": "reindent"},
+	{ "keys": ["alt+shift+up"], "command": "select_lines", "args": {"forward": false} },
+	{ "keys": ["alt+shift+down"], "command": "select_lines", "args": {"forward": true} },
+	{ "keys": ["shift+super+r"], "command": "reindent"},
+	{ "keys": ["alt+super+r"], "command": "permute_selection", "operation": "reverse"},
+	{ "keys": ["super+ctrl+o"], "command": "project_manager", "args": {"action": "new"} },// or ["ctrl+alt+o"] for Windows/Linux
+    { "keys": ["super+o"], "command": "prompt_open_file" }, // Returns the default behavior to the open keys
+    { "keys": ["super+shift+o"], "command": "i_opener" } // Adds the iOpener behavior as an option
+]

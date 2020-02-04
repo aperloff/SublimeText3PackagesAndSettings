@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[\\begin{alertblock}{$0}
+	${1:$TM_SELECTED_TEXT}
+\\end{alertblock}]]></content>
+	<tabTrigger>alertblock</tabTrigger>
+	<scope>text.tex.latex</scope>
+	<description>Alert Block</description>
+</snippet>

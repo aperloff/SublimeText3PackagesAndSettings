@@ -1,0 +1,1317 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"RELEASE",
+				"RELEASE_PATHS"
+			],
+			[
+				"rele",
+				"releases"
+			],
+			[
+				"RELEA",
+				"RELEASE_PATHS"
+			],
+			[
+				"SELE",
+				"SELECTED_RELEASE"
+			],
+			[
+				"datafr",
+				"dataframes"
+			],
+			[
+				"data",
+				"datacard_templates"
+			],
+			[
+				"output",
+				"outputDirectory"
+			],
+			[
+				"counts",
+				"counts_for_display"
+			],
+			[
+				"unwei",
+				"unweighted_count"
+			],
+			[
+				"avg",
+				"avg_weight"
+			],
+			[
+				"wieght",
+				"weight_by_bins"
+			],
+			[
+				"weight",
+				"weight_by_bins"
+			],
+			[
+				"unc",
+				"unc_by_bins"
+			],
+			[
+				"coutn",
+				"counts_by_bins"
+			],
+			[
+				"unweigh",
+				"unweighted_count_histograms"
+			],
+			[
+				"ave",
+				"avg_weight_histograms"
+			],
+			[
+				"count",
+				"count_histograms"
+			],
+			[
+				"input",
+				"input_file_path"
+			],
+			[
+				"outp",
+				"output_file_path"
+			],
+			[
+				"gra",
+				"graph_apr"
+			],
+			[
+				"pvalue",
+				"pvalues_bin"
+			],
+			[
+				"add",
+				"add_argument"
+			],
+			[
+				"nominalFil",
+				"nominalFilePath"
+			],
+			[
+				"true",
+				"True"
+			],
+			[
+				"nominal",
+				"nominal_name"
+			],
+			[
+				"electron",
+				"electronFile"
+			],
+			[
+				"QCD",
+				"QCD_MuFULL"
+			],
+			[
+				"h",
+				"h"
+			],
+			[
+				"Inter",
+				"Interpolate"
+			],
+			[
+				"gsl_int",
+				"gsl_interp_accel"
+			],
+			[
+				"gsl_interp",
+				"gsl_interp2d_type"
+			],
+			[
+				"print",
+				"printGraph"
+			],
+			[
+				"index_",
+				"index_x"
+			],
+			[
+				"sor",
+				"px_sorted"
+			],
+			[
+				"ind",
+				"index_x"
+			],
+			[
+				"evt",
+				"evt_fill"
+			],
+			[
+				"hist",
+				"histogram_in_range"
+			],
+			[
+				"vari",
+				"variable"
+			],
+			[
+				"make",
+				"make_full_range"
+			],
+			[
+				"summe",
+				"summed_histograms"
+			],
+			[
+				"his",
+				"histogram_names_added"
+			],
+			[
+				"TSpline",
+				"TSplineSteffen"
+			],
+			[
+				"TSpl",
+				"TSplineSteffen"
+			],
+			[
+				"n",
+				"n"
+			],
+			[
+				"TS",
+				"TS3"
+			],
+			[
+				"spline",
+				"spline_type"
+			],
+			[
+				"splin",
+				"spline_type"
+			],
+			[
+				"nse",
+				"nSectionsBeforeFunction"
+			],
+			[
+				"nSe",
+				"nSectionsBeforeFunction"
+			],
+			[
+				"graph",
+				"graphs"
+			],
+			[
+				"histogr",
+				"histogramMetric"
+			],
+			[
+				"Clos",
+				"ClosureMaker"
+			],
+			[
+				"histo",
+				"histogramMetric"
+			],
+			[
+				"Form",
+				"FormulaEvaluator"
+			],
+			[
+				"chek",
+				"checkFormulaEvaluator"
+			],
+			[
+				"root",
+				"root_func"
+			],
+			[
+				"l2l3",
+				"l2l3"
+			],
+			[
+				"check",
+				"checkFormulaEvaluator"
+			],
+			[
+				"bran",
+				"branchJetPUPPI"
+			],
+			[
+				"branch",
+				"branchVertex"
+			],
+			[
+				"Del",
+				"DelphesNtupleToJRANtuple_x"
+			],
+			[
+				"file",
+				"fileList"
+			],
+			[
+				"inpu",
+				"inputFilePath"
+			],
+			[
+				"TTreeR",
+				"TTreeReaderArray"
+			],
+			[
+				"i",
+				"i"
+			],
+			[
+				"vabscor_",
+				"vabscor_eta_spline"
+			],
+			[
+				"do",
+				"doPenalized"
+			],
+			[
+				"double",
+				"double"
+			],
+			[
+				"mak",
+				"makeCanvas"
+			],
+			[
+				"spline_",
+				"spline_func"
+			],
+			[
+				"spl",
+				"spline_func"
+			],
+			[
+				"makeCa",
+				"makeCanvasVariable"
+			],
+			[
+				"ssc",
+				"sscname"
+			],
+			[
+				"makeC",
+				"makeCanvasVariable"
+			],
+			[
+				"GetN",
+				"GetNpar"
+			],
+			[
+				"num",
+				"num_spline_pars"
+			],
+			[
+				"GetX",
+				"GetXmin"
+			],
+			[
+				"find",
+				"findNext"
+			],
+			[
+				"high",
+				"highest"
+			],
+			[
+				"fin",
+				"findNext"
+			],
+			[
+				"L2",
+				"L2Creator"
+			],
+			[
+				"mer",
+				"merge_points"
+			],
+			[
+				"getN",
+				"getNSections"
+			],
+			[
+				"set",
+				"setPartialFunction"
+			],
+			[
+				"par",
+				"partial_function"
+			],
+			[
+				"is",
+				"isFifthOrder"
+			],
+			[
+				"fitr",
+				"fitrange_min"
+			],
+			[
+				"numb",
+				"number_filled_bins"
+			],
+			[
+				"no",
+				"normToAll"
+			],
+			[
+				"SetParameters",
+				"SetParameters"
+			],
+			[
+				"bes",
+				"bestIter"
+			],
+			[
+				"fitRes",
+				"fitResultPtrs"
+			],
+			[
+				"l2",
+				"l2pffit"
+			],
+			[
+				"pari",
+				"pari_lim"
+			],
+			[
+				"outputDir",
+				"outputDirectory"
+			],
+			[
+				"out",
+				"outputFilename"
+			],
+			[
+				"modi",
+				"modifiedHandkerchief"
+			],
+			[
+				"function",
+				"functionType"
+			],
+			[
+				"mapTr",
+				"mapTreePU"
+			],
+			[
+				"fitfn",
+				"fitfnc"
+			],
+			[
+				"string",
+				"stringstream"
+			],
+			[
+				"anima",
+				"animationCmd"
+			],
+			[
+				"writ",
+				"writeCmd"
+			],
+			[
+				"prin",
+				"printCmd"
+			],
+			[
+				"anim",
+				"animated_names"
+			],
+			[
+				"cont",
+				"containsGIF"
+			],
+			[
+				"Single",
+				"SingleEl_WlnuJets"
+			],
+			[
+				"compar",
+				"compared"
+			],
+			[
+				"save",
+				"saveHistograms"
+			],
+			[
+				"filena",
+				"filename"
+			],
+			[
+				"load",
+				"loadHists"
+			],
+			[
+				"loa",
+				"loadHists"
+			],
+			[
+				"compa",
+				"compareFiles"
+			],
+			[
+				"JetT",
+				"JetType"
+			],
+			[
+				"Jet",
+				"JetType"
+			],
+			[
+				"max",
+				"maxEvents"
+			],
+			[
+				"JECNtuple_MiniAOD_JER",
+				"JECNtuple_MiniAOD_JERUncertaintyDown"
+			],
+			[
+				"if",
+				"ifilename_suffix"
+			],
+			[
+				"ifilen",
+				"ifilename_suffix"
+			],
+			[
+				"ifile",
+				"ifilename_suffix"
+			],
+			[
+				"jet",
+				"jetcollection"
+			],
+			[
+				"JERUn",
+				"JERUncertainty"
+			],
+			[
+				"apply",
+				"applyDBFile"
+			],
+			[
+				"jer",
+				"jerfile"
+			],
+			[
+				"glob",
+				"GlobalTag"
+			],
+			[
+				"MCHI",
+				"MCHist_reweighted"
+			],
+			[
+				"err",
+				"errorBandWeight"
+			],
+			[
+				"dta",
+				"dataHists"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/Users/aperloff/bin/utilities/README.md",
+			"settings":
+			{
+				"buffer_size": 9696,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 256.0,
+		"last_filter": "diff",
+		"selected_items":
+		[
+			[
+				"diff",
+				"FileDiffs: Menu"
+			],
+			[
+				"markdowprev",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"markdowtoc",
+				"MarkdownTOC:Update TOC"
+			],
+			[
+				"markdowpr",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"markdown pri",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"proje",
+				"Project Manager"
+			],
+			[
+				"sft",
+				"SFTP: Edit Server…"
+			],
+			[
+				"eq",
+				"Snippet: Equation"
+			],
+			[
+				"itemiz",
+				"Snippet: Itemize"
+			],
+			[
+				"enum",
+				"Snippet: Enumerate"
+			],
+			[
+				"comm",
+				"Snippet: Comment"
+			],
+			[
+				"equation",
+				"Snippet: Equation"
+			],
+			[
+				"comment",
+				"Snippet: Comment"
+			],
+			[
+				"snifigu",
+				"Snippet: figure"
+			],
+			[
+				"equ",
+				"Snippet: Equation"
+			],
+			[
+				"item",
+				"Snippet: Itemize"
+			],
+			[
+				"equati",
+				"Snippet: Equation"
+			],
+			[
+				"",
+				"A File Icon: Changelog"
+			],
+			[
+				"equa",
+				"Snippet: Equation"
+			],
+			[
+				"snicomme",
+				"Snippet: Comment"
+			],
+			[
+				"snieq",
+				"Snippet: Equation"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"intall",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"packin",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: List Packages"
+			],
+			[
+				"wrap",
+				"Word Wrap: Toggle"
+			],
+			[
+				"wra",
+				"Word Wrap: Toggle"
+			],
+			[
+				"packa",
+				"Package Control: Install Package"
+			],
+			[
+				"sftp",
+				"SFTP: Edit Server…"
+			],
+			[
+				"latextoo",
+				"LaTeXTools: Reconfigure and migrate settings"
+			],
+			[
+				"insal",
+				"Package Control: Install Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"latex",
+				"Set Syntax: LaTeX Beamer"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"snippe",
+				"Snippet: Using statement"
+			],
+			[
+				"c++",
+				"Set Syntax: C++"
+			],
+			[
+				"C++",
+				"Set Syntax: C++"
+			],
+			[
+				"Snippet: using",
+				"Snippet: using-namespace"
+			],
+			[
+				"un",
+				"Snippet: using-namespace"
+			],
+			[
+				"create",
+				"Create Xiki Buffer"
+			],
+			[
+				"packageconint",
+				"Package Control: Install Package"
+			],
+			[
+				"sideb",
+				"View: Toggle Side Bar"
+			],
+			[
+				"SFTP",
+				"Preferences: SFTP Settings"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				"Pac",
+				"Package Control: Install Package"
+			],
+			[
+				"Pack",
+				"Package Control: Install Package"
+			],
+			[
+				"Packag",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: In",
+				"Package Control: Install Package"
+			],
+			[
+				"FindKey",
+				"FindKeyConflicts: (Direct) Conflicts to Buffer"
+			],
+			[
+				"pacin",
+				"Package Control: Install Package"
+			],
+			[
+				"packinst",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 548.0
+	},
+	"console":
+	{
+		"height": 125.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = 'df21e130d211cfc94d9b0905775a7c0f' + '1e3d39e33b79698005270310898eea76'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by) ",
+			" import urllib.request,os,hashlib; h = 'df21e130d211cfc94d9b0905775a7c0f' + '1e3d39e33b79698005270310898eea76'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by) "
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/aperloff/bin/utilities",
+		"/Users/aperloff/bin/utilities/EOS"
+	],
+	"file_history":
+	[
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1517014948/cmslpc/uscms/homes/a/aperloff/eosdu_jjesus",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1517014961/cmslpc/uscms/homes/a/aperloff/eosdu_pedrok",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1517320273/cmslpc/uscms/homes/a/aperloff/Scripts/utilities/EOS/eosdu.sh",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1516979006/cmslpc/uscms/homes/a/aperloff/Scripts/utilities/refreshLoginLinks.sh",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1516983669/cmslpc/uscms/homes/a/aperloff/Scripts/utilities/EOS/eosCount.sh",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1516980869/cmslpc/uscms/homes/a/aperloff/Scripts/utilities/EOS/eosCount.sh",
+		"/Users/aperloff/bin/utilities/removeOlderThan.sh",
+		"/Users/aperloff/bin/utilities/Setup/DASSetup.csh",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1516980605/cmslpc/uscms/homes/a/aperloff/Scripts/utilities/EOS/eosCount.csh",
+		"/Users/aperloff/bin/utilities/Setup/FPGASetup.csh",
+		"/Users/aperloff/bin/utilities/refreshLoginLinks.sh",
+		"/Users/aperloff/bin/utilities/Setup/Setup.sh",
+		"/Users/aperloff/bin/utilities/countFoldersAndFiles.sh",
+		"/Users/aperloff/bin/utilities/Setup/MatrixElementSetup.sh",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1516930622/cmslpc/uscms/homes/a/aperloff/Scripts/utilities/Setup/Setup.sh",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1516920908/cmslpc/uscms/homes/a/aperloff/Scripts/utilities/Setup/MatrixElementSetup_v2.sh",
+		"/Users/aperloff/bin/utilities/Setup/MatrixElementSetup_v2.sh",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1516203531/correlator1/home/aperloff/Examples/GlobalCorrelator_HLS/firmware/data.h",
+		"/Users/aperloff/Documents/Finances/Taxes/2017/TAMU_1098_T_Detail.txt",
+		"/Users/aperloff/Documents/TAMU-Graduate/Research-RicardoEusebi/JetMET/JERC/JRAEvent_NanoAOD_Differences",
+		"/Users/aperloff/Documents/TAMU-Graduate/Research-RicardoEusebi/JetMET/JERC/Wrapper for JRAEvent:NanoAOD",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1516201897/correlator1/home/aperloff/Examples/GlobalCorrelator_HLS/vertexing/run_hls_vtx.tcl",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1516201956/correlator1/home/aperloff/Examples/GlobalCorrelator_HLS/vertexing/firmware/simple_vtx.cpp",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1516201937/correlator1/home/aperloff/Examples/GlobalCorrelator_HLS/vertexing/firmware/simple_vtx.h",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1516201914/correlator1/home/aperloff/Examples/GlobalCorrelator_HLS/vertexing/simple_vtx_ref.cpp",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1516201928/correlator1/home/aperloff/Examples/GlobalCorrelator_HLS/vertexing/simple_vtx_test.cpp",
+		"/Users/aperloff/Library/Application Support/Sublime Text 3/Packages/User/sftp_servers/correlator1",
+		"/Users/aperloff/Library/Application Support/Sublime Text 3/Packages/User/sftp_servers/cmslpc",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1515018215/cmslpc/uscms_data/d2/aperloff/YOURWORKINGAREA/CMSDAS2018/CMSSW_9_3_3/src/LongExerciseSusyTopTag/python/GetCounts.py",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1515098860/cmslpc/uscms_data/d2/aperloff/YOURWORKINGAREA/MatrixElement/Git/CMSSW_5_3_22_patch1/src/TAMUWW/Tools/python/yieldsFromCombinedCard.py",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1515186374/cmslpc/uscms_data/d2/aperloff/YOURWORKINGAREA/CMSDAS2018/CMSSW_9_3_3/src/LongExerciseSusyTopTag/src/SimpleAnalyzer.C",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1515186744/cmslpc/uscms_data/d2/aperloff/YOURWORKINGAREA/CMSDAS2018/CMSSW_9_3_3/src/LongExerciseSusyTopTag/include/SimpleAnalyzer.h",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1515186772/cmslpc/uscms_data/d2/aperloff/YOURWORKINGAREA/CMSDAS2018/CMSSW_9_3_3/src/LongExerciseSusyTopTag/src/RunSimpleAnalyzer.C",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1515096045/cmslpc/uscms_data/d2/aperloff/YOURWORKINGAREA/CMSDAS2018/CMSSW_9_3_3/src/LongExerciseSusyTopTag/src/samples.cc",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1515186494/cmslpc/uscms_data/d2/aperloff/YOURWORKINGAREA/CMSDAS2018/CMSSW_9_3_3/src/LongExerciseSusyTopTag/include/samples.h",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1515105548/cmslpc/uscms_data/d2/aperloff/YOURWORKINGAREA/CMSDAS2018/CMSSW_9_3_3/src/LongExerciseSusyTopTag/limit/cards/input_ch5.txt",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1515098510/cmslpc/uscms_data/d2/aperloff/YOURWORKINGAREA/CMSDAS2018/CMSSW_9_3_3/src/LongExerciseSusyTopTag/limit/cards/input_ch1.txt",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1515191824/cmslpc/uscms_data/d2/aperloff/YOURWORKINGAREA/CMSDAS2018/CMSSW_9_3_3/src/LongExerciseSusyTopTag/limit/add_masses.py",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1515100968/cmslpc/uscms_data/d2/aperloff/YOURWORKINGAREA/CMSDAS2018/CMSSW_9_3_3/src/LongExerciseSusyTopTag/limit/cards/input_ch2.txt",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1515019010/cmslpc/uscms/homes/a/aperloff/Scripts/movefiles.py",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1515018878/cmslpc/uscms_data/d2/aperloff/YOURWORKINGAREA/CMSDAS2018/CMSSW_9_3_3/src/LongExerciseSusyTopTag/python/Validation.py",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1515018455/cmslpc/uscms_data/d2/aperloff/YOURWORKINGAREA/CMSDAS2018/CMSSW_9_3_3/src/LongExerciseSusyTopTag/python/rocPlot.py",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1515018229/cmslpc/uscms_data/d2/aperloff/YOURWORKINGAREA/CMSDAS2018/CMSSW_9_3_3/src/LongExerciseSusyTopTag/python/Validation.py",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1515018285/cmslpc/uscms_data/d2/aperloff/YOURWORKINGAREA/CMSDAS2018/CMSSW_9_3_3/src/LongExerciseSusyTopTag/python/DataGetter.py",
+		"/Users/aperloff/Library/Application Support/Sublime Text 3/scratch buffer",
+		"/Users/aperloff/Documents/TAMU-Graduate/Thesis/DissertationDefense/figures/tmp/rejBvsS_BDT_simple_KinMEBDT.C",
+		"/Users/aperloff/Documents/TAMU-Graduate/Thesis/DissertationDefense/figures/tmp/rejBvsS_BDT_simple_MEBDT.C",
+		"/Users/aperloff/Documents/TAMU-Graduate/Thesis/DissertationDefense/figures/tmp/rejBvsS_BDT_simple_KinBDT.C",
+		"/Users/aperloff/Documents/TAMU-Graduate/Thesis/DissertationDefense/figures/tmp/rejBvsS_BDT_simple_Combined.C",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1513106816/cmslpc/uscms_data/d2/aperloff/YOURWORKINGAREA/MatrixElement/gitty/CMSSW_5_3_22_patch1/src/TAMUWW/Tools/bin/plotter_from_file_x.cc",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1513106786/cmslpc/uscms_data/d2/aperloff/YOURWORKINGAREA/MatrixElement/gitty/CMSSW_5_3_22_patch1/src/TAMUWW/Tools/interface/Plots.hh",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1513106727/cmslpc/uscms_data/d2/aperloff/YOURWORKINGAREA/MatrixElement/gitty/CMSSW_5_3_22_patch1/src/TAMUWW/Tools/src/Plots.cc",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1513107522/cmslpc/uscms_data/d2/aperloff/YOURWORKINGAREA/MatrixElement/gitty/CMSSW_5_3_22_patch1/src/TAMUWW/Tools/src/Style.cc",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1513107586/cmslpc/uscms_data/d2/aperloff/YOURWORKINGAREA/MatrixElement/gitty/CMSSW_5_3_22_patch1/src/TAMUWW/Tools/interface/Style.hh",
+		"/Users/aperloff/Documents/TAMU-Graduate/Research-RicardoEusebi/TAMUWW/TransferFunctions/macros/TransferFunctions_V6.C",
+		"/Users/aperloff/Documents/TAMU-Graduate/Research-RicardoEusebi/TAMUWW/TransferFunctions/macros/TFRootfiles/Ep-Ej.C",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1511465111/lxplus/afs/cern.ch/user/a/aperloff/JEC/CMSSW_9_3_3/src/JetMETCorrections/DBUploadTools/data/PhaseIIFall17_V5_MC_Uncertainty_AK4PF.txt",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1511465681/lxplus/afs/cern.ch/user/a/aperloff/JEC/CMSSW_9_3_3/src/JetMETCorrections/DBUploadTools/data/PhaseIIFall17_V5_MC_Uncertainty_AK4PFchs.txt",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1511465794/lxplus/afs/cern.ch/user/a/aperloff/JEC/CMSSW_9_3_3/src/JetMETCorrections/DBUploadTools/data/PhaseIIFall17_V5_MC_Uncertainty_AK4PFPuppi.txt",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1511465883/lxplus/afs/cern.ch/user/a/aperloff/JEC/CMSSW_9_3_3/src/JetMETCorrections/DBUploadTools/data/PhaseIIFall17_V5_MC_Uncertainty_AK8PF.txt",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1511465951/lxplus/afs/cern.ch/user/a/aperloff/JEC/CMSSW_9_3_3/src/JetMETCorrections/DBUploadTools/data/PhaseIIFall17_V5_MC_Uncertainty_AK8PFchs.txt",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1511465990/lxplus/afs/cern.ch/user/a/aperloff/JEC/CMSSW_9_3_3/src/JetMETCorrections/DBUploadTools/data/PhaseIIFall17_V5_MC_Uncertainty_AK8PFPuppi.txt",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1510885457/cmslpc/uscms_data/d2/aperloff/YOURWORKINGAREA/MatrixElement/gitty/CMSSW_8_1_0/src/tdrstyle_mod14.py",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1510880674/cmslpc/uscms_data/d2/aperloff/YOURWORKINGAREA/MatrixElement/gitty/CMSSW_8_1_0/src/plotUtils.py",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1510878736/cmslpc/uscms_data/d2/aperloff/YOURWORKINGAREA/MatrixElement/gitty/CMSSW_8_1_0/src/runDatacards_saveOutput_moveFiles.py",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1510741189/cmslpc/uscms_data/d2/aperloff/YOURWORKINGAREA/MatrixElement/gitty/CMSSW_8_1_0/src/plotUtils.py",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1510741182/cmslpc/uscms_data/d2/aperloff/YOURWORKINGAREA/MatrixElement/gitty/CMSSW_8_1_0/src/runDatacards_saveOutput_moveFiles.py",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1510726308/cmslpc/uscms_data/d2/aperloff/YOURWORKINGAREA/MatrixElement/gitty/CMSSW_5_3_22_patch1/src/TAMUWW/Tools/python/add_stat_shapes.py",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1510678488/cmslpc/uscms_data/d2/aperloff/YOURWORKINGAREA/MatrixElement/gitty/CMSSW_5_3_22_patch1/src/TAMUWW/Tools/python/limits.py",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1510728108/cmslpc/uscms_data/d2/aperloff/YOURWORKINGAREA/MatrixElement/gitty/CMSSW_5_3_22_patch1/src/TAMUWW/Tools/interface/Plots.hh",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1510726997/cmslpc/uscms_data/d2/aperloff/YOURWORKINGAREA/MatrixElement/gitty/CMSSW_5_3_22_patch1/src/TAMUWW/Tools/src/Plots.cc",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1510726959/cmslpc/uscms_data/d2/aperloff/YOURWORKINGAREA/MatrixElement/gitty/CMSSW_5_3_22_patch1/src/TAMUWW/Tools/bin/plotter_from_file_x.cc",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1510678186/cmslpc/uscms_data/d2/aperloff/YOURWORKINGAREA/MatrixElement/gitty/CMSSW_5_3_22_patch1/src/TAMUWW/Tools/bin/plotter_x.cc",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1510732727/cmslpc/uscms_data/d2/aperloff/YOURWORKINGAREA/MatrixElement/gitty/CMSSW_7_1_5/src/datacards/plotUtils.py",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1510732367/cmslpc/uscms_data/d2/aperloff/YOURWORKINGAREA/MatrixElement/gitty/CMSSW_7_1_5/src/datacards/runDatacards_saveOutput_moveFiles.py",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1510607927/cmslpc/uscms_data/d2/aperloff/YOURWORKINGAREA/MatrixElement/gitty/CMSSW_7_1_5/src/datacards/runDatacards_saveOutput_moveFiles.py",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1510606459/cmslpc/uscms_data/d2/aperloff/YOURWORKINGAREA/MatrixElement/gitty/CMSSW_5_3_22_patch1/src/TAMUWW/Tools/python/limits.py",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1510585669/cmslpc/uscms_data/d2/aperloff/YOURWORKINGAREA/MatrixElement/gitty/CMSSW_5_3_22_patch1/src/TAMUWW/Tools/bin/plotter_from_file_x.cc",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1510585657/cmslpc/uscms_data/d2/aperloff/YOURWORKINGAREA/MatrixElement/gitty/CMSSW_5_3_22_patch1/src/TAMUWW/Tools/bin/plotter_x.cc",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1510260273/cmslpc/uscms_data/d2/aperloff/YOURWORKINGAREA/MatrixElement/gitty/CMSSW_5_3_22_patch1/src/TAMUWW/Tools/src/Style.cc",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1510260256/cmslpc/uscms_data/d2/aperloff/YOURWORKINGAREA/MatrixElement/gitty/CMSSW_5_3_22_patch1/src/TAMUWW/Tools/interface/Style.hh",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1510259200/cmslpc/uscms_data/d2/aperloff/YOURWORKINGAREA/MatrixElement/gitty/CMSSW_5_3_22_patch1/src/TAMUWW/Tools/macros/plotJESShift.C",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1510259044/cmslpc/uscms_data/d2/aperloff/YOURWORKINGAREA/MatrixElement/gitty/CMSSW_5_3_22_patch1/src/TAMUWW/Tools/macros/plotPileupDistribution.C",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1510159541/cmslpc/uscms_data/d2/aperloff/YOURWORKINGAREA/MatrixElement/gitty/CMSSW_5_3_22_patch1/src/TAMUWW/Tools/python/limits.py",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1510555908/cmslpc/uscms_data/d2/aperloff/YOURWORKINGAREA/MatrixElement/gitty/CMSSW_7_1_5/src/datacards/tdrstyle_mod14.py",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1510554985/cmslpc/uscms_data/d2/aperloff/YOURWORKINGAREA/MatrixElement/gitty/CMSSW_7_1_5/src/datacards/runDatacards_saveOutput_moveFiles.py",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1510546819/cmslpc/uscms_data/d2/aperloff/YOURWORKINGAREA/MatrixElement/gitty/CMSSW_5_3_22_patch1/src/TAMUWW/Tools/macros/plotTransferFunctionEpMinusEj.C",
+		"/Users/aperloff/Documents/TAMU-Graduate/Research-RicardoEusebi/FNAL/LPCComputingDiscussionGroup/2017_11_10-Alexx-CVMFSandVoms/CommandsForDockerDemo.sh",
+		"/Users/aperloff/Documents/TAMU-Graduate/Research-RicardoEusebi/FNAL/LPCComputingDiscussionGroup/2017_11_10-Alexx-CVMFSandVoms/CommandsForDirectCVMFSInstall.sh",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1510164483/cmslpc/uscms_data/d2/aperloff/YOURWORKINGAREA/MatrixElement/gitty/CMSSW_5_3_22_patch1/src/TAMUWW/Tools/src/Plots.cc",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1510163965/cmslpc/uscms_data/d2/aperloff/YOURWORKINGAREA/MatrixElement/gitty/CMSSW_5_3_22_patch1/src/TAMUWW/Tools/bin/plotter_from_file_x.cc",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1510163955/cmslpc/uscms_data/d2/aperloff/YOURWORKINGAREA/MatrixElement/gitty/CMSSW_5_3_22_patch1/src/TAMUWW/Tools/bin/plotter_x.cc",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1510259057/cmslpc/uscms_data/d2/aperloff/YOURWORKINGAREA/MatrixElement/gitty/CMSSW_5_3_22_patch1/src/TAMUWW/Tools/macros/plotJES.C",
+		"/Users/aperloff/Downloads/10.1007%2FJHEP04%282010%29083.bib",
+		"/Users/aperloff/Downloads/S002200009791504X.bib",
+		"/Users/aperloff/Downloads/IOPEXPORT_BIB(1).bib",
+		"/Users/aperloff/Library/Application Support/Sublime Text 3/Packages/User/LaTeX/subfig2.sublime-snippet",
+		"/Users/aperloff/Library/Application Support/Sublime Text 3/Packages/User/LaTeX/beamer-textblock.sublime-snippet",
+		"/Users/aperloff/Downloads/10.1134%2FS1063779614040091.bib",
+		"/Users/aperloff/Documents/TAMU-Graduate/Thesis/latex/data/contributors.tex",
+		"/Users/aperloff/Documents/TAMU-Graduate/Thesis/latex/data/nomen.csv",
+		"/Users/aperloff/Documents/TAMU-Graduate/Thesis/latex/data/nomenclature.tex",
+		"/Users/aperloff/Documents/TAMU-Graduate/Thesis/latex/data/acknowledgements.tex",
+		"/Users/aperloff/Documents/TAMU-Graduate/Thesis/latex/data/abstract.tex",
+		"/Users/aperloff/Documents/TAMU-Graduate/Thesis/latex/TAMUTemplate.bbl",
+		"/Users/aperloff/Downloads/1858101citation.bibtex",
+		"/Users/aperloff/Downloads/0370269383901880.bib",
+		"/Users/aperloff/Downloads/037026938390744X.bib",
+		"/Users/aperloff/Downloads/0031916364904330.bib",
+		"/Users/aperloff/Documents/TAMU-Graduate/Thesis/KevinPedroThesis/latex/ptdr-definitions.sty",
+		"/Users/aperloff/Documents/TAMU-Graduate/Thesis/KevinPedroThesis/latex/theory.tex",
+		"/Users/aperloff/Documents/TAMU-Graduate/Thesis/KevinPedroThesis/latex/introduction.tex",
+		"/Users/aperloff/Documents/TAMU-Graduate/Templates/StandardModel_CERNWebfest2012.tex",
+		"/Users/aperloff/Library/texmf/tex/latex/StandardModel.tex",
+		"/Users/aperloff/Library/Application Support/Sublime Text 3/Packages/LaTeXTools/LaTeXTools.sublime-settings",
+		"/Users/aperloff/Library/Application Support/Sublime Text 3/Packages/User/LaTeXTools.sublime-settings",
+		"/Users/aperloff/Library/Application Support/Sublime Text 3/Packages/LaTeXTools/LaTeXTools (Advanced).sublime-settings",
+		"/Users/aperloff/Library/texmf/tex/latex/ptdr-definitions.sty",
+		"/Users/aperloff/Documents/TAMU-Graduate/Thesis/latex/ptdr-definitions.sty",
+		"/Users/aperloff/Documents/TAMU-Graduate/Thesis/latex/figures/Chapter3/jet_schematic.png",
+		"/Users/aperloff/Documents/TAMU-Graduate/Thesis/KevinPedroThesis/latex/reconstruction.tex",
+		"/Users/aperloff/Documents/TAMU-Graduate/Thesis/KevinPedroThesis/latex/cmsexperiment.tex",
+		"/Users/aperloff/Downloads/test2Dspline.py",
+		"/Users/aperloff/Documents/TAMU-Graduate/Thesis/latex/data/section6.tex",
+		"/Users/aperloff/Documents/TAMU-Graduate/Thesis/Text/data/dedication.tex",
+		"/Users/aperloff/Documents/TAMU-Graduate/Thesis/Text/tamuconfig.sty",
+		"/Users/aperloff/Documents/TAMU-Graduate/Thesis/Text/data/appendices.tex",
+		"/Users/aperloff/Documents/TAMU-Graduate/Research-RicardoEusebi/JetMET/JERC/2014_08_18~22-Alexx-BOOST/2014_08_04-Alexx.bib"
+	],
+	"find":
+	{
+		"height": 24.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"<ul><li>[ ]</li></ul>",
+			"<ul><li>[x]</li></ul>",
+			"Yes",
+			"No",
+			"noback",
+			"depth",
+			"$quit",
+			"  ",
+			"opt",
+			"basename",
+			"exit",
+			"RELEASES",
+			"options",
+			"532",
+			"config",
+			"depth"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/Users/aperloff/bin/utilities/README.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 9696,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4338,
+								4170
+							]
+						],
+						"settings":
+						{
+							"apply_syntax_touched": true,
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.clone": -1,
+							"bracket_highlighter.clone_locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.clone_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content"
+							],
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content"
+							],
+							"incomplete_sync": null,
+							"markdonw_live_preview_last_run": 1558108105.14,
+							"parser": "github",
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Markdown Extended/Syntaxes/Markdown Extended.sublime-syntax",
+							"target": "browser",
+							"word_wrap": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1090.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 24.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.git":
+	{
+		"height": 98.0
+	},
+	"output.sftp":
+	{
+		"height": 100.0
+	},
+	"pinned_build_system": "",
+	"project": "utilities.sublime-project",
+	"replace":
+	{
+		"height": 44.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"plo",
+				"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1460565795/cmslpc/uscms/home/aperloff/nobackup/YOURWORKINGAREA/MatrixElement/gitty/CMSSW_5_3_2_patch5/src/TAMUWW/Tools/bin/plotter_x.cc"
+			],
+			[
+				"dra",
+				"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1426464123/brazos/home/aperloff/JEC/CMSSW_7_3_3/src/JMEAnalysis/JMEValidator/macros/particleDrawer.C"
+			],
+			[
+				"run",
+				"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1426464338/brazos/home/aperloff/JEC/CMSSW_7_3_3/src/JMEAnalysis/JMEValidator/test/runValidator.py"
+			],
+			[
+				"par",
+				"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1426464123/brazos/home/aperloff/JEC/CMSSW_7_3_3/src/JMEAnalysis/JMEValidator/macros/particleDrawer.C"
+			],
+			[
+				"event",
+				"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1414446841/cmslpc/uscms/home/aperloff/nobackup/YOURWORKINGAREA/MatrixElement/gitty/CMSSW_5_3_2_patch4/src/TAMUWW/Tools/bin/EventNtupleToUVaNtuple_x.cc"
+			],
+			[
+				"form",
+				"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1412375393/cmslpc/uscms/home/aperloff/nobackup/YOURWORKINGAREA/VHbb/CMSSW_7_1_0_pre9/src/VHbb/HbbAnalyzer/bin/format_plots_x.cc"
+			],
+			[
+				"plot",
+				"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1409671503/cmslpc/uscms/home/aperloff/nobackup/YOURWORKINGAREA/MatrixElement/gitty/CMSSW_5_3_2_patch4/src/TAMUWW/Tools/bin/plotter_x.cc"
+			],
+			[
+				"plott",
+				"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1409671503/cmslpc/uscms/home/aperloff/nobackup/YOURWORKINGAREA/MatrixElement/gitty/CMSSW_5_3_2_patch4/src/TAMUWW/Tools/bin/plotter_x.cc"
+			],
+			[
+				"hbb",
+				"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1410537533/cmslpc/uscms/home/aperloff/nobackup/YOURWORKINGAREA/VHbb/CMSSW_7_1_0_pre9/src/VHbb/HbbAnalyzer/plugins/HbbAnalyzer.cc"
+			],
+			[
+				"hbban",
+				"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1410537533/cmslpc/uscms/home/aperloff/nobackup/YOURWORKINGAREA/VHbb/CMSSW_7_1_0_pre9/src/VHbb/HbbAnalyzer/plugins/HbbAnalyzer.cc"
+			],
+			[
+				"cfi",
+				"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1410537997/cmslpc/uscms/home/aperloff/nobackup/YOURWORKINGAREA/VHbb/CMSSW_7_1_0_pre9/src/VHbb/HbbAnalyzer/python/HbbAnalyzer_cfi.py"
+			],
+			[
+				"cfg",
+				"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1410538007/cmslpc/uscms/home/aperloff/nobackup/YOURWORKINGAREA/VHbb/CMSSW_7_1_0_pre9/src/VHbb/HbbAnalyzer/python/HbbAnalyzer_cfg.py"
+			],
+			[
+				"",
+				"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1412203431/cmslpc/uscms/home/aperloff/nobackup/YOURWORKINGAREA/MatrixElement/gitty/CMSSW_5_3_2_patch4/src/TAMUWW/MVA/src/TAMUWWMVA.cc"
+			],
+			[
+				"un",
+				"untitled"
+			],
+			[
+				"inc",
+				"/Users/aperloff/Library/Application Support/Sublime Text 2/Packages/User/C++/include-stl.sublime-snippet"
+			],
+			[
+				"unti",
+				"untitled"
+			],
+			[
+				"mico",
+				"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1384972849/cmslpc/uscms/home/aperloff/MatrixElement/gitty/CMSSW_5_3_2_patch4/src/TAMUWW/Tools/src/MicroNtupleMaker.cc"
+			],
+			[
+				"jn",
+				"kjfnvldjf"
+			],
+			[
+				"jv",
+				"kjfnvldjf"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 233.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

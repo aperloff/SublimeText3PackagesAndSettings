@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+\includegraphics[width=${0:\textwidth}]{${1:$TM_SELECTED_TEXT}}
+]]></content>
+	<tabTrigger>include</tabTrigger>
+	<scope>text.tex.latex</scope>
+	<description>includegraphics</description>
+</snippet>

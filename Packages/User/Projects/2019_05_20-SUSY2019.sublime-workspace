@@ -1,0 +1,3479 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"isCarte",
+				"isCartesian"
+			],
+			[
+				"isCartes",
+				"isCartesian_"
+			],
+			[
+				"tracks",
+				"tracks_selected"
+			],
+			[
+				"name",
+				"using\tnamespace"
+			],
+			[
+				"SetBranch",
+				"SetBranchStatus"
+			],
+			[
+				"KSK",
+				"KSkimDriverBatch"
+			],
+			[
+				"ecalBadCalibRed",
+				"ecalBadCalibReducedExtraFilter"
+			],
+			[
+				"output",
+				"output_filename"
+			],
+			[
+				"fileli",
+				"filelist"
+			],
+			[
+				"print",
+				"print"
+			],
+			[
+				"XSSourc",
+				"XSSource_13TeV"
+			],
+			[
+				"XSSour",
+				"XSSource_2016"
+			],
+			[
+				"XS",
+				"XS_2018"
+			],
+			[
+				"XSSou",
+				"XSSource_2017"
+			],
+			[
+				"XSSOu",
+				"XSSource_2018"
+			],
+			[
+				"XS_13T",
+				"XS_13TeV"
+			],
+			[
+				"XSS",
+				"XSSource_2018"
+			],
+			[
+				"XSSO",
+				"XSSource_13TeV"
+			],
+			[
+				"XSSource",
+				"XSSource_2016"
+			],
+			[
+				"kFactor",
+				"kFactorSource_2018"
+			],
+			[
+				"XS_",
+				"XS_2017"
+			],
+			[
+				"GenX",
+				"GenXSecAnalyzer"
+			],
+			[
+				"XS_20",
+				"XS_2018"
+			],
+			[
+				"Gen",
+				"GenXSecAnalyzer"
+			],
+			[
+				"fileinput",
+				"fileinput"
+			],
+			[
+				"XSSource_20",
+				"XSSource_2017"
+			],
+			[
+				"XSSo",
+				"XSSource_2016"
+			],
+			[
+				"kFact",
+				"kFactorSource_2016"
+			],
+			[
+				"boson",
+				"boson_status_codes"
+			],
+			[
+				"xroot",
+				"xrootd_endpoint"
+			],
+			[
+				"lastPar",
+				"lastParticle"
+			],
+			[
+				"GenPar",
+				"GenParticle"
+			],
+			[
+				"current",
+				"current_parent_id"
+			],
+			[
+				"GenParti",
+				"GenParticlesProducer"
+			],
+			[
+				"fromHar",
+				"fromHardProcessFinalState"
+			],
+			[
+				"curren",
+				"current_parent_idx"
+			],
+			[
+				"stored",
+				"stored_particles_ref"
+			],
+			[
+				"genPar",
+				"genParticle_vec"
+			],
+			[
+				"genCollec",
+				"genCollectionTokPacked"
+			],
+			[
+				"typical",
+				"typicalParentIds"
+			],
+			[
+				"PDG",
+				"PdgId_vec"
+			],
+			[
+				"genpar",
+				"genParticle_vec"
+			],
+			[
+				"TTFlag",
+				"TTFlag_vec"
+			],
+			[
+				"ParentId",
+				"ParentId_vec"
+			],
+			[
+				"Pdgi",
+				"PdgId_vec"
+			],
+			[
+				"Status",
+				"Status_vec"
+			],
+			[
+				"ener",
+				"__energies"
+			],
+			[
+				"fie",
+				"fields"
+			],
+			[
+				"field",
+				"field_index"
+			],
+			[
+				"MCSam",
+				"MCSampleValuesHelper"
+			],
+			[
+				"MC",
+				"MCSampleValuesHelper"
+			],
+			[
+				"ex",
+				"extra_dicts"
+			],
+			[
+				"Cross",
+				"CrossSectionHelper"
+			],
+			[
+				"year",
+				"year_result"
+			],
+			[
+				"yea",
+				"year_result"
+			],
+			[
+				"__help",
+				"__kfactor_helper"
+			],
+			[
+				"kFactorV",
+				"kFactorValues"
+			],
+			[
+				"cutval",
+				"cutvalmax_"
+			],
+			[
+				"fileNamePU",
+				"fileNamePUMC"
+			],
+			[
+				"varty",
+				"vartypes_"
+			],
+			[
+				"psuh",
+				"push_back\tfunc"
+			],
+			[
+				"iConfi",
+				"iConfig"
+			],
+			[
+				"GenEventI",
+				"GenEventInfoWeight"
+			],
+			[
+				"outpu",
+				"output_dataset"
+			],
+			[
+				"folder",
+				"folder_it"
+			],
+			[
+				"filter",
+				"filter_it"
+			],
+			[
+				"nfile",
+				"nfiles_added"
+			],
+			[
+				"var_go",
+				"var_group_title"
+			],
+			[
+				"var_gro",
+				"var_group_title"
+			],
+			[
+				"group",
+				"group_name"
+			],
+			[
+				"process",
+				"process_year"
+			],
+			[
+				"Jets_cha",
+				"Jets_chargedMultiplicity"
+			],
+			[
+				"Jets_char",
+				"Jets_chargedEmEnergyFraction"
+			],
+			[
+				"Jets_neu",
+				"Jets_neutralMultiplicity"
+			],
+			[
+				"pave",
+				"pave_text"
+			],
+			[
+				"file",
+				"filelist_stripped"
+			],
+			[
+				"compar",
+				"compare_names"
+			],
+			[
+				"xr",
+				"xrootd_endpoint"
+			],
+			[
+				"xrdfs",
+				"xrdfs_find"
+			],
+			[
+				"xrd",
+				"xrdfs_find"
+			],
+			[
+				"igno",
+				"ignore_cmssw"
+			],
+			[
+				"dire",
+				"directories"
+			],
+			[
+				"files",
+				"files"
+			],
+			[
+				"all_",
+				"all_directories"
+			],
+			[
+				"child",
+				"childcount"
+			],
+			[
+				"filename",
+				"filename_filter"
+			],
+			[
+				"pat",
+				"partial_path"
+			],
+			[
+				"XR",
+				"XRootD_endpoint"
+			],
+			[
+				"ign",
+				"ignore_cmssw"
+			],
+			[
+				"stor",
+				"store_true"
+			],
+			[
+				"comp",
+				"compare_names"
+			],
+			[
+				"missin",
+				"missingname"
+			],
+			[
+				"start",
+				"start_time"
+			],
+			[
+				"get",
+				"get_checksum_dict"
+			],
+			[
+				"ch",
+				"chk_range"
+			],
+			[
+				"pro",
+				"program_group"
+			],
+			[
+				"star",
+				"start_site_time"
+			],
+			[
+				"end",
+				"end_checksum_dict"
+			],
+			[
+				"out",
+				"out_split"
+			],
+			[
+				"filel",
+				"filelist_stripped"
+			],
+			[
+				"add",
+				"add_argument"
+			],
+			[
+				"fts",
+				"fts_gfal_group"
+			],
+			[
+				"sto",
+				"store_true"
+			],
+			[
+				"program",
+				"program_group"
+			],
+			[
+				"list",
+				"listname"
+			],
+			[
+				"notes",
+				"notes_papers"
+			],
+			[
+				"work",
+				"working_area"
+			],
+			[
+				"std",
+				"stderr"
+			],
+			[
+				"filelis",
+				"filelist_names"
+			],
+			[
+				"lis",
+				"list_of_filelist"
+			],
+			[
+				"in",
+				"indir"
+			],
+			[
+				"Zin",
+				"ZinvStatLumiValue"
+			],
+			[
+				"bis",
+				"bisect_right"
+			],
+			[
+				"Get",
+				"GetNbinsX"
+			],
+			[
+				"setFill",
+				"SetFillStyle"
+			],
+			[
+				"point",
+				"point_intersection"
+			],
+			[
+				"SetLine",
+				"SetLineStyle"
+			],
+			[
+				"Varnam",
+				"RA2VarNames"
+			],
+			[
+				"is",
+				"is_htmht"
+			],
+			[
+				"control",
+				"control_offset"
+			],
+			[
+				"contro",
+				"control_offset"
+			],
+			[
+				"RA2V",
+				"RA2VarMin"
+			],
+			[
+				"qty",
+				"qty"
+			],
+			[
+				"found",
+				"found_bin_nums"
+			],
+			[
+				"RA2bin",
+				"RA2binVec"
+			],
+			[
+				"RA2bi",
+				"RA2bins"
+			],
+			[
+				"RA",
+				"RA2VarMax"
+			],
+			[
+				"RA2Va",
+				"RA2VarMin"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/Users/aperloff/Documents/CMS/SUSY/Conferences/2019_05_20-SUSY2019/2019_05_20-SUSY2019.tex",
+			"settings":
+			{
+				"buffer_size": 1879,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/aperloff/Documents/CMS/SUSY/Conferences/2019_05_20-SUSY2019/introduction.tex",
+			"settings":
+			{
+				"buffer_size": 4566,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/aperloff/Documents/CMS/SUSY/Conferences/2019_05_20-SUSY2019/introduction_v2.tex",
+			"settings":
+			{
+				"buffer_size": 4081,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/aperloff/Documents/CMS/SUSY/Conferences/2019_05_20-SUSY2019/MT2.tex",
+			"settings":
+			{
+				"buffer_size": 7319,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/aperloff/Documents/CMS/SUSY/Conferences/2019_05_20-SUSY2019/BoostedHiggs.tex",
+			"settings":
+			{
+				"buffer_size": 1825,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/aperloff/Documents/CMS/SUSY/Conferences/2019_05_20-SUSY2019/SUSYWithPhotons.tex",
+			"settings":
+			{
+				"buffer_size": 7870,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/aperloff/Documents/CMS/SUSY/Conferences/2019_05_20-SUSY2019/future.tex",
+			"settings":
+			{
+				"buffer_size": 1509,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/aperloff/Documents/CMS/SUSY/Conferences/2019_05_20-SUSY2019/conclusion.tex",
+			"settings":
+			{
+				"buffer_size": 1456,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/aperloff/Documents/CMS/SUSY/Conferences/2019_05_20-SUSY2019/backup.tex",
+			"settings":
+			{
+				"buffer_size": 7866,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/aperloff/Documents/CMS/SUSY/Conferences/2019_05_20-SUSY2019/2019_05_20-SUSY2019_v2.tex",
+			"settings":
+			{
+				"buffer_size": 1896,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "Packages/LaTeXTools/LaTeX.sublime-build",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					""
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Traditional"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"PdfLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"XeLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"LuaLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Basic Builder"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Basic Builder - PdfLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Basic Builder - XeLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Basic Builder - LuaLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Script Builder"
+				],
+				[
+					"Packages/SublimeREPL/sublimerepl_build_system_hack.sublime-build",
+					""
+				]
+			],
+			[
+				"Packages/LaTeXTools/LaTeX.sublime-build",
+				"Traditional"
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 342.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"opennew",
+				"Project Manager: Open Project in New Window"
+			],
+			[
+				"proje",
+				"Project Manager: Open Project"
+			],
+			[
+				"commen",
+				"Snippet: Comment"
+			],
+			[
+				"mana",
+				"Project Manager"
+			],
+			[
+				"blockli",
+				"Snippet: Insert a block environment with a nested list environment."
+			],
+			[
+				"blockit",
+				"Snippet: Insert a block environment with a nested itemize environment."
+			],
+			[
+				"Snippet: commen",
+				"Snippet: Comment"
+			],
+			[
+				"pro",
+				"Project Manager"
+			],
+			[
+				"snippi",
+				"Snippet: includegraphics"
+			],
+			[
+				"lis",
+				"Snippet: Listing"
+			],
+			[
+				"snipcolum",
+				"Snippet: Column environment for beamer"
+			],
+			[
+				"comment",
+				"Snippet: Comment"
+			],
+			[
+				"proj",
+				"Project Manager: Open Project"
+			],
+			[
+				"mark",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"repl",
+				"SublimeREPL: Python"
+			],
+			[
+				"fi",
+				"Snippet: figure"
+			],
+			[
+				"figu",
+				"Snippet: figure"
+			],
+			[
+				"subfig",
+				"Snippet: subfig2"
+			],
+			[
+				"figur",
+				"Snippet: figure"
+			],
+			[
+				"table",
+				"Snippet: table"
+			],
+			[
+				"listi",
+				"Snippet: Listing"
+			],
+			[
+				"python",
+				"SublimeREPL: Python"
+			],
+			[
+				"figure",
+				"Snippet: figure"
+			],
+			[
+				"subfi",
+				"Snippet: subfig2"
+			],
+			[
+				"snipsub",
+				"Snippet: subfig2"
+			],
+			[
+				"sniptabl",
+				"Snippet: table"
+			],
+			[
+				"diff",
+				"FileDiffs: Menu"
+			],
+			[
+				"packa",
+				"Package Control: Install Package"
+			],
+			[
+				"markdown",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"fig",
+				"Snippet: figure"
+			],
+			[
+				"equation",
+				"Snippet: Equation"
+			],
+			[
+				"equa",
+				"Snippet: Equation"
+			],
+			[
+				"markdo",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"Apply",
+				"ApplySyntax: Settings"
+			],
+			[
+				"project mana",
+				"Project Manager: Open Project"
+			],
+			[
+				"sublimpy",
+				"SublimeREPL: Python"
+			],
+			[
+				"snittable",
+				"Snippet: table"
+			],
+			[
+				"sublreplpyth",
+				"SublimeREPL: Python"
+			],
+			[
+				"rep",
+				"SublimeREPL: Python"
+			],
+			[
+				"replpyth",
+				"SublimeREPL: Python"
+			],
+			[
+				"snipfig",
+				"Snippet: figure"
+			],
+			[
+				"open",
+				"Project Manager: Open Project"
+			],
+			[
+				"snipfigu",
+				"Snippet: figure"
+			],
+			[
+				"snippsubgi",
+				"Snippet: subfig2"
+			],
+			[
+				"sniptext",
+				"Snippet: beamer-textblock"
+			],
+			[
+				"snippfig",
+				"Snippet: figure"
+			],
+			[
+				"snipptex",
+				"Snippet: beamer-textblock"
+			],
+			[
+				"snifig",
+				"Snippet: figure"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"markpr",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"markdow",
+				"MarkdownTOC:Update TOC"
+			],
+			[
+				"markdotoc",
+				"MarkdownTOC:Update TOC"
+			],
+			[
+				"markdopri",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"markdowtoc",
+				"MarkdownTOC:Insert TOC"
+			],
+			[
+				"markdownpr",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"TOC",
+				"MarkdownTOC:Insert TOC"
+			],
+			[
+				"sft",
+				"SFTP: Edit Server…"
+			],
+			[
+				"eq",
+				"Snippet: Equation"
+			],
+			[
+				"itemiz",
+				"Snippet: Itemize"
+			],
+			[
+				"enum",
+				"Snippet: Enumerate"
+			],
+			[
+				"comm",
+				"Snippet: Comment"
+			],
+			[
+				"snifigu",
+				"Snippet: figure"
+			],
+			[
+				"equ",
+				"Snippet: Equation"
+			],
+			[
+				"item",
+				"Snippet: Itemize"
+			],
+			[
+				"equati",
+				"Snippet: Equation"
+			],
+			[
+				"",
+				"A File Icon: Changelog"
+			],
+			[
+				"snicomme",
+				"Snippet: Comment"
+			],
+			[
+				"snieq",
+				"Snippet: Equation"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"intall",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"packin",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: List Packages"
+			],
+			[
+				"wrap",
+				"Word Wrap: Toggle"
+			],
+			[
+				"wra",
+				"Word Wrap: Toggle"
+			],
+			[
+				"sftp",
+				"SFTP: Edit Server…"
+			],
+			[
+				"latextoo",
+				"LaTeXTools: Reconfigure and migrate settings"
+			],
+			[
+				"insal",
+				"Package Control: Install Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"latex",
+				"Set Syntax: LaTeX Beamer"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"snippe",
+				"Snippet: Using statement"
+			],
+			[
+				"c++",
+				"Set Syntax: C++"
+			],
+			[
+				"C++",
+				"Set Syntax: C++"
+			],
+			[
+				"Snippet: using",
+				"Snippet: using-namespace"
+			],
+			[
+				"un",
+				"Snippet: using-namespace"
+			],
+			[
+				"create",
+				"Create Xiki Buffer"
+			],
+			[
+				"packageconint",
+				"Package Control: Install Package"
+			],
+			[
+				"sideb",
+				"View: Toggle Side Bar"
+			],
+			[
+				"SFTP",
+				"Preferences: SFTP Settings"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				"Pac",
+				"Package Control: Install Package"
+			],
+			[
+				"Pack",
+				"Package Control: Install Package"
+			],
+			[
+				"Packag",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: In",
+				"Package Control: Install Package"
+			],
+			[
+				"FindKey",
+				"FindKeyConflicts: (Direct) Conflicts to Buffer"
+			],
+			[
+				"pacin",
+				"Package Control: Install Package"
+			],
+			[
+				"packinst",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 548.0
+	},
+	"console":
+	{
+		"height": 125.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = 'df21e130d211cfc94d9b0905775a7c0f' + '1e3d39e33b79698005270310898eea76'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by) ",
+			" import urllib.request,os,hashlib; h = 'df21e130d211cfc94d9b0905775a7c0f' + '1e3d39e33b79698005270310898eea76'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by) "
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/aperloff/Documents/CMS/SUSY/Conferences/2019_05_20-SUSY2019"
+	],
+	"file_history":
+	[
+		"/Users/aperloff/Documents/CMS/SUSY/Conferences/2019_05_20-SUSY2019/2019_05_20-SUSY2019_v2.log",
+		"/Users/aperloff/Documents/CMS/SUSY/RA2b/Presentations/2018_12_05-CMSWeek-SUSY-RA2:b/introduction.tex",
+		"/Users/aperloff/Library/Application Support/Sublime Text 3/Packages/User/LaTeX/beamer-blockitem.sublime-snippet",
+		"/Users/aperloff/Library/Application Support/Sublime Text 3/Packages/User/LaTeX/list.sublime-snippet",
+		"/Users/aperloff/Library/Application Support/Sublime Text 3/Packages/User/LaTeX/beamer-blocklist.sublime-snippet",
+		"/Users/aperloff/Library/Application Support/Sublime Text 3/Packages/User/LaTeX/beamer-block.sublime-snippet",
+		"/Users/aperloff/Documents/CMS/FPGA/Presentations/2019_03_07-TrackStandAloneBoard/tsa_testbench.tex",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1557534245/cmslpc/uscms_data/d2/aperloff/YOURWORKINGAREA/SUSY/slc7/CMSSW_10_2_11_patch1/src/TreeMaker/WeightProducer/python/MCSamples_Summer16.py",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1557534288/cmslpc/uscms_data/d2/aperloff/YOURWORKINGAREA/SUSY/slc7/CMSSW_10_2_11_patch1/src/TreeMaker/WeightProducer/python/MCSamples_Summer16v3.py",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1557534325/cmslpc/uscms_data/d2/aperloff/YOURWORKINGAREA/SUSY/slc7/CMSSW_10_2_11_patch1/src/TreeMaker/WeightProducer/python/SVJsamples.py",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1557534275/cmslpc/uscms_data/d2/aperloff/YOURWORKINGAREA/SUSY/slc7/CMSSW_10_2_11_patch1/src/TreeMaker/WeightProducer/python/MCSamples_Fall17.py",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1557534311/cmslpc/uscms_data/d2/aperloff/YOURWORKINGAREA/SUSY/slc7/CMSSW_10_2_11_patch1/src/TreeMaker/WeightProducer/python/MCSamples_Autumn18.py",
+		"/Users/aperloff/Downloads/tmp/TrackMET/sampleTrackMET.cpp",
+		"/Users/aperloff/Documents/CMS/FPGA/Presentations/2019_03_07-TrackStandAloneBoard/jet_finding.tex",
+		"/Users/aperloff/Documents/CMS/FPGA/Presentations/2019_05_10-InputFormat/2019_05_10-InputFormat.tex",
+		"/Users/aperloff/Documents/CMS/FPGA/Presentations/2018_08_24-USL1TrackingWorkshop/2018_08_24-USL1TrackingWorkshop.tex",
+		"/Users/aperloff/Documents/CMS/FPGA/Presentations/2018_08_24-USL1TrackingWorkshop/lessons_learned.tex",
+		"/Users/aperloff/Documents/CMS/FPGA/Presentations/2018_04_26-Vertexing/2018_04_26-Vertexing.tex",
+		"/Users/aperloff/Library/Application Support/Sublime Text 3/Packages/User/LaTeX/beamer-header.sublime-snippet",
+		"/Users/aperloff/Library/Application Support/Sublime Text 3/Packages/User/LaTeX/beamer-titlepage.sublime-snippet",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1557409873/cmslpc/uscms_data/d2/aperloff/YOURWORKINGAREA/SUSY/slc6/CMSSW_8_0_30/src/Analysis/input/input_RA2bin_skim_data.txt",
+		"/Users/aperloff/Documents/CMS/FNAL/Analysis Description Languages Workshop/2019_05_07-DiscussionIntro/2019_05_07-DiscussionIntro.tex",
+		"/Users/aperloff/Documents/CMS/FPGA/Presentations/2018_10_10-XilinxDevelopersForum/conclusion.tex",
+		"/Users/aperloff/Documents/CMS/FPGA/Presentations/2018_10_10-XilinxDevelopersForum/introduction.tex",
+		"/Users/aperloff/Documents/CMS/FPGA/Presentations/2018_10_10-XilinxDevelopersForum/2018_10_18-XilinxDevelopersForum.tex",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1557239389/cmslpc/uscms_data/d2/aperloff/YOURWORKINGAREA/SUSY/slc6/CMSSW_8_0_30/src/Analysis/ecal_comp.C",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1557240703/cmslpc/uscms_data/d2/aperloff/YOURWORKINGAREA/SUSY/slc6/CMSSW_8_0_30/src/Analysis/MakeAllDCdata.C",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1557241549/cmslpc/uscms_data/d2/aperloff/YOURWORKINGAREA/SUSY/slc6/CMSSW_8_0_30/src/Analysis/input/input_sets_DC_data.txt",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1557240803/cmslpc/uscms_data/d2/aperloff/YOURWORKINGAREA/SUSY/slc6/CMSSW_8_0_30/src/Analysis/input/input_RA2bin_DC_data.txt",
+		"/Users/aperloff/Documents/CMS/SUSY/RA2b/Presentations/2019_05_07-TreeMakerProduction/2019_05_07-TreeMakerProduction.tex",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1557241045/cmslpc/uscms_data/d2/aperloff/YOURWORKINGAREA/SUSY/slc6/CMSSW_8_0_30/src/Analysis/input/input_sets_DC_data.txt",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1557240620/cmslpc/uscms_data/d2/aperloff/YOURWORKINGAREA/SUSY/slc6/CMSSW_8_0_30/src/Analysis/input/input_sets_DC_data.txt",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1557236547/cmslpc/uscms_data/d2/aperloff/YOURWORKINGAREA/SUSY/slc6/CMSSW_8_0_30/src/Analysis/EcalNoiseComparison.C",
+		"/Users/aperloff/Documents/CMS/SUSY/RA2b/Presentations/2019_05_07-METFilters/ecal_comp.C",
+		"/Users/aperloff/Downloads/reCluster_cfg.py",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1556996594/cmslpc/uscms_data/d2/aperloff/YOURWORKINGAREA/SUSY/slc6/CMSSW_8_0_30/src/Analysis/KSkimDriver.C",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1556913256/cmslpc/uscms_data/d2/aperloff/YOURWORKINGAREA/SUSY/slc6/CMSSW_8_0_30/src/Analysis/KSkimDriver.C",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1556805724/cmslpc/uscms_data/d2/aperloff/YOURWORKINGAREA/SUSY/slc6/CMSSW_8_0_30/src/Analysis/KCode/KCommonSelectors.h",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1556808278/cmslpc/uscms_data/d2/aperloff/YOURWORKINGAREA/SUSY/slc6/CMSSW_8_0_30/src/Analysis/input/input_RA2bin_skim_data.txt",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1556809015/cmslpc/uscms_data/d2/aperloff/YOURWORKINGAREA/SUSY/slc6/CMSSW_8_0_30/src/Analysis/input/input_sets_skim_mc_2016.txt",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1556808918/cmslpc/uscms_data/d2/aperloff/YOURWORKINGAREA/SUSY/slc6/CMSSW_8_0_30/src/Analysis/input/input_selection.txt",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1556808819/cmslpc/uscms_data/d2/aperloff/YOURWORKINGAREA/SUSY/slc6/CMSSW_8_0_30/src/Analysis/input/input_RA2bin_options.txt",
+		"/Users/aperloff/Library/texmf/tex/latex/Presentation.cls",
+		"/Users/aperloff/Documents/CMS/SUSY/RA2b/Presentations/2019_05_07-METFilters/2019_05_07-METFilters.log",
+		"/Users/aperloff/Library/Application Support/Sublime Text 3/Packages/LaTeXTools/LaTeXTools.sublime-settings",
+		"/Users/aperloff/Library/Application Support/Sublime Text 3/Packages/LaTeXTools/LaTeXTools (Advanced).sublime-settings",
+		"/Users/aperloff/Library/Application Support/Sublime Text 3/Packages/User/LaTeXTools.sublime-settings",
+		"/Users/aperloff/Documents/CMS/SUSY/RA2b/Presentations/2019_04_30-METFilters/2019_04_30-METFilters.tex",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1556631204/cmslpc/uscms_data/d2/aperloff/YOURWORKINGAREA/SUSY/slc7/CMSSW_10_2_11_patch1/src/TreeMaker/Production/test/dict_RunIIAutumn18MiniAOD_Fast.py",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1556631770/cmslpc/uscms_data/d2/aperloff/YOURWORKINGAREA/SUSY/slc7/CMSSW_10_2_11_patch1/src/TreeMaker/README.md",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1556632089/cmslpc/uscms_data/d2/aperloff/YOURWORKINGAREA/SUSY/slc7/CMSSW_10_2_11_patch1/src/TreeMaker/Production/test/unitTest.py",
+		"/Users/aperloff/Documents/CMS/Notes_and_Papers/papers/SUS-19-006/zinv.tex",
+		"/Users/aperloff/Documents/CMS/Notes_and_Papers/papers/SUS-19-006/selection.tex",
+		"/Users/aperloff/Documents/CMS/Notes_and_Papers/papers/SUS-19-006/detector_reconstruction.tex",
+		"/Users/aperloff/bin/utilities/TDROpen.sh",
+		"/Users/aperloff/bin/utilities/TDRCompile.sh",
+		"/Users/aperloff/bin/utilities/TDRSetup.sh",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1555110319/cmslpc/uscms/homes/a/aperloff/Scripts/utilities/FTS/fts_utilities.py",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1555106427/cmslpc/uscms/homes/a/aperloff/Scripts/utilities/XRootD/xrdfs_find.py",
+		"/Users/aperloff/Documents/CMS/Notes_and_Papers/papers/SUS-19-006/r_plus_s.tex",
+		"/Users/aperloff/Documents/CMS/Notes_and_Papers/papers/SUS-19-006/SUS-19-006.bib",
+		"/Users/aperloff/Documents/CMS/SUSY/RA2b/Presentations/2019_04_16-TreeMakerProduction/2019_04_16-TreeMakerProduction.tex",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1554904409/cmslpc/uscms/homes/a/aperloff/Scripts/utilities/FTS/fts_utilities.py",
+		"/Users/aperloff/Documents/CMS/Notes_and_Papers/notes/AN-18-271/README.md",
+		"/Users/aperloff/Documents/CMS/SUSY/RA2b/Presentations/2019_04_09-TreeMakerProduction/2019_04_09-TreeMakerProduction.tex",
+		"/Users/aperloff/Documents/CMS/SUSY/RA2b/Presentations/2019_03_14-TreeMakerProduction/2019_03_14-TreeMakerProduction.tex",
+		"/Users/aperloff/Documents/CMS/SUSY/RA2b/Presentations/2019_01_04-BinningOptimizationStudies/2019_01_04-BinningOptimizationStudies.tex",
+		"/Users/aperloff/Documents/CMS/SUSY/RA2b/Presentations/2018_11_09-BinningOptimizationStudies/2018_11_20-BinningOptimizationStudies.tex",
+		"/Users/aperloff/Documents/CMS/Notes_and_Papers/notes/AN-18-271/trunk/AN-18-271.bib",
+		"/Users/aperloff/Documents/CMS/Notes_and_Papers/notes/AN-18-271/trunk/AN-18-271.tex",
+		"/Users/aperloff/Documents/CMS/Notes_and_Papers/notes/AN-18-271/trunk/search-variables.tex",
+		"/Users/aperloff/Documents/CMS/Notes_and_Papers/notes/AN-18-271/trunk/appendix-binopt.tex",
+		"/Users/aperloff/Documents/CMS/Notes_and_Papers/notes/AN-18-271/trunk/znn.tex",
+		"/Users/aperloff/Documents/CMS/Notes_and_Papers/notes/AN-18-271/trunk/appendix-znn.tex",
+		"/Users/aperloff/Documents/CMS/Notes_and_Papers/notes/AN-18-271/trunk/appendix01.tex",
+		"/Users/aperloff/Documents/CMS/Notes_and_Papers/notes/AN-18-271/trunk/event-selection.tex",
+		"/Users/aperloff/Documents/CMS/Notes_and_Papers/notes/AN-18-271/trunk/event-samples.tex",
+		"/Users/aperloff/Documents/CMS/Notes_and_Papers/notes/AN-18-271/trunk/introduction.tex",
+		"/Users/aperloff/Downloads/Dockerfile",
+		"/Users/aperloff/Downloads/install.sh",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1554314345/cmslpc/uscms/homes/a/aperloff/Scripts/utilities/XRootD/xrdfs_find.py",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1554302378/cmslpc/uscms/homes/a/aperloff/Scripts/utilities/FTS/fts_utilities.py",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1554301202/cmslpc/uscms/homes/a/aperloff/Scripts/utilities/XRootD/xrdfs_find.py",
+		"/Users/aperloff/Documents/CMS/SUSY/RA2b/Presentations/2019_04_02-TreeMakerProduction/2019_04_02-TreeMakerProduction.tex",
+		"/Users/aperloff/Documents/CMS/SUSY/RA2b/Presentations/2018_12_20-TreeMakerProduction/2018_12_20-TreeMakerProduction.tex",
+		"/Users/aperloff/Desktop/pyxrootd_debug.txt",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1553937346/cmslpc/uscms_data/d2/aperloff/YOURWORKINGAREA/SUSY/slc7/CMSSW_10_2_11_patch1/src/TreeMaker/WeightProducer/python/MCSampleValues.py",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1553770000/cmslpc/uscms_data/d2/aperloff/YOURWORKINGAREA/SUSY/slc7/CMSSW_10_2_11_patch1_GenXSecAnalyzer/src/genproductions/test/calculateXSectionAndFilterEfficiency/datasets.txt",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1553697083/cmslpc/uscms_data/d2/aperloff/YOURWORKINGAREA/SUSY/slc7/CMSSW_10_2_11_patch1/src/TreeMaker/WeightProducer/python/MCSampleValues.py",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1553861337/cmslpc/uscms/homes/a/aperloff/Scripts/utilities/XRootD/xrdfs_find.py",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1553697015/cmslpc/uscms_data/d2/aperloff/YOURWORKINGAREA/SUSY/slc7/CMSSW_10_2_11_patch1/src/TreeMaker/WeightProducer/python/MCSample.py",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1553784806/cmslpc/uscms_data/d2/aperloff/YOURWORKINGAREA/SUSY/slc7/CMSSW_10_2_11_patch1_GenXSecAnalyzer/src/genproductions/test/calculateXSectionAndFilterEfficiency/calculateXSectionAndFilterEfficiency.sh",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1553855353/cmslpc/uscms_data/d2/aperloff/YOURWORKINGAREA/SUSY/slc7/CMSSW_10_2_11_patch1_GenXSecAnalyzer/src/genproductions/test/calculateXSectionAndFilterEfficiency/multiple_datasets.py",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1553702419/cmslpc/uscms_data/d2/aperloff/YOURWORKINGAREA/SUSY/slc7/CMSSW_10_2_11_patch1/src/TreeMaker/WeightProducer/python/getWeightProducer_cff.py",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1553781614/cmslpc/uscms_data/d2/aperloff/YOURWORKINGAREA/SUSY/slc7/CMSSW_10_2_11_patch1_GenXSecAnalyzer/src/genproductions/test/calculateXSectionAndFilterEfficiency/multiple_datasets.py",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1553783495/cmslpc/uscms_data/d2/aperloff/YOURWORKINGAREA/SUSY/slc7/CMSSW_10_2_11_patch1_GenXSecAnalyzer/src/genproductions/test/calculateXSectionAndFilterEfficiency/multiple_datasets.sh",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1553784682/cmslpc/uscms_data/d2/aperloff/YOURWORKINGAREA/SUSY/slc7/CMSSW_10_2_11_patch1_GenXSecAnalyzer/src/genproductions/test/calculateXSectionAndFilterEfficiency/calculateXSectionAndFilterEfficiency.sh",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1553768384/cmslpc/uscms_data/d2/aperloff/YOURWORKINGAREA/SUSY/slc7/CMSSW_8_0_21/src/genproductions/test/calculateXSectionAndFilterEfficiency/datasets.txt",
+		"/Users/aperloff/Documents/CMS/SUSY/RA2b/TreeMakerMonteCarlo_GetMcM_2017.txt",
+		"/Users/aperloff/Documents/CMS/SUSY/RA2b/GenInfoForV17.txt",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1553623779/cmslpc/uscms/homes/a/aperloff/Scripts/utilities/FTS/fts_utilities.py",
+		"/Users/aperloff/Documents/CMS/HEP_DC_Advocacy_Trip/2019/Programatic Requests - IL",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1553607624/cmslpc/uscms_data/d2/aperloff/YOURWORKINGAREA/SUSY/slc7/CMSSW_10_2_11_patch1/src/TreeMaker/TreeMaker/python/makeTreeFromMiniAOD_cff.py",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1553606020/cmslpc/uscms_data/d2/aperloff/YOURWORKINGAREA/SUSY/slc7/CMSSW_10_2_11_patch1/src/TreeMaker/Utils/src/GenParticlesProducer.cc",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1553579473/cmslpc/uscms/homes/a/aperloff/Scripts/utilities/XRootD/xrdfs_find.py",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1553597360/cmslpc/uscms/homes/a/aperloff/Scripts/utilities/FTS/fts_utilities.py",
+		"/Users/aperloff/Desktop/GenInfoForV17.txt",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1552845752/cmslpc/uscms_data/d2/aperloff/YOURWORKINGAREA/SUSY/slc7/CMSSW_10_2_11_patch1/src/TreeMaker/Production/test/runPrintTree_cfg.py",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1552845440/cmslpc/uscms_data/d2/aperloff/YOURWORKINGAREA/SUSY/slc7/CMSSW_10_2_11_patch1/src/TreeMaker/Production/test/runMakeTreeFromMiniAOD_cfg.py",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1552664522/cmslpc/uscms_data/d2/aperloff/YOURWORKINGAREA/SUSY/slc7/CMSSW_10_2_11_patch1/src/TreeMaker/TreeMaker/python/maker.py",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1552597817/cmslpc/uscms_data/d2/aperloff/YOURWORKINGAREA/SUSY/slc7/CMSSW_10_2_11_patch1/src/TreeMaker/TreeMaker/python/makeTreeFromMiniAOD_cff.py",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1552597533/cmslpc/uscms_data/d2/aperloff/YOURWORKINGAREA/SUSY/slc7/CMSSW_10_2_11_patch1/src/TreeMaker/Utils/src/GenParticlesProducer.cc",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1552664469/cmslpc/uscms_data/d2/aperloff/YOURWORKINGAREA/SUSY/slc7/CMSSW_10_2_11_patch1/src/TreeMaker/Production/test/runMakeTreeFromMiniAOD_cfg.py",
+		"/Users/aperloff/Documents/CMS/FPGA/Presentations/2019_03_07-TrackStandAloneBoard/backup.tex",
+		"/Users/aperloff/Documents/CMS/HEP_DC_Advocacy_Trip/2019/PhoneScript.txt",
+		"/Users/aperloff/Documents/CMS/SUSY/RA2b/Presentations/2019_02_14-FastSimMHTRatio/Plan.txt",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1552336567/cmslpc/uscms_data/d2/aperloff/YOURWORKINGAREA/SUSY/slc7/CMSSW_9_4_11/src/TreeMaker/WeightProducer/python/MCSampleValues.py",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1552336556/cmslpc/uscms_data/d2/aperloff/YOURWORKINGAREA/SUSY/slc7/CMSSW_9_4_11/src/TreeMaker/WeightProducer/python/MCSample.py",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1552336121/cmslpc/uscms_data/d2/aperloff/YOURWORKINGAREA/SUSY/slc7/CMSSW_9_4_11/src/TreeMaker/WeightProducer/python/SVJxsecs.py",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1552333102/cmslpc/uscms_data/d2/aperloff/YOURWORKINGAREA/SUSY/slc7/CMSSW_9_4_11/src/TreeMaker/WeightProducer/python/SVJxsecs.py",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1552330763/cmslpc/uscms_data/d2/aperloff/YOURWORKINGAREA/SUSY/slc7/CMSSW_9_4_11/src/TreeMaker/WeightProducer/python/MCSampleValues.py",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1552276052/cmslpc/uscms_data/d2/aperloff/YOURWORKINGAREA/SUSY/slc7/CMSSW_9_4_11/src/TreeMaker/WeightProducer/python/MCSample.py",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1552276106/cmslpc/uscms_data/d2/aperloff/YOURWORKINGAREA/SUSY/slc7/CMSSW_9_4_11/src/TreeMaker/WeightProducer/python/kFactor.py",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1552319035/cmslpc/uscms_data/d2/aperloff/YOURWORKINGAREA/SUSY/slc7/CMSSW_9_4_11/src/TreeMaker/WeightProducer/python/CrossSection.py",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1552319842/cmslpc/uscms_data/d2/aperloff/YOURWORKINGAREA/SUSY/slc7/CMSSW_9_4_11/src/TreeMaker/WeightProducer/python/SVJxsecs.py",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1552280502/cmslpc/uscms_data/d2/aperloff/YOURWORKINGAREA/SUSY/slc7/CMSSW_9_4_11/src/TreeMaker/WeightProducer/python/namedtuple_with_defaults.py",
+		"/Users/aperloff/Documents/CMS/FPGA/Presentations/2019_03_07 - Track Stand-Alone Board/2019_03_07-TSABoard.tex",
+		"/Users/aperloff/Documents/CMS/FPGA/Presentations/2019_03_07 - Track Stand-Alone Board/introduction.tex"
+	],
+	"find":
+	{
+		"height": 24.0
+	},
+	"find_in_files":
+	{
+		"height": 94.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"itemize",
+			"width=\\textwidth]",
+			"\\textwidth",
+			"footnotesize",
+			"error",
+			"pdf",
+			"itemize",
+			"custom",
+			"itemize",
+			"{}",
+			"M\\textsub",
+			"\\mathsf{",
+			"pdf",
+			"exampleblock",
+			"Event",
+			"block",
+			"{list}",
+			"itemize",
+			"textsubstring",
+			"0.31",
+			"0.32",
+			"0.5",
+			"0.56",
+			"32",
+			"0.5",
+			"block",
+			"{block}",
+			"block",
+			"myal"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/Users/aperloff/Documents/CMS/SUSY/Conferences/2019_05_20-SUSY2019/2019_05_20-SUSY2019.tex",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1879,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1592,
+								1606
+							]
+						],
+						"settings":
+						{
+							"apply_syntax_touched": true,
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.clone": -1,
+							"bracket_highlighter.clone_locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.clone_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content"
+							],
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										1856,
+										1863
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/tag.png",
+										"region.orangish"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										1583,
+										1590
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content"
+							],
+							"incomplete_sync": null,
+							"markdonw_live_preview_last_run": 1559587094.67,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/LaTeX/LaTeX.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/Users/aperloff/Documents/CMS/SUSY/Conferences/2019_05_20-SUSY2019/introduction.tex",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4566,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								197,
+								197
+							]
+						],
+						"settings":
+						{
+							"apply_syntax_touched": true,
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.clone": -1,
+							"bracket_highlighter.clone_locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										1384,
+										1391
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/tag.png",
+										"region.orangish"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										1071,
+										1078
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.clone_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content"
+							],
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content"
+							],
+							"incomplete_sync": null,
+							"markdonw_live_preview_last_run": 1559587094.68,
+							"remote_loading": false,
+							"spell_check": true,
+							"synced": false,
+							"syntax": "Packages/LaTeX/LaTeX.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/Users/aperloff/Documents/CMS/SUSY/Conferences/2019_05_20-SUSY2019/introduction_v2.tex",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4081,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								39,
+								39
+							]
+						],
+						"settings":
+						{
+							"apply_syntax_touched": true,
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.clone": -1,
+							"bracket_highlighter.clone_locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										774,
+										781
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/tag.png",
+										"region.orangish"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										441,
+										448
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.clone_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content"
+							],
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content"
+							],
+							"incomplete_sync": null,
+							"markdonw_live_preview_last_run": 1559587094.68,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/LaTeX/LaTeX.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/Users/aperloff/Documents/CMS/SUSY/Conferences/2019_05_20-SUSY2019/MT2.tex",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7319,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								6545,
+								6545
+							]
+						],
+						"settings":
+						{
+							"apply_syntax_touched": true,
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.clone": 102,
+							"bracket_highlighter.clone_locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										6545,
+										6546
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/round_bracket.png",
+										"region.yellowish"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										6534,
+										6535
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.clone_regions":
+							[
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content"
+							],
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content"
+							],
+							"incomplete_sync": null,
+							"markdonw_live_preview_last_run": 1559587094.7,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/LaTeX/LaTeX.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "/Users/aperloff/Documents/CMS/SUSY/Conferences/2019_05_20-SUSY2019/BoostedHiggs.tex",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1825,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								615,
+								585
+							]
+						],
+						"settings":
+						{
+							"apply_syntax_touched": true,
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.clone": -1,
+							"bracket_highlighter.clone_locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										1519,
+										1520
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/curly_bracket.png",
+										"region.purplish"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										1515,
+										1516
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.clone_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content"
+							],
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										614,
+										615
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/curly_bracket.png",
+										"region.purplish"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										610,
+										611
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content"
+							],
+							"incomplete_sync": null,
+							"markdonw_live_preview_last_run": 1559587094.69,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/LaTeX/LaTeX.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "/Users/aperloff/Documents/CMS/SUSY/Conferences/2019_05_20-SUSY2019/SUSYWithPhotons.tex",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7870,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1372,
+								1342
+							]
+						],
+						"settings":
+						{
+							"apply_syntax_touched": true,
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.clone": -1,
+							"bracket_highlighter.clone_locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										7241,
+										7242
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/round_bracket.png",
+										"region.yellowish"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										7235,
+										7236
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.clone_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content"
+							],
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										1371,
+										1372
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/curly_bracket.png",
+										"region.purplish"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										1367,
+										1368
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content"
+							],
+							"incomplete_sync": null,
+							"markdonw_live_preview_last_run": 1559587094.69,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/LaTeX/LaTeX.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "/Users/aperloff/Documents/CMS/SUSY/Conferences/2019_05_20-SUSY2019/future.tex",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1509,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								151,
+								151
+							]
+						],
+						"settings":
+						{
+							"apply_syntax_touched": true,
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.clone": -1,
+							"bracket_highlighter.clone_locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.clone_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content"
+							],
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										151,
+										152
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/curly_bracket.png",
+										"region.purplish"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										144,
+										145
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content"
+							],
+							"incomplete_sync": null,
+							"markdonw_live_preview_last_run": 1559587094.7,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/LaTeX/LaTeX.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "/Users/aperloff/Documents/CMS/SUSY/Conferences/2019_05_20-SUSY2019/conclusion.tex",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1456,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								360,
+								341
+							]
+						],
+						"settings":
+						{
+							"apply_syntax_touched": true,
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.clone": 135,
+							"bracket_highlighter.clone_locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										1438,
+										1443
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/tag.png",
+										"region.orangish"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										330,
+										335
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.clone_regions":
+							[
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content"
+							],
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content"
+							],
+							"incomplete_sync": null,
+							"markdonw_live_preview_last_run": 1559587094.54,
+							"remote_loading": false,
+							"spell_check": true,
+							"synced": false,
+							"syntax": "Packages/LaTeX/LaTeX.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "/Users/aperloff/Documents/CMS/SUSY/Conferences/2019_05_20-SUSY2019/backup.tex",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7866,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								7715,
+								7715
+							]
+						],
+						"settings":
+						{
+							"apply_syntax_touched": true,
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.clone": -1,
+							"bracket_highlighter.clone_locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										6000,
+										6001
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/square_bracket.png",
+										"region.bluish"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										5983,
+										5984
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.clone_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content"
+							],
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										7715,
+										7716
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/round_bracket.png",
+										"region.yellowish"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										7706,
+										7707
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content"
+							],
+							"incomplete_sync": null,
+							"markdonw_live_preview_last_run": 1559587094.7,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/LaTeX/LaTeX.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "/Users/aperloff/Documents/CMS/SUSY/Conferences/2019_05_20-SUSY2019/2019_05_20-SUSY2019_v2.tex",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1896,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1743,
+								1743
+							]
+						],
+						"settings":
+						{
+							"apply_syntax_touched": true,
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.clone": -1,
+							"bracket_highlighter.clone_locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.clone_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content"
+							],
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										1742,
+										1743
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/square_bracket.png",
+										"region.bluish"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										1741,
+										1742
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content"
+							],
+							"incomplete_sync": null,
+							"markdonw_live_preview_last_run": 1559587094.71,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/LaTeX/LaTeX.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 24.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.latextools":
+	{
+		"height": 104.0
+	},
+	"output.sftp":
+	{
+		"height": 100.0
+	},
+	"pinned_build_system": "",
+	"project": "2019_05_20-SUSY2019.sublime-project",
+	"replace":
+	{
+		"height": 44.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"plo",
+				"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1460565795/cmslpc/uscms/home/aperloff/nobackup/YOURWORKINGAREA/MatrixElement/gitty/CMSSW_5_3_2_patch5/src/TAMUWW/Tools/bin/plotter_x.cc"
+			],
+			[
+				"dra",
+				"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1426464123/brazos/home/aperloff/JEC/CMSSW_7_3_3/src/JMEAnalysis/JMEValidator/macros/particleDrawer.C"
+			],
+			[
+				"run",
+				"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1426464338/brazos/home/aperloff/JEC/CMSSW_7_3_3/src/JMEAnalysis/JMEValidator/test/runValidator.py"
+			],
+			[
+				"par",
+				"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1426464123/brazos/home/aperloff/JEC/CMSSW_7_3_3/src/JMEAnalysis/JMEValidator/macros/particleDrawer.C"
+			],
+			[
+				"event",
+				"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1414446841/cmslpc/uscms/home/aperloff/nobackup/YOURWORKINGAREA/MatrixElement/gitty/CMSSW_5_3_2_patch4/src/TAMUWW/Tools/bin/EventNtupleToUVaNtuple_x.cc"
+			],
+			[
+				"form",
+				"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1412375393/cmslpc/uscms/home/aperloff/nobackup/YOURWORKINGAREA/VHbb/CMSSW_7_1_0_pre9/src/VHbb/HbbAnalyzer/bin/format_plots_x.cc"
+			],
+			[
+				"plot",
+				"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1409671503/cmslpc/uscms/home/aperloff/nobackup/YOURWORKINGAREA/MatrixElement/gitty/CMSSW_5_3_2_patch4/src/TAMUWW/Tools/bin/plotter_x.cc"
+			],
+			[
+				"plott",
+				"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1409671503/cmslpc/uscms/home/aperloff/nobackup/YOURWORKINGAREA/MatrixElement/gitty/CMSSW_5_3_2_patch4/src/TAMUWW/Tools/bin/plotter_x.cc"
+			],
+			[
+				"hbb",
+				"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1410537533/cmslpc/uscms/home/aperloff/nobackup/YOURWORKINGAREA/VHbb/CMSSW_7_1_0_pre9/src/VHbb/HbbAnalyzer/plugins/HbbAnalyzer.cc"
+			],
+			[
+				"hbban",
+				"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1410537533/cmslpc/uscms/home/aperloff/nobackup/YOURWORKINGAREA/VHbb/CMSSW_7_1_0_pre9/src/VHbb/HbbAnalyzer/plugins/HbbAnalyzer.cc"
+			],
+			[
+				"cfi",
+				"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1410537997/cmslpc/uscms/home/aperloff/nobackup/YOURWORKINGAREA/VHbb/CMSSW_7_1_0_pre9/src/VHbb/HbbAnalyzer/python/HbbAnalyzer_cfi.py"
+			],
+			[
+				"cfg",
+				"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1410538007/cmslpc/uscms/home/aperloff/nobackup/YOURWORKINGAREA/VHbb/CMSSW_7_1_0_pre9/src/VHbb/HbbAnalyzer/python/HbbAnalyzer_cfg.py"
+			],
+			[
+				"",
+				"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1412203431/cmslpc/uscms/home/aperloff/nobackup/YOURWORKINGAREA/MatrixElement/gitty/CMSSW_5_3_2_patch4/src/TAMUWW/MVA/src/TAMUWWMVA.cc"
+			],
+			[
+				"un",
+				"untitled"
+			],
+			[
+				"inc",
+				"/Users/aperloff/Library/Application Support/Sublime Text 2/Packages/User/C++/include-stl.sublime-snippet"
+			],
+			[
+				"unti",
+				"untitled"
+			],
+			[
+				"mico",
+				"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1384972849/cmslpc/uscms/home/aperloff/MatrixElement/gitty/CMSSW_5_3_2_patch4/src/TAMUWW/Tools/src/MicroNtupleMaker.cc"
+			],
+			[
+				"jn",
+				"kjfnvldjf"
+			],
+			[
+				"jv",
+				"kjfnvldjf"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 198.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

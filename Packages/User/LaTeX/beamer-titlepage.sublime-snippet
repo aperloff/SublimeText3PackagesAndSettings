@@ -1,0 +1,13 @@
+<snippet>
+	<content><![CDATA[
+{
+    \setbeamertemplate{footline}{} 
+    \begin{frame}
+        \titlepage
+    \end{frame}
+}
+]]></content>
+	<tabTrigger>beamertitlepage</tabTrigger>
+	<scope>text.tex.latex</scope>
+	<description>A basic titlepage without a footline.</description>
+</snippet>

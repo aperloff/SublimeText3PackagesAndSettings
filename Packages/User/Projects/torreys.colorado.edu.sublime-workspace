@@ -1,0 +1,4332 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"proj",
+				"projfinezadj"
+			],
+			[
+				"projfine",
+				"projfinez"
+			],
+			[
+				"save",
+				"savefirst"
+			],
+			[
+				"project",
+				"projectionBufferGlobalState"
+			],
+			[
+				"projec",
+				"projectionBufferGlobalState"
+			],
+			[
+				"CircularBuf",
+				"CircularBufferState"
+			],
+			[
+				"met",
+				"met_phi_"
+			],
+			[
+				"strin",
+				"string_values"
+			],
+			[
+				"add",
+				"add_argument"
+			],
+			[
+				"max",
+				"maxevts"
+			],
+			[
+				"sumP",
+				"sumPt"
+			],
+			[
+				"vtx",
+				"vtx"
+			],
+			[
+				"bi",
+				"bin_"
+			],
+			[
+				"produ",
+				"produce_plots"
+			],
+			[
+				"hwMV",
+				"hwMVASpecialized"
+			],
+			[
+				"hwMVA",
+				"hwMVA"
+			],
+			[
+				"DEEPSTREAM",
+				"DEEPSTREAMARRAY"
+			],
+			[
+				"z_array_0_V",
+				"z_array_0_V_ap_vld"
+			],
+			[
+				"rtl_simple_algo_",
+				"rtl_simple_algo_blackbox_stream"
+			],
+			[
+				"simp",
+				"simple_algo_blackbox_deepstream"
+			],
+			[
+				"set",
+				"set_top"
+			],
+			[
+				"sim",
+				"simple_algo_blackbox_deepstream"
+			],
+			[
+				"DEEP",
+				"DEEPSTREAMARRAY"
+			],
+			[
+				"buffernotemp",
+				"buffernotempty"
+			],
+			[
+				"projection",
+				"projectionBuffer"
+			],
+			[
+				"tkob",
+				"tkobjalgo"
+			],
+			[
+				"data",
+				"data_write_out"
+			],
+			[
+				"doxy",
+				"doxygen-2019"
+			],
+			[
+				"cs",
+				"csim-2018"
+			],
+			[
+				"templ",
+				"template_build-csynth"
+			],
+			[
+				"template_",
+				"template_build-csim"
+			],
+			[
+				"template_pro",
+				"template_project_make"
+			],
+			[
+				"job",
+				"job_template"
+			],
+			[
+				"inArray",
+				"inArray2"
+			],
+			[
+				"histo",
+				"histos_2"
+			],
+			[
+				"hist",
+				"hist_2"
+			],
+			[
+				"histograms",
+				"histograms_1"
+			],
+			[
+				"histogram",
+				"histograms_1"
+			],
+			[
+				"Histogram",
+				"HistogramVec"
+			],
+			[
+				"HISTO",
+				"histogram_t"
+			],
+			[
+				"histogram_t",
+				"histogram_sat_t"
+			],
+			[
+				"values",
+				"values_array"
+			],
+			[
+				"values_",
+				"values_array_1"
+			],
+			[
+				"current_max",
+				"current_max_index"
+			],
+			[
+				"result",
+				"result_array"
+			],
+			[
+				"golden",
+				"golden_array"
+			],
+			[
+				"goldn",
+				"golden_array"
+			],
+			[
+				"gold",
+				"golden_array"
+			],
+			[
+				"input",
+				"inputDataSize"
+			],
+			[
+				"multipli",
+				"multiplicity"
+			],
+			[
+				"n_l",
+				"nlines_per_event"
+			],
+			[
+				"bits",
+				"bits_per_track"
+			],
+			[
+				"curr",
+				"current_number_of_streams"
+			],
+			[
+				"desi",
+				"desired_number_of_streams"
+			],
+			[
+				"mutl",
+				"multiplicity"
+			],
+			[
+				"work",
+				"working_result"
+			],
+			[
+				"expand_li",
+				"expand_list_single_range"
+			],
+			[
+				"current",
+				"current_expansions"
+			],
+			[
+				"chunks",
+				"chunks_tmp"
+			],
+			[
+				"unused",
+				"unused_okay"
+			],
+			[
+				"ppre",
+				"pprecision_closest_to_100"
+			],
+			[
+				"preci",
+				"precision_closest_to_100"
+			],
+			[
+				"step",
+				"stepSize"
+			],
+			[
+				"stepSiz",
+				"stepSizes"
+			],
+			[
+				"maxpt",
+				"maxpt"
+			],
+			[
+				"multipl",
+				"multiplicity"
+			],
+			[
+				"Histogr",
+				"HistogramVec"
+			],
+			[
+				"histogr",
+				"histogram_t"
+			],
+			[
+				"mp7wrapped_",
+				"mp7wrapped_pack_in"
+			],
+			[
+				"NTRACK",
+				"NTRACKS_PER_SECTOR"
+			],
+			[
+				"TkObj",
+				"TkObjVec"
+			],
+			[
+				"MP7DataWor",
+				"MP7DataWordVecIn"
+			],
+			[
+				"WIDTH_",
+				"WIDTH_STREAM"
+			],
+			[
+				"Remak",
+				"RemakeJetsJERup"
+			],
+			[
+				"Remake",
+				"RemakeJetsJERdown"
+			],
+			[
+				"RemakeJe",
+				"RemakeJetsJECdown"
+			],
+			[
+				"cutStrin",
+				"cutStringPair"
+			],
+			[
+				"bracnh",
+				"branchesTLorentzVector"
+			],
+			[
+				"branch",
+				"branchesTLorentzVector"
+			],
+			[
+				"TTFlag",
+				"TTFlag_vec"
+			],
+			[
+				"outvtx",
+				"outvtx_ref"
+			],
+			[
+				"larger",
+				"larger_of_pair_array"
+			],
+			[
+				"MAXIMUM",
+				"MAXIMUM_SEARCH_SIZE"
+			],
+			[
+				"larger_",
+				"larger_of_pair_index_array"
+			],
+			[
+				"MAXIMU",
+				"MAXIMUM_SEARCH_SIZE"
+			],
+			[
+				"MAXIMUM_",
+				"MAXIMUM_SEARCH_SIZE"
+			],
+			[
+				"binin",
+				"binindex_t"
+			],
+			[
+				"clock",
+				"clock_block"
+			],
+			[
+				"interval",
+				"intervals"
+			],
+			[
+				"maximum",
+				"maximum"
+			],
+			[
+				"minimum",
+				"minimumtext"
+			],
+			[
+				"invers",
+				"inverse_t"
+			],
+			[
+				"zv",
+				"zvtx_sliding_sum"
+			],
+			[
+				"zvtx_sl",
+				"zvtx_sliding_tmp"
+			],
+			[
+				"zvt",
+				"zvtx_sliding_tmp"
+			],
+			[
+				"weight",
+				"weighted_position_ref"
+			],
+			[
+				"weigh",
+				"weighted_position_ref"
+			],
+			[
+				"files",
+				"files_folders_string"
+			],
+			[
+				"file",
+				"files_folders"
+			],
+			[
+				"datafr",
+				"dataframes"
+			],
+			[
+				"output",
+				"outputDirectory"
+			],
+			[
+				"counts",
+				"counts_for_display"
+			],
+			[
+				"unwei",
+				"unweighted_count"
+			],
+			[
+				"avg",
+				"avg_weight"
+			],
+			[
+				"wieght",
+				"weight_by_bins"
+			],
+			[
+				"unc",
+				"unc_by_bins"
+			],
+			[
+				"coutn",
+				"counts_by_bins"
+			],
+			[
+				"unweigh",
+				"unweighted_count_histograms"
+			],
+			[
+				"ave",
+				"avg_weight_histograms"
+			],
+			[
+				"count",
+				"count_histograms"
+			],
+			[
+				"outp",
+				"output_file_path"
+			],
+			[
+				"gra",
+				"graph_apr"
+			],
+			[
+				"pvalue",
+				"pvalues_bin"
+			],
+			[
+				"nominalFil",
+				"nominalFilePath"
+			],
+			[
+				"true",
+				"True"
+			],
+			[
+				"nominal",
+				"nominal_name"
+			],
+			[
+				"electron",
+				"electronFile"
+			],
+			[
+				"QCD",
+				"QCD_MuFULL"
+			],
+			[
+				"h",
+				"h"
+			],
+			[
+				"Inter",
+				"Interpolate"
+			],
+			[
+				"gsl_int",
+				"gsl_interp_accel"
+			],
+			[
+				"gsl_interp",
+				"gsl_interp2d_type"
+			],
+			[
+				"print",
+				"printGraph"
+			],
+			[
+				"index_",
+				"index_x"
+			],
+			[
+				"sor",
+				"px_sorted"
+			],
+			[
+				"ind",
+				"index_x"
+			],
+			[
+				"evt",
+				"evt_fill"
+			],
+			[
+				"vari",
+				"variable"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/Users/aperloff/Documents/CMS/FPGA/torreys.colorado.edu/L1TrackObjects_HLS/scratch",
+			"settings":
+			{
+				"buffer_size": 7733,
+				"encoding": "UTF-8",
+				"line_ending": "Unix",
+				"name": "top{"
+			}
+		},
+		{
+			"file": "/Users/aperloff/Documents/CMS/FPGA/torreys.colorado.edu/L1TrackObjectFramework/lib_hdl/hdl/design/vertex_hls/vertex_histogram_wrapper.v",
+			"settings":
+			{
+				"buffer_size": 18155,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/aperloff/Documents/CMS/FPGA/torreys.colorado.edu/L1TrackObjectFramework/lib_hdl/hdl/design/global_pkg.sv",
+			"settings":
+			{
+				"buffer_size": 7003,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/aperloff/Documents/CMS/FPGA/torreys.colorado.edu/L1TrackObjectFramework/lib_hdl/hdl/design/vertex_hls/vertex_histogram.sv",
+			"settings":
+			{
+				"buffer_size": 9265,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "1. CLB Logic\n------------\n\n+----------------------------+------+-------+-----------+-------+\n|          Site Type         | Used | Fixed | Available | Util% |\n+----------------------------+------+-------+-----------+-------+\n| CLB LUTs                   | 4028 |     0 |   1182240 |  0.34 |\n|   LUT as Logic             | 3432 |     0 |   1182240 |  0.29 |\n|   LUT as Memory            |  596 |     0 |    591840 |  0.10 |\n|     LUT as Distributed RAM |    0 |     0 |           |       |\n|     LUT as Shift Register  |  596 |     0 |           |       |\n| CLB Registers              | 4527 |     0 |   2364480 |  0.19 |\n|   Register as Flip Flop    | 4527 |     0 |   2364480 |  0.19 |\n|   Register as Latch        |    0 |     0 |   2364480 |  0.00 |\n| CARRY8                     |  223 |     0 |    147780 |  0.15 |\n| F7 Muxes                   |  147 |     0 |    591120 |  0.02 |\n| F8 Muxes                   |   72 |     0 |    295560 |  0.02 |\n| F9 Muxes                   |    0 |     0 |    147780 |  0.00 |\n+----------------------------+------+-------+-----------+-------+\n\n2. CLB Logic Distribution\n-------------------------\n\n+--------------------------------------------+------+-------+-----------+-------+\n|                  Site Type                 | Used | Fixed | Available | Util% |\n+--------------------------------------------+------+-------+-----------+-------+\n| CLB                                        |  736 |     0 |    147780 |  0.50 |\n|   CLBL                                     |  380 |     0 |           |       |\n|   CLBM                                     |  356 |     0 |           |       |\n| LUT as Logic                               | 3432 |     0 |   1182240 |  0.29 |\n|   using O5 output only                     |   45 |       |           |       |\n|   using O6 output only                     | 2147 |       |           |       |\n|   using O5 and O6                          | 1240 |       |           |       |\n| LUT as Memory                              |  596 |     0 |    591840 |  0.10 |\n|   LUT as Distributed RAM                   |    0 |     0 |           |       |\n|   LUT as Shift Register                    |  596 |     0 |           |       |\n|     using O5 output only                   |    0 |       |           |       |\n|     using O6 output only                   |  522 |       |           |       |\n|     using O5 and O6                        |   74 |       |           |       |\n| CLB Registers                              | 4527 |     0 |   2364480 |  0.19 |\n|   Register driven from within the CLB      | 2808 |       |           |       |\n|   Register driven from outside the CLB     | 1719 |       |           |       |\n|     LUT in front of the register is unused | 1032 |       |           |       |\n|     LUT in front of the register is used   |  687 |       |           |       |\n| Unique Control Sets                        |   94 |       |    295560 |  0.03 |\n+--------------------------------------------+------+-------+-----------+-------+\n* Note: Available Control Sets calculated as CLB Registers / 8, Review the Control Sets Report for more information regarding control sets.\n\n\n3. BLOCKRAM\n-----------\n\n+-------------------+------+-------+-----------+-------+\n|     Site Type     | Used | Fixed | Available | Util% |\n+-------------------+------+-------+-----------+-------+\n| Block RAM Tile    |    1 |     0 |      2160 |  0.05 |\n|   RAMB36/FIFO*    |    1 |     0 |      2160 |  0.05 |\n|     RAMB36E2 only |    1 |       |           |       |\n|   RAMB18          |    0 |     0 |      4320 |  0.00 |\n| URAM              |    0 |     0 |       960 |  0.00 |\n+-------------------+------+-------+-----------+-------+\n\n4. ARITHMETIC\n-------------\n\n+----------------+------+-------+-----------+-------+\n|    Site Type   | Used | Fixed | Available | Util% |\n+----------------+------+-------+-----------+-------+\n| DSPs           |    1 |     0 |      6840 |  0.01 |\n|   DSP48E2 only |    1 |       |           |       |\n+----------------+------+-------+-----------+-------+\n\n\n14. SLR CLB Logic and Dedicated Block Utilization\n-------------------------------------------------\n\n+----------------------------+------+------+------+--------+--------+--------+\n|          Site Type         | SLR0 | SLR1 | SLR2 | SLR0 % | SLR1 % | SLR2 % |\n+----------------------------+------+------+------+--------+--------+--------+\n| CLB                        |  736 |    0 |    0 |   1.49 |   0.00 |   0.00 |\n|   CLBL                     |  380 |    0 |    0 |   1.54 |   0.00 |   0.00 |\n|   CLBM                     |  356 |    0 |    0 |   1.44 |   0.00 |   0.00 |\n| CLB LUTs                   | 4028 |    0 |    0 |   1.02 |   0.00 |   0.00 |\n|   LUT as Logic             | 3432 |    0 |    0 |   0.87 |   0.00 |   0.00 |\n|   LUT as Memory            |  596 |    0 |    0 |   0.30 |   0.00 |   0.00 |\n|     LUT as Distributed RAM |    0 |    0 |    0 |   0.00 |   0.00 |   0.00 |\n|     LUT as Shift Register  |  596 |    0 |    0 |   0.30 |   0.00 |   0.00 |\n| CLB Registers              | 4527 |    0 |    0 |   0.57 |   0.00 |   0.00 |\n| CARRY8                     |  223 |    0 |    0 |   0.45 |   0.00 |   0.00 |\n| F7 Muxes                   |  147 |    0 |    0 |   0.07 |   0.00 |   0.00 |\n| F8 Muxes                   |   72 |    0 |    0 |   0.07 |   0.00 |   0.00 |\n| F9 Muxes                   |    0 |    0 |    0 |   0.00 |   0.00 |   0.00 |\n| Block RAM Tile             |    1 |    0 |    0 |   0.14 |   0.00 |   0.00 |\n|   RAMB36/FIFO              |    1 |    0 |    0 |   0.14 |   0.00 |   0.00 |\n|   RAMB18                   |    0 |    0 |    0 |   0.00 |   0.00 |   0.00 |\n| URAM                       |    0 |    0 |    0 |   0.00 |   0.00 |   0.00 |\n| DSPs                       |    1 |    0 |    0 |   0.04 |   0.00 |   0.00 |\n| PLL                        |    0 |    0 |    0 |   0.00 |   0.00 |   0.00 |\n| MMCM                       |    0 |    0 |    0 |   0.00 |   0.00 |   0.00 |\n| Unique Control Sets        |   94 |    0 |    0 |   0.10 |   0.00 |   0.00 |\n+----------------------------+------+------+------+--------+--------+--------+\n* Note: Available Control Sets based on CLB Registers / 8\n\n------------------------------------------------------------------------------------------------\n| Design Timing Summary\n| ---------------------\n------------------------------------------------------------------------------------------------\n\n    WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints\n    -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------\n      0.507        0.000                      0                 9795        0.042        0.000                      0                 9795        1.020        0.000                       0                  5200\n\n\nAll user specified timing constraints are met.\n\n\n\n------------------------------------------------------------------------------------------------\n| Clock Summary\n| -------------\n------------------------------------------------------------------------------------------------\n\nClock   Waveform(ns)         Period(ns)      Frequency(MHz)\n-----   ------------         ----------      --------------\nap_clk  {0.000 1.562}        3.125           320.000\n\n\n\nMax Delay Paths\n--------------------------------------------------------------------------------------\nSlack (MET) :             0.507ns  (required time - arrival time)\n  Source:                 bd_0_i/hls_inst/U0/tkobjalgo_find_vtx_U0/index_array_0_V_reg_5052_reg[0]_rep__1/C\n                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@1.562ns period=3.125ns})\n  Destination:            bd_0_i/hls_inst/U0/tkobjalgo_find_vtx_U0/add_ln700_reg_5069_reg[9]/D\n                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@1.562ns period=3.125ns})\n  Path Group:             ap_clk\n  Path Type:              Setup (Max at Slow Process Corner)\n  Requirement:            3.125ns  (ap_clk rise@3.125ns - ap_clk rise@0.000ns)\n  Data Path Delay:        2.600ns  (logic 0.755ns (29.038%)  route 1.845ns (70.962%))\n  Logic Levels:           6  (CARRY8=2 LUT5=1 LUT6=3)\n  Clock Path Skew:        -0.008ns (DCD - SCD + CPR)\n    Destination Clock Delay (DCD):    0.021ns = ( 3.146 - 3.125 )\n    Source Clock Delay      (SCD):    0.029ns\n    Clock Pessimism Removal (CPR):    0.000ns\n  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE\n    Total System Jitter     (TSJ):    0.071ns\n    Total Input Jitter      (TIJ):    0.000ns\n    Discrete Jitter          (DJ):    0.000ns\n    Phase Error              (PE):    0.000ns",
+			"settings":
+			{
+				"buffer_size": 8923,
+				"line_ending": "Unix",
+				"name": "1. CLB Logic"
+			}
+		},
+		{
+			"file": "/Users/aperloff/Documents/CMS/FPGA/torreys.colorado.edu/TrackletFirmware/project/script_ME.tcl",
+			"settings":
+			{
+				"buffer_size": 1163,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/aperloff/Documents/CMS/FPGA/torreys.colorado.edu/TrackletFirmware/TrackletAlgorithm/Constants.hh",
+			"settings":
+			{
+				"buffer_size": 758,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/aperloff/Documents/CMS/FPGA/torreys.colorado.edu/TrackletFirmware/TestBenches/MatchEngine_test.cpp",
+			"settings":
+			{
+				"buffer_size": 2288,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/aperloff/Documents/CMS/FPGA/torreys.colorado.edu/TrackletFirmware/TestBenches/FileReadUtility.hh",
+			"settings":
+			{
+				"buffer_size": 7684,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/aperloff/Documents/CMS/FPGA/torreys.colorado.edu/TrackletFirmware/TrackletAlgorithm/MatchEngine.h",
+			"settings":
+			{
+				"buffer_size": 4006,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/aperloff/Documents/CMS/FPGA/torreys.colorado.edu/TrackletFirmware/TrackletAlgorithm/MatchEngine.cpp",
+			"settings":
+			{
+				"buffer_size": 8517,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/aperloff/Documents/CMS/FPGA/torreys.colorado.edu/TrackletFirmware/TrackletAlgorithm/VMProjectionMemory.hh",
+			"settings":
+			{
+				"buffer_size": 4947,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/aperloff/Documents/CMS/FPGA/torreys.colorado.edu/TrackletFirmware/TrackletAlgorithm/MatchEngineEmulator.h",
+			"settings":
+			{
+				"buffer_size": 8146,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "kVMProjectionSize=21\nMEBinsBits=3\nzfirst.length()=3\nprojdata.raw().length()=21\nsum=25\nzero.length()=1\nzfirst.concat(zero).length()=4\nprojdata.raw().concat(tmp).length()=25\nnstubfirst.length()=5\nnstubfirst.concat(tmp2).length()=30\nzero=0b0\nzfirst=0b011\nprojdata.raw()=0b0101111000011110\nnstubfirst=0b0101\nzfirst.concat(zero)=0b0110\nprojdata.raw().concat(tmp)=0b01011110000111100110\nnstubfirst.concat(tmp2)=0b01010000001011110000111100110\n\nkVMProjectionSize=21\nMEBinsBits=3\nzfirst.length()=3\nprojdata.raw().length()=21\nsum=25\nzero.length()=1\nzfirst.concat(zero).length()=4\nprojdata.raw().concat(tmp).length()=25\nnstubfirst.length()=5\nnstubfirst.concat(tmp2).length()=31\nzero=0b0\nzfirst=0b011\nprojdata.raw()=0b0101111000011110\nnstubfirst=0b0101\nzfirst.concat(zero)=0b0110\nprojdata.raw().concat(tmp)=0b01011110000111100110\nnstubfirst.concat(tmp2)=0b010100000001011110000111100110\n\n\n\n\nprojdata.raw().concat(tmp)=0b01011110000111100110\nprojdata.raw().concat(tmp)=0b01011110000111100110\n\nnstubfirst.concat(tmp2)=0b01010000001011110000111100110\nnstubfirst.concat(tmp2)=0b010100000001011110000111100110\n\n\nHere's the instruction from Kevin Sung:\n\n* log into lxplus7 ('7' is important in order to get g++ 4.8.5 so that -std=c++11 CFLAG gets recognized)\n\n* setup ROOT environment\nsource /cvmfs/sft.cern.ch/lcg/app/releases/ROOT/6.16.00/x86_64-centos7-gcc48-opt/bin/thisroot.sh\n\n* git check out software packages with the appropriate tags:\ngit clone https://github.com/cms-tracklet/imath.git\ngit clone https://github.com/cms-tracklet/fpga_emulation_longVM.git\ncd imath/\ngit checkout AH_181201\nmake -j5\ncd ../fpga_emulation_longVM/\ngit checkout ZT_181203\n\n* modify FPGAConstants.hh\n  - https://github.com/cms-tracklet/fpga_emulation_longVM/blob/fw_synch/FPGAConstants.hh#L57\nto generate ME tables, set to true\n  - https://github.com/cms-tracklet/fpga_emulation_longVM/blob/fw_synch/FPGAConstants.hh#L93\nto generate memories files, set to true\n  - https://github.com/cms-tracklet/fpga_emulation_longVM/blob/fw_synch/FPGAConstants.hh#L273\nset to 72 to emulate the number of operations (108) per algo step\n\n* Get the ttbar input file\nofficial location: /eos/cms/store/user/skinnari/Tracklet/InputFiles/evlist_ttbar_D17_PU200.txt\nor from my lxplus area: /afs/cern.ch/work/k/ksung/public/Tracklet/TrackletEngine/fpga_emulation_longVM/evlist_ttbar_D17_PU200.txt\n\n* Build the executable:\nmake fpga\n\n* Run over 100 events:\n./fpga evlist_ttbar_D17_PU200.txt 100 0\n\nThis is what he did to get a testvector for whole detector and all instances: /afs/cern.ch/work/k/ksung/public/Tracklet/TrackletEngine/fpga_emulation_longVM/MemPrints/",
+			"settings":
+			{
+				"buffer_size": 2609,
+				"line_ending": "Unix",
+				"name": "kVMProjectionSize=21"
+			}
+		},
+		{
+			"contents": "CandidateMatch:\nindex\treference\tcomputed\n0\t00000110000001\t00000110000001\n1\t00000110000011\t00000110000011\n2\t00000110000100\t00000110000100\n3\t00000110000110\t00000110000110\n4\t00000110000111\t00000110000111\n5\t00001000000001\t00001000000001\n6\t00001000000011\t00001000000011\n7\t00001000000100\t00001000000100\n8\t00001000000110\t00001000000110\n9\t00001000000111\t00001000000111\n10\t00001010000001\t00001010000001\n11\t00001010000011\t00001010000011\n12\t00001010000100\t00001010000100\n13\t00001010000110\t00001010000110\n14\t00001010000111\t00001010000111\n15\t00010000000011\t00010000000011\n16\t00010000000111\t00010000000111\n17\t00010010000011\t00010010000011\n18\t00010010000111\t00010010000111\n19\t00011000001110\t00011000001110\n20\t00011000001111\t00011000001111\n21\t00011100001110\t00000110000001\t<=== INCONSISTENT\n22\t00011100001111\t00000110000011\t<=== INCONSISTENT\n23\t00100000001110\t00000110000100\t<=== INCONSISTENT\n24\t00100000001111\t00000110000110\t<=== INCONSISTENT\n25\t00100010001110\t00000110000111\t<=== INCONSISTENT\n26\t00100010001111\t00100000001110\t<=== INCONSISTENT\n27\t00100100001110\t00100000001111\t<=== INCONSISTENT\n28\t00100100001111\t00100010001110\t<=== INCONSISTENT\nmissing\t0x088f\nmissing\t0x090e\nmissing\t0x090f",
+			"settings":
+			{
+				"buffer_size": 1176,
+				"line_ending": "Unix",
+				"name": "CandidateMatch:"
+			}
+		}
+	],
+	"build_system": "Packages/LaTeXTools/LaTeX.sublime-build",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					""
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Traditional"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"PdfLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"XeLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"LuaLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Basic Builder"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Basic Builder - PdfLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Basic Builder - XeLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Basic Builder - LuaLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Script Builder"
+				],
+				[
+					"Packages/SublimeREPL/sublimerepl_build_system_hack.sublime-build",
+					""
+				]
+			],
+			[
+				"Packages/LaTeXTools/LaTeX.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				],
+				[
+					"Packages/SublimeREPL/sublimerepl_build_system_hack.sublime-build",
+					""
+				]
+			],
+			[
+				"Packages/Python/Python.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 342.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"python",
+				"SublimeREPL: Python"
+			],
+			[
+				"veril",
+				"Verilog: Linting"
+			],
+			[
+				"prpint",
+				"Print to HTML: print as HTML via browser"
+			],
+			[
+				"sftppan",
+				"SFTP: Show Panel"
+			],
+			[
+				"sftp",
+				"SFTP: Show Panel"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"lint",
+				"Verilog: Linting"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"packa",
+				"Package Control: Install Package"
+			],
+			[
+				"projenew",
+				"Project Manager: Open Project in New Window"
+			],
+			[
+				"project mana",
+				"Project Manager: Edit Project"
+			],
+			[
+				"projec",
+				"Project Manager"
+			],
+			[
+				"sublimpy",
+				"SublimeREPL: Python"
+			],
+			[
+				"figur",
+				"Snippet: figure"
+			],
+			[
+				"snittable",
+				"Snippet: table"
+			],
+			[
+				"sublreplpyth",
+				"SublimeREPL: Python"
+			],
+			[
+				"repl",
+				"SublimeREPL: Python"
+			],
+			[
+				"rep",
+				"SublimeREPL: Python"
+			],
+			[
+				"replpyth",
+				"SublimeREPL: Python"
+			],
+			[
+				"snipfig",
+				"Snippet: figure"
+			],
+			[
+				"snipsub",
+				"Snippet: subfig2"
+			],
+			[
+				"figure",
+				"Snippet: figure"
+			],
+			[
+				"open",
+				"Project Manager: Open Project"
+			],
+			[
+				"snipfigu",
+				"Snippet: figure"
+			],
+			[
+				"snippsubgi",
+				"Snippet: subfig2"
+			],
+			[
+				"sniptext",
+				"Snippet: beamer-textblock"
+			],
+			[
+				"snippfig",
+				"Snippet: figure"
+			],
+			[
+				"snipptex",
+				"Snippet: beamer-textblock"
+			],
+			[
+				"snifig",
+				"Snippet: figure"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"markpr",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"markdow",
+				"MarkdownTOC:Update TOC"
+			],
+			[
+				"markdown",
+				"MarkdownTOC:Update TOC"
+			],
+			[
+				"markdotoc",
+				"MarkdownTOC:Update TOC"
+			],
+			[
+				"markdopri",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"markdowtoc",
+				"MarkdownTOC:Insert TOC"
+			],
+			[
+				"markdownpr",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"TOC",
+				"MarkdownTOC:Insert TOC"
+			],
+			[
+				"comment",
+				"Snippet: Comment"
+			],
+			[
+				"markdo",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"mana",
+				"Project Manager"
+			],
+			[
+				"sft",
+				"SFTP: Edit Server…"
+			],
+			[
+				"eq",
+				"Snippet: Equation"
+			],
+			[
+				"itemiz",
+				"Snippet: Itemize"
+			],
+			[
+				"enum",
+				"Snippet: Enumerate"
+			],
+			[
+				"comm",
+				"Snippet: Comment"
+			],
+			[
+				"equation",
+				"Snippet: Equation"
+			],
+			[
+				"snifigu",
+				"Snippet: figure"
+			],
+			[
+				"equ",
+				"Snippet: Equation"
+			],
+			[
+				"item",
+				"Snippet: Itemize"
+			],
+			[
+				"equati",
+				"Snippet: Equation"
+			],
+			[
+				"",
+				"A File Icon: Changelog"
+			],
+			[
+				"equa",
+				"Snippet: Equation"
+			],
+			[
+				"snicomme",
+				"Snippet: Comment"
+			],
+			[
+				"snieq",
+				"Snippet: Equation"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"intall",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"packin",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: List Packages"
+			],
+			[
+				"wrap",
+				"Word Wrap: Toggle"
+			],
+			[
+				"wra",
+				"Word Wrap: Toggle"
+			],
+			[
+				"latextoo",
+				"LaTeXTools: Reconfigure and migrate settings"
+			],
+			[
+				"insal",
+				"Package Control: Install Package"
+			],
+			[
+				"latex",
+				"Set Syntax: LaTeX Beamer"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"snippe",
+				"Snippet: Using statement"
+			],
+			[
+				"c++",
+				"Set Syntax: C++"
+			],
+			[
+				"C++",
+				"Set Syntax: C++"
+			],
+			[
+				"Snippet: using",
+				"Snippet: using-namespace"
+			],
+			[
+				"un",
+				"Snippet: using-namespace"
+			],
+			[
+				"create",
+				"Create Xiki Buffer"
+			],
+			[
+				"packageconint",
+				"Package Control: Install Package"
+			],
+			[
+				"sideb",
+				"View: Toggle Side Bar"
+			],
+			[
+				"SFTP",
+				"Preferences: SFTP Settings"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				"Pac",
+				"Package Control: Install Package"
+			],
+			[
+				"Pack",
+				"Package Control: Install Package"
+			],
+			[
+				"Packag",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: In",
+				"Package Control: Install Package"
+			],
+			[
+				"FindKey",
+				"FindKeyConflicts: (Direct) Conflicts to Buffer"
+			],
+			[
+				"pacin",
+				"Package Control: Install Package"
+			],
+			[
+				"packinst",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 548.0
+	},
+	"console":
+	{
+		"height": 125.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = 'df21e130d211cfc94d9b0905775a7c0f' + '1e3d39e33b79698005270310898eea76'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by) ",
+			" import urllib.request,os,hashlib; h = 'df21e130d211cfc94d9b0905775a7c0f' + '1e3d39e33b79698005270310898eea76'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by) "
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/aperloff/Documents/CMS/FPGA/torreys.colorado.edu",
+		"/Users/aperloff/Documents/CMS/FPGA/torreys.colorado.edu/TrackletMaster",
+		"/Users/aperloff/Documents/CMS/FPGA/torreys.colorado.edu/TrackletMaster/TrackletAlgorithm"
+	],
+	"file_history":
+	[
+		"/Users/aperloff/Documents/CMS/FPGA/torreys.colorado.edu/TrackletFirmware/TrackletAlgorithm/VMProjectionMemory.hh",
+		"/Users/aperloff/Documents/CMS/FPGA/torreys.colorado.edu/TrackletFirmware/TrackletAlgorithm/MatchEngineAlternateVersions.cpp",
+		"/Users/aperloff/Documents/CMS/FPGA/torreys.colorado.edu/TrackletFirmware/TrackletAlgorithm/CandidateMatchMemory.hh",
+		"/Users/aperloff/Documents/CMS/FPGA/torreys.colorado.edu/TrackletFirmware/TrackletAlgorithm/MemoryTemplate.hh",
+		"/Users/aperloff/Documents/CMS/FPGA/torreys.colorado.edu/TrackletFirmware/TrackletAlgorithm/InputStubMemory.hh",
+		"/Users/aperloff/Documents/CMS/FPGA/torreys.colorado.edu/TrackletFirmware/TrackletAlgorithm/MatchEngineTopL1.cpp",
+		"/Users/aperloff/Documents/CMS/FPGA/torreys.colorado.edu/TrackletFirmware/TrackletAlgorithm/MatchEngineTopL4.cpp",
+		"/Users/aperloff/Documents/CMS/FPGA/torreys.colorado.edu/TrackletFirmware/TrackletAlgorithm/TrackletCalculator.hh",
+		"/Users/aperloff/Documents/CMS/FPGA/torreys.colorado.edu/TrackletFirmware/TrackletAlgorithm/TrackletEngineTop.h",
+		"/Users/aperloff/Documents/CMS/FPGA/torreys.colorado.edu/TrackletFirmware/TrackletAlgorithm/TrackletEngineTop.cpp",
+		"/Users/aperloff/Documents/CMS/FPGA/torreys.colorado.edu/TrackletFirmware/TrackletAlgorithm/TrackletEngine_stubptoutercut.h",
+		"/Users/aperloff/Documents/CMS/FPGA/torreys.colorado.edu/TrackletFirmware/TrackletAlgorithm/TrackletEngine_stubptinnercut.h",
+		"/Users/aperloff/Documents/CMS/FPGA/torreys.colorado.edu/TrackletFirmware/TrackletAlgorithm/TrackletEngine_ptcut.h",
+		"/Users/aperloff/Documents/CMS/FPGA/torreys.colorado.edu/TrackletFirmware/TrackletAlgorithm/TrackletEngine.h",
+		"/Users/aperloff/Documents/CMS/FPGA/torreys.colorado.edu/TrackletFirmware/TrackletAlgorithm/TrackletCalculator.cpp",
+		"/Users/aperloff/Documents/CMS/FPGA/torreys.colorado.edu/L1TrackObjects_HLS/firmware/data_types.h",
+		"/Users/aperloff/Documents/CMS/FPGA/torreys.colorado.edu/L1TrackObjects_HLS/firmware/simple_tkobjalgo.cpp",
+		"/Users/aperloff/Documents/CMS/FPGA/torreys.colorado.edu/L1TrackObjects_HLS/firmware/objects.h",
+		"/Users/aperloff/Documents/CMS/FPGA/torreys.colorado.edu/TrackletFirmware/TrackletAlgorithm/VMStubMEMemory.hh",
+		"/Users/aperloff/Documents/CMS/FPGA/torreys.colorado.edu/TrackletFirmware/TrackletAlgorithm/MemoryTemplateBinned.hh",
+		"/Users/aperloff/Documents/CMS/FPGA/torreys.colorado.edu/TrackletFirmware/project/script_TE.tcl",
+		"/Users/aperloff/Documents/CMS/FPGA/torreys.colorado.edu/TrackletFirmware/TestBenches/TrackletEngine_test.cpp",
+		"/Users/aperloff/Documents/CMS/FPGA/torreys.colorado.edu/TrackletFirmware/TrackletAlgorithm/CircularBuffer.hh",
+		"/Users/aperloff/Documents/CMS/FPGA/torreys.colorado.edu/L1TrackObjects_HLS/firmware/global_configuration.h",
+		"/Users/aperloff/Documents/CMS/FPGA/torreys.colorado.edu/TrackletFirmware/TrackletAlgorithm/CircularBufferParallel.hh",
+		"/Users/aperloff/Documents/CMS/FPGA/torreys.colorado.edu/TrackletFirmware/TrackletAlgorithm/StatelessCircularBuffer.hh",
+		"/Users/aperloff/Documents/CMS/FPGA/torreys.colorado.edu/TrackletFirmware/TrackletAlgorithm/TrackletProjectionMemory.hh",
+		"/Users/aperloff/Documents/CMS/FPGA/torreys.colorado.edu/TrackletFirmware/TrackletAlgorithm/Constants.hh",
+		"/Users/aperloff/Applications/vivado-docker/ubuntu/2019.1/vnc/.gitlab-ci.yml",
+		"/Users/aperloff/Documents/CMS/FPGA/torreys.colorado.edu/TrackletFirmware/TrackletAlgorithm/MatchEngineTopL4.h",
+		"/Users/aperloff/Documents/CMS/FPGA/torreys.colorado.edu/TrackletFirmware/TrackletAlgorithm/MatchEngineTopL1.h",
+		"/Users/aperloff/Documents/CMS/FPGA/torreys.colorado.edu/TrackletFirmware/TrackletAlgorithm/MatchEngine.cpp",
+		"/Users/aperloff/Documents/CMS/FPGA/torreys.colorado.edu/L1TrackObjects_HLS/config_hls_tkobjalgo.tcl",
+		"/Users/aperloff/Documents/CMS/FPGA/torreys.colorado.edu/L1TrackObjects_HLS/run_hls_tkobjalgo_make.tcl",
+		"/Users/aperloff/Documents/CMS/FPGA/torreys.colorado.edu/L1TrackObjects_HLS/simple_tkobjalgo_test.cpp",
+		"/Users/aperloff/Documents/CMS/FPGA/torreys.colorado.edu/L1TrackObjects_HLS/firmware/simple_tkobjalgo.h",
+		"/Users/aperloff/Documents/CMS/FPGA/torreys.colorado.edu/L1TrackObjects_HLS/firmware/histogramming.json",
+		"/Users/aperloff/Documents/CMS/FPGA/torreys.colorado.edu/L1TrackObjects_HLS/firmware/rtl_histogramming.json",
+		"/Users/aperloff/Documents/CMS/FPGA/torreys.colorado.edu/GlobalCorrelator/pulsar_devkit/simple_examples/HLSIPs/run_simple_algo_blackbox.tcl",
+		"/Users/aperloff/Documents/CMS/FPGA/torreys.colorado.edu/GlobalCorrelator/pulsar_devkit/simple_examples/HLSIPs/simple_algo_blackbox_test.cpp",
+		"/Users/aperloff/Documents/CMS/FPGA/torreys.colorado.edu/GlobalCorrelator/pulsar_devkit/simple_examples/HLSIPs/src/simple_algo_blackbox.h",
+		"/Users/aperloff/Documents/CMS/FPGA/torreys.colorado.edu/GlobalCorrelator/pulsar_devkit/simple_examples/HLSIPs/src/simple_algo_blackbox.cpp",
+		"/Users/aperloff/Documents/CMS/FPGA/torreys.colorado.edu/GlobalCorrelator/pulsar_devkit/simple_examples/HLSIPs/src/simple_algo_blackbox_deepstreamarray.json",
+		"/Users/aperloff/Documents/CMS/FPGA/torreys.colorado.edu/GlobalCorrelator/pulsar_devkit/simple_examples/HLSIPs/src/rtl_simple_algo_blackbox_deepstreamarray.v",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1572635587/culogin/nfs/data41/aperloff/L1TrackObjects_HLS/proj_VCU118_MET/solution/solution.log",
+		"/Users/aperloff/Documents/CMS/FPGA/torreys.colorado.edu/L1TrackObjects_HLS/python/compare_sw_to_fw.py",
+		"/Users/aperloff/Documents/CMS/FPGA/torreys.colorado.edu/L1TrackObjects_HLS/data/trackerRegion_alltracks_sectors_2x9_TTbar_PU200_evt1to10.txt",
+		"/Users/aperloff/Applications/vivado-docker/sl/2019.1/x11/files/install_config.txt",
+		"/Users/aperloff/Applications/vivado-docker/sl/2018.2/x11/files/install_config.txt",
+		"/Users/aperloff/Downloads/tmp/simple_algo_find_top_n_scan/simple_algo_find_top_n_scan.py",
+		"/Users/aperloff/Documents/CMS/FPGA/torreys.colorado.edu/L1TrackObjects_HLS/utils/pattern_serializer.cpp",
+		"/Users/aperloff/Documents/CMS/FPGA/torreys.colorado.edu/L1TrackObjects_HLS/utils/pattern_serializer.h",
+		"/Users/aperloff/Documents/CMS/FPGA/torreys.colorado.edu/L1TrackObjects_HLS/python/modify_coe.py",
+		"/Users/aperloff/Documents/CMS/FPGA/torreys.colorado.edu/L1TrackObjects_HLS/python/SWvsFW.py",
+		"/Users/aperloff/Documents/CMS/FPGA/torreys.colorado.edu/L1TrackObjects_HLS/data/trackerRegion_alltracks_sectors_2x9_TTbar_PU200.coe",
+		"/Users/aperloff/Downloads/trackerRegion_alltracks_sectors_2x9_TTbar_PU200.coe",
+		"/Users/aperloff/Documents/CMS/FPGA/torreys.colorado.edu/L1TrackObjects_HLS/utils/show.h",
+		"/Users/aperloff/Documents/CMS/FPGA/torreys.colorado.edu/L1TrackObjects_HLS/utils/test_utils.cpp",
+		"/Users/aperloff/Documents/CMS/FPGA/torreys.colorado.edu/L1TrackObjects_HLS/utils/test_utils.h",
+		"/Users/aperloff/Documents/CMS/FPGA/torreys.colorado.edu/L1TrackObjects_HLS/firmware/array_operations.h",
+		"/Users/aperloff/Documents/CMS/FPGA/torreys.colorado.edu/L1TrackObjects_HLS/firmware/sector_link_configuration.h",
+		"/Users/aperloff/Documents/CMS/FPGA/torreys.colorado.edu/L1TrackObjects_HLS/utils/DiscretePF2Firmware.h",
+		"/Users/aperloff/Documents/CMS/FPGA/torreys.colorado.edu/L1TrackObjects_HLS/firmware/track_configuration.h",
+		"/Users/aperloff/Documents/CMS/FPGA/torreys.colorado.edu/L1TrackObjects_HLS/utils/DiscretePFInputs_IO.h",
+		"/Users/aperloff/Documents/CMS/FPGA/torreys.colorado.edu/L1TrackObjects_HLS/utils/DiscretePFInputs.h",
+		"/Users/aperloff/Documents/CMS/FPGA/torreys.colorado.edu/L1TrackObjects_HLS/simple_tkobjalgo_ref.cpp",
+		"/Users/aperloff/Documents/CMS/FPGA/torreys.colorado.edu/L1TrackObjects_HLS/utils/random_inputs.h",
+		"/Users/aperloff/Documents/CMS/FPGA/torreys.colorado.edu/L1TrackObjects_HLS/utils/Firmware2DiscretePF.h",
+		"/Users/aperloff/Documents/CMS/FPGA/torreys.colorado.edu/L1TrackObjects_HLS/firmware/data.h",
+		"/Users/aperloff/Documents/CMS/FPGA/torreys.colorado.edu/GlobalCorrelator/pulsar_devkit/simple_examples/HLSIPs/src/simple_algo_blackbox_deepstream.json",
+		"/Users/aperloff/Documents/CMS/FPGA/torreys.colorado.edu/TrackletFirmware/project/script_ME.tcl",
+		"/Users/aperloff/Documents/CMS/FPGA/torreys.colorado.edu/TrackletFirmware/emData/ME/ME_L1PHIE20/VMProjections_VMPROJ_L1PHIE20_04.dat",
+		"/Users/aperloff/Documents/CMS/FPGA/torreys.colorado.edu/TrackletFirmware/emData/ME/ME_L1PHIE20/VMStubs_VMSME_L1PHIE20n1_04.dat",
+		"/Users/aperloff/Documents/CMS/FPGA/torreys.colorado.edu/TrackletFirmware/emData/ME/ME_L1PHIE20/CandidateMatches_CM_L1PHIE20_04.dat",
+		"/Users/aperloff/Documents/CMS/FPGA/torreys.colorado.edu/TrackletFirmware/emData/ME/ME_L1PHIE20/METable_L1.tab",
+		"/Users/aperloff/Documents/CMS/FPGA/torreys.colorado.edu/TrackletFirmware/TestBenches/MatchEngine_test.cpp",
+		"/Users/aperloff/Documents/CMS/FPGA/torreys.colorado.edu/TrackletFirmware/TestBenches/FileReadUtility.hh",
+		"/Users/aperloff/Documents/CMS/FPGA/torreys.colorado.edu/TrackletFirmware/MatchEngineNotes.txt",
+		"/Users/aperloff/Documents/CMS/FPGA/torreys.colorado.edu/TrackletFirmware/TrackletAlgorithm/MatchEngine.h",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1569895831/culogin/nfs/data41/aperloff/TrackletFirmware/project/matchengine/solution1_V1/syn/report/MatchEngineTop_csynth.rpt",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1569895873/culogin/nfs/data41/aperloff/TrackletFirmware/project/matchengine/solution1_V4/syn/report/MatchEngineTop_csynth.rpt",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1569895883/culogin/nfs/data41/aperloff/TrackletFirmware/project/matchengine/solution1_V4/syn/report/MatchEngine_1_0_s_csynth.rpt",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1569895862/culogin/nfs/data41/aperloff/TrackletFirmware/project/matchengine/solution1_V1/syn/report/MatchEngine_1_0_s_csynth.rpt",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1569895175/culogin/nfs/data41/aperloff/TrackletFirmware/project/matchengine/solution1_V1/solution1_V1.log",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1569963104/culogin/nfs/data41/aperloff/TrackletFirmware/project/matchengine/solution1_V3/solution1_V3.log",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1569894659/culogin/nfs/data41/aperloff/TrackletFirmware/project/matchengine/solution1_V4/solution1_V4.log",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1569848597/culogin/nfs/data41/aperloff/TrackletFirmware/project/matchengine/solution1_V4/syn/report/MatchEngineTop_csynth.rpt",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1569848673/culogin/nfs/data41/aperloff/TrackletFirmware/project/matchengine/solution1_V4/syn/report/MatchEngine_1_0_s_csynth.rpt",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1569620923/culogin/nfs/data41/aperloff/GlobalCorrelator/pulsar_devkit/simple_examples/HLSIPs/proj0/solution1_rtl_as_blackbox_DEEPSTREAM/.autopilot/db/simple_algo_blackbox_stream.constraint.tcl",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1569620958/culogin/nfs/data41/aperloff/TrackletFirmware/project/matchengine/solution1/.autopilot/db/MatchEngine.constraint.tcl",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1569620159/culogin/nfs/data41/aperloff/TrackletFirmware/project/matchengine/solution1/.autopilot/db/MatchEngine.constraint.tcl",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1569620193/culogin/nfs/data41/aperloff/GlobalCorrelator/pulsar_devkit/simple_examples/HLSIPs/proj0/solution1_rtl_as_blackbox_DEEPSTREAM/.autopilot/db/simple_algo_blackbox_stream.constraint.tcl",
+		"/Users/aperloff/Documents/CMS/FPGA/torreys.colorado.edu/L1TrackObjects_HLS/firmware/precompiler_functions.h",
+		"/Users/aperloff/Documents/CMS/FPGA/torreys.colorado.edu/GlobalCorrelator/pulsar_devkit/simple_examples/HLSIPs/run_simple_algo_blackbox_gcc.sh",
+		"/Users/aperloff/Documents/CMS/FPGA/torreys.colorado.edu/L1TrackObjects_HLS/firmware/parallel_find_max.h",
+		"/Users/aperloff/Documents/CMS/FPGA/torreys.colorado.edu/GlobalCorrelator/pulsar_devkit/simple_examples/HLSIPs/src/run_simple_algo_blackbox_gcc.sh",
+		"/Users/aperloff/Documents/CMS/FPGA/torreys.colorado.edu/GlobalCorrelator/pulsar_devkit/simple_examples/HLSIPs/src/rtl_simple_algo_blackbox_stream.v",
+		"/Users/aperloff/Documents/CMS/FPGA/torreys.colorado.edu/GlobalCorrelator/pulsar_devkit/simple_examples/HLSIPs/src/rtl_simple_algo_blackbox_deepstream.v",
+		"/Users/aperloff/Documents/CMS/FPGA/torreys.colorado.edu/GlobalCorrelator/pulsar_devkit/simple_examples/HLSIPs/src/rtl_simple_algo_blackbox.v",
+		"/Users/aperloff/Documents/CMS/FPGA/torreys.colorado.edu/GlobalCorrelator/pulsar_devkit/simple_examples/HLSIPs/src/simple_algo_blackbox_stream.json",
+		"/Users/aperloff/Downloads/rtl_simple_algo_blackbox_stream4xwrite.v",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1566841241/culogin/nfs/data41/aperloff/GlobalCorrelator/pulsar_devkit/simple_examples/HLSIPs/proj0/solution1_rtl_as_blackbox_cosim_debug/syn/verilog/start_for_sum_U0.v",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1566841228/culogin/nfs/data41/aperloff/GlobalCorrelator/pulsar_devkit/simple_examples/HLSIPs/proj0/solution1_rtl_as_blackbox_cosim_debug/syn/verilog/start_for_rtl_simple_algo_blackbox_stream_wrapper_U0.v",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1566841207/culogin/nfs/data41/aperloff/GlobalCorrelator/pulsar_devkit/simple_examples/HLSIPs/proj0/solution1_rtl_as_blackbox_cosim_debug/syn/verilog/simple_algo_blackbox_stream.v",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1566841184/culogin/nfs/data41/aperloff/GlobalCorrelator/pulsar_devkit/simple_examples/HLSIPs/proj0/solution1_rtl_as_blackbox_cosim_debug/syn/verilog/read_write.v",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1566841196/culogin/nfs/data41/aperloff/GlobalCorrelator/pulsar_devkit/simple_examples/HLSIPs/proj0/solution1_rtl_as_blackbox_cosim_debug/syn/verilog/rtl_simple_algo_blackbox_stream_wrapper.v",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1566841261/culogin/nfs/data41/aperloff/GlobalCorrelator/pulsar_devkit/simple_examples/HLSIPs/proj0/solution1_rtl_as_blackbox_cosim_debug/syn/verilog/fifo_w44_d2_A.v",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1566841248/culogin/nfs/data41/aperloff/GlobalCorrelator/pulsar_devkit/simple_examples/HLSIPs/proj0/solution1_rtl_as_blackbox_cosim_debug/syn/verilog/sum.v",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1566508241/culogin/nfs/data41/aperloff/GlobalCorrelator/pulsar_devkit/simple_examples/HLSIPs/proj0/solution1_rtl_as_blackbox_cosim_debug/syn/verilog/simple_algo_blackbox_stream.v",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1566508297/culogin/nfs/data41/aperloff/GlobalCorrelator/pulsar_devkit/simple_examples/HLSIPs/proj0/solution1_rtl_as_blackbox_cosim_debug/syn/verilog/sum.v",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1566508270/culogin/nfs/data41/aperloff/GlobalCorrelator/pulsar_devkit/simple_examples/HLSIPs/proj0/solution1_rtl_as_blackbox_cosim_debug/syn/verilog/start_for_sum_U0.v",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1566592984/culogin/nfs/data41/aperloff/GlobalCorrelator/pulsar_devkit/simple_examples/HLSIPs/proj0/solution1_rtl_as_blackbox_cosim_debug/syn/report/rtl_simple_algo_blackbox_stream_csynth.rpt",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1566593108/culogin/nfs/data41/aperloff/GlobalCorrelator/pulsar_devkit/simple_examples/HLSIPs/proj0/solution1_rtl_as_blackbox_cosim_debug/syn/report/sum_csynth.rpt",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1566593075/culogin/nfs/data41/aperloff/GlobalCorrelator/pulsar_devkit/simple_examples/HLSIPs/proj0/solution1_rtl_as_blackbox_cosim_debug/syn/report/simple_algo_blackbox_stream_csynth.rpt",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1566593001/culogin/nfs/data41/aperloff/GlobalCorrelator/pulsar_devkit/simple_examples/HLSIPs/proj0/solution1_rtl_as_blackbox_cosim_debug/syn/report/rtl_simple_algo_blac_csynth.rpt",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1566592931/culogin/nfs/data41/aperloff/GlobalCorrelator/pulsar_devkit/simple_examples/HLSIPs/proj0/solution1_rtl_as_blackbox_cosim_debug/syn/report/rtl_simple_algo_blac_csynth.rpt",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1566592901/culogin/nfs/data41/aperloff/GlobalCorrelator/pulsar_devkit/simple_examples/HLSIPs/proj0/solution1_rtl_as_blackbox_cosim_debug/syn/report/read_write_csynth.rpt",
+		"/private/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1565114999/culogin/nfs/data41/aperloff/TrackletFirmware/TrackletAlgorithm/MatchEngineEmulator.h",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1565114999/culogin/nfs/data41/aperloff/TrackletFirmware/TrackletAlgorithm/MatchEngine.cpp",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1565115319/culogin/nfs/data41/aperloff/TrackletFirmware/TrackletAlgorithm/MatchEngine.h.old",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1565114827/culogin/nfs/data41/aperloff/TrackletFirmware/TrackletAlgorithm/MatchEngineTop.h",
+		"/Users/aperloff/Downloads/data_types(1).h",
+		"/Users/aperloff/Documents/CMS/FPGA/torreys.colorado.edu/TrackletFirmware/TrackletAlgorithm/VMRouter.hh",
+		"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1563907437/culogin/nfs/data41/aperloff/GlobalCorrelator/pulsar_devkit/simple_examples/HLSIPs/proj_rtl_as_blackbox/solution1/syn/report/rtl_simple_algo_blackbox_csynth.rpt",
+		"/Users/aperloff/Documents/CMS/FPGA/torreys.colorado.edu/TrackletFirmware/TrackletAlgorithm/MatchCalculator.hh",
+		"/Users/aperloff/Documents/CMS/FPGA/torreys.colorado.edu/TrackletFirmware/TrackletAlgorithm/MatchCalculatorTop.h",
+		"/Users/aperloff/Documents/CMS/FPGA/torreys.colorado.edu/TrackletFirmware/TrackletAlgorithm/MatchCalculatorTop.cpp",
+		"/Users/aperloff/Documents/CMS/FPGA/torreys.colorado.edu/sftp-config.json"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 94.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"istub",
+			"projindex",
+			"kVMProjIndexSize",
+			"vmpid",
+			"kVMSMEIndexSize",
+			"VMSMEID",
+			"getindex",
+			"index",
+			"getindex",
+			"projectionbuffer",
+			"qdata",
+			"iprojection",
+			"continue",
+			"projindex",
+			"datatype",
+			"emType::",
+			"knbits_memaddr",
+			"memtype",
+			"comparememwithfile",
+			"set(",
+			"biset(",
+			"base",
+			"fout",
+			"pragma",
+			"nentries_",
+			"write_mem",
+			"write",
+			"zbin",
+			"projfinez",
+			"second",
+			"projfinezadj",
+			"idz",
+			"write_mem",
+			"newtracklet",
+			"second",
+			"kVMProjFineZSize",
+			"finez",
+			"projfinez",
+			"zbin",
+			"ibin",
+			"plusplus",
+			"projdata",
+			"projzbin",
+			"zbinstart",
+			"zlast",
+			"zfirst",
+			"istubinner",
+			"innerstubzbits",
+			"VMSTEIZBITS",
+			"zbinfirst",
+			"zbin",
+			"tmpz",
+			"finez",
+			"stubfinez",
+			"projfinezadj",
+			"zbin",
+			"innerstubfinephi",
+			"innerstubindex",
+			"VMSTEIID",
+			"codever",
+			"codev",
+			"cout",
+			"bin_center",
+			"bin_plus_half_win",
+			"NStubs",
+			"getentries",
+			"zero",
+			"nentryt",
+			".length()",
+			"kVMProjectionSize",
+			"vmprojdata",
+			"MEBinsBits+1",
+			"tebins",
+			"mebins",
+			"kNBits_MemAddrBinned",
+			"DataType",
+			"read_mem",
+			"TEBins",
+			"BARREL",
+			"kVMProjectionSize",
+			"vmprojdata",
+			"kvmprojectionsiz",
+			"vmprojdata",
+			"kNBits_MemAddr",
+			"nbit_add",
+			"nentryT",
+			"innertype",
+			"kVMStubTEInnerSize",
+			"tebinsbits",
+			"kNBitsBuffer",
+			"LSIZE",
+			"getEntries(bx,z",
+			"outputCandidateMatch->",
+			"inputProjectionData->",
+			"inputStubData->",
+			"* const",
+			"innerdata",
+			"bxty",
+			"candidatema",
+			"candmatch",
+			"phireg",
+			"seed",
+			"kNBits_MemAddrBinned",
+			"nstubs",
+			"kmaxproc",
+			"TE_L1PHIE18_L2PHIC17",
+			"nstubfirst",
+			"nstubs",
+			"zbin",
+			"define codeversion",
+			"writeindexplus",
+			"head_writeindexplus",
+			"=writeind",
+			"writeindex",
+			"head_writeindex",
+			"readindex",
+			"buffernotempt",
+			"istub",
+			"block",
+			"readindex",
+			"writeindex=",
+			"writeindex",
+			"readin",
+			"full,",
+			"tail_readindex,",
+			"empty",
+			"size",
+			"nproj"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"outputCandidateMatch.",
+			"inputProjectionData.",
+			"inputStubData.",
+			""
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 10,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/Users/aperloff/Documents/CMS/FPGA/torreys.colorado.edu/L1TrackObjects_HLS/scratch",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7733,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4962,
+								4962
+							]
+						],
+						"settings":
+						{
+							"SL.30.region_keys":
+							[
+							],
+							"SL.37.region_keys":
+							[
+							],
+							"SL.38.region_keys":
+							[
+							],
+							"apply_syntax_touched": true,
+							"auto_name": "top{",
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.clone": -1,
+							"bracket_highlighter.clone_locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.clone_regions":
+							[
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content"
+							],
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content"
+							],
+							"incomplete_sync": null,
+							"load_file_name": "/Users/aperloff/Documents/CMS/FPGA/torreys.colorado.edu/L1TrackObjects_HLS/scratch",
+							"markdonw_live_preview_last_run": 1573832670.3,
+							"remote_loading": false,
+							"synced": true,
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 11,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/Users/aperloff/Documents/CMS/FPGA/torreys.colorado.edu/L1TrackObjectFramework/lib_hdl/hdl/design/vertex_hls/vertex_histogram_wrapper.v",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 18155,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4385,
+								4385
+							]
+						],
+						"settings":
+						{
+							"SL.259.region_keys":
+							[
+							],
+							"SL.38.region_keys":
+							[
+							],
+							"SL.46.region_keys":
+							[
+							],
+							"apply_syntax_touched": true,
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.clone": -1,
+							"bracket_highlighter.clone_locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.clone_regions":
+							[
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content"
+							],
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content"
+							],
+							"incomplete_sync": null,
+							"load_file_name": "/Users/aperloff/Documents/CMS/FPGA/torreys.colorado.edu/L1TrackObjectFramework/lib_hdl/hdl/design/vertex_hls/vertex_histogram_wrapper.v",
+							"markdonw_live_preview_last_run": 1573832670.33,
+							"remote_loading": false,
+							"synced": true,
+							"syntax": "Packages/SystemVerilog/SystemVerilog.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 13,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/Users/aperloff/Documents/CMS/FPGA/torreys.colorado.edu/L1TrackObjectFramework/lib_hdl/hdl/design/global_pkg.sv",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7003,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1905,
+								1905
+							]
+						],
+						"settings":
+						{
+							"SL.262.region_keys":
+							[
+							],
+							"SL.39.region_keys":
+							[
+							],
+							"SL.47.region_keys":
+							[
+							],
+							"apply_syntax_touched": true,
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.clone": -1,
+							"bracket_highlighter.clone_locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.clone_regions":
+							[
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content"
+							],
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content"
+							],
+							"incomplete_sync": null,
+							"load_file_name": "/Users/aperloff/Documents/CMS/FPGA/torreys.colorado.edu/L1TrackObjectFramework/lib_hdl/hdl/design/global_pkg.sv",
+							"markdonw_live_preview_last_run": 1573832670.32,
+							"remote_loading": false,
+							"synced": true,
+							"syntax": "Packages/SystemVerilog/SystemVerilog.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 14,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/Users/aperloff/Documents/CMS/FPGA/torreys.colorado.edu/L1TrackObjectFramework/lib_hdl/hdl/design/vertex_hls/vertex_histogram.sv",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 9265,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"SL.264.region_keys":
+							[
+							],
+							"SL.40.region_keys":
+							[
+							],
+							"SL.48.region_keys":
+							[
+							],
+							"apply_syntax_touched": true,
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.clone": -1,
+							"bracket_highlighter.clone_locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.clone_regions":
+							[
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content"
+							],
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content"
+							],
+							"incomplete_sync": null,
+							"load_file_name": "/Users/aperloff/Documents/CMS/FPGA/torreys.colorado.edu/L1TrackObjectFramework/lib_hdl/hdl/design/vertex_hls/vertex_histogram.sv",
+							"markdonw_live_preview_last_run": 1573832670.33,
+							"remote_loading": false,
+							"synced": true,
+							"syntax": "Packages/SystemVerilog/SystemVerilog.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 12,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 8923,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								7118,
+								7118
+							]
+						],
+						"settings":
+						{
+							"SL.41.region_keys":
+							[
+							],
+							"apply_syntax_touched": true,
+							"auto_name": "1. CLB Logic",
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.clone": -1,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content"
+							],
+							"default_dir": "/Users/aperloff/Documents/CMS/FPGA/torreys.colorado.edu/L1TrackObjects_HLS/firmware",
+							"incomplete_sync": null,
+							"load_file_name": null,
+							"markdonw_live_preview_last_run": 1573832670.33,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 10,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "/Users/aperloff/Documents/CMS/FPGA/torreys.colorado.edu/TrackletFirmware/project/script_ME.tcl",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1163,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								549,
+								549
+							]
+						],
+						"settings":
+						{
+							"SL.42.region_keys":
+							[
+							],
+							"apply_syntax_touched": true,
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.clone": -1,
+							"bracket_highlighter.clone_locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										1183,
+										1184
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/double_quote.png",
+										"region.greenish"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										1143,
+										1144
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.clone_regions":
+							[
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content"
+							],
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										557,
+										558
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/double_quote.png",
+										"region.greenish"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										538,
+										539
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content"
+							],
+							"incomplete_sync": null,
+							"load_file_name": "/Users/aperloff/Documents/CMS/FPGA/torreys.colorado.edu/TrackletFirmware/project/script_ME.tcl",
+							"markdonw_live_preview_last_run": 1573833001.37,
+							"remote_loading": false,
+							"synced": true,
+							"syntax": "Packages/TCL/Tcl.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "/Users/aperloff/Documents/CMS/FPGA/torreys.colorado.edu/TrackletFirmware/TrackletAlgorithm/Constants.hh",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 758,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								261,
+								275
+							]
+						],
+						"settings":
+						{
+							"SL.43.region_keys":
+							[
+							],
+							"apply_syntax_touched": true,
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.clone": -1,
+							"bracket_highlighter.clone_locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.clone_regions":
+							[
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content"
+							],
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content"
+							],
+							"incomplete_sync": null,
+							"load_file_name": "/Users/aperloff/Documents/CMS/FPGA/torreys.colorado.edu/TrackletFirmware/TrackletAlgorithm/Constants.hh",
+							"markdonw_live_preview_last_run": 1574366445.93,
+							"remote_loading": false,
+							"synced": true,
+							"syntax": "Packages/C++11/C++11.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "/Users/aperloff/Documents/CMS/FPGA/torreys.colorado.edu/TrackletFirmware/TestBenches/MatchEngine_test.cpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2288,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								362,
+								363
+							]
+						],
+						"settings":
+						{
+							"SL.44.region_keys":
+							[
+							],
+							"apply_syntax_touched": true,
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.clone": -1,
+							"bracket_highlighter.clone_locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										2157,
+										2158
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/curly_bracket.png",
+										"region.purplish"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										1315,
+										1316
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.clone_regions":
+							[
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content"
+							],
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content"
+							],
+							"incomplete_sync": null,
+							"load_file_name": "/Users/aperloff/Documents/CMS/FPGA/torreys.colorado.edu/TrackletFirmware/TestBenches/MatchEngine_test.cpp",
+							"markdonw_live_preview_last_run": 1573832990.34,
+							"remote_loading": false,
+							"synced": true,
+							"syntax": "Packages/C++11/C++11.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 223.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "/Users/aperloff/Documents/CMS/FPGA/torreys.colorado.edu/TrackletFirmware/TestBenches/FileReadUtility.hh",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7684,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3220,
+								3220
+							]
+						],
+						"settings":
+						{
+							"SL.174.region_keys":
+							[
+							],
+							"apply_syntax_touched": true,
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.clone": -1,
+							"bracket_highlighter.clone_locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										6326,
+										6327
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/curly_bracket.png",
+										"region.purplish"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										6087,
+										6088
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.clone_regions":
+							[
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content"
+							],
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										4902,
+										4903
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/curly_bracket.png",
+										"region.purplish"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										2635,
+										2636
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content"
+							],
+							"incomplete_sync": null,
+							"load_file_name": "/Users/aperloff/Documents/CMS/FPGA/torreys.colorado.edu/TrackletFirmware/TestBenches/FileReadUtility.hh",
+							"remote_loading": false,
+							"synced": true,
+							"syntax": "Packages/C++11/C++11.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1815.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "/Users/aperloff/Documents/CMS/FPGA/torreys.colorado.edu/TrackletFirmware/TrackletAlgorithm/MatchEngine.h",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4006,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2230,
+								2244
+							]
+						],
+						"settings":
+						{
+							"SL.45.region_keys":
+							[
+							],
+							"SL.63.region_keys":
+							[
+							],
+							"SL.66.region_keys":
+							[
+							],
+							"apply_syntax_touched": true,
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.clone": -1,
+							"bracket_highlighter.clone_locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										3621,
+										3626
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/hash.png",
+										"region.yellowish"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										1,
+										7
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.clone_regions":
+							[
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content"
+							],
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										4000,
+										4005
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/hash.png",
+										"region.yellowish"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										1,
+										7
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content"
+							],
+							"incomplete_sync": null,
+							"load_file_name": "/Users/aperloff/Documents/CMS/FPGA/torreys.colorado.edu/TrackletFirmware/TrackletAlgorithm/MatchEngine.h",
+							"markdonw_live_preview_last_run": 1573832820.49,
+							"remote_loading": false,
+							"synced": true,
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 523.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "/Users/aperloff/Documents/CMS/FPGA/torreys.colorado.edu/TrackletFirmware/TrackletAlgorithm/MatchEngine.cpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 8517,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								8300,
+								8300
+							]
+						],
+						"settings":
+						{
+							"SL.110.region_keys":
+							[
+							],
+							"SL.46.region_keys":
+							[
+							],
+							"SL.68.region_keys":
+							[
+							],
+							"apply_syntax_touched": true,
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.clone": -1,
+							"bracket_highlighter.clone_locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+									"1":
+									[
+										2938,
+										2939
+									]
+								}
+							},
+							"bracket_highlighter.clone_regions":
+							[
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content"
+							],
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										8516,
+										8517
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/curly_bracket.png",
+										"region.purplish"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										8256,
+										8257
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content"
+							],
+							"incomplete_sync": null,
+							"load_file_name": "/Users/aperloff/Documents/CMS/FPGA/torreys.colorado.edu/TrackletFirmware/TrackletAlgorithm/MatchEngine.cpp",
+							"markdonw_live_preview_last_run": 1573832953.12,
+							"remote_loading": false,
+							"synced": true,
+							"syntax": "Packages/C++11/C++11.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 2278.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "/Users/aperloff/Documents/CMS/FPGA/torreys.colorado.edu/TrackletFirmware/TrackletAlgorithm/VMProjectionMemory.hh",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4947,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2295,
+								2249
+							]
+						],
+						"settings":
+						{
+							"apply_syntax_touched": true,
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.clone": -1,
+							"bracket_highlighter.clone_locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.clone_regions":
+							[
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content"
+							],
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										4733,
+										4734
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/curly_bracket.png",
+										"region.purplish"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										1240,
+										1241
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content"
+							],
+							"incomplete_sync": null,
+							"load_file_name": "/Users/aperloff/Documents/CMS/FPGA/torreys.colorado.edu/TrackletFirmware/TrackletAlgorithm/VMProjectionMemory.hh",
+							"remote_loading": false,
+							"synced": true,
+							"syntax": "Packages/C++11/C++11.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 364.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"file": "/Users/aperloff/Documents/CMS/FPGA/torreys.colorado.edu/TrackletFirmware/TrackletAlgorithm/MatchEngineEmulator.h",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 8146,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4392,
+								4392
+							]
+						],
+						"settings":
+						{
+							"apply_syntax_touched": true,
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.clone": -1,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										5635,
+										5636
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/curly_bracket.png",
+										"region.purplish"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										4024,
+										4025
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content"
+							],
+							"incomplete_sync": null,
+							"load_file_name": "/Users/aperloff/Documents/CMS/FPGA/torreys.colorado.edu/TrackletFirmware/TrackletAlgorithm/MatchEngineEmulator.h",
+							"remote_loading": false,
+							"synced": true,
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 2226.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 13,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2609,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1135,
+								1135
+							]
+						],
+						"settings":
+						{
+							"SL.48.region_keys":
+							[
+							],
+							"apply_syntax_touched": true,
+							"auto_name": "kVMProjectionSize=21",
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.clone": -1,
+							"bracket_highlighter.clone_locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.clone_regions":
+							[
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content"
+							],
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content"
+							],
+							"default_dir": "/Users/aperloff/Documents/CMS/FPGA/torreys.colorado.edu/TrackletFirmware/TrackletAlgorithm",
+							"incomplete_sync": null,
+							"load_file_name": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 302.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 14,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1176,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1176,
+								1176
+							]
+						],
+						"settings":
+						{
+							"apply_syntax_touched": true,
+							"auto_name": "CandidateMatch:",
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.clone": -1,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content"
+							],
+							"default_dir": "/Users/aperloff/Documents/CMS/FPGA/torreys.colorado.edu/TrackletFirmware/TrackletAlgorithm",
+							"incomplete_sync": null,
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 24.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.SublimeLinter":
+	{
+		"height": 0.0
+	},
+	"output.SystemVerilog":
+	{
+		"height": 104.0
+	},
+	"output.exec":
+	{
+		"height": 116.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.latextools":
+	{
+		"height": 104.0
+	},
+	"output.mdpopups":
+	{
+		"height": 0.0
+	},
+	"output.sftp":
+	{
+		"height": 134.0
+	},
+	"pinned_build_system": "",
+	"project": "torreys.colorado.edu.sublime-project",
+	"replace":
+	{
+		"height": 44.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"plo",
+				"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1460565795/cmslpc/uscms/home/aperloff/nobackup/YOURWORKINGAREA/MatrixElement/gitty/CMSSW_5_3_2_patch5/src/TAMUWW/Tools/bin/plotter_x.cc"
+			],
+			[
+				"dra",
+				"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1426464123/brazos/home/aperloff/JEC/CMSSW_7_3_3/src/JMEAnalysis/JMEValidator/macros/particleDrawer.C"
+			],
+			[
+				"run",
+				"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1426464338/brazos/home/aperloff/JEC/CMSSW_7_3_3/src/JMEAnalysis/JMEValidator/test/runValidator.py"
+			],
+			[
+				"par",
+				"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1426464123/brazos/home/aperloff/JEC/CMSSW_7_3_3/src/JMEAnalysis/JMEValidator/macros/particleDrawer.C"
+			],
+			[
+				"event",
+				"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1414446841/cmslpc/uscms/home/aperloff/nobackup/YOURWORKINGAREA/MatrixElement/gitty/CMSSW_5_3_2_patch4/src/TAMUWW/Tools/bin/EventNtupleToUVaNtuple_x.cc"
+			],
+			[
+				"form",
+				"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1412375393/cmslpc/uscms/home/aperloff/nobackup/YOURWORKINGAREA/VHbb/CMSSW_7_1_0_pre9/src/VHbb/HbbAnalyzer/bin/format_plots_x.cc"
+			],
+			[
+				"plot",
+				"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1409671503/cmslpc/uscms/home/aperloff/nobackup/YOURWORKINGAREA/MatrixElement/gitty/CMSSW_5_3_2_patch4/src/TAMUWW/Tools/bin/plotter_x.cc"
+			],
+			[
+				"plott",
+				"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1409671503/cmslpc/uscms/home/aperloff/nobackup/YOURWORKINGAREA/MatrixElement/gitty/CMSSW_5_3_2_patch4/src/TAMUWW/Tools/bin/plotter_x.cc"
+			],
+			[
+				"hbb",
+				"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1410537533/cmslpc/uscms/home/aperloff/nobackup/YOURWORKINGAREA/VHbb/CMSSW_7_1_0_pre9/src/VHbb/HbbAnalyzer/plugins/HbbAnalyzer.cc"
+			],
+			[
+				"hbban",
+				"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1410537533/cmslpc/uscms/home/aperloff/nobackup/YOURWORKINGAREA/VHbb/CMSSW_7_1_0_pre9/src/VHbb/HbbAnalyzer/plugins/HbbAnalyzer.cc"
+			],
+			[
+				"cfi",
+				"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1410537997/cmslpc/uscms/home/aperloff/nobackup/YOURWORKINGAREA/VHbb/CMSSW_7_1_0_pre9/src/VHbb/HbbAnalyzer/python/HbbAnalyzer_cfi.py"
+			],
+			[
+				"cfg",
+				"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1410538007/cmslpc/uscms/home/aperloff/nobackup/YOURWORKINGAREA/VHbb/CMSSW_7_1_0_pre9/src/VHbb/HbbAnalyzer/python/HbbAnalyzer_cfg.py"
+			],
+			[
+				"",
+				"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1412203431/cmslpc/uscms/home/aperloff/nobackup/YOURWORKINGAREA/MatrixElement/gitty/CMSSW_5_3_2_patch4/src/TAMUWW/MVA/src/TAMUWWMVA.cc"
+			],
+			[
+				"un",
+				"untitled"
+			],
+			[
+				"inc",
+				"/Users/aperloff/Library/Application Support/Sublime Text 2/Packages/User/C++/include-stl.sublime-snippet"
+			],
+			[
+				"unti",
+				"untitled"
+			],
+			[
+				"mico",
+				"/var/folders/x8/04k4m4d161nckqr1f2ncqxkm0000gn/T/sublime-sftp-browse-1384972849/cmslpc/uscms/home/aperloff/MatrixElement/gitty/CMSSW_5_3_2_patch4/src/TAMUWW/Tools/src/MicroNtupleMaker.cc"
+			],
+			[
+				"jn",
+				"kjfnvldjf"
+			],
+			[
+				"jv",
+				"kjfnvldjf"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 368.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

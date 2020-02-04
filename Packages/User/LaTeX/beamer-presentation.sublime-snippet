@@ -1,0 +1,74 @@
+<snippet>
+	<content><![CDATA[
+\documentclass[compress,10pt,dvipsnames]{Presentation}
+
+\title[${1:<short title>}]{${2:<title>}} %\title[short title]{title}
+\subtitle[]{${3:<subtitle>}} %\subtitle[short subtitle]{subtitle}
+\author[A. Perloff]{Alexx Perloff\inst{1}}
+\institute[CU]
+{
+    \inst{1}%
+    University of Colorado Boulder\\\\
+}
+\newdate{date}{${4:<day>}}{${5:<month>}}{${6:<year>}}
+\date{\displaydate{date}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+{
+    \setbeamertemplate{footline}{} 
+    \begin{frame}
+        \titlepage
+    \end{frame}
+}
+%\addtocounter{framenumber}{-1}
+
+%%============================================================================================
+\section*{Introduction}
+\label{sec:introduction}
+%%============================================================================================
+
+%%--------------------------------------------------------------------------------------------
+\subsection*{Introduction}
+%%--------------------------------------------------------------------------------------------
+
+\begin{frame}[t]\frametitle{Introduction}   
+	\vspace*{-0.4cm}
+	\begin{block}{}
+		\begin{itemize}
+			\item 
+		\end{itemize}
+	\end{block}
+\end{frame}
+
+\miniframesoff
+
+%%============================================================================================
+\section*{Backup}
+\label{sec:backup}
+%%============================================================================================
+
+%%--------------------------------------------------------------------------------------------
+\subsection*{Backup}
+%%--------------------------------------------------------------------------------------------
+
+\begin{frame}
+	\begin{block}{}
+		\begin{center}
+			\shadowoffset{2pt}
+			\shadowcolor{CUGold}
+			\shadowtext{{\fontsize{30}{60}\selectfont \textbf{\textcolor{black}{Backup Slides}}}}
+			\vspace{1.5mm}
+		\end{center}
+	\end{block}
+\end{frame}
+
+
+\end{document}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>presentation</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>text.tex.latex</scope>
+</snippet>

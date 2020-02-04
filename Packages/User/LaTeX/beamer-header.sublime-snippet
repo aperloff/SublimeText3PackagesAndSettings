@@ -1,0 +1,18 @@
+<snippet>
+	<content><![CDATA[
+\documentclass[compress,10pt,dvipsnames]{Presentation}
+
+\title[${1}]{${2}} %\title[short title]{title}
+\subtitle[${3}]{${4}} %\subtitle[short subtitle]{subtitle}
+\author[${5:A. Perloff}]{${6:\textbf{Alexx Perloff\inst{1}}}}
+\institute[CU] {
+    \inst{1}%
+    University of Colorado Boulder\\
+}   
+\newdate{date}{${7}}{${8}}{${9}}
+\date{\displaydate{date}}
+]]></content>
+	<tabTrigger>beamerheader</tabTrigger>
+	<scope>text.tex.latex</scope>
+	<description>A simple, but custom presentation header using the beamer package.</description>
+</snippet>

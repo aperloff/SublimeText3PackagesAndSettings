@@ -1,0 +1,12 @@
+<snippet>
+	<content><![CDATA[
+\begin{customlist}{${1:2.5em}}{${2:0em}}
+   \item ${3}
+\end{customlist}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>customlist</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>text.tex.latex</scope>
+	<description>customlist environment</description>
+</snippet>

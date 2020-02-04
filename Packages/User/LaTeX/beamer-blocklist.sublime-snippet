@@ -1,0 +1,12 @@
+<snippet>
+	<content><![CDATA[
+\\begin{block}{$1}
+	\begin{list}{${2:\$\circle\$}}{\leftmargin=${3:2.5em} \itemindent=${4:0em}}
+	    \item ${5:$TM_SELECTED_TEXT}
+	\end{list}
+\\end{block}
+]]></content>
+	<tabTrigger>blocklist</tabTrigger>
+	<scope>text.tex.latex</scope>
+	<description>Insert a block environment with a nested list environment.</description>
+</snippet>

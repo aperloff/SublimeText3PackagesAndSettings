@@ -1,0 +1,12 @@
+<snippet>
+	<content><![CDATA[
+\begin{list}{${1:\$\circle\$}}{\leftmargin=${2:2.5em} \itemindent=${3:0em}}
+    \item ${4}
+\end{list}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>list</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>text.tex.latex</scope>
+	<description>A list environment</description>
+</snippet>

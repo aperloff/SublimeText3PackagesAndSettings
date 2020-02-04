@@ -1,0 +1,12 @@
+<snippet>
+	<content><![CDATA[
+\\begin{block}{$1}
+	\begin{itemize}
+	    \item ${2:$TM_SELECTED_TEXT}
+	\end{itemize}
+\\end{block}
+]]></content>
+	<tabTrigger>blockitem</tabTrigger>
+	<scope>text.tex.latex</scope>
+	<description>Insert a block environment with a nested itemize environment.</description>
+</snippet>

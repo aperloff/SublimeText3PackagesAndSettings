@@ -1,0 +1,18 @@
+{
+	"folders":
+	[
+		{
+			"binary_file_patterns":
+			[
+			],
+			"file_exclude_patterns":
+			[
+			],
+			"folder_exclude_patterns":
+			[
+			],
+			"name": "2019_10_1-XilinxDevelopersForum",
+			"path": "~/Documents/CMS/FPGA/Presentations/2019_10_1-XilinxDevelopersForum"
+		}
+	]
+}

@@ -1,0 +1,9 @@
+{
+	"folders":
+	[
+		{
+			"path": "~/Documents/CMS/FPGA/torreys.colorado.edu",
+			"file_exclude_patterns": ["*.yml~","*.tcl~","*.cpp~","*.hh~"]
+		}
+	]
+}

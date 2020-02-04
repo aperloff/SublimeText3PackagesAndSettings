@@ -1,0 +1,6 @@
+<snippet>
+	<content><![CDATA[print "sfsg${1:1}${2: }"]]></content>
+	<tabTrigger>sfsg</tabTrigger>
+	<scope>source.python</scope>
+	<description>so far so good</description>
+</snippet>

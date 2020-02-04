@@ -1,0 +1,11 @@
+<snippet>
+	<content><![CDATA[
+\begin{textblock}{${1:1.0}}(${2:0.0},${3:0.0})
+	$4
+\end{textblock}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>textblock</tabTrigger> -->
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>text.tex.latex</scope>
+</snippet>

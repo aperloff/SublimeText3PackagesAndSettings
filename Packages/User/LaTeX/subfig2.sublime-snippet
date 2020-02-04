@@ -1,0 +1,23 @@
+<snippet>
+	<content><![CDATA[
+\begin{figure}[!hbt]
+    \centering
+    \begin{subfigure}[t]{0.48\textwidth}
+        \includegraphics[width=\textwidth]{${1}}
+        \caption{${2}}
+        \label{fig:${3}}
+    \end{subfigure}
+    \begin{subfigure}[t]{0.48\textwidth}
+        \includegraphics[width=\textwidth]{${4}}
+        \caption{${5}}
+        \label{fig:${6}}
+    \end{subfigure}
+    \caption{${7}}
+    \label{fig:${8}}
+\end{figure}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>subfig2</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>text.tex.latex</scope>
+</snippet>
