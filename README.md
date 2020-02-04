@@ -8,5 +8,8 @@ git remote add origin git@github.com:aperloff/SublimeText3PackagesAndSettings.gi
 git fetch
 git reset origin/master # Required when the versioned files existed in path before "git init" of this repo.
 git checkout -t origin/master # Only necessary if not on the master branch
-git restore --progress . # Recreates all of the files from the repository
+
+# To restore the files, which at this point appear as deleted, use one of the two commands below
+git checkout -- .
+git restore --progress .
 ```
